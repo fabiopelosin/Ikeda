@@ -1,0 +1,26 @@
+#!/bin/sh
+# -*- ruby -*-
+bindir=`cd -P "${0%/*}" 2>/dev/null; pwd`
+prefix="${bindir%/bin}"
+export DYLD_LIBRARY_PATH="$prefix/lib${DYLD_LIBRARY_PATH:+:$DYLD_LIBRARY_PATH}"
+exec "$bindir/ruby" -x "$0" "$@"
+#!/usr/bin/env ruby
+#
+#   irb.rb - interactive ruby
+#   	$Release Version: 0.9.6 $
+#   	$Revision: 25189 $
+#   	by Keiju ISHITSUKA(keiju@ruby-lang.org)
+#
+
+require "irb"
+
+if __FILE__ == $0
+  IRB.start(__FILE__)
+else
+  # check -e option
+  if /^-e$/ =~ $0
+    IRB.start(__FILE__)
+  else
+    IRB.setup(__FILE__)
+  end
+end

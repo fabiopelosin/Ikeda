@@ -1,0 +1,960 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>ICUPattern Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 789)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Fragaria 0.0.1 </a></h1>
+				<a id="developerHome" href="../index.html">Jonathan Mitchell</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">ICUPattern Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/patternWithString:">&nbsp;&nbsp;&nbsp;&nbsp;+ patternWithString:</option>
+	
+	<option value="//api/name/patternWithString:flags:">&nbsp;&nbsp;&nbsp;&nbsp;+ patternWithString:flags:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/componentsSplitFromString:">&nbsp;&nbsp;&nbsp;&nbsp;- componentsSplitFromString:</option>
+	
+	<option value="//api/name/initWithString:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithString:</option>
+	
+	<option value="//api/name/initWithString:flags:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithString:flags:</option>
+	
+	<option value="//api/name/matchesString:">&nbsp;&nbsp;&nbsp;&nbsp;- matchesString:</option>
+	
+	<option value="//api/name/pattern">&nbsp;&nbsp;&nbsp;&nbsp;- pattern</option>
+	
+	<option value="//api/name/re">&nbsp;&nbsp;&nbsp;&nbsp;- re</option>
+	
+	<option value="//api/name/reset">&nbsp;&nbsp;&nbsp;&nbsp;- reset</option>
+	
+	<option value="//api/name/setStringToSearch:">&nbsp;&nbsp;&nbsp;&nbsp;- setStringToSearch:</option>
+	
+	<option value="//api/name/stringToSearch">&nbsp;&nbsp;&nbsp;&nbsp;- stringToSearch</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/patternWithString:">patternWithString:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/patternWithString:flags:">patternWithString:flags:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/componentsSplitFromString:">componentsSplitFromString:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithString:">initWithString:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithString:flags:">initWithString:flags:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/matchesString:">matchesString:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pattern">pattern</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/re">re</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/reset">reset</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setStringToSearch:">setStringToSearch:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stringToSearch">stringToSearch</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="ICUPattern Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">ICUPattern Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSCopying</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">ICUPattern.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<pre><code>@class       ICUPattern
+@abstract    A compiled regular expression.
+@discussion  &lt;a href="http://icu.sourceforge.net/"&gt;ICU&lt;/a&gt; provides a widely used Unicode
+</code></pre>
+
+<p>regular expression library.  This class can be roughly mapped to the <a href="[http://icu.sourceforge.net/apiref/icu4c/classRegexPattern.html](http://icu.sourceforge.net/apiref/icu4c/classRegexPattern.html)">ICU C++ Pattern class</a>.  Notes about ICU regular expressions can be found at the
+<a href="[http://icu.sourceforge.net/userguide/regexp.html](http://icu.sourceforge.net/userguide/regexp.html)">ICU User Guide</a>.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/patternWithString:flags:">+&nbsp;patternWithString:flags:</a></code>
+		<span class="tooltip"><pre><code>@method     patternWithString:flags:
+@abstract   Returns an autoreleased pattern with the specified flags set.
+@discussion Flags are defined as the OR of the constants defined in the class.
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/patternWithString:">+&nbsp;patternWithString:</a></code>
+		<span class="tooltip"><pre><code>@method     patternWithString:
+@abstract   Returns an autoreleased pattern with the default flags.
+@discussion Flags are given by 0.
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithString:flags:">&ndash;&nbsp;initWithString:flags:</a></code>
+		<span class="tooltip"><pre><code>@method     initWithString:flags:
+@abstract   Returns a pattern with the specified flags set.
+@discussion Flags are defined as the OR of the constants defined in the class.
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithString:">&ndash;&nbsp;initWithString:</a></code>
+		<span class="tooltip"><pre><code>@method     initWithString:
+@abstract   Returns a pattern with the specified flags set.
+@discussion Flags are defined as 0.
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/componentsSplitFromString:">&ndash;&nbsp;componentsSplitFromString:</a></code>
+		<span class="tooltip"><pre><code>@method     componentsSplitFromString:
+@abstract   Splits the input string into fields delineated by the expression given by the pattern.
+@discussion Returns an empty array if the pattern is not found.
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/matchesString:">&ndash;&nbsp;matchesString:</a></code>
+		<span class="tooltip"><pre><code>@method     matchesString:
+@abstract   Returns YES if the pattern matches the entire input string.
+@discussion Returns YES if the pattern matches the entire input string.
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pattern">&ndash;&nbsp;pattern</a></code>
+		<span class="tooltip"><pre><code>@method     pattern
+@abstract   Returns the string representing the regular expression of this pattern.
+@discussion Returns the string representing the regular expression of this pattern.
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setStringToSearch:">&ndash;&nbsp;setStringToSearch:</a></code>
+		<span class="tooltip"><pre><code>@method     setStringToSearch:
+@abstract   Sets the string that is being searched by this pattern.
+@discussion This method also resets any internal state of the pattern.
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stringToSearch">&ndash;&nbsp;stringToSearch</a></code>
+		<span class="tooltip"><pre><code>@method     stringToSearch
+@abstract   Returns the string that is being searched over with the pattern.
+@discussion This method creates an NSString from the underlying UTF16 character array used by ICU.  For large
+</code></pre>
+
+<p>strings, this may be memory-intensive/time-consuming.  Performance-critical applications may want to modify this
+class to suite their needs to reduce the number of NSString objects that a<a href="#//api/name/re">re</a> created.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/reset">&ndash;&nbsp;reset</a></code>
+		<span class="tooltip"><pre><code>@method     reset
+@abstract   Resets the pattern.
+@discussion Patterns maintain state about the current match and this method resets that state.
+</code></pre></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/re">&ndash;&nbsp;re</a></code>
+		<span class="tooltip"><pre><code>@method     re
+@abstract   Returns the compiled ICU URegularExpression for this pattern.
+@discussion This method primarily exists to allow the ICUMatcher to access the pattern.
+</code></pre></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/patternWithString:" title="patternWithString:"></a>
+	<h3 class="subsubtitle method-title">patternWithString:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@method     patternWithString:
+@abstract   Returns an autoreleased pattern with the default flags.
+@discussion Flags are given by 0.
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (ICUPattern *)patternWithString:(NSString *)<em>aPattern</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code>@method     patternWithString:
+@abstract   Returns an autoreleased pattern with the default flags.
+@discussion Flags are given by 0.
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ICUPattern.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/patternWithString:flags:" title="patternWithString:flags:"></a>
+	<h3 class="subsubtitle method-title">patternWithString:flags:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@method     patternWithString:flags:
+@abstract   Returns an autoreleased pattern with the specified flags set.
+@discussion Flags are defined as the OR of the constants defined in the class.
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (ICUPattern *)patternWithString:(NSString *)<em>aPattern</em> flags:(unsigned)<em>flags</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code>@method     patternWithString:flags:
+@abstract   Returns an autoreleased pattern with the specified flags set.
+@discussion Flags are defined as the OR of the constants defined in the class.
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ICUPattern.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/componentsSplitFromString:" title="componentsSplitFromString:"></a>
+	<h3 class="subsubtitle method-title">componentsSplitFromString:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@method     componentsSplitFromString:
+@abstract   Splits the input string into fields delineated by the expression given by the pattern.
+@discussion Returns an empty array if the pattern is not found.
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)componentsSplitFromString:(NSString *)<em>stringToSplit</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code>@method     componentsSplitFromString:
+@abstract   Splits the input string into fields delineated by the expression given by the pattern.
+@discussion Returns an empty array if the pattern is not found.
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ICUPattern.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithString:" title="initWithString:"></a>
+	<h3 class="subsubtitle method-title">initWithString:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@method     initWithString:
+@abstract   Returns a pattern with the specified flags set.
+@discussion Flags are defined as 0.
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithString:(NSString *)<em>aPattern</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code>@method     initWithString:
+@abstract   Returns a pattern with the specified flags set.
+@discussion Flags are defined as 0.
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ICUPattern.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithString:flags:" title="initWithString:flags:"></a>
+	<h3 class="subsubtitle method-title">initWithString:flags:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@method     initWithString:flags:
+@abstract   Returns a pattern with the specified flags set.
+@discussion Flags are defined as the OR of the constants defined in the class.
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithString:(NSString *)<em>aPattern</em> flags:(unsigned)<em>flags</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code>@method     initWithString:flags:
+@abstract   Returns a pattern with the specified flags set.
+@discussion Flags are defined as the OR of the constants defined in the class.
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ICUPattern.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/matchesString:" title="matchesString:"></a>
+	<h3 class="subsubtitle method-title">matchesString:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@method     matchesString:
+@abstract   Returns YES if the pattern matches the entire input string.
+@discussion Returns YES if the pattern matches the entire input string.
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)matchesString:(NSString *)<em>stringToMatchAgainst</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code>@method     matchesString:
+@abstract   Returns YES if the pattern matches the entire input string.
+@discussion Returns YES if the pattern matches the entire input string.
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ICUPattern.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/pattern" title="pattern"></a>
+	<h3 class="subsubtitle method-title">pattern</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@method     pattern
+@abstract   Returns the string representing the regular expression of this pattern.
+@discussion Returns the string representing the regular expression of this pattern.
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)pattern</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code>@method     pattern
+@abstract   Returns the string representing the regular expression of this pattern.
+@discussion Returns the string representing the regular expression of this pattern.
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ICUPattern.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/re" title="re"></a>
+	<h3 class="subsubtitle method-title">re</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@method     re
+@abstract   Returns the compiled ICU URegularExpression for this pattern.
+@discussion This method primarily exists to allow the ICUMatcher to access the pattern.
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void *)re</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code>@method     re
+@abstract   Returns the compiled ICU URegularExpression for this pattern.
+@discussion This method primarily exists to allow the ICUMatcher to access the pattern.
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ICUPattern.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/reset" title="reset"></a>
+	<h3 class="subsubtitle method-title">reset</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@method     reset
+@abstract   Resets the pattern.
+@discussion Patterns maintain state about the current match and this method resets that state.
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)reset</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code>@method     reset
+@abstract   Resets the pattern.
+@discussion Patterns maintain state about the current match and this method resets that state.
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ICUPattern.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setStringToSearch:" title="setStringToSearch:"></a>
+	<h3 class="subsubtitle method-title">setStringToSearch:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@method     setStringToSearch:
+@abstract   Sets the string that is being searched by this pattern.
+@discussion This method also resets any internal state of the pattern.
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setStringToSearch:(NSString *)<em>aStringToSearchOver</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code>@method     setStringToSearch:
+@abstract   Sets the string that is being searched by this pattern.
+@discussion This method also resets any internal state of the pattern.
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ICUPattern.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stringToSearch" title="stringToSearch"></a>
+	<h3 class="subsubtitle method-title">stringToSearch</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<pre><code>@method     stringToSearch
+@abstract   Returns the string that is being searched over with the pattern.
+@discussion This method creates an NSString from the underlying UTF16 character array used by ICU.  For large
+</code></pre>
+
+<p>strings, this may be memory-intensive/time-consuming.  Performance-critical applications may want to modify this
+class to suite their needs to reduce the number of NSString objects that a<a href="#//api/name/re">re</a> created.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)stringToSearch</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code>@method     stringToSearch
+@abstract   Returns the string that is being searched over with the pattern.
+@discussion This method creates an NSString from the underlying UTF16 character array used by ICU.  For large
+</code></pre>
+
+<p>strings, this may be memory-intensive/time-consuming.  Performance-critical applications may want to modify this
+class to suite their needs to reduce the number of NSString objects that a<a href="#//api/name/re">re</a> created.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">ICUPattern.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Jonathan Mitchell. All rights reserved. (Last updated: 2012-09-06)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

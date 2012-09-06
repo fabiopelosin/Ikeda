@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SourceListItem.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SourceListItem</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SourceListItem.h</DeclaredIn>
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SourceListItem/setTitle:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SourceListItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *title</Declaration>
+			
+			
+			<Anchor>//api/name/title</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SourceListItem/title</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SourceListItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *title</Declaration>
+			
+			
+			<Anchor>//api/name/title</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SourceListItem/setIdentifier:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SourceListItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *identifier</Declaration>
+			
+			
+			<Anchor>//api/name/identifier</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SourceListItem/identifier</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SourceListItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *identifier</Declaration>
+			
+			
+			<Anchor>//api/name/identifier</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SourceListItem/setIcon:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SourceListItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSImage *icon</Declaration>
+			
+			
+			<Anchor>//api/name/icon</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SourceListItem/icon</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SourceListItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSImage *icon</Declaration>
+			
+			
+			<Anchor>//api/name/icon</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SourceListItem/setBadgeValue:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SourceListItem.h</DeclaredIn>			
+			
+			<Declaration>@property NSInteger badgeValue</Declaration>
+			
+			
+			<Anchor>//api/name/badgeValue</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SourceListItem/badgeValue</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SourceListItem.h</DeclaredIn>			
+			
+			<Declaration>@property NSInteger badgeValue</Declaration>
+			
+			
+			<Anchor>//api/name/badgeValue</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SourceListItem/setChildren:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SourceListItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSArray *children</Declaration>
+			
+			
+			<Anchor>//api/name/children</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SourceListItem/children</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SourceListItem.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSArray *children</Declaration>
+			
+			
+			<Anchor>//api/name/children</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SourceListItem/itemWithTitle:identifier:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SourceListItem.h</DeclaredIn>			
+			
+			<Declaration>+ (id)itemWithTitle:(NSString *)aTitle identifier:(NSString *)anIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/itemWithTitle:identifier:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SourceListItem/itemWithTitle:identifier:icon:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SourceListItem.h</DeclaredIn>			
+			
+			<Declaration>+ (id)itemWithTitle:(NSString *)aTitle identifier:(NSString *)anIdentifier icon:(NSImage *)anIcon</Declaration>
+			
+			
+			<Anchor>//api/name/itemWithTitle:identifier:icon:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SourceListItem/hasBadge</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SourceListItem.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)hasBadge</Declaration>
+			
+			
+			<Anchor>//api/name/hasBadge</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SourceListItem/hasChildren</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SourceListItem.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)hasChildren</Declaration>
+			
+			
+			<Anchor>//api/name/hasChildren</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SourceListItem/hasIcon</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SourceListItem.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)hasIcon</Declaration>
+			
+			
+			<Anchor>//api/name/hasIcon</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

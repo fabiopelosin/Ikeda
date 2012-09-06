@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SMLBasicPerformer.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SMLBasicPerformer</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMLBasicPerformer.h</DeclaredIn>
+			
+			<NodeRef refid="8"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SMLBasicPerformer/sharedInstance</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMLBasicPerformer.h</DeclaredIn>			
+			
+			<Declaration>+ (SMLBasicPerformer *)sharedInstance</Declaration>
+			
+			
+			<Anchor>//api/name/sharedInstance</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SMLBasicPerformer/insertFetchRequests</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMLBasicPerformer.h</DeclaredIn>			
+			
+			<Declaration>- (void)insertFetchRequests</Declaration>
+			
+			
+			<Anchor>//api/name/insertFetchRequests</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SMLBasicPerformer/fetchAll:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMLBasicPerformer.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)fetchAll:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/fetchAll:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SMLBasicPerformer/removeAllItemsFromMenu:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMLBasicPerformer.h</DeclaredIn>			
+			
+			<Declaration>- (void)removeAllItemsFromMenu:(NSMenu *)menu</Declaration>
+			
+			
+			<Anchor>//api/name/removeAllItemsFromMenu:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SMLBasicPerformer/insertSortOrderNumbersForArrayController:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMLBasicPerformer.h</DeclaredIn>			
+			
+			<Declaration>- (void)insertSortOrderNumbersForArrayController:(NSArrayController *)arrayController</Declaration>
+			
+			
+			<Anchor>//api/name/insertSortOrderNumbersForArrayController:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SMLBasicPerformer/thousandFormatedStringFromNumber:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMLBasicPerformer.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)thousandFormatedStringFromNumber:(NSNumber *)number</Declaration>
+			
+			
+			<Anchor>//api/name/thousandFormatedStringFromNumber:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SMLBasicPerformer/copyResolveAliasInPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMLBasicPerformer.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)copyResolveAliasInPath:(NSString *)path</Declaration>
+			
+			
+			<Anchor>//api/name/copyResolveAliasInPath:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

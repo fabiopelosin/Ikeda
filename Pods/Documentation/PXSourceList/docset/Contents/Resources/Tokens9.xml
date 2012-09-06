@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/PXSourceListDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/PXSourceListDelegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PXSourceListDelegate.h</DeclaredIn>
+			
+			<NodeRef refid="9"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PXSourceListDelegate/sourceList:isGroupAlwaysExpanded:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PXSourceListDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)sourceList:(PXSourceList *)aSourceList isGroupAlwaysExpanded:(id)group</Declaration>
+			
+			
+			<Anchor>//api/name/sourceList:isGroupAlwaysExpanded:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PXSourceListDelegate/sourceList:menuForEvent:item:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PXSourceListDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (NSMenu *)sourceList:(PXSourceList *)aSourceList menuForEvent:(NSEvent *)theEvent item:(id)item</Declaration>
+			
+			
+			<Anchor>//api/name/sourceList:menuForEvent:item:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PXSourceListDelegate/sourceList:shouldSelectItem:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PXSourceListDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)sourceList:(PXSourceList *)aSourceList shouldSelectItem:(id)item</Declaration>
+			
+			
+			<Anchor>//api/name/sourceList:shouldSelectItem:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PXSourceListDelegate/sourceList:selectionIndexesForProposedSelection:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PXSourceListDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (NSIndexSet *)sourceList:(PXSourceList *)aSourceList selectionIndexesForProposedSelection:(NSIndexSet *)proposedSelectionIndexes</Declaration>
+			
+			
+			<Anchor>//api/name/sourceList:selectionIndexesForProposedSelection:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PXSourceListDelegate/sourceList:shouldEditItem:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PXSourceListDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)sourceList:(PXSourceList *)aSourceList shouldEditItem:(id)item</Declaration>
+			
+			
+			<Anchor>//api/name/sourceList:shouldEditItem:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PXSourceListDelegate/sourceList:shouldTrackCell:forItem:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PXSourceListDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)sourceList:(PXSourceList *)aSourceList shouldTrackCell:(NSCell *)cell forItem:(id)item</Declaration>
+			
+			
+			<Anchor>//api/name/sourceList:shouldTrackCell:forItem:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PXSourceListDelegate/sourceList:shouldExpandItem:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PXSourceListDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)sourceList:(PXSourceList *)aSourceList shouldExpandItem:(id)item</Declaration>
+			
+			
+			<Anchor>//api/name/sourceList:shouldExpandItem:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PXSourceListDelegate/sourceList:shouldCollapseItem:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PXSourceListDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)sourceList:(PXSourceList *)aSourceList shouldCollapseItem:(id)item</Declaration>
+			
+			
+			<Anchor>//api/name/sourceList:shouldCollapseItem:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PXSourceListDelegate/sourceList:heightOfRowByItem:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PXSourceListDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (CGFloat)sourceList:(PXSourceList *)aSourceList heightOfRowByItem:(id)item</Declaration>
+			
+			
+			<Anchor>//api/name/sourceList:heightOfRowByItem:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PXSourceListDelegate/sourceList:willDisplayCell:forItem:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PXSourceListDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (NSCell *)sourceList:(PXSourceList *)aSourceList willDisplayCell:(id)cell forItem:(id)item</Declaration>
+			
+			
+			<Anchor>//api/name/sourceList:willDisplayCell:forItem:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PXSourceListDelegate/sourceList:dataCellForItem:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PXSourceListDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (NSCell *)sourceList:(PXSourceList *)aSourceList dataCellForItem:(id)item</Declaration>
+			
+			
+			<Anchor>//api/name/sourceList:dataCellForItem:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

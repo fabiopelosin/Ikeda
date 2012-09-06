@@ -1,0 +1,18 @@
+#!/bin/sh
+# -*- ruby -*-
+bindir=`cd -P "${0%/*}" 2>/dev/null; pwd`
+prefix="${bindir%/bin}"
+export DYLD_LIBRARY_PATH="$prefix/lib${DYLD_LIBRARY_PATH:+:$DYLD_LIBRARY_PATH}"
+exec "$bindir/ruby" -x "$0" "$@"
+#!/usr/bin/env ruby
+
+begin
+  gem 'rdoc'
+rescue NameError => e # --disable-gems
+  raise unless e.name == :gem
+rescue Gem::LoadError
+end
+
+require 'rdoc/ri/driver'
+
+RDoc::RI::Driver.run ARGV

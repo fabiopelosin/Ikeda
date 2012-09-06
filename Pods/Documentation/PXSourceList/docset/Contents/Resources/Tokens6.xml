@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/NSOutlineViewDataSource.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/NSOutlineViewDataSource</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PXSourceList.h</DeclaredIn>
+			
+			<NodeRef refid="6"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>

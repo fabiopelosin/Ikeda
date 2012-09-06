@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocSetNodes version="1.0">
+    <TOC>
+        <Node type="folder">
+            <Name>PXSourceList 0.8</Name>
+            <Path>index.html</Path>
+			<Subnodes>
+                
+				
+				<Node type="folder">
+					<Name>Classes</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="1"/>
+						<NodeRef refid="2"/>
+						<NodeRef refid="3"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+				<Node type="folder">
+					<Name>Categories</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="4"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+				<Node type="folder">
+					<Name>Protocols</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="5"/>
+						<NodeRef refid="6"/>
+						<NodeRef refid="7"/>
+						<NodeRef refid="8"/>
+						<NodeRef refid="9"/>
+						
+					</Subnodes>
+				</Node>
+				
+			</Subnodes>
+        </Node>
+    </TOC>
+	<Library>
+		
+		<Node id="1">
+			<Name>AppDelegate</Name>
+			<Path>Classes/AppDelegate.html</Path>
+		</Node>
+		<Node id="2">
+			<Name>PXSourceList</Name>
+			<Path>Classes/PXSourceList.html</Path>
+		</Node>
+		<Node id="3">
+			<Name>SourceListItem</Name>
+			<Path>Classes/SourceListItem.html</Path>
+		</Node>
+		
+		<Node id="4">
+			<Name>NSObject(PXSourceListNotifications)</Name>
+			<Path>Categories/NSObject+PXSourceListNotifications.html</Path>
+		</Node>
+		
+		<Node id="5">
+			<Name>NSApplicationDelegate</Name>
+			<Path>Protocols/NSApplicationDelegate.html</Path>
+		</Node>
+		<Node id="6">
+			<Name>NSOutlineViewDataSource</Name>
+			<Path>Protocols/NSOutlineViewDataSource.html</Path>
+		</Node>
+		<Node id="7">
+			<Name>NSOutlineViewDelegate</Name>
+			<Path>Protocols/NSOutlineViewDelegate.html</Path>
+		</Node>
+		<Node id="8">
+			<Name>PXSourceListDataSource</Name>
+			<Path>Protocols/PXSourceListDataSource.html</Path>
+		</Node>
+		<Node id="9">
+			<Name>PXSourceListDelegate</Name>
+			<Path>Protocols/PXSourceListDelegate.html</Path>
+		</Node>
+		
+	</Library>
+</DocSetNodes>

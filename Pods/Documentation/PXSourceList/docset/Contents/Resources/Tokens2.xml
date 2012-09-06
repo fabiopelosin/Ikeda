@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PXSourceList.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PXSourceList</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PXSourceList.h</DeclaredIn>
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PXSourceList/setIconSize:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PXSourceList.h</DeclaredIn>			
+			
+			<Declaration>@property NSSize iconSize</Declaration>
+			
+			
+			<Anchor>//api/name/iconSize</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PXSourceList/iconSize</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PXSourceList.h</DeclaredIn>			
+			
+			<Declaration>@property NSSize iconSize</Declaration>
+			
+			
+			<Anchor>//api/name/iconSize</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PXSourceList/setDataSource:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PXSourceList.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) id&lt;&gt; dataSource</Declaration>
+			
+			
+			<Anchor>//api/name/dataSource</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PXSourceList/dataSource</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PXSourceList.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) id&lt;&gt; dataSource</Declaration>
+			
+			
+			<Anchor>//api/name/dataSource</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PXSourceList/setDelegate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PXSourceList.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) id&lt;&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PXSourceList/delegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PXSourceList.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) id&lt;&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PXSourceList/numberOfGroups</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PXSourceList.h</DeclaredIn>			
+			
+			<Declaration>- (NSUInteger)numberOfGroups</Declaration>
+			
+			
+			<Anchor>//api/name/numberOfGroups</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PXSourceList/isGroupItem:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PXSourceList.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isGroupItem:(id)item</Declaration>
+			
+			
+			<Anchor>//api/name/isGroupItem:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PXSourceList/isGroupAlwaysExpanded:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PXSourceList.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)isGroupAlwaysExpanded:(id)group</Declaration>
+			
+			
+			<Anchor>//api/name/isGroupAlwaysExpanded:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PXSourceList/itemHasBadge:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PXSourceList.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)itemHasBadge:(id)item</Declaration>
+			
+			
+			<Anchor>//api/name/itemHasBadge:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PXSourceList/badgeValueForItem:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PXSourceList.h</DeclaredIn>			
+			
+			<Declaration>- (NSInteger)badgeValueForItem:(id)item</Declaration>
+			
+			
+			<Anchor>//api/name/badgeValueForItem:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

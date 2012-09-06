@@ -1,0 +1,24 @@
+
+PODS:
+- Fragaria (0.0.1)
+- PXSourceList (0.8)
+- TwUI (0.4):
+  - TwUI/Support (= 0.4)
+  - TwUI/UIKit (= 0.4)
+- TwUI/Support (0.4)
+- TwUI/UIKit (0.4):
+  - TwUI/Support
+
+DEPENDENCIES:
+- Fragaria
+- PXSourceList
+- TwUI
+
+SPEC CHECKSUMS:
+  Fragaria: 1741a33d1c2c69487a25ce561d7a41271a52405b
+  PXSourceList: 80a590e03f84221c62652a9b955b1d90b1807261
+  TwUI: cafc3ae0ad6ead59422b05b74405ac07152854f4
+  TwUI/Support: cafc3ae0ad6ead59422b05b74405ac07152854f4
+  TwUI/UIKit: cafc3ae0ad6ead59422b05b74405ac07152854f4
+
+COCOAPODS: 0.14.0.rc2

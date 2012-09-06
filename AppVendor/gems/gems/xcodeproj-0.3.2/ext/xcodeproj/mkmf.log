@@ -1,0 +1,92 @@
+checking for -std=c99 option to compiler... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I/Users/fabio/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/x86_64-darwin11.4.0 -I/Users/fabio/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/ruby/backward -I/Users/fabio/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1 -I. -I/Users/fabio/.rvm/usr/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    -fno-common -pipe conftest.c  -L. -L/Users/fabio/.rvm/rubies/ruby-1.9.3-p194/lib -L/Users/fabio/.rvm/usr/lib -L. -L/usr/local/lib     -lruby.1.9.1  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main() {return 0;}
+/* end */
+
+"/usr/bin/gcc-4.2 -I/Users/fabio/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/x86_64-darwin11.4.0 -I/Users/fabio/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/ruby/backward -I/Users/fabio/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1 -I. -I/Users/fabio/.rvm/usr/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    -fno-common -pipe  -std=c99 -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+/* end */
+
+--------------------
+
+have_framework: checking for CoreFoundation... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I/Users/fabio/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/x86_64-darwin11.4.0 -I/Users/fabio/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/ruby/backward -I/Users/fabio/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1 -I. -I/Users/fabio/.rvm/usr/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    -fno-common -pipe -std=c99 conftest.c  -L. -L/Users/fabio/.rvm/rubies/ruby-1.9.3-p194/lib -L/Users/fabio/.rvm/usr/lib -L. -L/usr/local/lib     -lruby.1.9.1 -framework CoreFoundation -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <CoreFoundation/CoreFoundation.h>
+4: 
+5: int main(void){return 0;}
+/* end */
+
+--------------------
+
+have_header: checking for CoreFoundation/CoreFoundation.h... -------------------- yes
+
+"/usr/bin/gcc-4.2 -E -I/Users/fabio/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/x86_64-darwin11.4.0 -I/Users/fabio/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/ruby/backward -I/Users/fabio/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1 -I. -I/Users/fabio/.rvm/usr/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    -fno-common -pipe -std=c99  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <CoreFoundation/CoreFoundation.h>
+/* end */
+
+--------------------
+
+have_header: checking for CoreFoundation/CFStream.h... -------------------- yes
+
+"/usr/bin/gcc-4.2 -E -I/Users/fabio/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/x86_64-darwin11.4.0 -I/Users/fabio/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/ruby/backward -I/Users/fabio/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1 -I. -I/Users/fabio/.rvm/usr/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    -fno-common -pipe -std=c99  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <CoreFoundation/CFStream.h>
+/* end */
+
+--------------------
+
+have_header: checking for CoreFoundation/CFPropertyList.h... -------------------- yes
+
+"/usr/bin/gcc-4.2 -E -I/Users/fabio/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/x86_64-darwin11.4.0 -I/Users/fabio/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/ruby/backward -I/Users/fabio/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1 -I. -I/Users/fabio/.rvm/usr/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    -fno-common -pipe -std=c99  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <CoreFoundation/CFPropertyList.h>
+/* end */
+
+--------------------
+
+have_header: checking for ruby/st.h... -------------------- yes
+
+"/usr/bin/gcc-4.2 -E -I/Users/fabio/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/x86_64-darwin11.4.0 -I/Users/fabio/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1/ruby/backward -I/Users/fabio/.rvm/rubies/ruby-1.9.3-p194/include/ruby-1.9.1 -I. -I/Users/fabio/.rvm/usr/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    -fno-common -pipe -std=c99  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ruby/st.h>
+/* end */
+
+--------------------
+
+extconf.h is:
+/* begin */
+1: #ifndef EXTCONF_H
+2: #define EXTCONF_H
+3: #define HAVE_FRAMEWORK_COREFOUNDATION 1
+4: #define HAVE_COREFOUNDATION_COREFOUNDATION_H 1
+5: #define HAVE_COREFOUNDATION_CFSTREAM_H 1
+6: #define HAVE_COREFOUNDATION_CFPROPERTYLIST_H 1
+7: #define HAVE_RUBY_ST_H 1
+8: #endif
+/* end */
+

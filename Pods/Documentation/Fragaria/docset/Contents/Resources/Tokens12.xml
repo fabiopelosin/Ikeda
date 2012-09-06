@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SMLSyntaxColouring.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SMLSyntaxColouring</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMLSyntaxColouring.h</DeclaredIn>
+			
+			<NodeRef refid="12"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SMLSyntaxColouring/setReactToChanges:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMLSyntaxColouring.h</DeclaredIn>			
+			
+			<Declaration>@property BOOL reactToChanges</Declaration>
+			
+			
+			<Anchor>//api/name/reactToChanges</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SMLSyntaxColouring/reactToChanges</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMLSyntaxColouring.h</DeclaredIn>			
+			
+			<Declaration>@property BOOL reactToChanges</Declaration>
+			
+			
+			<Anchor>//api/name/reactToChanges</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SMLSyntaxColouring/setUndoManager:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMLSyntaxColouring.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSUndoManager *undoManager</Declaration>
+			
+			
+			<Anchor>//api/name/undoManager</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SMLSyntaxColouring/undoManager</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMLSyntaxColouring.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSUndoManager *undoManager</Declaration>
+			
+			
+			<Anchor>//api/name/undoManager</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SMLSyntaxColouring/setFunctionDefinition:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMLSyntaxColouring.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSString *functionDefinition</Declaration>
+			
+			
+			<Anchor>//api/name/functionDefinition</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SMLSyntaxColouring/functionDefinition</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMLSyntaxColouring.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSString *functionDefinition</Declaration>
+			
+			
+			<Anchor>//api/name/functionDefinition</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SMLSyntaxColouring/setRemoveFromFunction:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMLSyntaxColouring.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSString *removeFromFunction</Declaration>
+			
+			
+			<Anchor>//api/name/removeFromFunction</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SMLSyntaxColouring/removeFromFunction</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMLSyntaxColouring.h</DeclaredIn>			
+			
+			<Declaration>@property (copy) NSString *removeFromFunction</Declaration>
+			
+			
+			<Anchor>//api/name/removeFromFunction</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SMLSyntaxColouring/setSecondLayoutManager:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMLSyntaxColouring.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) SMLLayoutManager *secondLayoutManager</Declaration>
+			
+			
+			<Anchor>//api/name/secondLayoutManager</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SMLSyntaxColouring/secondLayoutManager</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMLSyntaxColouring.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) SMLLayoutManager *secondLayoutManager</Declaration>
+			
+			
+			<Anchor>//api/name/secondLayoutManager</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SMLSyntaxColouring/setThirdLayoutManager:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMLSyntaxColouring.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) SMLLayoutManager *thirdLayoutManager</Declaration>
+			
+			
+			<Anchor>//api/name/thirdLayoutManager</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SMLSyntaxColouring/thirdLayoutManager</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMLSyntaxColouring.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) SMLLayoutManager *thirdLayoutManager</Declaration>
+			
+			
+			<Anchor>//api/name/thirdLayoutManager</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SMLSyntaxColouring/setFourthLayoutManager:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMLSyntaxColouring.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) SMLLayoutManager *fourthLayoutManager</Declaration>
+			
+			
+			<Anchor>//api/name/fourthLayoutManager</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SMLSyntaxColouring/fourthLayoutManager</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMLSyntaxColouring.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) SMLLayoutManager *fourthLayoutManager</Declaration>
+			
+			
+			<Anchor>//api/name/fourthLayoutManager</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SMLSyntaxColouring/initWithDocument:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMLSyntaxColouring.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithDocument:(id)document</Declaration>
+			
+			
+			<Anchor>//api/name/initWithDocument:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SMLSyntaxColouring/pageRecolourTextView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMLSyntaxColouring.h</DeclaredIn>			
+			
+			<Declaration>- (void)pageRecolourTextView:(SMLTextView *)textView</Declaration>
+			
+			
+			<Anchor>//api/name/pageRecolourTextView:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SMLSyntaxColouring/pageRecolour</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMLSyntaxColouring.h</DeclaredIn>			
+			
+			<Declaration>- (void)pageRecolour</Declaration>
+			
+			
+			<Anchor>//api/name/pageRecolour</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SMLSyntaxColouring/applySyntaxDefinition</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMLSyntaxColouring.h</DeclaredIn>			
+			
+			<Declaration>- (void)applySyntaxDefinition</Declaration>
+			
+			
+			<Anchor>//api/name/applySyntaxDefinition</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SMLSyntaxColouring/pageRecolourTextView:options:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMLSyntaxColouring.h</DeclaredIn>			
+			
+			<Declaration>- (void)pageRecolourTextView:(SMLTextView *)textView options:(NSDictionary *)options</Declaration>
+			
+			
+			<Anchor>//api/name/pageRecolourTextView:options:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

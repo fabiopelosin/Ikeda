@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MGSSyntaxController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MGSSyntaxController</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MGSSyntaxController.h</DeclaredIn>
+			
+			<NodeRef refid="6"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/MGSSyntaxController/sharedInstance</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MGSSyntaxController.h</DeclaredIn>			
+			
+			<Declaration>+ (MGSSyntaxController *)sharedInstance</Declaration>
+			
+			
+			<Anchor>//api/name/sharedInstance</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/MGSSyntaxController/standardSyntaxDefinitionName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MGSSyntaxController.h</DeclaredIn>			
+			
+			<Declaration>+ (NSString *)standardSyntaxDefinitionName</Declaration>
+			
+			
+			<Anchor>//api/name/standardSyntaxDefinitionName</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGSSyntaxController/syntaxDefinitionNames</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MGSSyntaxController.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)syntaxDefinitionNames</Declaration>
+			
+			
+			<Anchor>//api/name/syntaxDefinitionNames</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGSSyntaxController/insertSyntaxDefinitions</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MGSSyntaxController.h</DeclaredIn>			
+			
+			<Declaration>- (void)insertSyntaxDefinitions</Declaration>
+			
+			
+			<Anchor>//api/name/insertSyntaxDefinitions</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGSSyntaxController/syntaxDictionaryWithName:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MGSSyntaxController.h</DeclaredIn>			
+			
+			<Declaration>- (NSDictionary *)syntaxDictionaryWithName:(NSString *)name</Declaration>
+			
+			
+			<Anchor>//api/name/syntaxDictionaryWithName:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGSSyntaxController/syntaxDefinitionWithExtension:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MGSSyntaxController.h</DeclaredIn>			
+			
+			<Declaration>- (NSDictionary *)syntaxDefinitionWithExtension:(NSString *)extension</Declaration>
+			
+			
+			<Anchor>//api/name/syntaxDefinitionWithExtension:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGSSyntaxController/syntaxDefinitionNameWithExtension:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MGSSyntaxController.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)syntaxDefinitionNameWithExtension:(NSString *)extension</Declaration>
+			
+			
+			<Anchor>//api/name/syntaxDefinitionNameWithExtension:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGSSyntaxController/setSyntaxDefinitionNames:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MGSSyntaxController.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSArray *syntaxDefinitionNames</Declaration>
+			
+			
+			<Anchor>//api/name/syntaxDefinitionNames</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MGSSyntaxController/syntaxDefinitionNames</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MGSSyntaxController.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSArray *syntaxDefinitionNames</Declaration>
+			
+			
+			<Anchor>//api/name/syntaxDefinitionNames</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

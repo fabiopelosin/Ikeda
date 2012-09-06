@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SMLTextView.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SMLTextView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMLTextView.h</DeclaredIn>
+			
+			<NodeRef refid="14"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SMLTextView/setColouredIBeamCursor:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMLTextView.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSCursor *colouredIBeamCursor</Declaration>
+			
+			
+			<Anchor>//api/name/colouredIBeamCursor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SMLTextView/colouredIBeamCursor</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMLTextView.h</DeclaredIn>			
+			
+			<Declaration>@property (retain) NSCursor *colouredIBeamCursor</Declaration>
+			
+			
+			<Anchor>//api/name/colouredIBeamCursor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SMLTextView/setFragaria:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMLTextView.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) MGSFragaria *fragaria</Declaration>
+			
+			
+			<Anchor>//api/name/fragaria</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SMLTextView/fragaria</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMLTextView.h</DeclaredIn>			
+			
+			<Declaration>@property (assign) MGSFragaria *fragaria</Declaration>
+			
+			
+			<Anchor>//api/name/fragaria</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SMLTextView/setDefaults</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMLTextView.h</DeclaredIn>			
+			
+			<Declaration>- (void)setDefaults</Declaration>
+			
+			
+			<Anchor>//api/name/setDefaults</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SMLTextView/setTextDefaults</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMLTextView.h</DeclaredIn>			
+			
+			<Declaration>- (void)setTextDefaults</Declaration>
+			
+			
+			<Anchor>//api/name/setTextDefaults</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SMLTextView/lineHeight</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMLTextView.h</DeclaredIn>			
+			
+			<Declaration>- (NSInteger)lineHeight</Declaration>
+			
+			
+			<Anchor>//api/name/lineHeight</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SMLTextView/setTabWidth</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMLTextView.h</DeclaredIn>			
+			
+			<Declaration>- (void)setTabWidth</Declaration>
+			
+			
+			<Anchor>//api/name/setTabWidth</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SMLTextView/setPageGuideValues</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMLTextView.h</DeclaredIn>			
+			
+			<Declaration>- (void)setPageGuideValues</Declaration>
+			
+			
+			<Anchor>//api/name/setPageGuideValues</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SMLTextView/updateIBeamCursor</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMLTextView.h</DeclaredIn>			
+			
+			<Declaration>- (void)updateIBeamCursor</Declaration>
+			
+			
+			<Anchor>//api/name/updateIBeamCursor</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SMLTextView/setString:options:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMLTextView.h</DeclaredIn>			
+			
+			<Declaration>- (void)setString:(NSString *)text options:(NSDictionary *)options</Declaration>
+			
+			
+			<Anchor>//api/name/setString:options:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

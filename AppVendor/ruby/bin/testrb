@@ -1,0 +1,16 @@
+#!/bin/sh
+# -*- ruby -*-
+bindir=`cd -P "${0%/*}" 2>/dev/null; pwd`
+prefix="${bindir%/bin}"
+export DYLD_LIBRARY_PATH="$prefix/lib${DYLD_LIBRARY_PATH:+:$DYLD_LIBRARY_PATH}"
+exec "$bindir/ruby" -x "$0" "$@"
+#!/usr/bin/env ruby
+require 'test/unit'
+tests = Test::Unit::AutoRunner.new(true)
+tests.options.banner.sub!(/\[options\]/, '\& tests...')
+unless tests.process_args(ARGV)
+  abort tests.options.banner
+end
+files = tests.to_run
+$0 = files.size == 1 ? File.basename(files[0]) : files.to_s
+exit tests.run

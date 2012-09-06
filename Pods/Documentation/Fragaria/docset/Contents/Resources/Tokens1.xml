@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ICUMatcher.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ICUMatcher</TokenIdentifier>
+			<Abstract type="html">    @class		 ICUMatcher
+    @abstract    ICUMatcher provides matching functionality for regular expression matching.
+    @discussion  This class is based off of the C++ ICU RegexMatcher class.  For examples of how to use the matcher, see the NSString category included in this project.</Abstract>
+			<DeclaredIn>ICUMatcher.h</DeclaredIn>
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ICUMatcher/matcherWithPattern:overString:</TokenIdentifier>
+			<Abstract type="html">    @method     matcherWithPattern:overString:
+    @abstract   Returns a matcher that can match the given pattern over the given string.
+    @discussion </Abstract>
+			<DeclaredIn>ICUMatcher.h</DeclaredIn>			
+			
+			<Declaration>+ (ICUMatcher *)matcherWithPattern:(ICUPattern *)p overString:(NSString *)stringToSearchOver</Declaration>
+			
+			
+			<Anchor>//api/name/matcherWithPattern:overString:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ICUMatcher/initWithPattern:overString:</TokenIdentifier>
+			<Abstract type="html">    @method     initWithPattern:overString:
+    @abstract   Initializes a matcher that can match the given patter over the given string.
+    @discussion </Abstract>
+			<DeclaredIn>ICUMatcher.h</DeclaredIn>			
+			
+			<Declaration>- (ICUMatcher *)initWithPattern:(ICUPattern *)p overString:(NSString *)stringToSearchOver</Declaration>
+			
+			
+			<Anchor>//api/name/initWithPattern:overString:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ICUMatcher/findNext</TokenIdentifier>
+			<Abstract type="html">    @method     findNext
+    @abstract   Finds the next occurrence of the pattern in the input string.
+    @discussion Use &lt;code&gt;group&lt;/code&gt; and &lt;code&gt;rangeOfMatch&lt;/code&gt; to extract the match.</Abstract>
+			<DeclaredIn>ICUMatcher.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)findNext</Declaration>
+			
+			
+			<Anchor>//api/name/findNext</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ICUMatcher/findFromIndex:</TokenIdentifier>
+			<Abstract type="html">    @method     findFromIndex:
+    @abstract   Resets the pattern and performs a match from the specified index.
+    @discussion Use &lt;code&gt;group&lt;/code&gt; and &lt;code&gt;rangeOfMatch&lt;/code&gt; to extract the match.</Abstract>
+			<DeclaredIn>ICUMatcher.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)findFromIndex:(unsigned)idx</Declaration>
+			
+			
+			<Anchor>//api/name/findFromIndex:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ICUMatcher/group</TokenIdentifier>
+			<Abstract type="html">    @method     group
+    @abstract   Returns the current match.
+    @discussion Each match has one or more subexpressions associated with the match.  This returns the entire match.</Abstract>
+			<DeclaredIn>ICUMatcher.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)group</Declaration>
+			
+			
+			<Anchor>//api/name/group</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ICUMatcher/groupAtIndex:</TokenIdentifier>
+			<Abstract type="html">    @method     groupAtIndex:
+    @abstract   Returns the given subexpression for the current match.
+    @discussion &lt;code&gt;group&lt;/code&gt; is equivalent to &lt;code&gt;groupAtIndex:0&lt;/code&gt;.  The subexpressions for a match are indexed from 1.</Abstract>
+			<DeclaredIn>ICUMatcher.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)groupAtIndex:(unsigned)groupIndex</Declaration>
+			
+			
+			<Anchor>//api/name/groupAtIndex:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ICUMatcher/numberOfGroups</TokenIdentifier>
+			<Abstract type="html">    @method     numberOfGroups
+    @abstract   Returns the number of groups for the current match.
+    @discussion Group 0 is the entire match and groups 1..n represent the groups for the subexpressions.</Abstract>
+			<DeclaredIn>ICUMatcher.h</DeclaredIn>			
+			
+			<Declaration>- (unsigned)numberOfGroups</Declaration>
+			
+			
+			<Anchor>//api/name/numberOfGroups</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ICUMatcher/lookingAt:</TokenIdentifier>
+			<Abstract type="html">    @method     lookingAt:
+    @abstract   Returns true if the pattern matches some prefix of the input string starting at the specified index.
+    @discussion This method returns YES when some prefix of the substring matches the input string.</Abstract>
+			<DeclaredIn>ICUMatcher.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)lookingAt:(unsigned)idx</Declaration>
+			
+			
+			<Anchor>//api/name/lookingAt:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ICUMatcher/pattern</TokenIdentifier>
+			<Abstract type="html">    @method     pattern
+    @abstract   Returns the pattern for this matcher.
+    @discussion </Abstract>
+			<DeclaredIn>ICUMatcher.h</DeclaredIn>			
+			
+			<Declaration>- (ICUPattern *)pattern</Declaration>
+			
+			
+			<Anchor>//api/name/pattern</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ICUMatcher/setPattern:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>ICUMatcher.h</DeclaredIn>			
+			
+			<Declaration>- (void)setPattern:(ICUPattern *)p</Declaration>
+			
+			
+			<Anchor>//api/name/setPattern:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ICUMatcher/matches</TokenIdentifier>
+			<Abstract type="html">    @method     matches
+    @abstract   Returns YES if the patterns matches the &lt;b&gt;entire&lt;/b&gt; input string.
+    @discussion </Abstract>
+			<DeclaredIn>ICUMatcher.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)matches</Declaration>
+			
+			
+			<Anchor>//api/name/matches</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ICUMatcher/replaceAllWithString:</TokenIdentifier>
+			<Abstract type="html">    @method     replaceAllWithString:
+    @abstract   Replaces all occurrences of the pattern with the replacement string and returns the resulting string.
+    @discussion The replacement string can contain references to capture groups taking the form or $1, $2, etc.</Abstract>
+			<DeclaredIn>ICUMatcher.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)replaceAllWithString:(NSString *)aReplacementString</Declaration>
+			
+			
+			<Anchor>//api/name/replaceAllWithString:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ICUMatcher/replaceFirstWithString:</TokenIdentifier>
+			<Abstract type="html">    @method     replaceFirstWithString:
+    @abstract   Replaces the first occurrence of the pattern with the given replacement string and returns the resulting string.
+    @discussion The replacement string can contain references to capture groups taking the form or $1, $2, etc.</Abstract>
+			<DeclaredIn>ICUMatcher.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)replaceFirstWithString:(NSString *)aReplacementString</Declaration>
+			
+			
+			<Anchor>//api/name/replaceFirstWithString:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ICUMatcher/reset</TokenIdentifier>
+			<Abstract type="html">    @method     reset
+    @abstract   Resets any state associated with the matcher and its pattern.
+    @discussion </Abstract>
+			<DeclaredIn>ICUMatcher.h</DeclaredIn>			
+			
+			<Declaration>- (void)reset</Declaration>
+			
+			
+			<Anchor>//api/name/reset</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ICUMatcher/rangeOfMatch</TokenIdentifier>
+			<Abstract type="html">    @method     rangeOfMatch
+    @abstract   Returns the range of the input string that corresponds to the current match.
+    @discussion</Abstract>
+			<DeclaredIn>ICUMatcher.h</DeclaredIn>			
+			
+			<Declaration>- (NSRange)rangeOfMatch</Declaration>
+			
+			
+			<Anchor>//api/name/rangeOfMatch</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ICUMatcher/rangeOfMatchGroup:</TokenIdentifier>
+			<Abstract type="html">    @method     rangeOfMatchGroup:
+    @abstract   Returns the range of the input string that corresponds to the specified capture group of the current match.
+    @discussion</Abstract>
+			<DeclaredIn>ICUMatcher.h</DeclaredIn>			
+			
+			<Declaration>- (NSRange)rangeOfMatchGroup:(unsigned)groupNumber</Declaration>
+			
+			
+			<Anchor>//api/name/rangeOfMatchGroup:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,7 @@
+PODS_ROOT = ${SRCROOT}/Pods
+PODS_HEADERS_SEARCH_PATHS = ${PODS_PUBLIC_HEADERS_SEARCH_PATHS}
+ALWAYS_SEARCH_USER_PATHS = YES
+OTHER_LDFLAGS = -ObjC -licucore -framework ApplicationServices -framework Cocoa -framework QuartzCore
+HEADER_SEARCH_PATHS = $(PODS_ROOT)/Headers/Fragaria/icu/ ${PODS_HEADERS_SEARCH_PATHS}
+PODS_BUILD_HEADERS_SEARCH_PATHS = "${PODS_ROOT}/BuildHeaders" "${PODS_ROOT}/BuildHeaders/Fragaria" "${PODS_ROOT}/BuildHeaders/Fragaria/icu/unicode" "${PODS_ROOT}/BuildHeaders/PXSourceList" "${PODS_ROOT}/BuildHeaders/TwUI"
+PODS_PUBLIC_HEADERS_SEARCH_PATHS = "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/Fragaria" "${PODS_ROOT}/Headers/Fragaria/icu/unicode" "${PODS_ROOT}/Headers/PXSourceList" "${PODS_ROOT}/Headers/TwUI"

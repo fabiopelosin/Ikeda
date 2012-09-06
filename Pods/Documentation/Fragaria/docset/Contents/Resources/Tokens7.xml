@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MGSTextMenuController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MGSTextMenuController</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MGSTextMenuController.h</DeclaredIn>
+			
+			<NodeRef refid="7"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/MGSTextMenuController/sharedInstance</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MGSTextMenuController.h</DeclaredIn>			
+			
+			<Declaration>+ (MGSTextMenuController *)sharedInstance</Declaration>
+			
+			
+			<Anchor>//api/name/sharedInstance</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGSTextMenuController/buildEncodingsMenus</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MGSTextMenuController.h</DeclaredIn>			
+			
+			<Declaration>- (void)buildEncodingsMenus</Declaration>
+			
+			
+			<Anchor>//api/name/buildEncodingsMenus</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGSTextMenuController/buildSyntaxDefinitionsMenu</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MGSTextMenuController.h</DeclaredIn>			
+			
+			<Declaration>- (void)buildSyntaxDefinitionsMenu</Declaration>
+			
+			
+			<Anchor>//api/name/buildSyntaxDefinitionsMenu</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGSTextMenuController/changeEncodingAction:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MGSTextMenuController.h</DeclaredIn>			
+			
+			<Declaration>- (void)changeEncodingAction:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/changeEncodingAction:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGSTextMenuController/removeNeedlessWhitespaceAction:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MGSTextMenuController.h</DeclaredIn>			
+			
+			<Declaration>- (IBAction)removeNeedlessWhitespaceAction:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/removeNeedlessWhitespaceAction:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGSTextMenuController/detabAction:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MGSTextMenuController.h</DeclaredIn>			
+			
+			<Declaration>- (IBAction)detabAction:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/detabAction:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGSTextMenuController/entabAction:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MGSTextMenuController.h</DeclaredIn>			
+			
+			<Declaration>- (IBAction)entabAction:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/entabAction:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGSTextMenuController/performEntab</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MGSTextMenuController.h</DeclaredIn>			
+			
+			<Declaration>- (void)performEntab</Declaration>
+			
+			
+			<Anchor>//api/name/performEntab</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGSTextMenuController/performDetab</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MGSTextMenuController.h</DeclaredIn>			
+			
+			<Declaration>- (void)performDetab</Declaration>
+			
+			
+			<Anchor>//api/name/performDetab</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGSTextMenuController/shiftLeftAction:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MGSTextMenuController.h</DeclaredIn>			
+			
+			<Declaration>- (IBAction)shiftLeftAction:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/shiftLeftAction:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGSTextMenuController/shiftRightAction:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MGSTextMenuController.h</DeclaredIn>			
+			
+			<Declaration>- (IBAction)shiftRightAction:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/shiftRightAction:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGSTextMenuController/toLowercaseAction:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MGSTextMenuController.h</DeclaredIn>			
+			
+			<Declaration>- (IBAction)toLowercaseAction:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/toLowercaseAction:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGSTextMenuController/toUppercaseAction:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MGSTextMenuController.h</DeclaredIn>			
+			
+			<Declaration>- (IBAction)toUppercaseAction:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/toUppercaseAction:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGSTextMenuController/capitaliseAction:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MGSTextMenuController.h</DeclaredIn>			
+			
+			<Declaration>- (IBAction)capitaliseAction:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/capitaliseAction:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGSTextMenuController/goToLineAction:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MGSTextMenuController.h</DeclaredIn>			
+			
+			<Declaration>- (IBAction)goToLineAction:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/goToLineAction:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGSTextMenuController/performGoToLine:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MGSTextMenuController.h</DeclaredIn>			
+			
+			<Declaration>- (void)performGoToLine:(NSInteger)lineToGoTo</Declaration>
+			
+			
+			<Anchor>//api/name/performGoToLine:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGSTextMenuController/closeTagAction:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MGSTextMenuController.h</DeclaredIn>			
+			
+			<Declaration>- (IBAction)closeTagAction:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/closeTagAction:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGSTextMenuController/commentOrUncommentAction:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MGSTextMenuController.h</DeclaredIn>			
+			
+			<Declaration>- (IBAction)commentOrUncommentAction:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/commentOrUncommentAction:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGSTextMenuController/emptyDummyAction:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MGSTextMenuController.h</DeclaredIn>			
+			
+			<Declaration>- (IBAction)emptyDummyAction:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/emptyDummyAction:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGSTextMenuController/removeLineEndingsAction:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MGSTextMenuController.h</DeclaredIn>			
+			
+			<Declaration>- (IBAction)removeLineEndingsAction:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/removeLineEndingsAction:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGSTextMenuController/changeLineEndingsAction:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MGSTextMenuController.h</DeclaredIn>			
+			
+			<Declaration>- (IBAction)changeLineEndingsAction:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/changeLineEndingsAction:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGSTextMenuController/interchangeAdjacentCharactersAction:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MGSTextMenuController.h</DeclaredIn>			
+			
+			<Declaration>- (IBAction)interchangeAdjacentCharactersAction:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/interchangeAdjacentCharactersAction:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGSTextMenuController/prepareForXMLAction:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MGSTextMenuController.h</DeclaredIn>			
+			
+			<Declaration>- (IBAction)prepareForXMLAction:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/prepareForXMLAction:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGSTextMenuController/changeSyntaxDefinitionAction:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MGSTextMenuController.h</DeclaredIn>			
+			
+			<Declaration>- (IBAction)changeSyntaxDefinitionAction:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/changeSyntaxDefinitionAction:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

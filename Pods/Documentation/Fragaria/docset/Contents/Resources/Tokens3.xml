@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MGSExtraInterfaceController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MGSExtraInterfaceController</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MGSExtraInterfaceController.h</DeclaredIn>
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGSExtraInterfaceController/setOpenPanelAccessoryView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MGSExtraInterfaceController.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) IBOutlet NSView *openPanelAccessoryView</Declaration>
+			
+			
+			<Anchor>//api/name/openPanelAccessoryView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MGSExtraInterfaceController/openPanelAccessoryView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MGSExtraInterfaceController.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) IBOutlet NSView *openPanelAccessoryView</Declaration>
+			
+			
+			<Anchor>//api/name/openPanelAccessoryView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGSExtraInterfaceController/setOpenPanelEncodingsPopUp:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MGSExtraInterfaceController.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) IBOutlet NSPopUpButton *openPanelEncodingsPopUp</Declaration>
+			
+			
+			<Anchor>//api/name/openPanelEncodingsPopUp</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MGSExtraInterfaceController/openPanelEncodingsPopUp</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MGSExtraInterfaceController.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) IBOutlet NSPopUpButton *openPanelEncodingsPopUp</Declaration>
+			
+			
+			<Anchor>//api/name/openPanelEncodingsPopUp</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGSExtraInterfaceController/setCommandResultWindow:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MGSExtraInterfaceController.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) IBOutlet NSWindow *commandResultWindow</Declaration>
+			
+			
+			<Anchor>//api/name/commandResultWindow</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MGSExtraInterfaceController/commandResultWindow</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MGSExtraInterfaceController.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) IBOutlet NSWindow *commandResultWindow</Declaration>
+			
+			
+			<Anchor>//api/name/commandResultWindow</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGSExtraInterfaceController/setCommandResultTextView:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MGSExtraInterfaceController.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) IBOutlet NSTextView *commandResultTextView</Declaration>
+			
+			
+			<Anchor>//api/name/commandResultTextView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MGSExtraInterfaceController/commandResultTextView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MGSExtraInterfaceController.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) IBOutlet NSTextView *commandResultTextView</Declaration>
+			
+			
+			<Anchor>//api/name/commandResultTextView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGSExtraInterfaceController/setProjectWindow:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MGSExtraInterfaceController.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) IBOutlet NSWindow *projectWindow</Declaration>
+			
+			
+			<Anchor>//api/name/projectWindow</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/MGSExtraInterfaceController/projectWindow</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MGSExtraInterfaceController.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) IBOutlet NSWindow *projectWindow</Declaration>
+			
+			
+			<Anchor>//api/name/projectWindow</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGSExtraInterfaceController/displayEntab</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MGSExtraInterfaceController.h</DeclaredIn>			
+			
+			<Declaration>- (void)displayEntab</Declaration>
+			
+			
+			<Anchor>//api/name/displayEntab</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGSExtraInterfaceController/displayDetab</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MGSExtraInterfaceController.h</DeclaredIn>			
+			
+			<Declaration>- (void)displayDetab</Declaration>
+			
+			
+			<Anchor>//api/name/displayDetab</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGSExtraInterfaceController/entabButtonEntabWindowAction:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MGSExtraInterfaceController.h</DeclaredIn>			
+			
+			<Declaration>- (IBAction)entabButtonEntabWindowAction:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/entabButtonEntabWindowAction:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGSExtraInterfaceController/detabButtonDetabWindowAction:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MGSExtraInterfaceController.h</DeclaredIn>			
+			
+			<Declaration>- (IBAction)detabButtonDetabWindowAction:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/detabButtonDetabWindowAction:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGSExtraInterfaceController/cancelButtonEntabDetabGoToLineWindowsAction:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MGSExtraInterfaceController.h</DeclaredIn>			
+			
+			<Declaration>- (IBAction)cancelButtonEntabDetabGoToLineWindowsAction:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/cancelButtonEntabDetabGoToLineWindowsAction:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGSExtraInterfaceController/displayGoToLine</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MGSExtraInterfaceController.h</DeclaredIn>			
+			
+			<Declaration>- (void)displayGoToLine</Declaration>
+			
+			
+			<Anchor>//api/name/displayGoToLine</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGSExtraInterfaceController/goButtonGoToLineWindowAction:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MGSExtraInterfaceController.h</DeclaredIn>			
+			
+			<Declaration>- (IBAction)goButtonGoToLineWindowAction:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/goButtonGoToLineWindowAction:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGSExtraInterfaceController/openPanelEncodingsPopUp</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MGSExtraInterfaceController.h</DeclaredIn>			
+			
+			<Declaration>- (NSPopUpButton *)openPanelEncodingsPopUp</Declaration>
+			
+			
+			<Anchor>//api/name/openPanelEncodingsPopUp</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGSExtraInterfaceController/openPanelAccessoryView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MGSExtraInterfaceController.h</DeclaredIn>			
+			
+			<Declaration>- (NSView *)openPanelAccessoryView</Declaration>
+			
+			
+			<Anchor>//api/name/openPanelAccessoryView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGSExtraInterfaceController/commandResultWindow</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MGSExtraInterfaceController.h</DeclaredIn>			
+			
+			<Declaration>- (NSWindow *)commandResultWindow</Declaration>
+			
+			
+			<Anchor>//api/name/commandResultWindow</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGSExtraInterfaceController/commandResultTextView</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MGSExtraInterfaceController.h</DeclaredIn>			
+			
+			<Declaration>- (NSTextView *)commandResultTextView</Declaration>
+			
+			
+			<Anchor>//api/name/commandResultTextView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGSExtraInterfaceController/showCommandResultWindow</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MGSExtraInterfaceController.h</DeclaredIn>			
+			
+			<Declaration>- (void)showCommandResultWindow</Declaration>
+			
+			
+			<Anchor>//api/name/showCommandResultWindow</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MGSExtraInterfaceController/showRegularExpressionsHelpPanel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MGSExtraInterfaceController.h</DeclaredIn>			
+			
+			<Declaration>- (void)showRegularExpressionsHelpPanel</Declaration>
+			
+			
+			<Anchor>//api/name/showRegularExpressionsHelpPanel</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

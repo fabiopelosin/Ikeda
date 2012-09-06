@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SMLTextPerformer.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SMLTextPerformer</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMLTextPerformer.h</DeclaredIn>
+			
+			<NodeRef refid="13"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SMLTextPerformer/sharedInstance</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMLTextPerformer.h</DeclaredIn>			
+			
+			<Declaration>+ (SMLTextPerformer *)sharedInstance</Declaration>
+			
+			
+			<Anchor>//api/name/sharedInstance</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SMLTextPerformer/convertLineEndings:inDocument:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMLTextPerformer.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)convertLineEndings:(NSString *)stringToConvert inDocument:(id)document</Declaration>
+			
+			
+			<Anchor>//api/name/convertLineEndings:inDocument:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SMLTextPerformer/guessEncodingFromData:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMLTextPerformer.h</DeclaredIn>			
+			
+			<Declaration>- (NSStringEncoding)guessEncodingFromData:(NSData *)textData</Declaration>
+			
+			
+			<Anchor>//api/name/guessEncodingFromData:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SMLTextPerformer/replaceAllNewLineCharactersWithSymbolInString:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMLTextPerformer.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)replaceAllNewLineCharactersWithSymbolInString:(NSString *)theTextString</Declaration>
+			
+			
+			<Anchor>//api/name/replaceAllNewLineCharactersWithSymbolInString:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SMLTextPerformer/removeAllLineEndingsInString:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SMLTextPerformer.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)removeAllLineEndingsInString:(NSString *)string</Declaration>
+			
+			
+			<Anchor>//api/name/removeAllLineEndingsInString:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>
