@@ -11,14 +11,14 @@
 #import "CPSpec.h"
 
 @implementation CPPodsTableView {
-    TUITableView *_tableView;
+	TUITableView *_tableView;
 	TUIFont *titleFont;
 	TUIFont *descFont;
 }
 
 - (void)setSpecs:(NSArray *)specs {
-    _specs = specs;
-    [_tableView reloadData];
+	_specs = specs;
+	[_tableView reloadData];
 }
 
 
@@ -31,8 +31,8 @@
 		descFont = [TUIFont fontWithName:@"HelveticaNeue" size:13];
 
 		CGRect b = self.bounds;
-//        b.origin.y -= 30;
-        b.size.height -= 60;
+//		b.origin.y -= 30;
+		b.size.height -= 60;
 
 		_tableView = [[TUITableView alloc] initWithFrame:b];
 		_tableView.autoresizingMask = TUIViewAutoresizingFlexibleSize;
@@ -41,12 +41,12 @@
 		_tableView.maintainContentOffsetAfterReload = TRUE;
 		[self addSubview:_tableView];
 
-        b = CGRectMake(0, self.bounds.size.height - 60, self.bounds.size.width, 60);
-        TUIView* searchView= [[TUIView alloc] initWithFrame:b];
-        searchView.backgroundColor = [TUIColor colorWithWhite:0.2 alpha:1.0];
-        searchView.autoresizingMask = TUIViewAutoresizingFlexibleWidth;
-        [self addSubview:searchView];
-        // Add searchbar
+		b = CGRectMake(0, self.bounds.size.height - 60, self.bounds.size.width, 60);
+		TUIView* searchView = [[TUIView alloc] initWithFrame:b];
+		searchView.backgroundColor = [TUIColor colorWithWhite:0.2 alpha:1.0];
+		searchView.autoresizingMask = TUIViewAutoresizingFlexibleWidth | TUIViewAutoresizingFlexibleBottomMargin;
+		[self addSubview:searchView];
+		// Add searchbar
 
     }
 	return self;
@@ -66,13 +66,13 @@
 {
 	CPSpecTableViewCell *cell = reusableTableCellOfClass(tableView, CPSpecTableViewCell);
 
-    CPSpec *spec = self.specs[indexPath.row];
+	CPSpec *spec = self.specs[indexPath.row];
 	TUIAttributedString *title = [TUIAttributedString stringWithString:spec.name];
 	title.color = [TUIColor colorWithWhite:0.2 alpha:1.0];
 	title.font = titleFont;
 	cell.title = title;
 
-    TUIAttributedString *desc = [TUIAttributedString stringWithString:spec.summary];
+	TUIAttributedString *desc = [TUIAttributedString stringWithString:spec.summary];
 	desc.color = [TUIColor colorWithWhite:0.5 alpha:1.0];
 	desc.font = descFont;
 	cell.description = desc;
