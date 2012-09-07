@@ -10,6 +10,7 @@
 #import "TUIKit.h"
 #import "CPPodsTableView.h"
 #import "CPSpec.h"
+#import "CPMacRubyServiceProtocol.h"
 
 @implementation CPAppDelegate {
     CPPodsTableView *_table;
@@ -22,10 +23,39 @@
     contentView.rootView = _table;
 
     [self testRuby];
+    [self startMacRubyConnection];
 }
 
 - (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender {
     return TRUE;
+}
+
+- (void)startMacRubyConnection {
+    NSXPCInterface *myCookieInterface = [NSXPCInterface interfaceWithProtocol:@protocol(CPMacRubyServiceProtocol)];
+    NSXPCConnection *myConnection = [[NSXPCConnection alloc] initWithServiceName:@"org.cocoapods.macrubyservice"];
+    myConnection.remoteObjectInterface = myCookieInterface;
+    [myConnection resume];
+    id<CPMacRubyServiceProtocol> proxy = [myConnection remoteObjectProxyWithErrorHandler:^(NSError *error) {
+        NSLog(@"%@", error);
+    }];
+    myConnection.invalidationHandler = ^{
+        NSLog(@"CONNECTION INVALIDATED");
+    };
+    
+    [proxy cocoapodsVersion:^(NSString *version) {
+        NSLog(@"Version: %@", version);
+    }];
+
+    [proxy specs:^(NSArray *spec_dicts) {
+        NSMutableArray *specs = [NSMutableArray new];
+        [spec_dicts enumerateObjectsUsingBlock:^(NSDictionary* spec_dict, NSUInteger idx, BOOL *stop) {
+            [specs  addObject:[CPSpec specFromDict:spec_dict]];
+        }];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            _table.specs = specs;
+        });
+    }];
+    NSLog(@"COMPLETED CONNECTION REQUESTS");
 }
 
 - (void)testRuby {
@@ -45,7 +75,7 @@
     NSTask *task;
     task = [[NSTask alloc] init];
     [task setLaunchPath:podPath];
-    [task setArguments:@[@"--no-color", @"list"]];
+    [task setArguments:@[@"--no-color", @"--version"]];
     //[task setArguments:@[@"--version"]];
     [task setStandardOutput: pipe];
     [task setStandardError:pipe];
@@ -60,19 +90,8 @@
             NSLog(@"Terminated - OK");
         else
             NSLog(@"Terminated - ERROR");
+        NSLog(@"COMMAND LINE VERSION:%@", output);
 
-        NSMutableArray *spec_strings = [[output componentsSeparatedByString:@"\n\n"] mutableCopy];
-        [spec_strings removeObjectAtIndex:0];
-        [spec_strings removeLastObject];
-        [spec_strings removeLastObject];
-
-        NSMutableArray *specs = [NSMutableArray new];
-        [spec_strings enumerateObjectsUsingBlock:^(NSString* spec_string, NSUInteger idx, BOOL *stop) {
-            [specs  addObject:[CPSpec specFromString:spec_string]];
-        }];
-        dispatch_async(dispatch_get_main_queue(), ^{
-            _table.specs = specs;
-        });
     };
     [task launch];
 }

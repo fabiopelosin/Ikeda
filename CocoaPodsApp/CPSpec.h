@@ -15,8 +15,10 @@
 @property NSString* description;
 @property NSString* author;
 @property NSString* homepage;
+@property NSString* version;
 @property NSString* filePath;
 
-+ (CPSpec*)specFromString:(NSString*)string;
++ (CPSpec*)specFromDict:(NSDictionary*)dict;
+
 
 @end

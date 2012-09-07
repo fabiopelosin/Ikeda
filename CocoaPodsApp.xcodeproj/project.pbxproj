@@ -8,7 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		094B011CF38442FFB173D883 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 12CF706AD7304DBD919F6B98 /* libPods.a */; };
+		E51E608A15F9647400D4DF27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E51E608915F9647400D4DF27 /* Foundation.framework */; };
+		E51E609015F9647400D4DF27 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E51E608E15F9647400D4DF27 /* InfoPlist.strings */; };
+		E51E609315F9647400D4DF27 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E51E609215F9647400D4DF27 /* main.m */; };
+		E51E609C15F965B800D4DF27 /* org.cocoapods.macrubyservice.xpc in CopyFiles */ = {isa = PBXBuildFile; fileRef = E51E608815F9647400D4DF27 /* org.cocoapods.macrubyservice.xpc */; };
 		E536203B15F580E400C2D4CC /* CPSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E536203A15F580E400C2D4CC /* CPSpec.m */; };
+		E54B9AE115F97DBA00AB19D3 /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E54B9AE015F97DBA00AB19D3 /* MacRuby.framework */; };
+		E54B9AE915F9818C00AB19D3 /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = E54B9AE315F97E2400AB19D3 /* rb_main.rb */; };
+		E54B9AF515F98B4B00AB19D3 /* CPMacRubyServiceProtocol.bridgesupport in Resources */ = {isa = PBXBuildFile; fileRef = E54B9AF315F98B4800AB19D3 /* CPMacRubyServiceProtocol.bridgesupport */; };
+		E5844BB015F9AFF0006FA83A /* CPMacRubyProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = E543D31E15F96F6C00A239B4 /* CPMacRubyProxy.m */; };
 		E591DA7F15F27BB0006FB638 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E591DA7E15F27BB0006FB638 /* Cocoa.framework */; };
 		E591DA8915F27BB0006FB638 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E591DA8715F27BB0006FB638 /* InfoPlist.strings */; };
 		E591DA8B15F27BB0006FB638 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E591DA8A15F27BB0006FB638 /* main.m */; };
@@ -20,11 +28,46 @@
 		E591E22115F29A0F006FB638 /* CPSpecTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E591E22015F29A0F006FB638 /* CPSpecTableViewCell.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		E51E609D15F965C600D4DF27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E591DA7115F27BAF006FB638 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E51E608715F9647400D4DF27;
+			remoteInfo = MacRubyService;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E51E609B15F9657300D4DF27 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/XPCServices;
+			dstSubfolderSpec = 1;
+			files = (
+				E51E609C15F965B800D4DF27 /* org.cocoapods.macrubyservice.xpc in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		12CF706AD7304DBD919F6B98 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C453DA64E3B8423FB942292C /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		E51E608815F9647400D4DF27 /* org.cocoapods.macrubyservice.xpc */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = org.cocoapods.macrubyservice.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
+		E51E608915F9647400D4DF27 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E51E608D15F9647400D4DF27 /* MacRubyService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MacRubyService-Info.plist"; sourceTree = "<group>"; };
+		E51E608F15F9647400D4DF27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E51E609115F9647400D4DF27 /* MacRubyService-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MacRubyService-Prefix.pch"; sourceTree = "<group>"; };
+		E51E609215F9647400D4DF27 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E51E609F15F9668700D4DF27 /* CPMacRubyServiceProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CPMacRubyServiceProtocol.h; path = CocoaPodsApp/CPMacRubyServiceProtocol.h; sourceTree = "<group>"; };
 		E536203915F580E400C2D4CC /* CPSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSpec.h; sourceTree = "<group>"; };
 		E536203A15F580E400C2D4CC /* CPSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSpec.m; sourceTree = "<group>"; };
+		E543D31D15F96F6C00A239B4 /* CPMacRubyProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPMacRubyProxy.h; sourceTree = "<group>"; };
+		E543D31E15F96F6C00A239B4 /* CPMacRubyProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPMacRubyProxy.m; sourceTree = "<group>"; };
+		E54B9AE015F97DBA00AB19D3 /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = Library/Frameworks/MacRuby.framework; sourceTree = DEVELOPER_DIR; };
+		E54B9AE315F97E2400AB19D3 /* rb_main.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
+		E54B9AF315F98B4800AB19D3 /* CPMacRubyServiceProtocol.bridgesupport */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = CPMacRubyServiceProtocol.bridgesupport; sourceTree = "<group>"; };
 		E591DA7A15F27BB0006FB638 /* CocoaPodsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaPodsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E591DA7E15F27BB0006FB638 /* Cocoa.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		E591DA8115F27BB0006FB638 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -46,6 +89,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		E51E608515F9647400D4DF27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E54B9AE115F97DBA00AB19D3 /* MacRuby.framework in Frameworks */,
+				E51E608A15F9647400D4DF27 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E591DA7715F27BB0006FB638 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -58,6 +110,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E51E608B15F9647400D4DF27 /* MacRubyService */ = {
+			isa = PBXGroup;
+			children = (
+				E51E609215F9647400D4DF27 /* main.m */,
+				E54B9AE315F97E2400AB19D3 /* rb_main.rb */,
+				E543D31D15F96F6C00A239B4 /* CPMacRubyProxy.h */,
+				E543D31E15F96F6C00A239B4 /* CPMacRubyProxy.m */,
+				E51E608C15F9647400D4DF27 /* Supporting Files */,
+			);
+			path = MacRubyService;
+			sourceTree = "<group>";
+		};
+		E51E608C15F9647400D4DF27 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E51E608D15F9647400D4DF27 /* MacRubyService-Info.plist */,
+				E51E608E15F9647400D4DF27 /* InfoPlist.strings */,
+				E51E609115F9647400D4DF27 /* MacRubyService-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		E536203D15F580E800C2D4CC /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -89,7 +163,11 @@
 		E591DA6F15F27BAF006FB638 = {
 			isa = PBXGroup;
 			children = (
+				E54B9AE015F97DBA00AB19D3 /* MacRuby.framework */,
+				E51E609F15F9668700D4DF27 /* CPMacRubyServiceProtocol.h */,
+				E54B9AF315F98B4800AB19D3 /* CPMacRubyServiceProtocol.bridgesupport */,
 				E591DA8415F27BB0006FB638 /* CocoaPodsApp */,
+				E51E608B15F9647400D4DF27 /* MacRubyService */,
 				E591DA7D15F27BB0006FB638 /* Frameworks */,
 				E591DA7B15F27BB0006FB638 /* Products */,
 				C453DA64E3B8423FB942292C /* Pods.xcconfig */,
@@ -100,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				E591DA7A15F27BB0006FB638 /* CocoaPodsApp.app */,
+				E51E608815F9647400D4DF27 /* org.cocoapods.macrubyservice.xpc */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				E591DA7E15F27BB0006FB638 /* Cocoa.framework */,
+				E51E608915F9647400D4DF27 /* Foundation.framework */,
 				E591DA8015F27BB0006FB638 /* Other Frameworks */,
 				12CF706AD7304DBD919F6B98 /* libPods.a */,
 			);
@@ -153,19 +233,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		E51E608715F9647400D4DF27 /* macrubyservice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E51E609615F9647400D4DF27 /* Build configuration list for PBXNativeTarget "macrubyservice" */;
+			buildPhases = (
+				E51E608415F9647400D4DF27 /* Sources */,
+				E51E608515F9647400D4DF27 /* Frameworks */,
+				E51E608615F9647400D4DF27 /* Resources */,
+				E54B9AF215F989C100AB19D3 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = macrubyservice;
+			productName = MacRubyService;
+			productReference = E51E608815F9647400D4DF27 /* org.cocoapods.macrubyservice.xpc */;
+			productType = "com.apple.product-type.bundle";
+		};
 		E591DA7915F27BB0006FB638 /* CocoaPodsApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E591DA9815F27BB0006FB638 /* Build configuration list for PBXNativeTarget "CocoaPodsApp" */;
 			buildPhases = (
 				E591DA7615F27BB0006FB638 /* Sources */,
 				E591DA7715F27BB0006FB638 /* Frameworks */,
-				E591DA7815F27BB0006FB638 /* Resources */,
 				E591DA9D15F27C85006FB638 /* ShellScript */,
+				E591DA7815F27BB0006FB638 /* Resources */,
+				E51E609B15F9657300D4DF27 /* CopyFiles */,
 				5947349588B741148B2BC8A5 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E51E609E15F965C600D4DF27 /* PBXTargetDependency */,
 			);
 			name = CocoaPodsApp;
 			productName = CocoaPodsApp;
@@ -195,11 +295,22 @@
 			projectRoot = "";
 			targets = (
 				E591DA7915F27BB0006FB638 /* CocoaPodsApp */,
+				E51E608715F9647400D4DF27 /* macrubyservice */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		E51E608615F9647400D4DF27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E51E609015F9647400D4DF27 /* InfoPlist.strings in Resources */,
+				E54B9AE915F9818C00AB19D3 /* rb_main.rb in Resources */,
+				E54B9AF515F98B4B00AB19D3 /* CPMacRubyServiceProtocol.bridgesupport in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E591DA7815F27BB0006FB638 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -228,9 +339,22 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
 		};
-		E591DA9D15F27C85006FB638 /* ShellScript */ = {
+		E54B9AF215F989C100AB19D3 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+		E591DA9D15F27C85006FB638 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
 			files = (
 			);
 			inputPaths = (
@@ -244,6 +368,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		E51E608415F9647400D4DF27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E51E609315F9647400D4DF27 /* main.m in Sources */,
+				E5844BB015F9AFF0006FA83A /* CPMacRubyProxy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E591DA7615F27BB0006FB638 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -258,7 +391,23 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		E51E609E15F965C600D4DF27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E51E608715F9647400D4DF27 /* macrubyservice */;
+			targetProxy = E51E609D15F965C600D4DF27 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		E51E608E15F9647400D4DF27 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E51E608F15F9647400D4DF27 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		E591DA8715F27BB0006FB638 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -286,6 +435,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		E51E609415F9647400D4DF27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+					"/Library/Frameworks/**",
+				);
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MacRubyService/MacRubyService-Prefix.pch";
+				INFOPLIST_FILE = "MacRubyService/MacRubyService-Info.plist";
+				MACH_O_TYPE = mh_execute;
+				PRODUCT_NAME = "org.cocoapods.$(TARGET_NAME:rfc1034identifier)";
+				WRAPPER_EXTENSION = xpc;
+			};
+			name = Debug;
+		};
+		E51E609515F9647400D4DF27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+					"/Library/Frameworks/**",
+				);
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MacRubyService/MacRubyService-Prefix.pch";
+				INFOPLIST_FILE = "MacRubyService/MacRubyService-Info.plist";
+				MACH_O_TYPE = mh_execute;
+				PRODUCT_NAME = "org.cocoapods.$(TARGET_NAME:rfc1034identifier)";
+				WRAPPER_EXTENSION = xpc;
+			};
+			name = Release;
+		};
 		E591DA9615F27BB0006FB638 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -364,6 +553,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E51E609615F9647400D4DF27 /* Build configuration list for PBXNativeTarget "macrubyservice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E51E609415F9647400D4DF27 /* Debug */,
+				E51E609515F9647400D4DF27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E591DA7415F27BB0006FB638 /* Build configuration list for PBXProject "CocoaPodsApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

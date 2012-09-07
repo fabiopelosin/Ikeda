@@ -59,10 +59,12 @@
 
 - (CGFloat)tableView:(TUITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-	return 80.0;
+    return 80;
+    CPSpecTableViewCell *cell = (CPSpecTableViewCell *)[self tableView:nil cellForRowAtIndexPath:(TUIFastIndexPath *)indexPath];
+	return cell.height;
 }
 
-- (TUITableViewCell *)tableView:(TUITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (CPSpecTableViewCell *)tableView:(TUITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
 	CPSpecTableViewCell *cell = reusableTableCellOfClass(tableView, CPSpecTableViewCell);
 
@@ -82,8 +84,16 @@
 
 - (void)tableView:(TUITableView *)tableView didClickRowAtIndexPath:(NSIndexPath *)indexPath withEvent:(NSEvent *)event
 {
-	if([event clickCount] == 1) {
-		// Open spec homepage
+    CPSpec *spec = self.specs[indexPath.row];
+    if([event clickCount] == 1) {
+		// Show the details
+        // Move this to details view or use Fragraria
+        [[NSWorkspace sharedWorkspace] openFile:spec.filePath ];
+	}
+
+	if([event clickCount] == 2) {
+        NSURL* url = [NSURL URLWithString:spec.homepage];
+        [[NSWorkspace sharedWorkspace] openURL:url ];
 	}
 
 	if(event.type == NSRightMouseUp){

@@ -13,4 +13,6 @@
 @property (nonatomic, copy) NSAttributedString *title;
 @property (nonatomic, copy) NSAttributedString *description;
 
+- (CGFloat)height;
+
 @end

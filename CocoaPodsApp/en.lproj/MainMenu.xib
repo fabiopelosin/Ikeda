@@ -1292,7 +1292,7 @@
 			<object class="NSWindowTemplate" id="972006081">
 				<int key="NSWindowStyleMask">271</int>
 				<int key="NSWindowBacking">2</int>
-				<string key="NSWindowRect">{{335, 390}, {446, 689}}</string>
+				<string key="NSWindowRect">{{335, 390}, {446, 502}}</string>
 				<int key="NSWTFlags">1954021376</int>
 				<string key="NSWindowTitle">CocoaPodsApp</string>
 				<string key="NSWindowClass">NSWindow</string>
@@ -1301,7 +1301,7 @@
 				<object class="NSView" key="NSWindowView" id="439893737">
 					<reference key="NSNextResponder"/>
 					<int key="NSvFlags">256</int>
-					<string key="NSFrameSize">{446, 689}</string>
+					<string key="NSFrameSize">{446, 502}</string>
 					<reference key="NSSuperview"/>
 					<reference key="NSWindow"/>
 				</object>

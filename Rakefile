@@ -62,7 +62,6 @@ namespace :appvendor do
 
   desc "Creates/Updates the vendored Ruby"
   task :buils_script do
-
     dirs={}
     %w|FRAMEWORKS_FOLDER_PATH EXECUTABLE_FOLDER_PATH|.each do |env_var|
       value = ENV[env_var]

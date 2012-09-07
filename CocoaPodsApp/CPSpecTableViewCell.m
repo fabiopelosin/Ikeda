@@ -14,6 +14,10 @@
     TUITextRenderer *descriptionTextRenderer;
 }
 
+- (CGFloat)height {
+    return 10 + textRenderer.size.height + descriptionTextRenderer.size.height;
+}
+
 - (id)initWithStyle:(TUITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
 	if((self = [super initWithStyle:style reuseIdentifier:reuseIdentifier])) {
@@ -34,6 +38,8 @@
 	textRenderer.attributedString = attributedString;
 	[self setNeedsDisplay];
 }
+
+
 
 - (NSAttributedString *)description
 {

@@ -10,23 +10,18 @@
 
 @implementation CPSpec
 
-
-/*
- SAMPLE:
- "--> A2DynamicDelegate (1.0, 1.0.1, 1.0.2, 1.0.3, 1.0.4, 1.0.5, 1.0.6, 1.0.7, 1.0.8, 2.0.0, 2.0.1)
- Blocks are to functions as A2DynamicDelegate is to delegates.
- - Homepage: https://github.com/pandamonia/A2DynamicDelegate
- - Source:   https://github.com/pandamonia/A2DynamicDelegate.git"
- */
-+ (CPSpec*)specFromString:(NSString*)string {
++ (CPSpec*)specFromDict:(NSDictionary*)dict {
     CPSpec* spec = [[self class] new];
-    NSArray *lines = [string componentsSeparatedByString:@"\n"];
-    NSString*first = lines[0];
-    spec.name = [first componentsSeparatedByString:@" "][1];
-    spec.summary = lines[1];
-    spec.summary = [spec.summary substringFromIndex:4];
+    spec.name = [dict objectForKey:@"name"];
+    spec.summary = [dict objectForKey:@"summary"];
+    spec.description = [dict objectForKey:@"description"];
+    spec.filePath = [dict objectForKey:@"defined_in_file"];
+    spec.version = [dict objectForKey:@"version"];
+    spec.homepage = [dict objectForKey:@"homepage"];
+
     return spec;
 }
+
 
 
 @end
