@@ -15,8 +15,7 @@
 		E536203B15F580E400C2D4CC /* CPSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E536203A15F580E400C2D4CC /* CPSpec.m */; };
 		E54B9AE115F97DBA00AB19D3 /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E54B9AE015F97DBA00AB19D3 /* MacRuby.framework */; };
 		E54B9AE915F9818C00AB19D3 /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = E54B9AE315F97E2400AB19D3 /* rb_main.rb */; };
-		E54B9AF515F98B4B00AB19D3 /* CPMacRubyServiceProtocol.bridgesupport in Resources */ = {isa = PBXBuildFile; fileRef = E54B9AF315F98B4800AB19D3 /* CPMacRubyServiceProtocol.bridgesupport */; };
-		E5844BB015F9AFF0006FA83A /* CPMacRubyProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = E543D31E15F96F6C00A239B4 /* CPMacRubyProxy.m */; };
+		E5844BB015F9AFF0006FA83A /* AbstractExportedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E543D31E15F96F6C00A239B4 /* AbstractExportedObject.m */; };
 		E591DA7F15F27BB0006FB638 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E591DA7E15F27BB0006FB638 /* Cocoa.framework */; };
 		E591DA8915F27BB0006FB638 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E591DA8715F27BB0006FB638 /* InfoPlist.strings */; };
 		E591DA8B15F27BB0006FB638 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E591DA8A15F27BB0006FB638 /* main.m */; };
@@ -26,6 +25,8 @@
 		E591DA9C15F27C5F006FB638 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = E591DA9B15F27C5F006FB638 /* Icon.icns */; };
 		E591E21D15F297AA006FB638 /* CPPodsTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = E591E21C15F297AA006FB638 /* CPPodsTableView.m */; };
 		E591E22115F29A0F006FB638 /* CPSpecTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E591E22015F29A0F006FB638 /* CPSpecTableViewCell.m */; };
+		E5C6F3E215FBA7CF0038976B /* exported_object.rb in Resources */ = {isa = PBXBuildFile; fileRef = E5C6F3E115FBA7CF0038976B /* exported_object.rb */; };
+		E5C6F3E415FBB2050038976B /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5C6F3E315FBB2050038976B /* ScriptingBridge.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,14 +61,13 @@
 		E51E608F15F9647400D4DF27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E51E609115F9647400D4DF27 /* MacRubyService-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MacRubyService-Prefix.pch"; sourceTree = "<group>"; };
 		E51E609215F9647400D4DF27 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E51E609F15F9668700D4DF27 /* CPMacRubyServiceProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CPMacRubyServiceProtocol.h; path = CocoaPodsApp/CPMacRubyServiceProtocol.h; sourceTree = "<group>"; };
+		E51E609F15F9668700D4DF27 /* MacRubyServiceProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MacRubyServiceProtocol.h; path = ../CocoaPodsApp/MacRubyServiceProtocol.h; sourceTree = "<group>"; };
 		E536203915F580E400C2D4CC /* CPSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSpec.h; sourceTree = "<group>"; };
 		E536203A15F580E400C2D4CC /* CPSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSpec.m; sourceTree = "<group>"; };
-		E543D31D15F96F6C00A239B4 /* CPMacRubyProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPMacRubyProxy.h; sourceTree = "<group>"; };
-		E543D31E15F96F6C00A239B4 /* CPMacRubyProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPMacRubyProxy.m; sourceTree = "<group>"; };
+		E543D31D15F96F6C00A239B4 /* AbstractExportedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractExportedObject.h; sourceTree = "<group>"; };
+		E543D31E15F96F6C00A239B4 /* AbstractExportedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractExportedObject.m; sourceTree = "<group>"; };
 		E54B9AE015F97DBA00AB19D3 /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = Library/Frameworks/MacRuby.framework; sourceTree = DEVELOPER_DIR; };
 		E54B9AE315F97E2400AB19D3 /* rb_main.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
-		E54B9AF315F98B4800AB19D3 /* CPMacRubyServiceProtocol.bridgesupport */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = CPMacRubyServiceProtocol.bridgesupport; sourceTree = "<group>"; };
 		E591DA7A15F27BB0006FB638 /* CocoaPodsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaPodsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E591DA7E15F27BB0006FB638 /* Cocoa.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		E591DA8115F27BB0006FB638 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -86,6 +86,9 @@
 		E591E21C15F297AA006FB638 /* CPPodsTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPPodsTableView.m; sourceTree = "<group>"; };
 		E591E21F15F29A0F006FB638 /* CPSpecTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSpecTableViewCell.h; sourceTree = "<group>"; };
 		E591E22015F29A0F006FB638 /* CPSpecTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSpecTableViewCell.m; sourceTree = "<group>"; };
+		E5C6F3E115FBA7CF0038976B /* exported_object.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = exported_object.rb; sourceTree = "<group>"; };
+		E5C6F3E315FBB2050038976B /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
+		E5C6F3E515FBB21A0038976B /* Xcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Xcode.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5C6F3E415FBB2050038976B /* ScriptingBridge.framework in Frameworks */,
 				E591DA7F15F27BB0006FB638 /* Cocoa.framework in Frameworks */,
 				094B011CF38442FFB173D883 /* libPods.a in Frameworks */,
 			);
@@ -113,10 +117,12 @@
 		E51E608B15F9647400D4DF27 /* MacRubyService */ = {
 			isa = PBXGroup;
 			children = (
+				E51E609F15F9668700D4DF27 /* MacRubyServiceProtocol.h */,
 				E51E609215F9647400D4DF27 /* main.m */,
 				E54B9AE315F97E2400AB19D3 /* rb_main.rb */,
-				E543D31D15F96F6C00A239B4 /* CPMacRubyProxy.h */,
-				E543D31E15F96F6C00A239B4 /* CPMacRubyProxy.m */,
+				E5C6F3E115FBA7CF0038976B /* exported_object.rb */,
+				E543D31D15F96F6C00A239B4 /* AbstractExportedObject.h */,
+				E543D31E15F96F6C00A239B4 /* AbstractExportedObject.m */,
 				E51E608C15F9647400D4DF27 /* Supporting Files */,
 			);
 			path = MacRubyService;
@@ -163,9 +169,7 @@
 		E591DA6F15F27BAF006FB638 = {
 			isa = PBXGroup;
 			children = (
-				E54B9AE015F97DBA00AB19D3 /* MacRuby.framework */,
-				E51E609F15F9668700D4DF27 /* CPMacRubyServiceProtocol.h */,
-				E54B9AF315F98B4800AB19D3 /* CPMacRubyServiceProtocol.bridgesupport */,
+				E5C6F3E515FBB21A0038976B /* Xcode.h */,
 				E591DA8415F27BB0006FB638 /* CocoaPodsApp */,
 				E51E608B15F9647400D4DF27 /* MacRubyService */,
 				E591DA7D15F27BB0006FB638 /* Frameworks */,
@@ -186,6 +190,8 @@
 		E591DA7D15F27BB0006FB638 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E5C6F3E315FBB2050038976B /* ScriptingBridge.framework */,
+				E54B9AE015F97DBA00AB19D3 /* MacRuby.framework */,
 				E591DA7E15F27BB0006FB638 /* Cocoa.framework */,
 				E51E608915F9647400D4DF27 /* Foundation.framework */,
 				E591DA8015F27BB0006FB638 /* Other Frameworks */,
@@ -307,7 +313,7 @@
 			files = (
 				E51E609015F9647400D4DF27 /* InfoPlist.strings in Resources */,
 				E54B9AE915F9818C00AB19D3 /* rb_main.rb in Resources */,
-				E54B9AF515F98B4B00AB19D3 /* CPMacRubyServiceProtocol.bridgesupport in Resources */,
+				E5C6F3E215FBA7CF0038976B /* exported_object.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,7 +379,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E51E609315F9647400D4DF27 /* main.m in Sources */,
-				E5844BB015F9AFF0006FA83A /* CPMacRubyProxy.m in Sources */,
+				E5844BB015F9AFF0006FA83A /* AbstractExportedObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

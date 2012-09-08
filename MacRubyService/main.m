@@ -8,7 +8,7 @@
 
 #include <xpc/xpc.h>
 #import <MacRuby/MacRuby.h>
-#import "CPMacRubyServiceProtocol.h"
+#import "MacRubyServiceProtocol.h"
 
 int main(int argc, char *argv[])
 {
