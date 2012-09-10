@@ -59,25 +59,6 @@ namespace :appvendor do
     sh "rm -rf #{app_vendor_gems_dir}"
     sh "cp -r #{vendor_gems_dir} #{app_vendor_gems_dir}"
   end
-
-  desc "Creates/Updates the vendored Ruby"
-  task :buils_script do
-    dirs={}
-    %w|FRAMEWORKS_FOLDER_PATH EXECUTABLE_FOLDER_PATH|.each do |env_var|
-      value = ENV[env_var]
-      raise "Call this task only from Xcode" unless value
-      dirs[env_var] = full_path = "#{ENV['CONFIGURATION_BUILD_DIR']}/#{value}"
-      sh "mkdir -p #{full_path}"
-    end
-
-    app_vendor_ruby_dir =  relative_path("AppVendor/ruby")
-    app_vendor_gems_dir =  relative_path("AppVendor/gems")
-    app_vendor_bins  =  relative_path("AppVendor/bin/*")
-
-    sh "cp -rf '#{app_vendor_ruby_dir}' '#{dirs['FRAMEWORKS_FOLDER_PATH']}'"
-    sh "cp -rf '#{app_vendor_gems_dir}' '#{dirs['FRAMEWORKS_FOLDER_PATH']}'"
-    sh "cp -rf '#{app_vendor_bins}' '#{dirs['EXECUTABLE_FOLDER_PATH']}'"
-  end
 end
 
 # task :build => 'vendor:all'

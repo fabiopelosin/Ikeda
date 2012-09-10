@@ -11,7 +11,11 @@
 		E51E608A15F9647400D4DF27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E51E608915F9647400D4DF27 /* Foundation.framework */; };
 		E51E609015F9647400D4DF27 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E51E608E15F9647400D4DF27 /* InfoPlist.strings */; };
 		E51E609315F9647400D4DF27 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E51E609215F9647400D4DF27 /* main.m */; };
-		E51E609C15F965B800D4DF27 /* org.cocoapods.macrubyservice.xpc in CopyFiles */ = {isa = PBXBuildFile; fileRef = E51E608815F9647400D4DF27 /* org.cocoapods.macrubyservice.xpc */; };
+		E51E609C15F965B800D4DF27 /* org.cocoapods.macrubyservice.xpc in Copy XPC Services */ = {isa = PBXBuildFile; fileRef = E51E608815F9647400D4DF27 /* org.cocoapods.macrubyservice.xpc */; };
+		E521039415FE239200127C9B /* ruby in CopyFiles */ = {isa = PBXBuildFile; fileRef = E521039215FE235B00127C9B /* ruby */; };
+		E521039515FE239500127C9B /* gems in CopyFiles */ = {isa = PBXBuildFile; fileRef = E521039015FE235500127C9B /* gems */; };
+		E521F73315FE221F00127C9B /* pod in Copy Ruby Executables */ = {isa = PBXBuildFile; fileRef = E521F73115FE221F00127C9B /* pod */; };
+		E521F73415FE221F00127C9B /* ruby in Copy Ruby Executables */ = {isa = PBXBuildFile; fileRef = E521F73215FE221F00127C9B /* ruby */; };
 		E536203B15F580E400C2D4CC /* CPSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E536203A15F580E400C2D4CC /* CPSpec.m */; };
 		E54B9AE115F97DBA00AB19D3 /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E54B9AE015F97DBA00AB19D3 /* MacRuby.framework */; };
 		E54B9AE915F9818C00AB19D3 /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = E54B9AE315F97E2400AB19D3 /* rb_main.rb */; };
@@ -42,13 +46,37 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		E51E609B15F9657300D4DF27 /* CopyFiles */ = {
+		E51E609B15F9657300D4DF27 /* Copy XPC Services */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = Contents/XPCServices;
 			dstSubfolderSpec = 1;
 			files = (
-				E51E609C15F965B800D4DF27 /* org.cocoapods.macrubyservice.xpc in CopyFiles */,
+				E51E609C15F965B800D4DF27 /* org.cocoapods.macrubyservice.xpc in Copy XPC Services */,
+			);
+			name = "Copy XPC Services";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E521F73015FE221300127C9B /* Copy Ruby Executables */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				E521F73315FE221F00127C9B /* pod in Copy Ruby Executables */,
+				E521F73415FE221F00127C9B /* ruby in Copy Ruby Executables */,
+			);
+			name = "Copy Ruby Executables";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E521F73515FE223E00127C9B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E521039415FE239200127C9B /* ruby in CopyFiles */,
+				E521039515FE239500127C9B /* gems in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +92,10 @@
 		E51E609115F9647400D4DF27 /* MacRubyService-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MacRubyService-Prefix.pch"; sourceTree = "<group>"; };
 		E51E609215F9647400D4DF27 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E51E609F15F9668700D4DF27 /* MacRubyServiceProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MacRubyServiceProtocol.h; path = ../CocoaPodsApp/MacRubyServiceProtocol.h; sourceTree = "<group>"; };
+		E521039015FE235500127C9B /* gems */ = {isa = PBXFileReference; lastKnownFileType = folder; name = gems; path = AppVendor/gems; sourceTree = "<group>"; };
+		E521039215FE235B00127C9B /* ruby */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ruby; path = AppVendor/ruby; sourceTree = "<group>"; };
+		E521F73115FE221F00127C9B /* pod */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = pod; path = AppVendor/bin/pod; sourceTree = "<group>"; };
+		E521F73215FE221F00127C9B /* ruby */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = ruby; path = AppVendor/bin/ruby; sourceTree = "<group>"; };
 		E536203915F580E400C2D4CC /* CPSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSpec.h; sourceTree = "<group>"; };
 		E536203A15F580E400C2D4CC /* CPSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSpec.m; sourceTree = "<group>"; };
 		E543D31D15F96F6C00A239B4 /* AbstractExportedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractExportedObject.h; sourceTree = "<group>"; };
@@ -91,7 +123,7 @@
 		E591E22015F29A0F006FB638 /* CPSpecTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSpecTableViewCell.m; sourceTree = "<group>"; };
 		E5C6F3E115FBA7CF0038976B /* exported_object.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = exported_object.rb; sourceTree = "<group>"; };
 		E5C6F3E315FBB2050038976B /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
-		E5C6F3E515FBB21A0038976B /* Xcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Xcode.h; sourceTree = "<group>"; };
+		E5C6F3E515FBB21A0038976B /* Xcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Xcode.h; path = ../Xcode.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,9 +174,30 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		E521036F15FE227000127C9B /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				E521039215FE235B00127C9B /* ruby */,
+				E521039015FE235500127C9B /* gems */,
+				E521038F15FE22EB00127C9B /* bin */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		E521038F15FE22EB00127C9B /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				E521F73115FE221F00127C9B /* pod */,
+				E521F73215FE221F00127C9B /* ruby */,
+			);
+			name = bin;
+			sourceTree = "<group>";
+		};
 		E536203D15F580E800C2D4CC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E555F05F15FD10A100167373 /* CocoaPodsApp.xcdatamodeld */,
+				E5C6F3E515FBB21A0038976B /* Xcode.h */,
 				E536203915F580E400C2D4CC /* CPSpec.h */,
 				E536203A15F580E400C2D4CC /* CPSpec.m */,
 			);
@@ -173,10 +226,9 @@
 		E591DA6F15F27BAF006FB638 = {
 			isa = PBXGroup;
 			children = (
-				E555F05F15FD10A100167373 /* CocoaPodsApp.xcdatamodeld */,
-				E5C6F3E515FBB21A0038976B /* Xcode.h */,
 				E591DA8415F27BB0006FB638 /* CocoaPodsApp */,
 				E51E608B15F9647400D4DF27 /* MacRubyService */,
+				E521036F15FE227000127C9B /* Vendor */,
 				E591DA7D15F27BB0006FB638 /* Frameworks */,
 				E591DA7B15F27BB0006FB638 /* Products */,
 				C453DA64E3B8423FB942292C /* Pods.xcconfig */,
@@ -212,10 +264,10 @@
 			children = (
 				E591DA9015F27BB0006FB638 /* CPAppDelegate.h */,
 				E591DA9115F27BB0006FB638 /* CPAppDelegate.m */,
-				E536203E15F5820D00C2D4CC /* Views */,
 				E591DA9315F27BB0006FB638 /* MainMenu.xib */,
-				E591DA8515F27BB0006FB638 /* Supporting Files */,
+				E536203E15F5820D00C2D4CC /* Views */,
 				E536203D15F580E800C2D4CC /* Model */,
+				E591DA8515F27BB0006FB638 /* Supporting Files */,
 			);
 			path = CocoaPodsApp;
 			sourceTree = "<group>";
@@ -262,8 +314,10 @@
 				E591DA7715F27BB0006FB638 /* Frameworks */,
 				E591DA9D15F27C85006FB638 /* ShellScript */,
 				E591DA7815F27BB0006FB638 /* Resources */,
-				E51E609B15F9657300D4DF27 /* CopyFiles */,
+				E51E609B15F9657300D4DF27 /* Copy XPC Services */,
 				5947349588B741148B2BC8A5 /* Copy Pods Resources */,
+				E521F73015FE221300127C9B /* Copy Ruby Executables */,
+				E521F73515FE223E00127C9B /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -366,7 +420,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "rake appvendor:buils_script";
+			shellScript = "#rake appvendor:buils_script";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -594,7 +648,7 @@
 			);
 			currentVersion = E555F06015FD10A100167373 /* CocoaPodsApp.xcdatamodel */;
 			path = CocoaPodsApp.xcdatamodeld;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
