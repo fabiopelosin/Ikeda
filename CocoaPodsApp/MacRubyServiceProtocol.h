@@ -23,9 +23,8 @@
 - (void)arrayForKey:(NSString*)key completion:(void (^)(NSArray*))completion;
 - (void)dictionaryForKey:(NSString*)key completion:(void (^)(NSDictionary*))completion;
 
-// @TODO: Add variants that support arguments
+- (void)stringForKey:(NSString *)key arguments:(NSDictionary*)arguments completion:(void (^)(NSString *))completion;
+- (void)arrayForKey:(NSString*)key arguments:(NSDictionary*)arguments completion:(void (^)(NSArray*))completion;
+- (void)dictionaryForKey:(NSString*)key arguments:(NSDictionary*)arguments completion:(void (^)(NSDictionary*))completion;
 
-//- (void)stringWithName:(NSString*)name arguments:(NSArray*)arguments completion:(void (^)(NSString*))completion;
-//- (void)arrayWithName:(NSString*)name arguments:(NSArray*)arguments completion:(void (^)(NSString*))completion;
-//- (void)dictionaryWithName:(NSString*)name arguments:(NSArray*)arguments completion:(void (^)(NSString*))completion;
 @end

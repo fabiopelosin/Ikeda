@@ -12,7 +12,7 @@
 	<body>
 		<header id="top_header">
 			<div id="library" class="hideInXcode">
-				<h1><a id="libraryTitle" href="../index.html">MagicalRecord 2.0.3 </a></h1>
+				<h1><a id="libraryTitle" href="../index.html">MagicalRecord HEAD based on 2.0.3 </a></h1>
 				<a id="developerHome" href="../index.html">Saul Mora</a>
 			</div>
 			
@@ -41,8 +41,6 @@
 	<option value="class_methods">Class Methods</option>
 	
 	<option value="//api/name/cleanUp">&nbsp;&nbsp;&nbsp;&nbsp;+ cleanUp</option>
-	
-	<option value="//api/name/cleanUpErrorHanding">&nbsp;&nbsp;&nbsp;&nbsp;+ cleanUpErrorHanding</option>
 	
 	<option value="//api/name/currentStack">&nbsp;&nbsp;&nbsp;&nbsp;+ currentStack</option>
 	
@@ -74,6 +72,8 @@
 	
 	<option value="//api/name/setShouldAutoCreateManagedObjectModel:">&nbsp;&nbsp;&nbsp;&nbsp;+ setShouldAutoCreateManagedObjectModel:</option>
 	
+	<option value="//api/name/setShouldDeleteStoreOnModelMismatch:">&nbsp;&nbsp;&nbsp;&nbsp;+ setShouldDeleteStoreOnModelMismatch:</option>
+	
 	<option value="//api/name/setupAutoMigratingCoreDataStack">&nbsp;&nbsp;&nbsp;&nbsp;+ setupAutoMigratingCoreDataStack</option>
 	
 	<option value="//api/name/setupCoreDataStack">&nbsp;&nbsp;&nbsp;&nbsp;+ setupCoreDataStack</option>
@@ -93,6 +93,8 @@
 	<option value="//api/name/shouldAutoCreateDefaultPersistentStoreCoordinator">&nbsp;&nbsp;&nbsp;&nbsp;+ shouldAutoCreateDefaultPersistentStoreCoordinator</option>
 	
 	<option value="//api/name/shouldAutoCreateManagedObjectModel">&nbsp;&nbsp;&nbsp;&nbsp;+ shouldAutoCreateManagedObjectModel</option>
+	
+	<option value="//api/name/shouldDeleteStoreOnModelMismatch">&nbsp;&nbsp;&nbsp;&nbsp;+ shouldDeleteStoreOnModelMismatch</option>
 	
 	<option value="//api/name/swizzleShorthandMethods">&nbsp;&nbsp;&nbsp;&nbsp;+ swizzleShorthandMethods</option>
 	
@@ -117,17 +119,17 @@
 
 <li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_iCloud Methods">iCloud Methods</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Options Methods">Options Methods</a></span></li>
-	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Actions Methods">Actions Methods</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Setup Methods">Setup Methods</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_ShorthandSupport Methods">ShorthandSupport Methods</a></span></li>
-	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_ErrorHandling Methods">ErrorHandling Methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_iCloud Methods">iCloud Methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Options Methods">Options Methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_ShorthandSupport Methods">ShorthandSupport Methods</a></span></li>
 	
 </ul></li>
 
@@ -140,8 +142,6 @@
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cleanUp">cleanUp</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cleanUpErrorHanding">cleanUpErrorHanding</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/currentStack">currentStack</a></span></li>
 	
@@ -173,6 +173,8 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setShouldAutoCreateManagedObjectModel:">setShouldAutoCreateManagedObjectModel:</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setShouldDeleteStoreOnModelMismatch:">setShouldDeleteStoreOnModelMismatch:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setupAutoMigratingCoreDataStack">setupAutoMigratingCoreDataStack</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setupCoreDataStack">setupCoreDataStack</a></span></li>
@@ -192,6 +194,8 @@
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/shouldAutoCreateDefaultPersistentStoreCoordinator">shouldAutoCreateDefaultPersistentStoreCoordinator</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/shouldAutoCreateManagedObjectModel">shouldAutoCreateManagedObjectModel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/shouldDeleteStoreOnModelMismatch">shouldDeleteStoreOnModelMismatch</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/swizzleShorthandMethods">swizzleShorthandMethods</a></span></li>
 	
@@ -287,78 +291,6 @@
 						</ul>
 						
 						
-						<a title="iCloud Methods" name="task_iCloud Methods"></a>
-						<h3 class="subsubtitle task-title">iCloud Methods</h3>
-
-						<ul class="task-list">
-							<li>
-	<span class="tooltip">
-		<code><a href="#//api/name/isICloudEnabled">+&nbsp;isICloudEnabled</a></code>
-		
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/setupCoreDataStackWithiCloudContainer:localStoreNamed:">+&nbsp;setupCoreDataStackWithiCloudContainer:localStoreNamed:</a></code>
-		
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/setupCoreDataStackWithiCloudContainer:contentNameKey:localStoreNamed:cloudStorePathComponent:">+&nbsp;setupCoreDataStackWithiCloudContainer:contentNameKey:localStoreNamed:cloudStorePathComponent:</a></code>
-		
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/setupCoreDataStackWithiCloudContainer:contentNameKey:localStoreNamed:cloudStorePathComponent:completion:">+&nbsp;setupCoreDataStackWithiCloudContainer:contentNameKey:localStoreNamed:cloudStorePathComponent:completion:</a></code>
-		
-	</span>
-	
-	
-</li>
-						</ul>
-						
-						
-						<a title="Options Methods" name="task_Options Methods"></a>
-						<h3 class="subsubtitle task-title">Options Methods</h3>
-
-						<ul class="task-list">
-							<li>
-	<span class="tooltip">
-		<code><a href="#//api/name/shouldAutoCreateManagedObjectModel">+&nbsp;shouldAutoCreateManagedObjectModel</a></code>
-		
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/setShouldAutoCreateManagedObjectModel:">+&nbsp;setShouldAutoCreateManagedObjectModel:</a></code>
-		
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/shouldAutoCreateDefaultPersistentStoreCoordinator">+&nbsp;shouldAutoCreateDefaultPersistentStoreCoordinator</a></code>
-		
-	</span>
-	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/setShouldAutoCreateDefaultPersistentStoreCoordinator:">+&nbsp;setShouldAutoCreateDefaultPersistentStoreCoordinator:</a></code>
-		
-	</span>
-	
-	
-</li>
-						</ul>
-						
-						
 						<a title="Actions Methods" name="task_Actions Methods"></a>
 						<h3 class="subsubtitle task-title">Actions Methods</h3>
 
@@ -438,21 +370,6 @@
 						</ul>
 						
 						
-						<a title="ShorthandSupport Methods" name="task_ShorthandSupport Methods"></a>
-						<h3 class="subsubtitle task-title">ShorthandSupport Methods</h3>
-
-						<ul class="task-list">
-							<li>
-	<span class="tooltip">
-		<code><a href="#//api/name/swizzleShorthandMethods">+&nbsp;swizzleShorthandMethods</a></code>
-		
-	</span>
-	
-	
-</li>
-						</ul>
-						
-						
 						<a title="ErrorHandling Methods" name="task_ErrorHandling Methods"></a>
 						<h3 class="subsubtitle task-title">ErrorHandling Methods</h3>
 
@@ -492,9 +409,105 @@
 	</span>
 	
 	
+</li>
+						</ul>
+						
+						
+						<a title="iCloud Methods" name="task_iCloud Methods"></a>
+						<h3 class="subsubtitle task-title">iCloud Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isICloudEnabled">+&nbsp;isICloudEnabled</a></code>
+		
+	</span>
+	
+	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/cleanUpErrorHanding">+&nbsp;cleanUpErrorHanding</a></code>
+		<code><a href="#//api/name/setupCoreDataStackWithiCloudContainer:localStoreNamed:">+&nbsp;setupCoreDataStackWithiCloudContainer:localStoreNamed:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setupCoreDataStackWithiCloudContainer:contentNameKey:localStoreNamed:cloudStorePathComponent:">+&nbsp;setupCoreDataStackWithiCloudContainer:contentNameKey:localStoreNamed:cloudStorePathComponent:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setupCoreDataStackWithiCloudContainer:contentNameKey:localStoreNamed:cloudStorePathComponent:completion:">+&nbsp;setupCoreDataStackWithiCloudContainer:contentNameKey:localStoreNamed:cloudStorePathComponent:completion:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Options Methods" name="task_Options Methods"></a>
+						<h3 class="subsubtitle task-title">Options Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/shouldAutoCreateManagedObjectModel">+&nbsp;shouldAutoCreateManagedObjectModel</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setShouldAutoCreateManagedObjectModel:">+&nbsp;setShouldAutoCreateManagedObjectModel:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/shouldAutoCreateDefaultPersistentStoreCoordinator">+&nbsp;shouldAutoCreateDefaultPersistentStoreCoordinator</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setShouldAutoCreateDefaultPersistentStoreCoordinator:">+&nbsp;setShouldAutoCreateDefaultPersistentStoreCoordinator:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setShouldDeleteStoreOnModelMismatch:">+&nbsp;setShouldDeleteStoreOnModelMismatch:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/shouldDeleteStoreOnModelMismatch">+&nbsp;shouldDeleteStoreOnModelMismatch</a></code>
+		<span class="tooltip"><p>@method shouldDeleteStoreOnModelMistmatch
+@abstract If true, when configuring the persistant store coordinator, and Magical Record encounters a store that does not match the model, it will attempt to remove it and re-create a new store.
+This is extremely useful during development where every model change could potentially require a delete/reinstall of the app.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="ShorthandSupport Methods" name="task_ShorthandSupport Methods"></a>
+						<h3 class="subsubtitle task-title">ShorthandSupport Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/swizzleShorthandMethods">+&nbsp;swizzleShorthandMethods</a></code>
 		
 	</span>
 	
@@ -521,17 +534,6 @@
 	
 
 	<div class="method-subsection method-declaration"><code>+ (void)cleanUp</code></div>
-
-    
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/cleanUpErrorHanding" title="cleanUpErrorHanding"></a>
-	<h3 class="subsubtitle method-title">cleanUpErrorHanding</h3>
-	
-	
-
-	<div class="method-subsection method-declaration"><code>+ (void)cleanUpErrorHanding</code></div>
 
     
 </div>
@@ -702,6 +704,17 @@
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/setShouldDeleteStoreOnModelMismatch:" title="setShouldDeleteStoreOnModelMismatch:"></a>
+	<h3 class="subsubtitle method-title">setShouldDeleteStoreOnModelMismatch:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (void)setShouldDeleteStoreOnModelMismatch:(BOOL)<em>shouldDeleteStoreOnModelMismatch</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/setupAutoMigratingCoreDataStack" title="setupAutoMigratingCoreDataStack"></a>
 	<h3 class="subsubtitle method-title">setupAutoMigratingCoreDataStack</h3>
 	
@@ -812,6 +825,51 @@
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/shouldDeleteStoreOnModelMismatch" title="shouldDeleteStoreOnModelMismatch"></a>
+	<h3 class="subsubtitle method-title">shouldDeleteStoreOnModelMismatch</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>@method shouldDeleteStoreOnModelMistmatch
+@abstract If true, when configuring the persistant store coordinator, and Magical Record encounters a store that does not match the model, it will attempt to remove it and re-create a new store.
+This is extremely useful during development where every model change could potentially require a delete/reinstall of the app.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (BOOL)shouldDeleteStoreOnModelMismatch</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>@method shouldDeleteStoreOnModelMistmatch
+@abstract If true, when configuring the persistant store coordinator, and Magical Record encounters a store that does not match the model, it will attempt to remove it and re-create a new store.
+This is extremely useful during development where every model change could potentially require a delete/reinstall of the app.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">MagicalRecord+Options.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/swizzleShorthandMethods" title="swizzleShorthandMethods"></a>
 	<h3 class="subsubtitle method-title">swizzleShorthandMethods</h3>
 	
@@ -854,7 +912,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2012 Saul Mora. All rights reserved. (Last updated: 2012-09-08)</span><br />
+						<p><span class="copyright">&copy; 2012 Saul Mora. All rights reserved. (Last updated: 2012-09-10)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
 						

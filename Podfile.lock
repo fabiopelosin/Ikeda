@@ -5,7 +5,7 @@ PODS:
 - BlocksKit (1.5.1):
   - A2DynamicDelegate
 - Fragaria (0.0.1)
-- MagicalRecord (2.0.3)
+- MagicalRecord (HEAD based on 2.0.3)
 - PXSourceList (0.8)
 - TwUI (0.4):
   - TwUI/Support (= 0.4)
@@ -18,7 +18,7 @@ PODS:
 DEPENDENCIES:
 - BlocksKit
 - Fragaria
-- MagicalRecord
+- MagicalRecord (HEAD)
 - PXSourceList
 - TwUI
 

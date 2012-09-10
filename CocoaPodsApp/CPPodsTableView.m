@@ -8,7 +8,8 @@
 
 #import "CPPodsTableView.h"
 #import "CPSpecTableViewCell.h"
-#import "CPSpec.h"
+#import "CPSpecification.h"
+
 
 #define	CPSearchFieldAnyfilter     0
 #define	CPSearchFieldIOSfilter     1
@@ -147,10 +148,11 @@
   if ([textView.string isEqualToString:@""]) {
     _specsArrayController.filterPredicate = nil;
   } else {
-    _specsArrayController.filterPredicate = [NSPredicate predicateWithBlock:^BOOL(CPSpec *spec, NSDictionary *bindings) {
+    _specsArrayController.filterPredicate = [NSPredicate predicateWithBlock:^BOOL(CPSpecification *spec, NSDictionary *bindings) {
       BOOL nameMatch = [spec.name rangeOfString:textView.string options:NSCaseInsensitiveSearch | NSDiacriticInsensitiveSearch].length > 0;
       BOOL summaryMatch = [spec.summary rangeOfString:textView.string options:NSCaseInsensitiveSearch | NSDiacriticInsensitiveSearch].length > 0;
-      return nameMatch || summaryMatch;
+      BOOL descriptionMatch = [spec.specDescription rangeOfString:textView.string options:NSCaseInsensitiveSearch | NSDiacriticInsensitiveSearch].length > 0;
+      return nameMatch || summaryMatch || descriptionMatch;
     }];
   }
   [_tableView reloadData];
@@ -168,7 +170,7 @@
   CPSpecTableViewCell *cell = reusableTableCellOfClass(_tableView, CPSpecTableViewCell);
 
   NSMutableDictionary *dictionary = [NSMutableDictionary new];
-  [_specs enumerateObjectsUsingBlock:^(CPSpec *spec, NSUInteger idx, BOOL *stop) {
+  [_specs enumerateObjectsUsingBlock:^(CPSpecification *spec, NSUInteger idx, BOOL *stop) {
     TUIAttributedString *title = [TUIAttributedString stringWithString:spec.name];
     title.color = [TUIColor colorWithWhite:0.2 alpha:1.0];
     title.font = titleFont;
@@ -191,7 +193,7 @@
 
 - (CGFloat)tableView:(TUITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-  CPSpec *spec = self.specsArrayController.arrangedObjects[indexPath.row];
+  CPSpecification *spec = self.specsArrayController.arrangedObjects[indexPath.row];
   return [[cellHeights objectForKey:spec.name] floatValue];
 }
 
@@ -199,7 +201,7 @@
 {
 	CPSpecTableViewCell *cell = reusableTableCellOfClass(tableView, CPSpecTableViewCell);
 
-	CPSpec *spec = self.specsArrayController.arrangedObjects[indexPath.row];
+	CPSpecification *spec = self.specsArrayController.arrangedObjects[indexPath.row];
 	TUIAttributedString *title = [TUIAttributedString stringWithString:spec.name];
 	title.color = [TUIColor colorWithWhite:0.2 alpha:1.0];
 	title.font = titleFont;
@@ -215,14 +217,14 @@
 
 - (void)tableView:(TUITableView *)tableView didClickRowAtIndexPath:(NSIndexPath *)indexPath withEvent:(NSEvent *)event
 {
-	CPSpec *spec = self.specsArrayController.arrangedObjects[indexPath.row];
+	CPSpecification *spec = self.specsArrayController.arrangedObjects[indexPath.row];
   if([event clickCount] == 2) {
     NSURL* url = [NSURL URLWithString:spec.homepage];
     [[NSWorkspace sharedWorkspace] openURL:url ];
 	} else if ([event clickCount] == 1) {
 		// Show the details
     // Move this to details view or use Fragraria
-    [[NSWorkspace sharedWorkspace] openFile:spec.filePath ];
+    [[NSWorkspace sharedWorkspace] openFile:spec.definedInFile ];
 	}
 }
 - (BOOL)tableView:(TUITableView *)tableView shouldSelectRowAtIndexPath:(NSIndexPath *)indexPath forEvent:(NSEvent *)event{

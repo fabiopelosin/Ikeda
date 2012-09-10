@@ -78,14 +78,14 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/NSPersistentStoreCoordinator(MagicalRecordShortHand)/coordinatorWithPersitentStore:</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSPersistentStoreCoordinator(MagicalRecordShortHand)/coordinatorWithPersistentStore:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
 			
-			<Declaration>+ (NSPersistentStoreCoordinator *)coordinatorWithPersitentStore:(NSPersistentStore *)persistentStore</Declaration>
+			<Declaration>+ (NSPersistentStoreCoordinator *)coordinatorWithPersistentStore:(NSPersistentStore *)persistentStore</Declaration>
 			
 			
-			<Anchor>//api/name/coordinatorWithPersitentStore:</Anchor>
+			<Anchor>//api/name/coordinatorWithPersistentStore:</Anchor>
 		</Token>
 		
 		<Token>

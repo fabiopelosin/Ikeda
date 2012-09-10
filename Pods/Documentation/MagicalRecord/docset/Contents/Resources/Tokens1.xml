@@ -67,94 +67,6 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/MagicalRecord/isICloudEnabled</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>MagicalRecord+iCloud.h</DeclaredIn>			
-			
-			<Declaration>+ (BOOL)isICloudEnabled</Declaration>
-			
-			
-			<Anchor>//api/name/isICloudEnabled</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/MagicalRecord/setupCoreDataStackWithiCloudContainer:localStoreNamed:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>MagicalRecord+iCloud.h</DeclaredIn>			
-			
-			<Declaration>+ (void)setupCoreDataStackWithiCloudContainer:(NSString *)icloudBucket localStoreNamed:(NSString *)localStore</Declaration>
-			
-			
-			<Anchor>//api/name/setupCoreDataStackWithiCloudContainer:localStoreNamed:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/MagicalRecord/setupCoreDataStackWithiCloudContainer:contentNameKey:localStoreNamed:cloudStorePathComponent:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>MagicalRecord+iCloud.h</DeclaredIn>			
-			
-			<Declaration>+ (void)setupCoreDataStackWithiCloudContainer:(NSString *)containerID contentNameKey:(NSString *)contentNameKey localStoreNamed:(NSString *)localStoreName cloudStorePathComponent:(NSString *)pathSubcomponent</Declaration>
-			
-			
-			<Anchor>//api/name/setupCoreDataStackWithiCloudContainer:contentNameKey:localStoreNamed:cloudStorePathComponent:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/MagicalRecord/setupCoreDataStackWithiCloudContainer:contentNameKey:localStoreNamed:cloudStorePathComponent:completion:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>MagicalRecord+iCloud.h</DeclaredIn>			
-			
-			<Declaration>+ (void)setupCoreDataStackWithiCloudContainer:(NSString *)containerID contentNameKey:(NSString *)contentNameKey localStoreNamed:(NSString *)localStoreName cloudStorePathComponent:(NSString *)pathSubcomponent completion:(void ( ^ ) ( void ))completion</Declaration>
-			
-			
-			<Anchor>//api/name/setupCoreDataStackWithiCloudContainer:contentNameKey:localStoreNamed:cloudStorePathComponent:completion:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/MagicalRecord/shouldAutoCreateManagedObjectModel</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>MagicalRecord+Options.h</DeclaredIn>			
-			
-			<Declaration>+ (BOOL)shouldAutoCreateManagedObjectModel</Declaration>
-			
-			
-			<Anchor>//api/name/shouldAutoCreateManagedObjectModel</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/MagicalRecord/setShouldAutoCreateManagedObjectModel:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>MagicalRecord+Options.h</DeclaredIn>			
-			
-			<Declaration>+ (void)setShouldAutoCreateManagedObjectModel:(BOOL)shouldAutoCreate</Declaration>
-			
-			
-			<Anchor>//api/name/setShouldAutoCreateManagedObjectModel:</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/MagicalRecord/shouldAutoCreateDefaultPersistentStoreCoordinator</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>MagicalRecord+Options.h</DeclaredIn>			
-			
-			<Declaration>+ (BOOL)shouldAutoCreateDefaultPersistentStoreCoordinator</Declaration>
-			
-			
-			<Anchor>//api/name/shouldAutoCreateDefaultPersistentStoreCoordinator</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/MagicalRecord/setShouldAutoCreateDefaultPersistentStoreCoordinator:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>MagicalRecord+Options.h</DeclaredIn>			
-			
-			<Declaration>+ (void)setShouldAutoCreateDefaultPersistentStoreCoordinator:(BOOL)shouldAutoCreate</Declaration>
-			
-			
-			<Anchor>//api/name/setShouldAutoCreateDefaultPersistentStoreCoordinator:</Anchor>
-		</Token>
-		
-		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/MagicalRecord/saveWithBlock:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>MagicalRecord+Actions.h</DeclaredIn>			
@@ -254,17 +166,6 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/MagicalRecord/swizzleShorthandMethods</TokenIdentifier>
-			<Abstract type="html"></Abstract>
-			<DeclaredIn>MagicalRecord+ShorthandSupport.h</DeclaredIn>			
-			
-			<Declaration>+ (void)swizzleShorthandMethods</Declaration>
-			
-			
-			<Anchor>//api/name/swizzleShorthandMethods</Anchor>
-		</Token>
-		
-		<Token>
 			<TokenIdentifier>//apple_ref/occ/clm/MagicalRecord/handleErrors:</TokenIdentifier>
 			<Abstract type="html"></Abstract>
 			<DeclaredIn>MagicalRecord+ErrorHandling.h</DeclaredIn>			
@@ -320,14 +221,126 @@
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/MagicalRecord/cleanUpErrorHanding</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/clm/MagicalRecord/isICloudEnabled</TokenIdentifier>
 			<Abstract type="html"></Abstract>
-			<DeclaredIn>MagicalRecord+ErrorHandling.h</DeclaredIn>			
+			<DeclaredIn>MagicalRecord+iCloud.h</DeclaredIn>			
 			
-			<Declaration>+ (void)cleanUpErrorHanding</Declaration>
+			<Declaration>+ (BOOL)isICloudEnabled</Declaration>
 			
 			
-			<Anchor>//api/name/cleanUpErrorHanding</Anchor>
+			<Anchor>//api/name/isICloudEnabled</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/MagicalRecord/setupCoreDataStackWithiCloudContainer:localStoreNamed:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecord+iCloud.h</DeclaredIn>			
+			
+			<Declaration>+ (void)setupCoreDataStackWithiCloudContainer:(NSString *)icloudBucket localStoreNamed:(NSString *)localStore</Declaration>
+			
+			
+			<Anchor>//api/name/setupCoreDataStackWithiCloudContainer:localStoreNamed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/MagicalRecord/setupCoreDataStackWithiCloudContainer:contentNameKey:localStoreNamed:cloudStorePathComponent:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecord+iCloud.h</DeclaredIn>			
+			
+			<Declaration>+ (void)setupCoreDataStackWithiCloudContainer:(NSString *)containerID contentNameKey:(NSString *)contentNameKey localStoreNamed:(NSString *)localStoreName cloudStorePathComponent:(NSString *)pathSubcomponent</Declaration>
+			
+			
+			<Anchor>//api/name/setupCoreDataStackWithiCloudContainer:contentNameKey:localStoreNamed:cloudStorePathComponent:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/MagicalRecord/setupCoreDataStackWithiCloudContainer:contentNameKey:localStoreNamed:cloudStorePathComponent:completion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecord+iCloud.h</DeclaredIn>			
+			
+			<Declaration>+ (void)setupCoreDataStackWithiCloudContainer:(NSString *)containerID contentNameKey:(NSString *)contentNameKey localStoreNamed:(NSString *)localStoreName cloudStorePathComponent:(NSString *)pathSubcomponent completion:(void ( ^ ) ( void ))completion</Declaration>
+			
+			
+			<Anchor>//api/name/setupCoreDataStackWithiCloudContainer:contentNameKey:localStoreNamed:cloudStorePathComponent:completion:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/MagicalRecord/shouldAutoCreateManagedObjectModel</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecord+Options.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)shouldAutoCreateManagedObjectModel</Declaration>
+			
+			
+			<Anchor>//api/name/shouldAutoCreateManagedObjectModel</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/MagicalRecord/setShouldAutoCreateManagedObjectModel:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecord+Options.h</DeclaredIn>			
+			
+			<Declaration>+ (void)setShouldAutoCreateManagedObjectModel:(BOOL)shouldAutoCreate</Declaration>
+			
+			
+			<Anchor>//api/name/setShouldAutoCreateManagedObjectModel:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/MagicalRecord/shouldAutoCreateDefaultPersistentStoreCoordinator</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecord+Options.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)shouldAutoCreateDefaultPersistentStoreCoordinator</Declaration>
+			
+			
+			<Anchor>//api/name/shouldAutoCreateDefaultPersistentStoreCoordinator</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/MagicalRecord/setShouldAutoCreateDefaultPersistentStoreCoordinator:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecord+Options.h</DeclaredIn>			
+			
+			<Declaration>+ (void)setShouldAutoCreateDefaultPersistentStoreCoordinator:(BOOL)shouldAutoCreate</Declaration>
+			
+			
+			<Anchor>//api/name/setShouldAutoCreateDefaultPersistentStoreCoordinator:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/MagicalRecord/setShouldDeleteStoreOnModelMismatch:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecord+Options.h</DeclaredIn>			
+			
+			<Declaration>+ (void)setShouldDeleteStoreOnModelMismatch:(BOOL)shouldDeleteStoreOnModelMismatch</Declaration>
+			
+			
+			<Anchor>//api/name/setShouldDeleteStoreOnModelMismatch:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/MagicalRecord/shouldDeleteStoreOnModelMismatch</TokenIdentifier>
+			<Abstract type="html">@method shouldDeleteStoreOnModelMistmatch
+@abstract If true, when configuring the persistant store coordinator, and Magical Record encounters a store that does not match the model, it will attempt to remove it and re-create a new store.
+This is extremely useful during development where every model change could potentially require a delete/reinstall of the app.</Abstract>
+			<DeclaredIn>MagicalRecord+Options.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)shouldDeleteStoreOnModelMismatch</Declaration>
+			
+			
+			<Anchor>//api/name/shouldDeleteStoreOnModelMismatch</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/MagicalRecord/swizzleShorthandMethods</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecord+ShorthandSupport.h</DeclaredIn>			
+			
+			<Declaration>+ (void)swizzleShorthandMethods</Declaration>
+			
+			
+			<Anchor>//api/name/swizzleShorthandMethods</Anchor>
 		</Token>
 		
 	</File>

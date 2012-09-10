@@ -8,11 +8,11 @@
 
 #import "CPAppDelegate.h"
 #import "TUIKit.h"
-#import "CPPodsTableView.h"
-#import "CPSpec.h"
-#import "MacRubyServiceProtocol.h"
-#import "Xcode.h"
+
+#import "CPCocoaPodsManager.h"
 #import "CoreData+MagicalRecord.h"
+#import "CPPodsTableView.h"
+#import "Xcode.h"
 
 @implementation CPAppDelegate {
   CPPodsTableView *_table;
@@ -24,48 +24,25 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
+  [MagicalRecord setupAutoMigratingCoreDataStack];
+  [[CPCocoaPodsManager sharedInstance] updateSets];
+
 	TUINSView* contentView = self.window.contentView;
 	_table = [[CPPodsTableView alloc] initWithFrame:contentView.bounds];
   contentView.rootView = _table;
+  _table.specs = [[CPCocoaPodsManager sharedInstance] specs];
 
-  //[MagicalRecord setupCoreDataStack];
 
-  [self testRuby];
-  [self startMacRubyConnection];
-  [self testXcodeBridge];
+  //[self testRuby];
+  //[self testXcodeBridge];
 }
 
 - (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender {
   return TRUE;
 }
 
-- (void)startMacRubyConnection {
-  NSXPCInterface *myCookieInterface = [NSXPCInterface interfaceWithProtocol:@protocol(MacRubyServiceProtocol)];
-  NSXPCConnection *myConnection = [[NSXPCConnection alloc] initWithServiceName:@"org.cocoapods.macrubyservice"];
-  myConnection.remoteObjectInterface = myCookieInterface;
-  [myConnection resume];
-  id<MacRubyServiceProtocol> proxy = [myConnection remoteObjectProxyWithErrorHandler:^(NSError *error) {
-    NSLog(@"%@", error);
-  }];
-  myConnection.invalidationHandler = ^{
-    NSLog(@"CONNECTION INVALIDATED");
-  };
-  
-  [proxy stringForKey:@"version" completion:^(NSString *version) {
-    NSLog(@"Version: %@", version);
-  }];
-
-  [proxy arrayForKey:@"specs" completion:^(NSArray *spec_dicts) {
-    NSMutableArray *specs = [NSMutableArray new];
-    [spec_dicts enumerateObjectsUsingBlock:^(NSDictionary* spec_dict, NSUInteger idx, BOOL *stop) {
-      [specs  addObject:[CPSpec specFromDict:spec_dict]];
-    }];
-    dispatch_async(dispatch_get_main_queue(), ^{
-      _table.specs = specs;
-    });
-  }];
-
-  NSLog(@"COMPLETED CONNECTION REQUESTS");
+- (void)applicationWillTerminate:(NSNotification *)notification {
+  [MagicalRecord cleanUp];
 }
 
 - (void)testRuby {

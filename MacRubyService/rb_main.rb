@@ -26,7 +26,6 @@ end
 
 class ListenerDelegate
   def listener(listener, shouldAcceptNewConnection:newConnection)
-    NSLog("SERVICE: shouldAcceptNewConnection")
     newConnection.exportedInterface = NSXPCInterface.interfaceWithProtocol(NSProtocolFromString("MacRubyServiceProtocol"))
     newConnection.exportedObject = ExportedObject.new
     newConnection.resume

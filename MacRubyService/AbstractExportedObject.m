@@ -22,4 +22,17 @@
   completion([self valueForKey:key]);
 }
 
+- (void)stringForKey:(NSString *)key arguments:(NSDictionary*)arguments completion:(void (^)(NSString *))completion {
+  completion([self performSelector:NSSelectorFromString([key stringByAppendingString:@":"]) withObject:arguments]);
+}
+
+- (void)arrayForKey:(NSString*)key arguments:(NSDictionary*)arguments completion:(void (^)(NSArray*))completion {
+  completion([self performSelector:NSSelectorFromString([key stringByAppendingString:@":"]) withObject:arguments]);
+}
+
+- (void)dictionaryForKey:(NSString*)key arguments:(NSDictionary*)arguments completion:(void (^)(NSDictionary*))completion{
+  completion([self performSelector:NSSelectorFromString([key stringByAppendingString:@":"]) withObject:arguments]);
+}
+
+
 @end

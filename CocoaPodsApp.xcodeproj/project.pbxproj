@@ -16,7 +16,6 @@
 		E521039515FE239500127C9B /* gems in CopyFiles */ = {isa = PBXBuildFile; fileRef = E521039015FE235500127C9B /* gems */; };
 		E521F73315FE221F00127C9B /* pod in Copy Ruby Executables */ = {isa = PBXBuildFile; fileRef = E521F73115FE221F00127C9B /* pod */; };
 		E521F73415FE221F00127C9B /* ruby in Copy Ruby Executables */ = {isa = PBXBuildFile; fileRef = E521F73215FE221F00127C9B /* ruby */; };
-		E536203B15F580E400C2D4CC /* CPSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E536203A15F580E400C2D4CC /* CPSpec.m */; };
 		E54B9AE115F97DBA00AB19D3 /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E54B9AE015F97DBA00AB19D3 /* MacRuby.framework */; };
 		E54B9AE915F9818C00AB19D3 /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = E54B9AE315F97E2400AB19D3 /* rb_main.rb */; };
 		E555F02615FD0BBC00167373 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E591DA8215F27BB0006FB638 /* CoreData.framework */; };
@@ -31,6 +30,10 @@
 		E591DA9C15F27C5F006FB638 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = E591DA9B15F27C5F006FB638 /* Icon.icns */; };
 		E591E21D15F297AA006FB638 /* CPPodsTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = E591E21C15F297AA006FB638 /* CPPodsTableView.m */; };
 		E591E22115F29A0F006FB638 /* CPSpecTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E591E22015F29A0F006FB638 /* CPSpecTableViewCell.m */; };
+		E5B9CBDF15FE312200ACED8A /* CPCocoaPodsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B9CBDE15FE312200ACED8A /* CPCocoaPodsManager.m */; };
+		E5B9CBF815FE3FBC00ACED8A /* CPVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B9CBF715FE3FBC00ACED8A /* CPVersion.m */; };
+		E5B9CBFB15FE3FBC00ACED8A /* CPSet.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B9CBFA15FE3FBC00ACED8A /* CPSet.m */; };
+		E5B9CBFE15FE481A00ACED8A /* CPSpecification.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B9CBFD15FE481A00ACED8A /* CPSpecification.m */; };
 		E5C6F3E215FBA7CF0038976B /* exported_object.rb in Resources */ = {isa = PBXBuildFile; fileRef = E5C6F3E115FBA7CF0038976B /* exported_object.rb */; };
 		E5C6F3E415FBB2050038976B /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5C6F3E315FBB2050038976B /* ScriptingBridge.framework */; };
 /* End PBXBuildFile section */
@@ -96,8 +99,6 @@
 		E521039215FE235B00127C9B /* ruby */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ruby; path = AppVendor/ruby; sourceTree = "<group>"; };
 		E521F73115FE221F00127C9B /* pod */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = pod; path = AppVendor/bin/pod; sourceTree = "<group>"; };
 		E521F73215FE221F00127C9B /* ruby */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = ruby; path = AppVendor/bin/ruby; sourceTree = "<group>"; };
-		E536203915F580E400C2D4CC /* CPSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSpec.h; sourceTree = "<group>"; };
-		E536203A15F580E400C2D4CC /* CPSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSpec.m; sourceTree = "<group>"; };
 		E543D31D15F96F6C00A239B4 /* AbstractExportedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractExportedObject.h; sourceTree = "<group>"; };
 		E543D31E15F96F6C00A239B4 /* AbstractExportedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractExportedObject.m; sourceTree = "<group>"; };
 		E54B9AE015F97DBA00AB19D3 /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = Library/Frameworks/MacRuby.framework; sourceTree = DEVELOPER_DIR; };
@@ -121,6 +122,15 @@
 		E591E21C15F297AA006FB638 /* CPPodsTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPPodsTableView.m; sourceTree = "<group>"; };
 		E591E21F15F29A0F006FB638 /* CPSpecTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSpecTableViewCell.h; sourceTree = "<group>"; };
 		E591E22015F29A0F006FB638 /* CPSpecTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSpecTableViewCell.m; sourceTree = "<group>"; };
+		E5B9CBDD15FE312200ACED8A /* CPCocoaPodsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPCocoaPodsManager.h; sourceTree = "<group>"; };
+		E5B9CBDE15FE312200ACED8A /* CPCocoaPodsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPCocoaPodsManager.m; sourceTree = "<group>"; };
+		E5B9CBE015FE336700ACED8A /* CocoaPodsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocoaPodsModel.h; sourceTree = "<group>"; };
+		E5B9CBF615FE3FBC00ACED8A /* CPVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPVersion.h; sourceTree = "<group>"; };
+		E5B9CBF715FE3FBC00ACED8A /* CPVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPVersion.m; sourceTree = "<group>"; };
+		E5B9CBF915FE3FBC00ACED8A /* CPSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSet.h; sourceTree = "<group>"; };
+		E5B9CBFA15FE3FBC00ACED8A /* CPSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSet.m; sourceTree = "<group>"; };
+		E5B9CBFC15FE481A00ACED8A /* CPSpecification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSpecification.h; sourceTree = "<group>"; };
+		E5B9CBFD15FE481A00ACED8A /* CPSpecification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSpecification.m; sourceTree = "<group>"; };
 		E5C6F3E115FBA7CF0038976B /* exported_object.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = exported_object.rb; sourceTree = "<group>"; };
 		E5C6F3E315FBB2050038976B /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
 		E5C6F3E515FBB21A0038976B /* Xcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Xcode.h; path = ../Xcode.h; sourceTree = "<group>"; };
@@ -196,10 +206,15 @@
 		E536203D15F580E800C2D4CC /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				E555F05F15FD10A100167373 /* CocoaPodsApp.xcdatamodeld */,
 				E5C6F3E515FBB21A0038976B /* Xcode.h */,
-				E536203915F580E400C2D4CC /* CPSpec.h */,
-				E536203A15F580E400C2D4CC /* CPSpec.m */,
+				E5B9CBE015FE336700ACED8A /* CocoaPodsModel.h */,
+				E555F05F15FD10A100167373 /* CocoaPodsApp.xcdatamodeld */,
+				E5B9CBFC15FE481A00ACED8A /* CPSpecification.h */,
+				E5B9CBFD15FE481A00ACED8A /* CPSpecification.m */,
+				E5B9CBF915FE3FBC00ACED8A /* CPSet.h */,
+				E5B9CBFA15FE3FBC00ACED8A /* CPSet.m */,
+				E5B9CBF615FE3FBC00ACED8A /* CPVersion.h */,
+				E5B9CBF715FE3FBC00ACED8A /* CPVersion.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -265,6 +280,8 @@
 				E591DA9015F27BB0006FB638 /* CPAppDelegate.h */,
 				E591DA9115F27BB0006FB638 /* CPAppDelegate.m */,
 				E591DA9315F27BB0006FB638 /* MainMenu.xib */,
+				E5B9CBDD15FE312200ACED8A /* CPCocoaPodsManager.h */,
+				E5B9CBDE15FE312200ACED8A /* CPCocoaPodsManager.m */,
 				E536203E15F5820D00C2D4CC /* Views */,
 				E536203D15F580E800C2D4CC /* Model */,
 				E591DA8515F27BB0006FB638 /* Supporting Files */,
@@ -442,8 +459,11 @@
 				E591DA9215F27BB0006FB638 /* CPAppDelegate.m in Sources */,
 				E591E21D15F297AA006FB638 /* CPPodsTableView.m in Sources */,
 				E591E22115F29A0F006FB638 /* CPSpecTableViewCell.m in Sources */,
-				E536203B15F580E400C2D4CC /* CPSpec.m in Sources */,
 				E555F06115FD10A100167373 /* CocoaPodsApp.xcdatamodeld in Sources */,
+				E5B9CBDF15FE312200ACED8A /* CPCocoaPodsManager.m in Sources */,
+				E5B9CBF815FE3FBC00ACED8A /* CPVersion.m in Sources */,
+				E5B9CBFB15FE3FBC00ACED8A /* CPSet.m in Sources */,
+				E5B9CBFE15FE481A00ACED8A /* CPSpecification.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,6 +606,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C453DA64E3B8423FB942292C /* Pods.xcconfig */;
 			buildSettings = {
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = NO;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CocoaPodsApp/CocoaPodsApp-Prefix.pch";
@@ -599,6 +620,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C453DA64E3B8423FB942292C /* Pods.xcconfig */;
 			buildSettings = {
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = NO;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CocoaPodsApp/CocoaPodsApp-Prefix.pch";

@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>MagicalRecord 2.0.3 Reference</title>
+		<title>MagicalRecord HEAD based on 2.0.3 Reference</title>
 		<link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
 		<link rel="stylesheet" type="text/css" media="print" href="css/stylesPrint.css" />
 		<meta name="generator" content="appledoc 2.0.5 (build 789)" />
@@ -10,12 +10,12 @@
 	<body>
 		<header id="top_header">
 			<div id="library" class="hideInXcode">
-				<h1><a id="libraryTitle" href="index.html">MagicalRecord 2.0.3 </a></h1>
+				<h1><a id="libraryTitle" href="index.html">MagicalRecord HEAD based on 2.0.3 </a></h1>
 				<a id="developerHome" href="index.html">Saul Mora</a>
 			</div>
 			
 			<div id="title" role="banner">
-				<h1 class="hideInXcode">MagicalRecord 2.0.3 Reference</h1>
+				<h1 class="hideInXcode">MagicalRecord HEAD based on 2.0.3 Reference</h1>
 			</div>
 			<ul id="headerButtons" role="toolbar"></ul>
 		</header>
@@ -26,7 +26,7 @@
 				</div>
 				<div id="header">
 					<div class="section-header">
-						<h1 class="title title-header">MagicalRecord 2.0.3 Reference</h1>
+						<h1 class="title title-header">MagicalRecord HEAD based on 2.0.3 Reference</h1>
 					</div>		
 				</div>
 				<div id="container">
@@ -56,10 +56,31 @@
 <ol>
 <li>In your XCode Project, drag the <em><a href="Classes/MagicalRecord.html">MagicalRecord</a></em> folder (under the main folder) into your project.</li>
 <li>Add <em>CoreData+<a href="Classes/MagicalRecord.html">MagicalRecord</a>.h</em> file to your PCH file or your AppDelegate file.</li>
-<li>Optionally precees the <em>CoreData+<a href="Classes/MagicalRecord.html">MagicalRecord</a>.h</em> import with <code>#define MR_SHORTHAND</code> to your PCH file if you want to use <a href="Classes/MagicalRecord.html">MagicalRecord</a> methods without the <em>MR_prefix</em> like <code>findAll</code> instead of <code>MR_findAll</code></li>
+<li>Optionally preceed the <em>CoreData+<a href="Classes/MagicalRecord.html">MagicalRecord</a>.h</em> import with <code>#define MR_SHORTHAND</code> to your PCH file if you want to use <a href="Classes/MagicalRecord.html">MagicalRecord</a> methods without the <em>MR_prefix</em> like <code>findAll</code> instead of <code>MR_findAll</code></li>
 <li>Start writing code!</li>
 </ol>
 
+
+<h1>Requirements</h1>
+
+<p><a href="Classes/MagicalRecord.html">MagicalRecord</a> Platform Requirements:</p>
+
+<ul>
+<li>iOS5.0 and newer, or Mac OS 10.7 and newer</li>
+<li>ARC</li>
+</ul>
+
+
+<p>An iOS4 compatible version is available for use. Reference <a href="https://github.com/magicalpanda/MagicalRecord/tree/1.8.3">tag 1.8.3</a>.</p>
+
+<h2>Updating to 2.0</h2>
+
+<p><a href="Classes/MagicalRecord.html">MagicalRecord</a> 2.0 is considered a major update since there were some class and API refactorings that will effect previous installations of <a href="Classes/MagicalRecord.html">MagicalRecord</a> in your code. The most straight forward change is that <em>MagicalRecordHelpers</em> and <em>MRCoreDataAction</em> have both been replaced with a single class, <em><a href="Classes/MagicalRecord.html">MagicalRecord</a></em>.</p>
+
+<h2>ARC Support</h2>
+
+<p><a href="Classes/MagicalRecord.html">MagicalRecord</a> fully supports ARC out of the box, there is no configuration necessary.
+The last version to support manually managed memory is 1.8.3, and is available from the downloads page, or by switching to the 1.8.3 tag in the source.</p>
 
 <h1>Notes</h1>
 
@@ -79,15 +100,6 @@
 <h2>Twitter</h2>
 
 <p>Follow <a href="http://twitter.com/magicalrecord">@MagicalRecord</a> on twitter to stay up to date on twitter with the lastest updates to <a href="Classes/MagicalRecord.html">MagicalRecord</a> and for basic support</p>
-
-<h2>Updating to 2.0</h2>
-
-<p><a href="Classes/MagicalRecord.html">MagicalRecord</a> 2.0 is considered a major update since there were some class and API refactorings that will effect previous installations of <a href="Classes/MagicalRecord.html">MagicalRecord</a> in your code. The most straight forward change is that <em>MagicalRecordHelpers</em> and <em>MRCoreDataAction</em> have both been replaced with a single class, <em><a href="Classes/MagicalRecord.html">MagicalRecord</a></em>.</p>
-
-<h2>ARC Support</h2>
-
-<p><a href="Classes/MagicalRecord.html">MagicalRecord</a> fully supports ARC out of the box, there is no configuration necessary.
-The last version to support manually managed memory is 1.8.3, and is available from the downloads page, or by switching to the 1.8.3 tag in the source.</p>
 
 <h2>Nested Contexts</h2>
 
@@ -120,7 +132,9 @@ Next, somewhere in your app delegate, in either the applicationDidFinishLaunchin
 
 <p>Each call instantiates one of each piece of the Core Data stack, and provides getter and setter methods for these instances. These well known instances to MagicalRecord, and are recognized as &ldquo;defaults&rdquo;.</p>
 
-<p>And, before your app exits, you can use the clean up method:</p>
+<p>When using the default sqlite data store with the DEBUG flag set, if you change your model without creating a new model version, Magical Record will delete the old store and create a new one automatically. No more uninstall/reinstall every time you make a change!</p>
+
+<p>And finally, before your app exits, you can use the clean up method:</p>
 
 <pre><code>[MagicalRecord cleanUp];
 </code></pre>
@@ -175,7 +189,7 @@ Next, somewhere in your app delegate, in either the applicationDidFinishLaunchin
 <p>Most methods in <a href="Classes/MagicalRecord.html">MagicalRecord</a> return an NSArray of results. So, if you have an Entity called Person, related to a Department (as seen in various Apple Core Data documentation), to get all the Person entities from your Persistent Store:</p>
 
 <pre><code>//In order for this to work you need to add "#define MR_SHORTHAND" to your PCH file
-NSArray *people = [Person MR_findAll];
+NSArray *people = [Person findAll];
 
 // Otherwise you can use the longer, namespaced version
 NSArray *people = [Person MR_findAll];
@@ -462,7 +476,7 @@ There is no charge for Awesome.</p>
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2012 Saul Mora. All rights reserved. (Last updated: 2012-09-08)</span><br />
+						<p><span class="copyright">&copy; 2012 Saul Mora. All rights reserved. (Last updated: 2012-09-10)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
 						

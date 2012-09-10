@@ -5,9 +5,9 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleIdentifier</key>
-	<string>org.cocoapods.MagicalRecord-2.0.3</string>
+	<string>org.cocoapods.MagicalRecord-HEAD-based-on-2.0.3</string>
 	<key>CFBundleName</key>
-	<string>MagicalRecord 2.0.3 Documentation</string>
+	<string>MagicalRecord HEAD based on 2.0.3 Documentation</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
@@ -18,7 +18,7 @@
 	<string>Handy fetching, threading and data import helpers to make Core Data a little easier to use.</string>
 	
 	<key>DocSetFeedName</key>
-	<string>MagicalRecord 2.0.3 Documentation</string>
+	<string>MagicalRecord HEAD based on 2.0.3 Documentation</string>
 	
 	<key>DocSetMinimumXcodeVersion</key>
 	<string>3.0</string>
