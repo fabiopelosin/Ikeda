@@ -15,17 +15,24 @@ class ExportedObject < AbstractExportedObject
     Pod::VERSION.to_s
   end
 
-  # See http://rubydoc.info/github/CocoaPods/CocoaPods/master/Pod/Source
-  # See http://rubydoc.info/github/CocoaPods/CocoaPods/master/Pod/Specification
+  def specs_names
+    Pod::Source.all_sets.map {|set| {"name" => set.name} }
+  end
+
+
+  # http://rubydoc.info/github/CocoaPods/CocoaPods/master/Pod/Source
+  # http://rubydoc.info/github/CocoaPods/CocoaPods/master/Pod/Specification
+  # http://rubydoc.info/github/CocoaPods/CocoaPods/master/Pod/Specification/Set
   #
   def specs
     Pod::Source.all_sets.map do |set|
       spec = set.specification
       hash = {}
+      hash['versions'] = set.versions.map(&:to_s)
       %w|name version homepage summary description defined_in_file|.each do |attribute|
         hash[attribute] = spec.send(attribute).to_s
       end
-      # available_platforms
+      hash['available_platforms'] = spec.available_platforms.map(&:to_s)
       hash
     end
   end

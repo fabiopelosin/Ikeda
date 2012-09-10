@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSPersistentStoreCoordinator+MagicalRecordShortHand.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSPersistentStoreCoordinator(MagicalRecordShortHand)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>
+			
+			<NodeRef refid="29"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSPersistentStoreCoordinator(MagicalRecordShortHand)/defaultStoreCoordinator</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSPersistentStoreCoordinator *)defaultStoreCoordinator</Declaration>
+			
+			
+			<Anchor>//api/name/defaultStoreCoordinator</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSPersistentStoreCoordinator(MagicalRecordShortHand)/setDefaultStoreCoordinator:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (void)setDefaultStoreCoordinator:(NSPersistentStoreCoordinator *)coordinator</Declaration>
+			
+			
+			<Anchor>//api/name/setDefaultStoreCoordinator:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSPersistentStoreCoordinator(MagicalRecordShortHand)/coordinatorWithInMemoryStore</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSPersistentStoreCoordinator *)coordinatorWithInMemoryStore</Declaration>
+			
+			
+			<Anchor>//api/name/coordinatorWithInMemoryStore</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSPersistentStoreCoordinator(MagicalRecordShortHand)/newPersistentStoreCoordinator</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSPersistentStoreCoordinator *)newPersistentStoreCoordinator</Declaration>
+			
+			
+			<Anchor>//api/name/newPersistentStoreCoordinator</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSPersistentStoreCoordinator(MagicalRecordShortHand)/coordinatorWithSqliteStoreNamed:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSPersistentStoreCoordinator *)coordinatorWithSqliteStoreNamed:(NSString *)storeFileName</Declaration>
+			
+			
+			<Anchor>//api/name/coordinatorWithSqliteStoreNamed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSPersistentStoreCoordinator(MagicalRecordShortHand)/coordinatorWithAutoMigratingSqliteStoreNamed:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSPersistentStoreCoordinator *)coordinatorWithAutoMigratingSqliteStoreNamed:(NSString *)storeFileName</Declaration>
+			
+			
+			<Anchor>//api/name/coordinatorWithAutoMigratingSqliteStoreNamed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSPersistentStoreCoordinator(MagicalRecordShortHand)/coordinatorWithPersitentStore:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSPersistentStoreCoordinator *)coordinatorWithPersitentStore:(NSPersistentStore *)persistentStore</Declaration>
+			
+			
+			<Anchor>//api/name/coordinatorWithPersitentStore:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSPersistentStoreCoordinator(MagicalRecordShortHand)/coordinatorWithiCloudContainerID:contentNameKey:localStoreNamed:cloudStorePathComponent:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSPersistentStoreCoordinator *)coordinatorWithiCloudContainerID:(NSString *)containerID contentNameKey:(NSString *)contentNameKey localStoreNamed:(NSString *)localStoreName cloudStorePathComponent:(NSString *)subPathComponent</Declaration>
+			
+			
+			<Anchor>//api/name/coordinatorWithiCloudContainerID:contentNameKey:localStoreNamed:cloudStorePathComponent:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSPersistentStoreCoordinator(MagicalRecordShortHand)/coordinatorWithiCloudContainerID:contentNameKey:localStoreNamed:cloudStorePathComponent:completion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSPersistentStoreCoordinator *)coordinatorWithiCloudContainerID:(NSString *)containerID contentNameKey:(NSString *)contentNameKey localStoreNamed:(NSString *)localStoreName cloudStorePathComponent:(NSString *)subPathComponent completion:(void ( ^ ) ( void ))completionHandler</Declaration>
+			
+			
+			<Anchor>//api/name/coordinatorWithiCloudContainerID:contentNameKey:localStoreNamed:cloudStorePathComponent:completion:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSPersistentStoreCoordinator(MagicalRecordShortHand)/addInMemoryStore</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>- (NSPersistentStore *)addInMemoryStore</Declaration>
+			
+			
+			<Anchor>//api/name/addInMemoryStore</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSPersistentStoreCoordinator(MagicalRecordShortHand)/addAutoMigratingSqliteStoreNamed:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>- (NSPersistentStore *)addAutoMigratingSqliteStoreNamed:(NSString *)storeFileName</Declaration>
+			
+			
+			<Anchor>//api/name/addAutoMigratingSqliteStoreNamed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSPersistentStoreCoordinator(MagicalRecordShortHand)/addSqliteStoreNamed:withOptions:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>- (NSPersistentStore *)addSqliteStoreNamed:(id)storeFileName withOptions:(__autoreleasing NSDictionary *)options</Declaration>
+			
+			
+			<Anchor>//api/name/addSqliteStoreNamed:withOptions:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSPersistentStoreCoordinator(MagicalRecordShortHand)/addiCloudContainerID:contentNameKey:localStoreNamed:cloudStorePathComponent:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>- (void)addiCloudContainerID:(NSString *)containerID contentNameKey:(NSString *)contentNameKey localStoreNamed:(NSString *)localStoreName cloudStorePathComponent:(NSString *)subPathComponent</Declaration>
+			
+			
+			<Anchor>//api/name/addiCloudContainerID:contentNameKey:localStoreNamed:cloudStorePathComponent:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSPersistentStoreCoordinator(MagicalRecordShortHand)/addiCloudContainerID:contentNameKey:localStoreNamed:cloudStorePathComponent:completion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>- (void)addiCloudContainerID:(NSString *)containerID contentNameKey:(NSString *)contentNameKey localStoreNamed:(NSString *)localStoreName cloudStorePathComponent:(NSString *)subPathComponent completion:(void ( ^ ) ( void ))completionBlock</Declaration>
+			
+			
+			<Anchor>//api/name/addiCloudContainerID:contentNameKey:localStoreNamed:cloudStorePathComponent:completion:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

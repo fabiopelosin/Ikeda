@@ -11,5 +11,6 @@
 @interface CPPodsTableView : TUIView <TUITableViewDelegate, TUITableViewDataSource>
 
 @property (nonatomic, strong) NSArray *specs;
+@property (nonatomic, strong) NSArrayController *specsArrayController;
 
 @end

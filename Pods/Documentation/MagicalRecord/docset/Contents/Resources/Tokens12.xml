@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSManagedObject+MagicalRequests.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSManagedObject(MagicalRequests)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObject+MagicalRequests.h</DeclaredIn>
+			
+			<NodeRef refid="12"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRequests)/MR_createFetchRequest</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObject+MagicalRequests.h</DeclaredIn>			
+			
+			<Declaration>+ (NSFetchRequest *)MR_createFetchRequest</Declaration>
+			
+			
+			<Anchor>//api/name/MR_createFetchRequest</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRequests)/MR_createFetchRequestInContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObject+MagicalRequests.h</DeclaredIn>			
+			
+			<Declaration>+ (NSFetchRequest *)MR_createFetchRequestInContext:(NSManagedObjectContext *)context</Declaration>
+			
+			
+			<Anchor>//api/name/MR_createFetchRequestInContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRequests)/MR_requestAll</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObject+MagicalRequests.h</DeclaredIn>			
+			
+			<Declaration>+ (NSFetchRequest *)MR_requestAll</Declaration>
+			
+			
+			<Anchor>//api/name/MR_requestAll</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRequests)/MR_requestAllInContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObject+MagicalRequests.h</DeclaredIn>			
+			
+			<Declaration>+ (NSFetchRequest *)MR_requestAllInContext:(NSManagedObjectContext *)context</Declaration>
+			
+			
+			<Anchor>//api/name/MR_requestAllInContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRequests)/MR_requestAllWithPredicate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObject+MagicalRequests.h</DeclaredIn>			
+			
+			<Declaration>+ (NSFetchRequest *)MR_requestAllWithPredicate:(NSPredicate *)searchTerm</Declaration>
+			
+			
+			<Anchor>//api/name/MR_requestAllWithPredicate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRequests)/MR_requestAllWithPredicate:inContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObject+MagicalRequests.h</DeclaredIn>			
+			
+			<Declaration>+ (NSFetchRequest *)MR_requestAllWithPredicate:(NSPredicate *)searchTerm inContext:(NSManagedObjectContext *)context</Declaration>
+			
+			
+			<Anchor>//api/name/MR_requestAllWithPredicate:inContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRequests)/MR_requestAllWhere:isEqualTo:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObject+MagicalRequests.h</DeclaredIn>			
+			
+			<Declaration>+ (NSFetchRequest *)MR_requestAllWhere:(NSString *)property isEqualTo:(id)value</Declaration>
+			
+			
+			<Anchor>//api/name/MR_requestAllWhere:isEqualTo:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRequests)/MR_requestAllWhere:isEqualTo:inContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObject+MagicalRequests.h</DeclaredIn>			
+			
+			<Declaration>+ (NSFetchRequest *)MR_requestAllWhere:(NSString *)property isEqualTo:(id)value inContext:(NSManagedObjectContext *)context</Declaration>
+			
+			
+			<Anchor>//api/name/MR_requestAllWhere:isEqualTo:inContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRequests)/MR_requestFirstWithPredicate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObject+MagicalRequests.h</DeclaredIn>			
+			
+			<Declaration>+ (NSFetchRequest *)MR_requestFirstWithPredicate:(NSPredicate *)searchTerm</Declaration>
+			
+			
+			<Anchor>//api/name/MR_requestFirstWithPredicate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRequests)/MR_requestFirstWithPredicate:inContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObject+MagicalRequests.h</DeclaredIn>			
+			
+			<Declaration>+ (NSFetchRequest *)MR_requestFirstWithPredicate:(NSPredicate *)searchTerm inContext:(NSManagedObjectContext *)context</Declaration>
+			
+			
+			<Anchor>//api/name/MR_requestFirstWithPredicate:inContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRequests)/MR_requestFirstByAttribute:withValue:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObject+MagicalRequests.h</DeclaredIn>			
+			
+			<Declaration>+ (NSFetchRequest *)MR_requestFirstByAttribute:(NSString *)attribute withValue:(id)searchValue</Declaration>
+			
+			
+			<Anchor>//api/name/MR_requestFirstByAttribute:withValue:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRequests)/MR_requestFirstByAttribute:withValue:inContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObject+MagicalRequests.h</DeclaredIn>			
+			
+			<Declaration>+ (NSFetchRequest *)MR_requestFirstByAttribute:(NSString *)attribute withValue:(id)searchValue inContext:(NSManagedObjectContext *)context</Declaration>
+			
+			
+			<Anchor>//api/name/MR_requestFirstByAttribute:withValue:inContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRequests)/MR_requestAllSortedBy:ascending:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObject+MagicalRequests.h</DeclaredIn>			
+			
+			<Declaration>+ (NSFetchRequest *)MR_requestAllSortedBy:(NSString *)sortTerm ascending:(BOOL)ascending</Declaration>
+			
+			
+			<Anchor>//api/name/MR_requestAllSortedBy:ascending:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRequests)/MR_requestAllSortedBy:ascending:inContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObject+MagicalRequests.h</DeclaredIn>			
+			
+			<Declaration>+ (NSFetchRequest *)MR_requestAllSortedBy:(NSString *)sortTerm ascending:(BOOL)ascending inContext:(NSManagedObjectContext *)context</Declaration>
+			
+			
+			<Anchor>//api/name/MR_requestAllSortedBy:ascending:inContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRequests)/MR_requestAllSortedBy:ascending:withPredicate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObject+MagicalRequests.h</DeclaredIn>			
+			
+			<Declaration>+ (NSFetchRequest *)MR_requestAllSortedBy:(NSString *)sortTerm ascending:(BOOL)ascending withPredicate:(NSPredicate *)searchTerm</Declaration>
+			
+			
+			<Anchor>//api/name/MR_requestAllSortedBy:ascending:withPredicate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRequests)/MR_requestAllSortedBy:ascending:withPredicate:inContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObject+MagicalRequests.h</DeclaredIn>			
+			
+			<Declaration>+ (NSFetchRequest *)MR_requestAllSortedBy:(NSString *)sortTerm ascending:(BOOL)ascending withPredicate:(NSPredicate *)searchTerm inContext:(NSManagedObjectContext *)context</Declaration>
+			
+			
+			<Anchor>//api/name/MR_requestAllSortedBy:ascending:withPredicate:inContext:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

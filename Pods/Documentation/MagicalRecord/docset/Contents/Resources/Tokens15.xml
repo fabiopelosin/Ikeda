@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSManagedObjectContext+MagicalObservingShortHand.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSManagedObjectContext(MagicalObservingShortHand)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>
+			
+			<NodeRef refid="15"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObjectContext(MagicalObservingShortHand)/observeContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>- (void)observeContext:(NSManagedObjectContext *)otherContext</Declaration>
+			
+			
+			<Anchor>//api/name/observeContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObjectContext(MagicalObservingShortHand)/stopObservingContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>- (void)stopObservingContext:(NSManagedObjectContext *)otherContext</Declaration>
+			
+			
+			<Anchor>//api/name/stopObservingContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObjectContext(MagicalObservingShortHand)/observeContextOnMainThread:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>- (void)observeContextOnMainThread:(NSManagedObjectContext *)otherContext</Declaration>
+			
+			
+			<Anchor>//api/name/observeContextOnMainThread:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObjectContext(MagicalObservingShortHand)/observeiCloudChangesInCoordinator:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>- (void)observeiCloudChangesInCoordinator:(NSPersistentStoreCoordinator *)coordinator</Declaration>
+			
+			
+			<Anchor>//api/name/observeiCloudChangesInCoordinator:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObjectContext(MagicalObservingShortHand)/stopObservingiCloudChangesInCoordinator:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>- (void)stopObservingiCloudChangesInCoordinator:(NSPersistentStoreCoordinator *)coordinator</Declaration>
+			
+			
+			<Anchor>//api/name/stopObservingiCloudChangesInCoordinator:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

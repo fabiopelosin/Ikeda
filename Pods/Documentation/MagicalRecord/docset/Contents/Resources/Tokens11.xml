@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSManagedObject+MagicalRecord_DataImportShortHand.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSManagedObject(MagicalRecord_DataImportShortHand)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>
+			
+			<NodeRef refid="11"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecord_DataImportShortHand)/importValuesForKeysWithObject:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)importValuesForKeysWithObject:(id)objectData</Declaration>
+			
+			
+			<Anchor>//api/name/importValuesForKeysWithObject:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecord_DataImportShortHand)/importFromObject:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (id)importFromObject:(id)data</Declaration>
+			
+			
+			<Anchor>//api/name/importFromObject:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecord_DataImportShortHand)/importFromObject:inContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (id)importFromObject:(id)data inContext:(NSManagedObjectContext *)context</Declaration>
+			
+			
+			<Anchor>//api/name/importFromObject:inContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecord_DataImportShortHand)/importFromArray:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSArray *)importFromArray:(NSArray *)listOfObjectData</Declaration>
+			
+			
+			<Anchor>//api/name/importFromArray:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecord_DataImportShortHand)/importFromArray:inContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSArray *)importFromArray:(NSArray *)listOfObjectData inContext:(NSManagedObjectContext *)context</Declaration>
+			
+			
+			<Anchor>//api/name/importFromArray:inContext:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

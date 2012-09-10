@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSManagedObjectContext+MagicalThreadingShortHand.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSManagedObjectContext(MagicalThreadingShortHand)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>
+			
+			<NodeRef refid="21"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObjectContext(MagicalThreadingShortHand)/contextForCurrentThread</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSManagedObjectContext *)contextForCurrentThread</Declaration>
+			
+			
+			<Anchor>//api/name/contextForCurrentThread</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObjectContext(MagicalThreadingShortHand)/contextThatNotifiesDefaultContextOnMainThread</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSManagedObjectContext *)contextThatNotifiesDefaultContextOnMainThread</Declaration>
+			
+			
+			<Anchor>//api/name/contextThatNotifiesDefaultContextOnMainThread</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObjectContext(MagicalThreadingShortHand)/contextThatNotifiesDefaultContextOnMainThreadWithCoordinator:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSManagedObjectContext *)contextThatNotifiesDefaultContextOnMainThreadWithCoordinator:(NSPersistentStoreCoordinator *)coordinator</Declaration>
+			
+			
+			<Anchor>//api/name/contextThatNotifiesDefaultContextOnMainThreadWithCoordinator:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObjectContext(MagicalThreadingShortHand)/resetContextForCurrentThread</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (void)resetContextForCurrentThread</Declaration>
+			
+			
+			<Anchor>//api/name/resetContextForCurrentThread</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

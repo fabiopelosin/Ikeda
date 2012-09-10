@@ -12,16 +12,23 @@
 #import "CPSpec.h"
 #import "MacRubyServiceProtocol.h"
 #import "Xcode.h"
+#import "CoreData+MagicalRecord.h"
 
 @implementation CPAppDelegate {
   CPPodsTableView *_table;
 }
+
+@synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
+@synthesize managedObjectModel = _managedObjectModel;
+@synthesize managedObjectContext = _managedObjectContext;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
 	TUINSView* contentView = self.window.contentView;
 	_table = [[CPPodsTableView alloc] initWithFrame:contentView.bounds];
   contentView.rootView = _table;
+
+  //[MagicalRecord setupCoreDataStack];
 
   [self testRuby];
   [self startMacRubyConnection];

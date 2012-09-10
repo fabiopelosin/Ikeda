@@ -1,0 +1,740 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>NSManagedObject(MagicalRecordShortHand) Category Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 789)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">MagicalRecord 2.0.3 </a></h1>
+				<a id="developerHome" href="../index.html">Saul Mora</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">NSManagedObject(MagicalRecordShortHand) Category Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/ascendingSortDescriptors:">&nbsp;&nbsp;&nbsp;&nbsp;+ ascendingSortDescriptors:</option>
+	
+	<option value="//api/name/createEntity">&nbsp;&nbsp;&nbsp;&nbsp;+ createEntity</option>
+	
+	<option value="//api/name/createInContext:">&nbsp;&nbsp;&nbsp;&nbsp;+ createInContext:</option>
+	
+	<option value="//api/name/defaultBatchSize">&nbsp;&nbsp;&nbsp;&nbsp;+ defaultBatchSize</option>
+	
+	<option value="//api/name/deleteAllMatchingPredicate:">&nbsp;&nbsp;&nbsp;&nbsp;+ deleteAllMatchingPredicate:</option>
+	
+	<option value="//api/name/deleteAllMatchingPredicate:inContext:">&nbsp;&nbsp;&nbsp;&nbsp;+ deleteAllMatchingPredicate:inContext:</option>
+	
+	<option value="//api/name/descendingSortDescriptors:">&nbsp;&nbsp;&nbsp;&nbsp;+ descendingSortDescriptors:</option>
+	
+	<option value="//api/name/entityDescription">&nbsp;&nbsp;&nbsp;&nbsp;+ entityDescription</option>
+	
+	<option value="//api/name/entityDescriptionInContext:">&nbsp;&nbsp;&nbsp;&nbsp;+ entityDescriptionInContext:</option>
+	
+	<option value="//api/name/executeFetchRequest:">&nbsp;&nbsp;&nbsp;&nbsp;+ executeFetchRequest:</option>
+	
+	<option value="//api/name/executeFetchRequest:inContext:">&nbsp;&nbsp;&nbsp;&nbsp;+ executeFetchRequest:inContext:</option>
+	
+	<option value="//api/name/executeFetchRequestAndReturnFirstObject:">&nbsp;&nbsp;&nbsp;&nbsp;+ executeFetchRequestAndReturnFirstObject:</option>
+	
+	<option value="//api/name/executeFetchRequestAndReturnFirstObject:inContext:">&nbsp;&nbsp;&nbsp;&nbsp;+ executeFetchRequestAndReturnFirstObject:inContext:</option>
+	
+	<option value="//api/name/performFetch:">&nbsp;&nbsp;&nbsp;&nbsp;+ performFetch:</option>
+	
+	<option value="//api/name/propertiesNamed:">&nbsp;&nbsp;&nbsp;&nbsp;+ propertiesNamed:</option>
+	
+	<option value="//api/name/setDefaultBatchSize:">&nbsp;&nbsp;&nbsp;&nbsp;+ setDefaultBatchSize:</option>
+	
+	<option value="//api/name/truncateAll">&nbsp;&nbsp;&nbsp;&nbsp;+ truncateAll</option>
+	
+	<option value="//api/name/truncateAllInContext:">&nbsp;&nbsp;&nbsp;&nbsp;+ truncateAllInContext:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/deleteEntity">&nbsp;&nbsp;&nbsp;&nbsp;- deleteEntity</option>
+	
+	<option value="//api/name/deleteInContext:">&nbsp;&nbsp;&nbsp;&nbsp;- deleteInContext:</option>
+	
+	<option value="//api/name/inContext:">&nbsp;&nbsp;&nbsp;&nbsp;- inContext:</option>
+	
+	<option value="//api/name/inThreadContext">&nbsp;&nbsp;&nbsp;&nbsp;- inThreadContext</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/ascendingSortDescriptors:">ascendingSortDescriptors:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createEntity">createEntity</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createInContext:">createInContext:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/defaultBatchSize">defaultBatchSize</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deleteAllMatchingPredicate:">deleteAllMatchingPredicate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deleteAllMatchingPredicate:inContext:">deleteAllMatchingPredicate:inContext:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/descendingSortDescriptors:">descendingSortDescriptors:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/entityDescription">entityDescription</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/entityDescriptionInContext:">entityDescriptionInContext:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/executeFetchRequest:">executeFetchRequest:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/executeFetchRequest:inContext:">executeFetchRequest:inContext:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/executeFetchRequestAndReturnFirstObject:">executeFetchRequestAndReturnFirstObject:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/executeFetchRequestAndReturnFirstObject:inContext:">executeFetchRequestAndReturnFirstObject:inContext:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/performFetch:">performFetch:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/propertiesNamed:">propertiesNamed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setDefaultBatchSize:">setDefaultBatchSize:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/truncateAll">truncateAll</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/truncateAllInContext:">truncateAllInContext:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deleteEntity">deleteEntity</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deleteInContext:">deleteInContext:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/inContext:">inContext:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/inThreadContext">inThreadContext</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="NSManagedObject(MagicalRecordShortHand) Category Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">NSManagedObject(MagicalRecordShortHand) Category Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">MagicalRecordShorthand.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/defaultBatchSize">+&nbsp;defaultBatchSize</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setDefaultBatchSize:">+&nbsp;setDefaultBatchSize:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/executeFetchRequest:">+&nbsp;executeFetchRequest:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/executeFetchRequest:inContext:">+&nbsp;executeFetchRequest:inContext:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/executeFetchRequestAndReturnFirstObject:">+&nbsp;executeFetchRequestAndReturnFirstObject:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/executeFetchRequestAndReturnFirstObject:inContext:">+&nbsp;executeFetchRequestAndReturnFirstObject:inContext:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/performFetch:">+&nbsp;performFetch:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/entityDescription">+&nbsp;entityDescription</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/entityDescriptionInContext:">+&nbsp;entityDescriptionInContext:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/propertiesNamed:">+&nbsp;propertiesNamed:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createEntity">+&nbsp;createEntity</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createInContext:">+&nbsp;createInContext:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deleteEntity">&ndash;&nbsp;deleteEntity</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deleteInContext:">&ndash;&nbsp;deleteInContext:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deleteAllMatchingPredicate:">+&nbsp;deleteAllMatchingPredicate:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deleteAllMatchingPredicate:inContext:">+&nbsp;deleteAllMatchingPredicate:inContext:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/truncateAll">+&nbsp;truncateAll</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/truncateAllInContext:">+&nbsp;truncateAllInContext:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/ascendingSortDescriptors:">+&nbsp;ascendingSortDescriptors:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/descendingSortDescriptors:">+&nbsp;descendingSortDescriptors:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/inContext:">&ndash;&nbsp;inContext:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/inThreadContext">&ndash;&nbsp;inThreadContext</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/ascendingSortDescriptors:" title="ascendingSortDescriptors:"></a>
+	<h3 class="subsubtitle method-title">ascendingSortDescriptors:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (NSArray *)ascendingSortDescriptors:(NSArray *)<em>attributesToSortBy</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createEntity" title="createEntity"></a>
+	<h3 class="subsubtitle method-title">createEntity</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (id)createEntity</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createInContext:" title="createInContext:"></a>
+	<h3 class="subsubtitle method-title">createInContext:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (id)createInContext:(NSManagedObjectContext *)<em>context</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/defaultBatchSize" title="defaultBatchSize"></a>
+	<h3 class="subsubtitle method-title">defaultBatchSize</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (NSUInteger)defaultBatchSize</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deleteAllMatchingPredicate:" title="deleteAllMatchingPredicate:"></a>
+	<h3 class="subsubtitle method-title">deleteAllMatchingPredicate:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (BOOL)deleteAllMatchingPredicate:(NSPredicate *)<em>predicate</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deleteAllMatchingPredicate:inContext:" title="deleteAllMatchingPredicate:inContext:"></a>
+	<h3 class="subsubtitle method-title">deleteAllMatchingPredicate:inContext:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (BOOL)deleteAllMatchingPredicate:(NSPredicate *)<em>predicate</em> inContext:(NSManagedObjectContext *)<em>context</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/descendingSortDescriptors:" title="descendingSortDescriptors:"></a>
+	<h3 class="subsubtitle method-title">descendingSortDescriptors:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (NSArray *)descendingSortDescriptors:(NSArray *)<em>attributesToSortBy</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/entityDescription" title="entityDescription"></a>
+	<h3 class="subsubtitle method-title">entityDescription</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (NSEntityDescription *)entityDescription</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/entityDescriptionInContext:" title="entityDescriptionInContext:"></a>
+	<h3 class="subsubtitle method-title">entityDescriptionInContext:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (NSEntityDescription *)entityDescriptionInContext:(NSManagedObjectContext *)<em>context</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/executeFetchRequest:" title="executeFetchRequest:"></a>
+	<h3 class="subsubtitle method-title">executeFetchRequest:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (NSArray *)executeFetchRequest:(NSFetchRequest *)<em>request</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/executeFetchRequest:inContext:" title="executeFetchRequest:inContext:"></a>
+	<h3 class="subsubtitle method-title">executeFetchRequest:inContext:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (NSArray *)executeFetchRequest:(NSFetchRequest *)<em>request</em> inContext:(NSManagedObjectContext *)<em>context</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/executeFetchRequestAndReturnFirstObject:" title="executeFetchRequestAndReturnFirstObject:"></a>
+	<h3 class="subsubtitle method-title">executeFetchRequestAndReturnFirstObject:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (id)executeFetchRequestAndReturnFirstObject:(NSFetchRequest *)<em>request</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/executeFetchRequestAndReturnFirstObject:inContext:" title="executeFetchRequestAndReturnFirstObject:inContext:"></a>
+	<h3 class="subsubtitle method-title">executeFetchRequestAndReturnFirstObject:inContext:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (id)executeFetchRequestAndReturnFirstObject:(NSFetchRequest *)<em>request</em> inContext:(NSManagedObjectContext *)<em>context</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/performFetch:" title="performFetch:"></a>
+	<h3 class="subsubtitle method-title">performFetch:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (void)performFetch:(NSFetchedResultsController *)<em>controller</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/propertiesNamed:" title="propertiesNamed:"></a>
+	<h3 class="subsubtitle method-title">propertiesNamed:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (NSArray *)propertiesNamed:(NSArray *)<em>properties</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setDefaultBatchSize:" title="setDefaultBatchSize:"></a>
+	<h3 class="subsubtitle method-title">setDefaultBatchSize:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (void)setDefaultBatchSize:(NSUInteger)<em>newBatchSize</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/truncateAll" title="truncateAll"></a>
+	<h3 class="subsubtitle method-title">truncateAll</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (BOOL)truncateAll</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/truncateAllInContext:" title="truncateAllInContext:"></a>
+	<h3 class="subsubtitle method-title">truncateAllInContext:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (BOOL)truncateAllInContext:(NSManagedObjectContext *)<em>context</em></code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/deleteEntity" title="deleteEntity"></a>
+	<h3 class="subsubtitle method-title">deleteEntity</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)deleteEntity</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deleteInContext:" title="deleteInContext:"></a>
+	<h3 class="subsubtitle method-title">deleteInContext:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)deleteInContext:(NSManagedObjectContext *)<em>context</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/inContext:" title="inContext:"></a>
+	<h3 class="subsubtitle method-title">inContext:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id)inContext:(NSManagedObjectContext *)<em>otherContext</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/inThreadContext" title="inThreadContext"></a>
+	<h3 class="subsubtitle method-title">inThreadContext</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (id)inThreadContext</code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Saul Mora. All rights reserved. (Last updated: 2012-09-08)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

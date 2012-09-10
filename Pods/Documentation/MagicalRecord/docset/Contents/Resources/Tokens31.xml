@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSString+MagicalRecord_DataImport.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSString(MagicalRecord_DataImport)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSString+MagicalDataImport.h</DeclaredIn>
+			
+			<NodeRef refid="31"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(MagicalRecord_DataImport)/MR_capitalizedFirstCharacterString</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSString+MagicalDataImport.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)MR_capitalizedFirstCharacterString</Declaration>
+			
+			
+			<Anchor>//api/name/MR_capitalizedFirstCharacterString</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

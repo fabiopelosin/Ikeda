@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSManagedObject+MagicalAggregation.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSManagedObject(MagicalAggregation)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObject+MagicalAggregation.h</DeclaredIn>
+			
+			<NodeRef refid="4"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalAggregation)/MR_numberOfEntities</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObject+MagicalAggregation.h</DeclaredIn>			
+			
+			<Declaration>+ (NSNumber *)MR_numberOfEntities</Declaration>
+			
+			
+			<Anchor>//api/name/MR_numberOfEntities</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalAggregation)/MR_numberOfEntitiesWithContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObject+MagicalAggregation.h</DeclaredIn>			
+			
+			<Declaration>+ (NSNumber *)MR_numberOfEntitiesWithContext:(NSManagedObjectContext *)context</Declaration>
+			
+			
+			<Anchor>//api/name/MR_numberOfEntitiesWithContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalAggregation)/MR_numberOfEntitiesWithPredicate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObject+MagicalAggregation.h</DeclaredIn>			
+			
+			<Declaration>+ (NSNumber *)MR_numberOfEntitiesWithPredicate:(NSPredicate *)searchTerm</Declaration>
+			
+			
+			<Anchor>//api/name/MR_numberOfEntitiesWithPredicate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalAggregation)/MR_numberOfEntitiesWithPredicate:inContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObject+MagicalAggregation.h</DeclaredIn>			
+			
+			<Declaration>+ (NSNumber *)MR_numberOfEntitiesWithPredicate:(NSPredicate *)searchTerm inContext:(NSManagedObjectContext *)context</Declaration>
+			
+			
+			<Anchor>//api/name/MR_numberOfEntitiesWithPredicate:inContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalAggregation)/MR_countOfEntities</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObject+MagicalAggregation.h</DeclaredIn>			
+			
+			<Declaration>+ (NSUInteger)MR_countOfEntities</Declaration>
+			
+			
+			<Anchor>//api/name/MR_countOfEntities</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalAggregation)/MR_countOfEntitiesWithContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObject+MagicalAggregation.h</DeclaredIn>			
+			
+			<Declaration>+ (NSUInteger)MR_countOfEntitiesWithContext:(NSManagedObjectContext *)context</Declaration>
+			
+			
+			<Anchor>//api/name/MR_countOfEntitiesWithContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalAggregation)/MR_countOfEntitiesWithPredicate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObject+MagicalAggregation.h</DeclaredIn>			
+			
+			<Declaration>+ (NSUInteger)MR_countOfEntitiesWithPredicate:(NSPredicate *)searchFilter</Declaration>
+			
+			
+			<Anchor>//api/name/MR_countOfEntitiesWithPredicate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalAggregation)/MR_countOfEntitiesWithPredicate:inContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObject+MagicalAggregation.h</DeclaredIn>			
+			
+			<Declaration>+ (NSUInteger)MR_countOfEntitiesWithPredicate:(NSPredicate *)searchFilter inContext:(NSManagedObjectContext *)context</Declaration>
+			
+			
+			<Anchor>//api/name/MR_countOfEntitiesWithPredicate:inContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalAggregation)/MR_hasAtLeastOneEntity</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObject+MagicalAggregation.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)MR_hasAtLeastOneEntity</Declaration>
+			
+			
+			<Anchor>//api/name/MR_hasAtLeastOneEntity</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalAggregation)/MR_hasAtLeastOneEntityInContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObject+MagicalAggregation.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)MR_hasAtLeastOneEntityInContext:(NSManagedObjectContext *)context</Declaration>
+			
+			
+			<Anchor>//api/name/MR_hasAtLeastOneEntityInContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalAggregation)/MR_aggregateOperation:onAttribute:withPredicate:inContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObject+MagicalAggregation.h</DeclaredIn>			
+			
+			<Declaration>+ (NSNumber *)MR_aggregateOperation:(NSString *)function onAttribute:(NSString *)attributeName withPredicate:(NSPredicate *)predicate inContext:(NSManagedObjectContext *)context</Declaration>
+			
+			
+			<Anchor>//api/name/MR_aggregateOperation:onAttribute:withPredicate:inContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalAggregation)/MR_aggregateOperation:onAttribute:withPredicate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObject+MagicalAggregation.h</DeclaredIn>			
+			
+			<Declaration>+ (NSNumber *)MR_aggregateOperation:(NSString *)function onAttribute:(NSString *)attributeName withPredicate:(NSPredicate *)predicate</Declaration>
+			
+			
+			<Anchor>//api/name/MR_aggregateOperation:onAttribute:withPredicate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalAggregation)/MR_objectWithMinValueFor:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObject+MagicalAggregation.h</DeclaredIn>			
+			
+			<Declaration>- (id)MR_objectWithMinValueFor:(NSString *)property</Declaration>
+			
+			
+			<Anchor>//api/name/MR_objectWithMinValueFor:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalAggregation)/MR_objectWithMinValueFor:inContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObject+MagicalAggregation.h</DeclaredIn>			
+			
+			<Declaration>- (id)MR_objectWithMinValueFor:(NSString *)property inContext:(NSManagedObjectContext *)context</Declaration>
+			
+			
+			<Anchor>//api/name/MR_objectWithMinValueFor:inContext:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

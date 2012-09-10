@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSObject+MagicalRecord_DataImport.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSObject(MagicalRecord_DataImport)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSObject+MagicalDataImport.h</DeclaredIn>
+			
+			<NodeRef refid="25"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(MagicalRecord_DataImport)/MR_lookupKeyForAttribute:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSObject+MagicalDataImport.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)MR_lookupKeyForAttribute:(NSAttributeDescription *)attributeInfo</Declaration>
+			
+			
+			<Anchor>//api/name/MR_lookupKeyForAttribute:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(MagicalRecord_DataImport)/MR_valueForAttribute:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSObject+MagicalDataImport.h</DeclaredIn>			
+			
+			<Declaration>- (id)MR_valueForAttribute:(NSAttributeDescription *)attributeInfo</Declaration>
+			
+			
+			<Anchor>//api/name/MR_valueForAttribute:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(MagicalRecord_DataImport)/MR_lookupKeyForRelationship:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSObject+MagicalDataImport.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)MR_lookupKeyForRelationship:(NSRelationshipDescription *)relationshipInfo</Declaration>
+			
+			
+			<Anchor>//api/name/MR_lookupKeyForRelationship:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSObject(MagicalRecord_DataImport)/MR_relatedValueForRelationship:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSObject+MagicalDataImport.h</DeclaredIn>			
+			
+			<Declaration>- (id)MR_relatedValueForRelationship:(NSRelationshipDescription *)relationshipInfo</Declaration>
+			
+			
+			<Anchor>//api/name/MR_relatedValueForRelationship:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

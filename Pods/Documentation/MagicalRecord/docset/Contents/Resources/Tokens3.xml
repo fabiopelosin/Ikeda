@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSEntityDescription+MagicalRecord_DataImport.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSEntityDescription(MagicalRecord_DataImport)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSEntityDescription+MagicalDataImport.h</DeclaredIn>
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSEntityDescription(MagicalRecord_DataImport)/MR_primaryAttributeToRelateBy</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSEntityDescription+MagicalDataImport.h</DeclaredIn>			
+			
+			<Declaration>- (NSAttributeDescription *)MR_primaryAttributeToRelateBy</Declaration>
+			
+			
+			<Anchor>//api/name/MR_primaryAttributeToRelateBy</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSEntityDescription(MagicalRecord_DataImport)/MR_createInstanceInContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSEntityDescription+MagicalDataImport.h</DeclaredIn>			
+			
+			<Declaration>- (NSManagedObject *)MR_createInstanceInContext:(NSManagedObjectContext *)context</Declaration>
+			
+			
+			<Anchor>//api/name/MR_createInstanceInContext:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocSetNodes version="1.0">
+    <TOC>
+        <Node type="folder">
+            <Name>MagicalRecord 2.0.3</Name>
+            <Path>index.html</Path>
+			<Subnodes>
+                
+				
+				<Node type="folder">
+					<Name>Classes</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="1"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+				<Node type="folder">
+					<Name>Categories</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="2"/>
+						<NodeRef refid="3"/>
+						<NodeRef refid="4"/>
+						<NodeRef refid="5"/>
+						<NodeRef refid="6"/>
+						<NodeRef refid="7"/>
+						<NodeRef refid="8"/>
+						<NodeRef refid="9"/>
+						<NodeRef refid="10"/>
+						<NodeRef refid="11"/>
+						<NodeRef refid="12"/>
+						<NodeRef refid="13"/>
+						<NodeRef refid="14"/>
+						<NodeRef refid="15"/>
+						<NodeRef refid="16"/>
+						<NodeRef refid="17"/>
+						<NodeRef refid="18"/>
+						<NodeRef refid="19"/>
+						<NodeRef refid="20"/>
+						<NodeRef refid="21"/>
+						<NodeRef refid="22"/>
+						<NodeRef refid="23"/>
+						<NodeRef refid="24"/>
+						<NodeRef refid="25"/>
+						<NodeRef refid="26"/>
+						<NodeRef refid="27"/>
+						<NodeRef refid="28"/>
+						<NodeRef refid="29"/>
+						<NodeRef refid="30"/>
+						<NodeRef refid="31"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+			</Subnodes>
+        </Node>
+    </TOC>
+	<Library>
+		
+		<Node id="1">
+			<Name>MagicalRecord</Name>
+			<Path>Classes/MagicalRecord.html</Path>
+		</Node>
+		
+		<Node id="2">
+			<Name>NSAttributeDescription(MagicalRecord_DataImport)</Name>
+			<Path>Categories/NSAttributeDescription+MagicalRecord_DataImport.html</Path>
+		</Node>
+		<Node id="3">
+			<Name>NSEntityDescription(MagicalRecord_DataImport)</Name>
+			<Path>Categories/NSEntityDescription+MagicalRecord_DataImport.html</Path>
+		</Node>
+		<Node id="4">
+			<Name>NSManagedObject(MagicalAggregation)</Name>
+			<Path>Categories/NSManagedObject+MagicalAggregation.html</Path>
+		</Node>
+		<Node id="5">
+			<Name>NSManagedObject(MagicalAggregationShortHand)</Name>
+			<Path>Categories/NSManagedObject+MagicalAggregationShortHand.html</Path>
+		</Node>
+		<Node id="6">
+			<Name>NSManagedObject(MagicalFinders)</Name>
+			<Path>Categories/NSManagedObject+MagicalFinders.html</Path>
+		</Node>
+		<Node id="7">
+			<Name>NSManagedObject(MagicalFindersShortHand)</Name>
+			<Path>Categories/NSManagedObject+MagicalFindersShortHand.html</Path>
+		</Node>
+		<Node id="8">
+			<Name>NSManagedObject(MagicalRecord)</Name>
+			<Path>Categories/NSManagedObject+MagicalRecord.html</Path>
+		</Node>
+		<Node id="9">
+			<Name>NSManagedObject(MagicalRecordShortHand)</Name>
+			<Path>Categories/NSManagedObject+MagicalRecordShortHand.html</Path>
+		</Node>
+		<Node id="10">
+			<Name>NSManagedObject(MagicalRecord_DataImport)</Name>
+			<Path>Categories/NSManagedObject+MagicalRecord_DataImport.html</Path>
+		</Node>
+		<Node id="11">
+			<Name>NSManagedObject(MagicalRecord_DataImportShortHand)</Name>
+			<Path>Categories/NSManagedObject+MagicalRecord_DataImportShortHand.html</Path>
+		</Node>
+		<Node id="12">
+			<Name>NSManagedObject(MagicalRequests)</Name>
+			<Path>Categories/NSManagedObject+MagicalRequests.html</Path>
+		</Node>
+		<Node id="13">
+			<Name>NSManagedObject(MagicalRequestsShortHand)</Name>
+			<Path>Categories/NSManagedObject+MagicalRequestsShortHand.html</Path>
+		</Node>
+		<Node id="14">
+			<Name>NSManagedObjectContext(MagicalObserving)</Name>
+			<Path>Categories/NSManagedObjectContext+MagicalObserving.html</Path>
+		</Node>
+		<Node id="15">
+			<Name>NSManagedObjectContext(MagicalObservingShortHand)</Name>
+			<Path>Categories/NSManagedObjectContext+MagicalObservingShortHand.html</Path>
+		</Node>
+		<Node id="16">
+			<Name>NSManagedObjectContext(MagicalRecord)</Name>
+			<Path>Categories/NSManagedObjectContext+MagicalRecord.html</Path>
+		</Node>
+		<Node id="17">
+			<Name>NSManagedObjectContext(MagicalRecordShortHand)</Name>
+			<Path>Categories/NSManagedObjectContext+MagicalRecordShortHand.html</Path>
+		</Node>
+		<Node id="18">
+			<Name>NSManagedObjectContext(MagicalSaves)</Name>
+			<Path>Categories/NSManagedObjectContext+MagicalSaves.html</Path>
+		</Node>
+		<Node id="19">
+			<Name>NSManagedObjectContext(MagicalSavesShortHand)</Name>
+			<Path>Categories/NSManagedObjectContext+MagicalSavesShortHand.html</Path>
+		</Node>
+		<Node id="20">
+			<Name>NSManagedObjectContext(MagicalThreading)</Name>
+			<Path>Categories/NSManagedObjectContext+MagicalThreading.html</Path>
+		</Node>
+		<Node id="21">
+			<Name>NSManagedObjectContext(MagicalThreadingShortHand)</Name>
+			<Path>Categories/NSManagedObjectContext+MagicalThreadingShortHand.html</Path>
+		</Node>
+		<Node id="22">
+			<Name>NSManagedObjectModel(MagicalRecord)</Name>
+			<Path>Categories/NSManagedObjectModel+MagicalRecord.html</Path>
+		</Node>
+		<Node id="23">
+			<Name>NSManagedObjectModel(MagicalRecordShortHand)</Name>
+			<Path>Categories/NSManagedObjectModel+MagicalRecordShortHand.html</Path>
+		</Node>
+		<Node id="24">
+			<Name>NSNumber(MagicalRecord_DataImport)</Name>
+			<Path>Categories/NSNumber+MagicalRecord_DataImport.html</Path>
+		</Node>
+		<Node id="25">
+			<Name>NSObject(MagicalRecord_DataImport)</Name>
+			<Path>Categories/NSObject+MagicalRecord_DataImport.html</Path>
+		</Node>
+		<Node id="26">
+			<Name>NSPersistentStore(MagicalRecord)</Name>
+			<Path>Categories/NSPersistentStore+MagicalRecord.html</Path>
+		</Node>
+		<Node id="27">
+			<Name>NSPersistentStore(MagicalRecordShortHand)</Name>
+			<Path>Categories/NSPersistentStore+MagicalRecordShortHand.html</Path>
+		</Node>
+		<Node id="28">
+			<Name>NSPersistentStoreCoordinator(MagicalRecord)</Name>
+			<Path>Categories/NSPersistentStoreCoordinator+MagicalRecord.html</Path>
+		</Node>
+		<Node id="29">
+			<Name>NSPersistentStoreCoordinator(MagicalRecordShortHand)</Name>
+			<Path>Categories/NSPersistentStoreCoordinator+MagicalRecordShortHand.html</Path>
+		</Node>
+		<Node id="30">
+			<Name>NSRelationshipDescription(MagicalRecord_DataImport)</Name>
+			<Path>Categories/NSRelationshipDescription+MagicalRecord_DataImport.html</Path>
+		</Node>
+		<Node id="31">
+			<Name>NSString(MagicalRecord_DataImport)</Name>
+			<Path>Categories/NSString+MagicalRecord_DataImport.html</Path>
+		</Node>
+		
+		
+	</Library>
+</DocSetNodes>

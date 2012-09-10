@@ -1,0 +1,957 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>MagicalRecord Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 789)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">MagicalRecord 2.0.3 </a></h1>
+				<a id="developerHome" href="../index.html">Saul Mora</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">MagicalRecord Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/cleanUp">&nbsp;&nbsp;&nbsp;&nbsp;+ cleanUp</option>
+	
+	<option value="//api/name/cleanUpErrorHanding">&nbsp;&nbsp;&nbsp;&nbsp;+ cleanUpErrorHanding</option>
+	
+	<option value="//api/name/currentStack">&nbsp;&nbsp;&nbsp;&nbsp;+ currentStack</option>
+	
+	<option value="//api/name/defaultStoreName">&nbsp;&nbsp;&nbsp;&nbsp;+ defaultStoreName</option>
+	
+	<option value="//api/name/errorHandlerAction">&nbsp;&nbsp;&nbsp;&nbsp;+ errorHandlerAction</option>
+	
+	<option value="//api/name/errorHandlerTarget">&nbsp;&nbsp;&nbsp;&nbsp;+ errorHandlerTarget</option>
+	
+	<option value="//api/name/handleErrors:">&nbsp;&nbsp;&nbsp;&nbsp;+ handleErrors:</option>
+	
+	<option value="//api/name/isICloudEnabled">&nbsp;&nbsp;&nbsp;&nbsp;+ isICloudEnabled</option>
+	
+	<option value="//api/name/saveInBackgroundUsingCurrentContextWithBlock:completion:errorHandler:">&nbsp;&nbsp;&nbsp;&nbsp;+ saveInBackgroundUsingCurrentContextWithBlock:completion:errorHandler:</option>
+	
+	<option value="//api/name/saveInBackgroundWithBlock:">&nbsp;&nbsp;&nbsp;&nbsp;+ saveInBackgroundWithBlock:</option>
+	
+	<option value="//api/name/saveInBackgroundWithBlock:completion:">&nbsp;&nbsp;&nbsp;&nbsp;+ saveInBackgroundWithBlock:completion:</option>
+	
+	<option value="//api/name/saveWithBlock:">&nbsp;&nbsp;&nbsp;&nbsp;+ saveWithBlock:</option>
+	
+	<option value="//api/name/setDefaultModelFromClass:">&nbsp;&nbsp;&nbsp;&nbsp;+ setDefaultModelFromClass:</option>
+	
+	<option value="//api/name/setDefaultModelNamed:">&nbsp;&nbsp;&nbsp;&nbsp;+ setDefaultModelNamed:</option>
+	
+	<option value="//api/name/setErrorHandlerTarget:action:">&nbsp;&nbsp;&nbsp;&nbsp;+ setErrorHandlerTarget:action:</option>
+	
+	<option value="//api/name/setShouldAutoCreateDefaultPersistentStoreCoordinator:">&nbsp;&nbsp;&nbsp;&nbsp;+ setShouldAutoCreateDefaultPersistentStoreCoordinator:</option>
+	
+	<option value="//api/name/setShouldAutoCreateManagedObjectModel:">&nbsp;&nbsp;&nbsp;&nbsp;+ setShouldAutoCreateManagedObjectModel:</option>
+	
+	<option value="//api/name/setupAutoMigratingCoreDataStack">&nbsp;&nbsp;&nbsp;&nbsp;+ setupAutoMigratingCoreDataStack</option>
+	
+	<option value="//api/name/setupCoreDataStack">&nbsp;&nbsp;&nbsp;&nbsp;+ setupCoreDataStack</option>
+	
+	<option value="//api/name/setupCoreDataStackWithAutoMigratingSqliteStoreNamed:">&nbsp;&nbsp;&nbsp;&nbsp;+ setupCoreDataStackWithAutoMigratingSqliteStoreNamed:</option>
+	
+	<option value="//api/name/setupCoreDataStackWithInMemoryStore">&nbsp;&nbsp;&nbsp;&nbsp;+ setupCoreDataStackWithInMemoryStore</option>
+	
+	<option value="//api/name/setupCoreDataStackWithStoreNamed:">&nbsp;&nbsp;&nbsp;&nbsp;+ setupCoreDataStackWithStoreNamed:</option>
+	
+	<option value="//api/name/setupCoreDataStackWithiCloudContainer:contentNameKey:localStoreNamed:cloudStorePathComponent:">&nbsp;&nbsp;&nbsp;&nbsp;+ setupCoreDataStackWithiCloudContainer:contentNameKey:localStoreNamed:cloudStorePathComponent:</option>
+	
+	<option value="//api/name/setupCoreDataStackWithiCloudContainer:contentNameKey:localStoreNamed:cloudStorePathComponent:completion:">&nbsp;&nbsp;&nbsp;&nbsp;+ setupCoreDataStackWithiCloudContainer:contentNameKey:localStoreNamed:cloudStorePathComponent:completion:</option>
+	
+	<option value="//api/name/setupCoreDataStackWithiCloudContainer:localStoreNamed:">&nbsp;&nbsp;&nbsp;&nbsp;+ setupCoreDataStackWithiCloudContainer:localStoreNamed:</option>
+	
+	<option value="//api/name/shouldAutoCreateDefaultPersistentStoreCoordinator">&nbsp;&nbsp;&nbsp;&nbsp;+ shouldAutoCreateDefaultPersistentStoreCoordinator</option>
+	
+	<option value="//api/name/shouldAutoCreateManagedObjectModel">&nbsp;&nbsp;&nbsp;&nbsp;+ shouldAutoCreateManagedObjectModel</option>
+	
+	<option value="//api/name/swizzleShorthandMethods">&nbsp;&nbsp;&nbsp;&nbsp;+ swizzleShorthandMethods</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/handleErrors:">&nbsp;&nbsp;&nbsp;&nbsp;- handleErrors:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_iCloud Methods">iCloud Methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Options Methods">Options Methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Actions Methods">Actions Methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Setup Methods">Setup Methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_ShorthandSupport Methods">ShorthandSupport Methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_ErrorHandling Methods">ErrorHandling Methods</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cleanUp">cleanUp</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cleanUpErrorHanding">cleanUpErrorHanding</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/currentStack">currentStack</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/defaultStoreName">defaultStoreName</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/errorHandlerAction">errorHandlerAction</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/errorHandlerTarget">errorHandlerTarget</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/handleErrors:">handleErrors:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isICloudEnabled">isICloudEnabled</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/saveInBackgroundUsingCurrentContextWithBlock:completion:errorHandler:">saveInBackgroundUsingCurrentContextWithBlock:completion:errorHandler:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/saveInBackgroundWithBlock:">saveInBackgroundWithBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/saveInBackgroundWithBlock:completion:">saveInBackgroundWithBlock:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/saveWithBlock:">saveWithBlock:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setDefaultModelFromClass:">setDefaultModelFromClass:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setDefaultModelNamed:">setDefaultModelNamed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setErrorHandlerTarget:action:">setErrorHandlerTarget:action:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setShouldAutoCreateDefaultPersistentStoreCoordinator:">setShouldAutoCreateDefaultPersistentStoreCoordinator:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setShouldAutoCreateManagedObjectModel:">setShouldAutoCreateManagedObjectModel:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setupAutoMigratingCoreDataStack">setupAutoMigratingCoreDataStack</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setupCoreDataStack">setupCoreDataStack</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setupCoreDataStackWithAutoMigratingSqliteStoreNamed:">setupCoreDataStackWithAutoMigratingSqliteStoreNamed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setupCoreDataStackWithInMemoryStore">setupCoreDataStackWithInMemoryStore</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setupCoreDataStackWithStoreNamed:">setupCoreDataStackWithStoreNamed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setupCoreDataStackWithiCloudContainer:contentNameKey:localStoreNamed:cloudStorePathComponent:">setupCoreDataStackWithiCloudContainer:contentNameKey:localStoreNamed:cloudStorePathComponent:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setupCoreDataStackWithiCloudContainer:contentNameKey:localStoreNamed:cloudStorePathComponent:completion:">setupCoreDataStackWithiCloudContainer:contentNameKey:localStoreNamed:cloudStorePathComponent:completion:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setupCoreDataStackWithiCloudContainer:localStoreNamed:">setupCoreDataStackWithiCloudContainer:localStoreNamed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/shouldAutoCreateDefaultPersistentStoreCoordinator">shouldAutoCreateDefaultPersistentStoreCoordinator</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/shouldAutoCreateManagedObjectModel">shouldAutoCreateManagedObjectModel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/swizzleShorthandMethods">swizzleShorthandMethods</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/handleErrors:">handleErrors:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="MagicalRecord Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">MagicalRecord Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">MagicalRecord.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/currentStack">+&nbsp;currentStack</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cleanUp">+&nbsp;cleanUp</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setDefaultModelFromClass:">+&nbsp;setDefaultModelFromClass:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setDefaultModelNamed:">+&nbsp;setDefaultModelNamed:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/defaultStoreName">+&nbsp;defaultStoreName</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="iCloud Methods" name="task_iCloud Methods"></a>
+						<h3 class="subsubtitle task-title">iCloud Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isICloudEnabled">+&nbsp;isICloudEnabled</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setupCoreDataStackWithiCloudContainer:localStoreNamed:">+&nbsp;setupCoreDataStackWithiCloudContainer:localStoreNamed:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setupCoreDataStackWithiCloudContainer:contentNameKey:localStoreNamed:cloudStorePathComponent:">+&nbsp;setupCoreDataStackWithiCloudContainer:contentNameKey:localStoreNamed:cloudStorePathComponent:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setupCoreDataStackWithiCloudContainer:contentNameKey:localStoreNamed:cloudStorePathComponent:completion:">+&nbsp;setupCoreDataStackWithiCloudContainer:contentNameKey:localStoreNamed:cloudStorePathComponent:completion:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Options Methods" name="task_Options Methods"></a>
+						<h3 class="subsubtitle task-title">Options Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/shouldAutoCreateManagedObjectModel">+&nbsp;shouldAutoCreateManagedObjectModel</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setShouldAutoCreateManagedObjectModel:">+&nbsp;setShouldAutoCreateManagedObjectModel:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/shouldAutoCreateDefaultPersistentStoreCoordinator">+&nbsp;shouldAutoCreateDefaultPersistentStoreCoordinator</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setShouldAutoCreateDefaultPersistentStoreCoordinator:">+&nbsp;setShouldAutoCreateDefaultPersistentStoreCoordinator:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Actions Methods" name="task_Actions Methods"></a>
+						<h3 class="subsubtitle task-title">Actions Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/saveWithBlock:">+&nbsp;saveWithBlock:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/saveInBackgroundWithBlock:">+&nbsp;saveInBackgroundWithBlock:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/saveInBackgroundWithBlock:completion:">+&nbsp;saveInBackgroundWithBlock:completion:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/saveInBackgroundUsingCurrentContextWithBlock:completion:errorHandler:">+&nbsp;saveInBackgroundUsingCurrentContextWithBlock:completion:errorHandler:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Setup Methods" name="task_Setup Methods"></a>
+						<h3 class="subsubtitle task-title">Setup Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setupCoreDataStack">+&nbsp;setupCoreDataStack</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setupCoreDataStackWithInMemoryStore">+&nbsp;setupCoreDataStackWithInMemoryStore</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setupAutoMigratingCoreDataStack">+&nbsp;setupAutoMigratingCoreDataStack</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setupCoreDataStackWithStoreNamed:">+&nbsp;setupCoreDataStackWithStoreNamed:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setupCoreDataStackWithAutoMigratingSqliteStoreNamed:">+&nbsp;setupCoreDataStackWithAutoMigratingSqliteStoreNamed:</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="ShorthandSupport Methods" name="task_ShorthandSupport Methods"></a>
+						<h3 class="subsubtitle task-title">ShorthandSupport Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/swizzleShorthandMethods">+&nbsp;swizzleShorthandMethods</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="ErrorHandling Methods" name="task_ErrorHandling Methods"></a>
+						<h3 class="subsubtitle task-title">ErrorHandling Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/handleErrors:">+&nbsp;handleErrors:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/handleErrors:">&ndash;&nbsp;handleErrors:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setErrorHandlerTarget:action:">+&nbsp;setErrorHandlerTarget:action:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/errorHandlerAction">+&nbsp;errorHandlerAction</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/errorHandlerTarget">+&nbsp;errorHandlerTarget</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cleanUpErrorHanding">+&nbsp;cleanUpErrorHanding</a></code>
+		
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/cleanUp" title="cleanUp"></a>
+	<h3 class="subsubtitle method-title">cleanUp</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (void)cleanUp</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/cleanUpErrorHanding" title="cleanUpErrorHanding"></a>
+	<h3 class="subsubtitle method-title">cleanUpErrorHanding</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (void)cleanUpErrorHanding</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/currentStack" title="currentStack"></a>
+	<h3 class="subsubtitle method-title">currentStack</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)currentStack</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/defaultStoreName" title="defaultStoreName"></a>
+	<h3 class="subsubtitle method-title">defaultStoreName</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (NSString *)defaultStoreName</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/errorHandlerAction" title="errorHandlerAction"></a>
+	<h3 class="subsubtitle method-title">errorHandlerAction</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (SEL)errorHandlerAction</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/errorHandlerTarget" title="errorHandlerTarget"></a>
+	<h3 class="subsubtitle method-title">errorHandlerTarget</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (id)errorHandlerTarget</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/handleErrors:" title="handleErrors:"></a>
+	<h3 class="subsubtitle method-title">handleErrors:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (void)handleErrors:(NSError *)<em>error</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isICloudEnabled" title="isICloudEnabled"></a>
+	<h3 class="subsubtitle method-title">isICloudEnabled</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (BOOL)isICloudEnabled</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/saveInBackgroundUsingCurrentContextWithBlock:completion:errorHandler:" title="saveInBackgroundUsingCurrentContextWithBlock:completion:errorHandler:"></a>
+	<h3 class="subsubtitle method-title">saveInBackgroundUsingCurrentContextWithBlock:completion:errorHandler:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (void)saveInBackgroundUsingCurrentContextWithBlock:(void ( ^ ) ( NSManagedObjectContext *))<em>block</em> completion:(void ( ^ ) ( void ))<em>completion</em> errorHandler:(void ( ^ ) ( NSError *))<em>errorHandler</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/saveInBackgroundWithBlock:" title="saveInBackgroundWithBlock:"></a>
+	<h3 class="subsubtitle method-title">saveInBackgroundWithBlock:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (void)saveInBackgroundWithBlock:(void ( ^ ) ( NSManagedObjectContext *localContext ))<em>block</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/saveInBackgroundWithBlock:completion:" title="saveInBackgroundWithBlock:completion:"></a>
+	<h3 class="subsubtitle method-title">saveInBackgroundWithBlock:completion:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (void)saveInBackgroundWithBlock:(void ( ^ ) ( NSManagedObjectContext *localContext ))<em>block</em> completion:(void ( ^ ) ( void ))<em>callback</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/saveWithBlock:" title="saveWithBlock:"></a>
+	<h3 class="subsubtitle method-title">saveWithBlock:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (void)saveWithBlock:(void ( ^ ) ( NSManagedObjectContext *localContext ))<em>block</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setDefaultModelFromClass:" title="setDefaultModelFromClass:"></a>
+	<h3 class="subsubtitle method-title">setDefaultModelFromClass:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (void)setDefaultModelFromClass:(Class)<em>klass</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setDefaultModelNamed:" title="setDefaultModelNamed:"></a>
+	<h3 class="subsubtitle method-title">setDefaultModelNamed:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (void)setDefaultModelNamed:(NSString *)<em>modelName</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setErrorHandlerTarget:action:" title="setErrorHandlerTarget:action:"></a>
+	<h3 class="subsubtitle method-title">setErrorHandlerTarget:action:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (void)setErrorHandlerTarget:(id)<em>target</em> action:(SEL)<em>action</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setShouldAutoCreateDefaultPersistentStoreCoordinator:" title="setShouldAutoCreateDefaultPersistentStoreCoordinator:"></a>
+	<h3 class="subsubtitle method-title">setShouldAutoCreateDefaultPersistentStoreCoordinator:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (void)setShouldAutoCreateDefaultPersistentStoreCoordinator:(BOOL)<em>shouldAutoCreate</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setShouldAutoCreateManagedObjectModel:" title="setShouldAutoCreateManagedObjectModel:"></a>
+	<h3 class="subsubtitle method-title">setShouldAutoCreateManagedObjectModel:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (void)setShouldAutoCreateManagedObjectModel:(BOOL)<em>shouldAutoCreate</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setupAutoMigratingCoreDataStack" title="setupAutoMigratingCoreDataStack"></a>
+	<h3 class="subsubtitle method-title">setupAutoMigratingCoreDataStack</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (void)setupAutoMigratingCoreDataStack</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setupCoreDataStack" title="setupCoreDataStack"></a>
+	<h3 class="subsubtitle method-title">setupCoreDataStack</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (void)setupCoreDataStack</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setupCoreDataStackWithAutoMigratingSqliteStoreNamed:" title="setupCoreDataStackWithAutoMigratingSqliteStoreNamed:"></a>
+	<h3 class="subsubtitle method-title">setupCoreDataStackWithAutoMigratingSqliteStoreNamed:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (void)setupCoreDataStackWithAutoMigratingSqliteStoreNamed:(NSString *)<em>storeName</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setupCoreDataStackWithInMemoryStore" title="setupCoreDataStackWithInMemoryStore"></a>
+	<h3 class="subsubtitle method-title">setupCoreDataStackWithInMemoryStore</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (void)setupCoreDataStackWithInMemoryStore</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setupCoreDataStackWithStoreNamed:" title="setupCoreDataStackWithStoreNamed:"></a>
+	<h3 class="subsubtitle method-title">setupCoreDataStackWithStoreNamed:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (void)setupCoreDataStackWithStoreNamed:(NSString *)<em>storeName</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setupCoreDataStackWithiCloudContainer:contentNameKey:localStoreNamed:cloudStorePathComponent:" title="setupCoreDataStackWithiCloudContainer:contentNameKey:localStoreNamed:cloudStorePathComponent:"></a>
+	<h3 class="subsubtitle method-title">setupCoreDataStackWithiCloudContainer:contentNameKey:localStoreNamed:cloudStorePathComponent:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (void)setupCoreDataStackWithiCloudContainer:(NSString *)<em>containerID</em> contentNameKey:(NSString *)<em>contentNameKey</em> localStoreNamed:(NSString *)<em>localStoreName</em> cloudStorePathComponent:(NSString *)<em>pathSubcomponent</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setupCoreDataStackWithiCloudContainer:contentNameKey:localStoreNamed:cloudStorePathComponent:completion:" title="setupCoreDataStackWithiCloudContainer:contentNameKey:localStoreNamed:cloudStorePathComponent:completion:"></a>
+	<h3 class="subsubtitle method-title">setupCoreDataStackWithiCloudContainer:contentNameKey:localStoreNamed:cloudStorePathComponent:completion:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (void)setupCoreDataStackWithiCloudContainer:(NSString *)<em>containerID</em> contentNameKey:(NSString *)<em>contentNameKey</em> localStoreNamed:(NSString *)<em>localStoreName</em> cloudStorePathComponent:(NSString *)<em>pathSubcomponent</em> completion:(void ( ^ ) ( void ))<em>completion</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setupCoreDataStackWithiCloudContainer:localStoreNamed:" title="setupCoreDataStackWithiCloudContainer:localStoreNamed:"></a>
+	<h3 class="subsubtitle method-title">setupCoreDataStackWithiCloudContainer:localStoreNamed:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (void)setupCoreDataStackWithiCloudContainer:(NSString *)<em>icloudBucket</em> localStoreNamed:(NSString *)<em>localStore</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/shouldAutoCreateDefaultPersistentStoreCoordinator" title="shouldAutoCreateDefaultPersistentStoreCoordinator"></a>
+	<h3 class="subsubtitle method-title">shouldAutoCreateDefaultPersistentStoreCoordinator</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (BOOL)shouldAutoCreateDefaultPersistentStoreCoordinator</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/shouldAutoCreateManagedObjectModel" title="shouldAutoCreateManagedObjectModel"></a>
+	<h3 class="subsubtitle method-title">shouldAutoCreateManagedObjectModel</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (BOOL)shouldAutoCreateManagedObjectModel</code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/swizzleShorthandMethods" title="swizzleShorthandMethods"></a>
+	<h3 class="subsubtitle method-title">swizzleShorthandMethods</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>+ (void)swizzleShorthandMethods</code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/handleErrors:" title="handleErrors:"></a>
+	<h3 class="subsubtitle method-title">handleErrors:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)handleErrors:(NSError *)<em>error</em></code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 Saul Mora. All rights reserved. (Last updated: 2012-09-08)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

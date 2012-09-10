@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSPersistentStore+MagicalRecord.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSPersistentStore(MagicalRecord)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSPersistentStore+MagicalRecord.h</DeclaredIn>
+			
+			<NodeRef refid="26"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSPersistentStore(MagicalRecord)/MR_defaultLocalStoreUrl</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSPersistentStore+MagicalRecord.h</DeclaredIn>			
+			
+			<Declaration>+ (NSURL *)MR_defaultLocalStoreUrl</Declaration>
+			
+			
+			<Anchor>//api/name/MR_defaultLocalStoreUrl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSPersistentStore(MagicalRecord)/MR_defaultPersistentStore</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSPersistentStore+MagicalRecord.h</DeclaredIn>			
+			
+			<Declaration>+ (NSPersistentStore *)MR_defaultPersistentStore</Declaration>
+			
+			
+			<Anchor>//api/name/MR_defaultPersistentStore</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSPersistentStore(MagicalRecord)/MR_setDefaultPersistentStore:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSPersistentStore+MagicalRecord.h</DeclaredIn>			
+			
+			<Declaration>+ (void)MR_setDefaultPersistentStore:(NSPersistentStore *)store</Declaration>
+			
+			
+			<Anchor>//api/name/MR_setDefaultPersistentStore:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSPersistentStore(MagicalRecord)/MR_urlForStoreName:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSPersistentStore+MagicalRecord.h</DeclaredIn>			
+			
+			<Declaration>+ (NSURL *)MR_urlForStoreName:(NSString *)storeFileName</Declaration>
+			
+			
+			<Anchor>//api/name/MR_urlForStoreName:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSPersistentStore(MagicalRecord)/MR_cloudURLForUbiqutiousContainer:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSPersistentStore+MagicalRecord.h</DeclaredIn>			
+			
+			<Declaration>+ (NSURL *)MR_cloudURLForUbiqutiousContainer:(NSString *)bucketName</Declaration>
+			
+			
+			<Anchor>//api/name/MR_cloudURLForUbiqutiousContainer:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

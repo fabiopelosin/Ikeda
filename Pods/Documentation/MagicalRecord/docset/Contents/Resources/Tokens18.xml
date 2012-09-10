@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSManagedObjectContext+MagicalSaves.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSManagedObjectContext(MagicalSaves)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObjectContext+MagicalSaves.h</DeclaredIn>
+			
+			<NodeRef refid="18"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObjectContext(MagicalSaves)/MR_save</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObjectContext+MagicalSaves.h</DeclaredIn>			
+			
+			<Declaration>- (void)MR_save</Declaration>
+			
+			
+			<Anchor>//api/name/MR_save</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObjectContext(MagicalSaves)/MR_saveErrorHandler:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObjectContext+MagicalSaves.h</DeclaredIn>			
+			
+			<Declaration>- (void)MR_saveErrorHandler:(void ( ^ ) ( NSError *))errorCallback</Declaration>
+			
+			
+			<Anchor>//api/name/MR_saveErrorHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObjectContext(MagicalSaves)/MR_saveInBackgroundCompletion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObjectContext+MagicalSaves.h</DeclaredIn>			
+			
+			<Declaration>- (void)MR_saveInBackgroundCompletion:(void ( ^ ) ( void ))completion</Declaration>
+			
+			
+			<Anchor>//api/name/MR_saveInBackgroundCompletion:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObjectContext(MagicalSaves)/MR_saveInBackgroundErrorHandler:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObjectContext+MagicalSaves.h</DeclaredIn>			
+			
+			<Declaration>- (void)MR_saveInBackgroundErrorHandler:(void ( ^ ) ( NSError *))errorCallback</Declaration>
+			
+			
+			<Anchor>//api/name/MR_saveInBackgroundErrorHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObjectContext(MagicalSaves)/MR_saveInBackgroundErrorHandler:completion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObjectContext+MagicalSaves.h</DeclaredIn>			
+			
+			<Declaration>- (void)MR_saveInBackgroundErrorHandler:(void ( ^ ) ( NSError *))errorCallback completion:(void ( ^ ) ( void ))completion</Declaration>
+			
+			
+			<Anchor>//api/name/MR_saveInBackgroundErrorHandler:completion:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObjectContext(MagicalSaves)/MR_saveNestedContexts</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObjectContext+MagicalSaves.h</DeclaredIn>			
+			
+			<Declaration>- (void)MR_saveNestedContexts</Declaration>
+			
+			
+			<Anchor>//api/name/MR_saveNestedContexts</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObjectContext(MagicalSaves)/MR_saveNestedContextsErrorHandler:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObjectContext+MagicalSaves.h</DeclaredIn>			
+			
+			<Declaration>- (void)MR_saveNestedContextsErrorHandler:(void ( ^ ) ( NSError *))errorCallback</Declaration>
+			
+			
+			<Anchor>//api/name/MR_saveNestedContextsErrorHandler:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

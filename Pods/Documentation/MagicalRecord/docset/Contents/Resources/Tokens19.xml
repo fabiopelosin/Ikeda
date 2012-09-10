@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSManagedObjectContext+MagicalSavesShortHand.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSManagedObjectContext(MagicalSavesShortHand)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>
+			
+			<NodeRef refid="19"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObjectContext(MagicalSavesShortHand)/save</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>- (void)save</Declaration>
+			
+			
+			<Anchor>//api/name/save</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObjectContext(MagicalSavesShortHand)/saveErrorHandler:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>- (void)saveErrorHandler:(void ( ^ ) ( NSError *))errorCallback</Declaration>
+			
+			
+			<Anchor>//api/name/saveErrorHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObjectContext(MagicalSavesShortHand)/saveInBackgroundCompletion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>- (void)saveInBackgroundCompletion:(void ( ^ ) ( void ))completion</Declaration>
+			
+			
+			<Anchor>//api/name/saveInBackgroundCompletion:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObjectContext(MagicalSavesShortHand)/saveInBackgroundErrorHandler:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>- (void)saveInBackgroundErrorHandler:(void ( ^ ) ( NSError *))errorCallback</Declaration>
+			
+			
+			<Anchor>//api/name/saveInBackgroundErrorHandler:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObjectContext(MagicalSavesShortHand)/saveInBackgroundErrorHandler:completion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>- (void)saveInBackgroundErrorHandler:(void ( ^ ) ( NSError *))errorCallback completion:(void ( ^ ) ( void ))completion</Declaration>
+			
+			
+			<Anchor>//api/name/saveInBackgroundErrorHandler:completion:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObjectContext(MagicalSavesShortHand)/saveNestedContexts</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>- (void)saveNestedContexts</Declaration>
+			
+			
+			<Anchor>//api/name/saveNestedContexts</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObjectContext(MagicalSavesShortHand)/saveNestedContextsErrorHandler:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>- (void)saveNestedContextsErrorHandler:(void ( ^ ) ( NSError *))errorCallback</Declaration>
+			
+			
+			<Anchor>//api/name/saveNestedContextsErrorHandler:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

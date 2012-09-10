@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSManagedObject+MagicalRecord.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSManagedObject(MagicalRecord)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObject+MagicalRecord.h</DeclaredIn>
+			
+			<NodeRef refid="8"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecord)/MR_defaultBatchSize</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObject+MagicalRecord.h</DeclaredIn>			
+			
+			<Declaration>+ (NSUInteger)MR_defaultBatchSize</Declaration>
+			
+			
+			<Anchor>//api/name/MR_defaultBatchSize</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecord)/MR_setDefaultBatchSize:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObject+MagicalRecord.h</DeclaredIn>			
+			
+			<Declaration>+ (void)MR_setDefaultBatchSize:(NSUInteger)newBatchSize</Declaration>
+			
+			
+			<Anchor>//api/name/MR_setDefaultBatchSize:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecord)/MR_executeFetchRequest:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObject+MagicalRecord.h</DeclaredIn>			
+			
+			<Declaration>+ (NSArray *)MR_executeFetchRequest:(NSFetchRequest *)request</Declaration>
+			
+			
+			<Anchor>//api/name/MR_executeFetchRequest:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecord)/MR_executeFetchRequest:inContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObject+MagicalRecord.h</DeclaredIn>			
+			
+			<Declaration>+ (NSArray *)MR_executeFetchRequest:(NSFetchRequest *)request inContext:(NSManagedObjectContext *)context</Declaration>
+			
+			
+			<Anchor>//api/name/MR_executeFetchRequest:inContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecord)/MR_executeFetchRequestAndReturnFirstObject:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObject+MagicalRecord.h</DeclaredIn>			
+			
+			<Declaration>+ (id)MR_executeFetchRequestAndReturnFirstObject:(NSFetchRequest *)request</Declaration>
+			
+			
+			<Anchor>//api/name/MR_executeFetchRequestAndReturnFirstObject:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecord)/MR_executeFetchRequestAndReturnFirstObject:inContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObject+MagicalRecord.h</DeclaredIn>			
+			
+			<Declaration>+ (id)MR_executeFetchRequestAndReturnFirstObject:(NSFetchRequest *)request inContext:(NSManagedObjectContext *)context</Declaration>
+			
+			
+			<Anchor>//api/name/MR_executeFetchRequestAndReturnFirstObject:inContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecord)/MR_performFetch:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObject+MagicalRecord.h</DeclaredIn>			
+			
+			<Declaration>+ (void)MR_performFetch:(NSFetchedResultsController *)controller</Declaration>
+			
+			
+			<Anchor>//api/name/MR_performFetch:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecord)/MR_entityDescription</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObject+MagicalRecord.h</DeclaredIn>			
+			
+			<Declaration>+ (NSEntityDescription *)MR_entityDescription</Declaration>
+			
+			
+			<Anchor>//api/name/MR_entityDescription</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecord)/MR_entityDescriptionInContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObject+MagicalRecord.h</DeclaredIn>			
+			
+			<Declaration>+ (NSEntityDescription *)MR_entityDescriptionInContext:(NSManagedObjectContext *)context</Declaration>
+			
+			
+			<Anchor>//api/name/MR_entityDescriptionInContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecord)/MR_propertiesNamed:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObject+MagicalRecord.h</DeclaredIn>			
+			
+			<Declaration>+ (NSArray *)MR_propertiesNamed:(NSArray *)properties</Declaration>
+			
+			
+			<Anchor>//api/name/MR_propertiesNamed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecord)/MR_createEntity</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObject+MagicalRecord.h</DeclaredIn>			
+			
+			<Declaration>+ (id)MR_createEntity</Declaration>
+			
+			
+			<Anchor>//api/name/MR_createEntity</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecord)/MR_createInContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObject+MagicalRecord.h</DeclaredIn>			
+			
+			<Declaration>+ (id)MR_createInContext:(NSManagedObjectContext *)context</Declaration>
+			
+			
+			<Anchor>//api/name/MR_createInContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecord)/MR_deleteEntity</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObject+MagicalRecord.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)MR_deleteEntity</Declaration>
+			
+			
+			<Anchor>//api/name/MR_deleteEntity</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecord)/MR_deleteInContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObject+MagicalRecord.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)MR_deleteInContext:(NSManagedObjectContext *)context</Declaration>
+			
+			
+			<Anchor>//api/name/MR_deleteInContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecord)/MR_deleteAllMatchingPredicate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObject+MagicalRecord.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)MR_deleteAllMatchingPredicate:(NSPredicate *)predicate</Declaration>
+			
+			
+			<Anchor>//api/name/MR_deleteAllMatchingPredicate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecord)/MR_deleteAllMatchingPredicate:inContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObject+MagicalRecord.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)MR_deleteAllMatchingPredicate:(NSPredicate *)predicate inContext:(NSManagedObjectContext *)context</Declaration>
+			
+			
+			<Anchor>//api/name/MR_deleteAllMatchingPredicate:inContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecord)/MR_truncateAll</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObject+MagicalRecord.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)MR_truncateAll</Declaration>
+			
+			
+			<Anchor>//api/name/MR_truncateAll</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecord)/MR_truncateAllInContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObject+MagicalRecord.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)MR_truncateAllInContext:(NSManagedObjectContext *)context</Declaration>
+			
+			
+			<Anchor>//api/name/MR_truncateAllInContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecord)/MR_ascendingSortDescriptors:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObject+MagicalRecord.h</DeclaredIn>			
+			
+			<Declaration>+ (NSArray *)MR_ascendingSortDescriptors:(NSArray *)attributesToSortBy</Declaration>
+			
+			
+			<Anchor>//api/name/MR_ascendingSortDescriptors:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecord)/MR_descendingSortDescriptors:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObject+MagicalRecord.h</DeclaredIn>			
+			
+			<Declaration>+ (NSArray *)MR_descendingSortDescriptors:(NSArray *)attributesToSortBy</Declaration>
+			
+			
+			<Anchor>//api/name/MR_descendingSortDescriptors:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecord)/MR_inContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObject+MagicalRecord.h</DeclaredIn>			
+			
+			<Declaration>- (id)MR_inContext:(NSManagedObjectContext *)otherContext</Declaration>
+			
+			
+			<Anchor>//api/name/MR_inContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalRecord)/MR_inThreadContext</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObject+MagicalRecord.h</DeclaredIn>			
+			
+			<Declaration>- (id)MR_inThreadContext</Declaration>
+			
+			
+			<Anchor>//api/name/MR_inThreadContext</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

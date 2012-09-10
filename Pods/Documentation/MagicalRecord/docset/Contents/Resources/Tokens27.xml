@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSPersistentStore+MagicalRecordShortHand.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSPersistentStore(MagicalRecordShortHand)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>
+			
+			<NodeRef refid="27"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSPersistentStore(MagicalRecordShortHand)/defaultLocalStoreUrl</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSURL *)defaultLocalStoreUrl</Declaration>
+			
+			
+			<Anchor>//api/name/defaultLocalStoreUrl</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSPersistentStore(MagicalRecordShortHand)/defaultPersistentStore</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSPersistentStore *)defaultPersistentStore</Declaration>
+			
+			
+			<Anchor>//api/name/defaultPersistentStore</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSPersistentStore(MagicalRecordShortHand)/setDefaultPersistentStore:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (void)setDefaultPersistentStore:(NSPersistentStore *)store</Declaration>
+			
+			
+			<Anchor>//api/name/setDefaultPersistentStore:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSPersistentStore(MagicalRecordShortHand)/urlForStoreName:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSURL *)urlForStoreName:(NSString *)storeFileName</Declaration>
+			
+			
+			<Anchor>//api/name/urlForStoreName:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSPersistentStore(MagicalRecordShortHand)/cloudURLForUbiqutiousContainer:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSURL *)cloudURLForUbiqutiousContainer:(NSString *)bucketName</Declaration>
+			
+			
+			<Anchor>//api/name/cloudURLForUbiqutiousContainer:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

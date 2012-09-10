@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSManagedObject+MagicalAggregationShortHand.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSManagedObject(MagicalAggregationShortHand)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>
+			
+			<NodeRef refid="5"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalAggregationShortHand)/numberOfEntities</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSNumber *)numberOfEntities</Declaration>
+			
+			
+			<Anchor>//api/name/numberOfEntities</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalAggregationShortHand)/numberOfEntitiesWithContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSNumber *)numberOfEntitiesWithContext:(NSManagedObjectContext *)context</Declaration>
+			
+			
+			<Anchor>//api/name/numberOfEntitiesWithContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalAggregationShortHand)/numberOfEntitiesWithPredicate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSNumber *)numberOfEntitiesWithPredicate:(NSPredicate *)searchTerm</Declaration>
+			
+			
+			<Anchor>//api/name/numberOfEntitiesWithPredicate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalAggregationShortHand)/numberOfEntitiesWithPredicate:inContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSNumber *)numberOfEntitiesWithPredicate:(NSPredicate *)searchTerm inContext:(NSManagedObjectContext *)context</Declaration>
+			
+			
+			<Anchor>//api/name/numberOfEntitiesWithPredicate:inContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalAggregationShortHand)/countOfEntities</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSUInteger)countOfEntities</Declaration>
+			
+			
+			<Anchor>//api/name/countOfEntities</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalAggregationShortHand)/countOfEntitiesWithContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSUInteger)countOfEntitiesWithContext:(NSManagedObjectContext *)context</Declaration>
+			
+			
+			<Anchor>//api/name/countOfEntitiesWithContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalAggregationShortHand)/countOfEntitiesWithPredicate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSUInteger)countOfEntitiesWithPredicate:(NSPredicate *)searchFilter</Declaration>
+			
+			
+			<Anchor>//api/name/countOfEntitiesWithPredicate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalAggregationShortHand)/countOfEntitiesWithPredicate:inContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSUInteger)countOfEntitiesWithPredicate:(NSPredicate *)searchFilter inContext:(NSManagedObjectContext *)context</Declaration>
+			
+			
+			<Anchor>//api/name/countOfEntitiesWithPredicate:inContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalAggregationShortHand)/hasAtLeastOneEntity</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)hasAtLeastOneEntity</Declaration>
+			
+			
+			<Anchor>//api/name/hasAtLeastOneEntity</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalAggregationShortHand)/hasAtLeastOneEntityInContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)hasAtLeastOneEntityInContext:(NSManagedObjectContext *)context</Declaration>
+			
+			
+			<Anchor>//api/name/hasAtLeastOneEntityInContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalAggregationShortHand)/aggregateOperation:onAttribute:withPredicate:inContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSNumber *)aggregateOperation:(NSString *)function onAttribute:(NSString *)attributeName withPredicate:(NSPredicate *)predicate inContext:(NSManagedObjectContext *)context</Declaration>
+			
+			
+			<Anchor>//api/name/aggregateOperation:onAttribute:withPredicate:inContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalAggregationShortHand)/aggregateOperation:onAttribute:withPredicate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSNumber *)aggregateOperation:(NSString *)function onAttribute:(NSString *)attributeName withPredicate:(NSPredicate *)predicate</Declaration>
+			
+			
+			<Anchor>//api/name/aggregateOperation:onAttribute:withPredicate:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalAggregationShortHand)/objectWithMinValueFor:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>- (id)objectWithMinValueFor:(NSString *)property</Declaration>
+			
+			
+			<Anchor>//api/name/objectWithMinValueFor:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObject(MagicalAggregationShortHand)/objectWithMinValueFor:inContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>- (id)objectWithMinValueFor:(NSString *)property inContext:(NSManagedObjectContext *)context</Declaration>
+			
+			
+			<Anchor>//api/name/objectWithMinValueFor:inContext:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

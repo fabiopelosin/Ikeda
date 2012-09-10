@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSManagedObjectContext+MagicalRecordShortHand.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSManagedObjectContext(MagicalRecordShortHand)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>
+			
+			<NodeRef refid="17"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObjectContext(MagicalRecordShortHand)/initializeDefaultContextWithCoordinator:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (void)initializeDefaultContextWithCoordinator:(NSPersistentStoreCoordinator *)coordinator</Declaration>
+			
+			
+			<Anchor>//api/name/initializeDefaultContextWithCoordinator:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObjectContext(MagicalRecordShortHand)/context</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSManagedObjectContext *)context</Declaration>
+			
+			
+			<Anchor>//api/name/context</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObjectContext(MagicalRecordShortHand)/contextWithParent:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSManagedObjectContext *)contextWithParent:(NSManagedObjectContext *)parentContext</Declaration>
+			
+			
+			<Anchor>//api/name/contextWithParent:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObjectContext(MagicalRecordShortHand)/newMainQueueContext</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSManagedObjectContext *)newMainQueueContext</Declaration>
+			
+			
+			<Anchor>//api/name/newMainQueueContext</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObjectContext(MagicalRecordShortHand)/contextThatPushesChangesToDefaultContext</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSManagedObjectContext *)contextThatPushesChangesToDefaultContext</Declaration>
+			
+			
+			<Anchor>//api/name/contextThatPushesChangesToDefaultContext</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObjectContext(MagicalRecordShortHand)/contextWithStoreCoordinator:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSManagedObjectContext *)contextWithStoreCoordinator:(NSPersistentStoreCoordinator *)coordinator</Declaration>
+			
+			
+			<Anchor>//api/name/contextWithStoreCoordinator:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObjectContext(MagicalRecordShortHand)/resetDefaultContext</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (void)resetDefaultContext</Declaration>
+			
+			
+			<Anchor>//api/name/resetDefaultContext</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObjectContext(MagicalRecordShortHand)/rootSavingContext</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSManagedObjectContext *)rootSavingContext</Declaration>
+			
+			
+			<Anchor>//api/name/rootSavingContext</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObjectContext(MagicalRecordShortHand)/defaultContext</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (NSManagedObjectContext *)defaultContext</Declaration>
+			
+			
+			<Anchor>//api/name/defaultContext</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObjectContext(MagicalRecordShortHand)/cleanUp</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>+ (void)cleanUp</Declaration>
+			
+			
+			<Anchor>//api/name/cleanUp</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObjectContext(MagicalRecordShortHand)/description</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>MagicalRecordShorthand.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)description</Declaration>
+			
+			
+			<Anchor>//api/name/description</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

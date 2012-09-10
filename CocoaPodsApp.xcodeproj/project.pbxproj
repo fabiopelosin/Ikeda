@@ -15,6 +15,8 @@
 		E536203B15F580E400C2D4CC /* CPSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E536203A15F580E400C2D4CC /* CPSpec.m */; };
 		E54B9AE115F97DBA00AB19D3 /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E54B9AE015F97DBA00AB19D3 /* MacRuby.framework */; };
 		E54B9AE915F9818C00AB19D3 /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = E54B9AE315F97E2400AB19D3 /* rb_main.rb */; };
+		E555F02615FD0BBC00167373 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E591DA8215F27BB0006FB638 /* CoreData.framework */; };
+		E555F06115FD10A100167373 /* CocoaPodsApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E555F05F15FD10A100167373 /* CocoaPodsApp.xcdatamodeld */; };
 		E5844BB015F9AFF0006FA83A /* AbstractExportedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E543D31E15F96F6C00A239B4 /* AbstractExportedObject.m */; };
 		E591DA7F15F27BB0006FB638 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E591DA7E15F27BB0006FB638 /* Cocoa.framework */; };
 		E591DA8915F27BB0006FB638 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E591DA8715F27BB0006FB638 /* InfoPlist.strings */; };
@@ -68,6 +70,7 @@
 		E543D31E15F96F6C00A239B4 /* AbstractExportedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractExportedObject.m; sourceTree = "<group>"; };
 		E54B9AE015F97DBA00AB19D3 /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = Library/Frameworks/MacRuby.framework; sourceTree = DEVELOPER_DIR; };
 		E54B9AE315F97E2400AB19D3 /* rb_main.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
+		E555F06015FD10A100167373 /* CocoaPodsApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CocoaPodsApp.xcdatamodel; sourceTree = "<group>"; };
 		E591DA7A15F27BB0006FB638 /* CocoaPodsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaPodsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E591DA7E15F27BB0006FB638 /* Cocoa.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		E591DA8115F27BB0006FB638 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -96,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E555F02615FD0BBC00167373 /* CoreData.framework in Frameworks */,
 				E54B9AE115F97DBA00AB19D3 /* MacRuby.framework in Frameworks */,
 				E51E608A15F9647400D4DF27 /* Foundation.framework in Frameworks */,
 			);
@@ -169,6 +173,7 @@
 		E591DA6F15F27BAF006FB638 = {
 			isa = PBXGroup;
 			children = (
+				E555F05F15FD10A100167373 /* CocoaPodsApp.xcdatamodeld */,
 				E5C6F3E515FBB21A0038976B /* Xcode.h */,
 				E591DA8415F27BB0006FB638 /* CocoaPodsApp */,
 				E51E608B15F9647400D4DF27 /* MacRubyService */,
@@ -190,24 +195,16 @@
 		E591DA7D15F27BB0006FB638 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E591DA8115F27BB0006FB638 /* AppKit.framework */,
+				E591DA8215F27BB0006FB638 /* CoreData.framework */,
+				E591DA8315F27BB0006FB638 /* Foundation.framework */,
 				E5C6F3E315FBB2050038976B /* ScriptingBridge.framework */,
 				E54B9AE015F97DBA00AB19D3 /* MacRuby.framework */,
 				E591DA7E15F27BB0006FB638 /* Cocoa.framework */,
 				E51E608915F9647400D4DF27 /* Foundation.framework */,
-				E591DA8015F27BB0006FB638 /* Other Frameworks */,
 				12CF706AD7304DBD919F6B98 /* libPods.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		E591DA8015F27BB0006FB638 /* Other Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E591DA8115F27BB0006FB638 /* AppKit.framework */,
-				E591DA8215F27BB0006FB638 /* CoreData.framework */,
-				E591DA8315F27BB0006FB638 /* Foundation.framework */,
-			);
-			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
 		E591DA8415F27BB0006FB638 /* CocoaPodsApp */ = {
@@ -392,6 +389,7 @@
 				E591E21D15F297AA006FB638 /* CPPodsTableView.m in Sources */,
 				E591E22115F29A0F006FB638 /* CPSpecTableViewCell.m in Sources */,
 				E536203B15F580E400C2D4CC /* CPSpec.m in Sources */,
+				E555F06115FD10A100167373 /* CocoaPodsApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -587,6 +585,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E555F05F15FD10A100167373 /* CocoaPodsApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E555F06015FD10A100167373 /* CocoaPodsApp.xcdatamodel */,
+			);
+			currentVersion = E555F06015FD10A100167373 /* CocoaPodsApp.xcdatamodel */;
+			path = CocoaPodsApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E591DA7115F27BAF006FB638 /* Project object */;
 }

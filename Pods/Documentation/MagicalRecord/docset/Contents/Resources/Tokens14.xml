@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSManagedObjectContext+MagicalObserving.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSManagedObjectContext(MagicalObserving)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObjectContext+MagicalObserving.h</DeclaredIn>
+			
+			<NodeRef refid="14"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObjectContext(MagicalObserving)/MR_observeContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObjectContext+MagicalObserving.h</DeclaredIn>			
+			
+			<Declaration>- (void)MR_observeContext:(NSManagedObjectContext *)otherContext</Declaration>
+			
+			
+			<Anchor>//api/name/MR_observeContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObjectContext(MagicalObserving)/MR_stopObservingContext:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObjectContext+MagicalObserving.h</DeclaredIn>			
+			
+			<Declaration>- (void)MR_stopObservingContext:(NSManagedObjectContext *)otherContext</Declaration>
+			
+			
+			<Anchor>//api/name/MR_stopObservingContext:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObjectContext(MagicalObserving)/MR_observeContextOnMainThread:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObjectContext+MagicalObserving.h</DeclaredIn>			
+			
+			<Declaration>- (void)MR_observeContextOnMainThread:(NSManagedObjectContext *)otherContext</Declaration>
+			
+			
+			<Anchor>//api/name/MR_observeContextOnMainThread:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObjectContext(MagicalObserving)/MR_observeiCloudChangesInCoordinator:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObjectContext+MagicalObserving.h</DeclaredIn>			
+			
+			<Declaration>- (void)MR_observeiCloudChangesInCoordinator:(NSPersistentStoreCoordinator *)coordinator</Declaration>
+			
+			
+			<Anchor>//api/name/MR_observeiCloudChangesInCoordinator:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSManagedObjectContext(MagicalObserving)/MR_stopObservingiCloudChangesInCoordinator:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSManagedObjectContext+MagicalObserving.h</DeclaredIn>			
+			
+			<Declaration>- (void)MR_stopObservingiCloudChangesInCoordinator:(NSPersistentStoreCoordinator *)coordinator</Declaration>
+			
+			
+			<Anchor>//api/name/MR_stopObservingiCloudChangesInCoordinator:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

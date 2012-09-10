@@ -14,8 +14,8 @@
     TUITextRenderer *descriptionTextRenderer;
 }
 
-- (CGFloat)height {
-    return 10 + textRenderer.size.height + descriptionTextRenderer.size.height;
+- (CGFloat)sizeConstrainedToWidth:(CGFloat)width {
+  return 40 + [textRenderer sizeConstrainedToWidth:width -30].height + [descriptionTextRenderer sizeConstrainedToWidth:width -30].height;
 }
 
 - (id)initWithStyle:(TUITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
@@ -73,14 +73,12 @@
 		CGContextFillRect(ctx, CGRectMake(0, 0, b.size.width, 1));
 	}
 
-	// text
-	CGRect textRect = CGRectOffset(b, 15, -15);
-	textRenderer.frame = textRect; // set the frame so it knows where to draw itself
+	CGRect textRect = CGRectMake(15, b.origin.x - 15, b.size.width -30, self.bounds.size.height);
+	textRenderer.frame = textRect;
 	[textRenderer draw];
 
-    // text
-	CGRect descRect = CGRectOffset(b, 15, -40);
-	descriptionTextRenderer.frame = descRect; // set the frame so it knows where to draw itself
+	CGRect descRect = CGRectMake(15, b.origin.x - 40, b.size.width -30, self.bounds.size.height);
+	descriptionTextRenderer.frame = descRect;
 	[descriptionTextRenderer draw];
 }
 
