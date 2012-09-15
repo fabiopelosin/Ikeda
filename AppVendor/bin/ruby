@@ -28,5 +28,5 @@ export GEM_HOME="$PHYS_DIR/../Frameworks/gems"
 export GEM_PATH=''
 
 # Restore original path
-cd $WORKING_DIR
+cd "$WORKING_DIR"
 exec "$PHYS_DIR/../Frameworks/ruby/bin/ruby" $@

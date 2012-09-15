@@ -16,10 +16,8 @@ desc "Updates the vendored dependencies"
 namespace :vendor do
   desc "Updates the vendored CocoaPods gem and it dependencies"
   task :bundle do
-    # TODO: update the bin stub to not require bundler and their shebang to point to custom ruby.
     destination_dir =  relative_path("vendor/bundler")
     sh "bundle install --path #{destination_dir}"
-
     puts_success("Installed CocoaPods Gem", destination_dir)
   end
 
@@ -60,6 +58,16 @@ namespace :appvendor do
     sh "cp -r #{vendor_gems_dir} #{app_vendor_gems_dir}"
   end
 end
+
+
+desc "Embeds MacRuby in the XPC service"
+task :deployment do
+  build_dir = ENV['TARGET_BUILD_DIR']
+  project_name = ENV['PROJECT_NAME']
+  xpc_bundle = File.join(build_dir, project_name + '.app', 'Contents/XPCServices/org.cocoapods.macrubyservice.xpc')
+  sh "/usr/local/bin/macruby_deploy --embed #{xpc_bundle}"
+end
+
 
 # task :build => 'vendor:all'
 # task :default => :build

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1487" systemVersion="12B19" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1810" systemVersion="12B19" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="CPSet" representedClassName="CPSet" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="needsSpecUpdate" optional="YES" attributeType="Boolean" syncable="YES"/>
@@ -7,23 +7,37 @@
         <relationship name="versions" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="CPVersion" inverseName="set" inverseEntity="CPVersion" syncable="YES"/>
     </entity>
     <entity name="CPSpecification" representedClassName="CPSpecification" syncable="YES">
+        <attribute name="authors" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="creationDate" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="definedInFile" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="githubForks" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="githubLastActivity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="githubWatchers" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="homepage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="license" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sourceURL" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="specDescription" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="summary" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="supportsIOS" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="supportsOSX" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="version" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="versions" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="set" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="CPSet" inverseName="spec" inverseEntity="CPSet" syncable="YES"/>
+        <relationship name="subspecs" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="CPSubspec" inverseName="specification" inverseEntity="CPSubspec" syncable="YES"/>
+    </entity>
+    <entity name="CPSubspec" representedClassName="CPSubspec" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="specification" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="CPSpecification" inverseName="subspecs" inverseEntity="CPSpecification" syncable="YES"/>
     </entity>
     <entity name="CPVersion" representedClassName="CPVersion" syncable="YES">
         <attribute name="value" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="set" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="CPSet" inverseName="versions" inverseEntity="CPSet" syncable="YES"/>
     </entity>
     <elements>
-        <element name="CPSet" positionX="0" positionY="0" width="0" height="0"/>
-        <element name="CPVersion" positionX="0" positionY="0" width="0" height="0"/>
-        <element name="CPSpecification" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="CPSet" positionX="0" positionY="0" width="128" height="105"/>
+        <element name="CPSpecification" positionX="0" positionY="0" width="128" height="315"/>
+        <element name="CPVersion" positionX="0" positionY="0" width="128" height="75"/>
+        <element name="CPSubspec" positionX="160" positionY="192" width="128" height="75"/>
     </elements>
 </model>

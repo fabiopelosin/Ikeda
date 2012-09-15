@@ -12,14 +12,29 @@
 		E51E609015F9647400D4DF27 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E51E608E15F9647400D4DF27 /* InfoPlist.strings */; };
 		E51E609315F9647400D4DF27 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E51E609215F9647400D4DF27 /* main.m */; };
 		E51E609C15F965B800D4DF27 /* org.cocoapods.macrubyservice.xpc in Copy XPC Services */ = {isa = PBXBuildFile; fileRef = E51E608815F9647400D4DF27 /* org.cocoapods.macrubyservice.xpc */; };
+		E51FB4741600C898001150D5 /* CPSourceList.m in Sources */ = {isa = PBXBuildFile; fileRef = E51FB4731600C898001150D5 /* CPSourceList.m */; };
+		E51FB4971600E3E2001150D5 /* CPPodfile.m in Sources */ = {isa = PBXBuildFile; fileRef = E51FB4961600E3E2001150D5 /* CPPodfile.m */; };
 		E521039415FE239200127C9B /* ruby in CopyFiles */ = {isa = PBXBuildFile; fileRef = E521039215FE235B00127C9B /* ruby */; };
 		E521039515FE239500127C9B /* gems in CopyFiles */ = {isa = PBXBuildFile; fileRef = E521039015FE235500127C9B /* gems */; };
 		E521F73315FE221F00127C9B /* pod in Copy Ruby Executables */ = {isa = PBXBuildFile; fileRef = E521F73115FE221F00127C9B /* pod */; };
 		E521F73415FE221F00127C9B /* ruby in Copy Ruby Executables */ = {isa = PBXBuildFile; fileRef = E521F73215FE221F00127C9B /* ruby */; };
+		E524369C16037F440026F2DD /* CPSpecCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = E524369B16037F440026F2DD /* CPSpecCellView.m */; };
+		E52436AD1603A7B50026F2DD /* CPSpecDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E52436AB1603A7B50026F2DD /* CPSpecDetailViewController.m */; };
+		E52436AE1603A7B50026F2DD /* CPSpecDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E52436AC1603A7B50026F2DD /* CPSpecDetailViewController.xib */; };
+		E530788A16037598007A42D0 /* CPSpecsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E530788816037597007A42D0 /* CPSpecsViewController.m */; };
+		E530788B16037598007A42D0 /* CPSpecsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E530788916037598007A42D0 /* CPSpecsViewController.xib */; };
+		E54B1B5F1605101D000E9B79 /* CPAutoSizingTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E54B1B5E1605101D000E9B79 /* CPAutoSizingTextField.m */; };
 		E54B9AE115F97DBA00AB19D3 /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E54B9AE015F97DBA00AB19D3 /* MacRuby.framework */; };
 		E54B9AE915F9818C00AB19D3 /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = E54B9AE315F97E2400AB19D3 /* rb_main.rb */; };
 		E555F02615FD0BBC00167373 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E591DA8215F27BB0006FB638 /* CoreData.framework */; };
 		E555F06115FD10A100167373 /* CocoaPodsApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E555F05F15FD10A100167373 /* CocoaPodsApp.xcdatamodeld */; };
+		E55AF5271606AA3800F01798 /* CPStringScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = E55AF5261606AA3800F01798 /* CPStringScanner.m */; };
+		E55CD1F215FEB8EE00AE8206 /* CPSourceListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E55CD1F115FEB8EE00AE8206 /* CPSourceListItem.m */; };
+		E55CD1FC15FECE1300AE8206 /* MasterRepoIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = E55CD1FB15FECE1300AE8206 /* MasterRepoIcon.png */; };
+		E55CD1FE15FED01200AE8206 /* reposIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = E55CD1FD15FED01200AE8206 /* reposIcon.png */; };
+		E56FE84A1607E31E0076C2CD /* CocoaPods-Podfile.icns in Resources */ = {isa = PBXBuildFile; fileRef = E56FE8491607E31E0076C2CD /* CocoaPods-Podfile.icns */; };
+		E56FE85A160800050076C2CD /* CPExecutableWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = E56FE858160800020076C2CD /* CPExecutableWindowController.m */; };
+		E56FE85B160800050076C2CD /* CPExecutableWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E56FE859160800030076C2CD /* CPExecutableWindowController.xib */; };
 		E5844BB015F9AFF0006FA83A /* AbstractExportedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E543D31E15F96F6C00A239B4 /* AbstractExportedObject.m */; };
 		E591DA7F15F27BB0006FB638 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E591DA7E15F27BB0006FB638 /* Cocoa.framework */; };
 		E591DA8915F27BB0006FB638 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E591DA8715F27BB0006FB638 /* InfoPlist.strings */; };
@@ -28,14 +43,27 @@
 		E591DA9215F27BB0006FB638 /* CPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E591DA9115F27BB0006FB638 /* CPAppDelegate.m */; };
 		E591DA9515F27BB0006FB638 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E591DA9315F27BB0006FB638 /* MainMenu.xib */; };
 		E591DA9C15F27C5F006FB638 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = E591DA9B15F27C5F006FB638 /* Icon.icns */; };
-		E591E21D15F297AA006FB638 /* CPPodsTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = E591E21C15F297AA006FB638 /* CPPodsTableView.m */; };
-		E591E22115F29A0F006FB638 /* CPSpecTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E591E22015F29A0F006FB638 /* CPSpecTableViewCell.m */; };
-		E5B9CBDF15FE312200ACED8A /* CPCocoaPodsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B9CBDE15FE312200ACED8A /* CPCocoaPodsManager.m */; };
+		E5B9CBDF15FE312200ACED8A /* CPGemBridgeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B9CBDE15FE312200ACED8A /* CPGemBridgeManager.m */; };
 		E5B9CBF815FE3FBC00ACED8A /* CPVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B9CBF715FE3FBC00ACED8A /* CPVersion.m */; };
 		E5B9CBFB15FE3FBC00ACED8A /* CPSet.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B9CBFA15FE3FBC00ACED8A /* CPSet.m */; };
-		E5B9CBFE15FE481A00ACED8A /* CPSpecification.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B9CBFD15FE481A00ACED8A /* CPSpecification.m */; };
+		E5BE849D15FF831B00AABA55 /* CPExecutableManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E5BE849C15FF831B00AABA55 /* CPExecutableManager.m */; };
+		E5BE84CD15FF9EF500AABA55 /* CPSourceListTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E5BE84CC15FF9EF400AABA55 /* CPSourceListTextField.m */; };
+		E5BE84D515FFAA2500AABA55 /* CPMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5BE84D315FFAA2500AABA55 /* CPMainViewController.m */; };
+		E5BE84D615FFAA2500AABA55 /* CPMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5BE84D415FFAA2500AABA55 /* CPMainViewController.xib */; };
 		E5C6F3E215FBA7CF0038976B /* exported_object.rb in Resources */ = {isa = PBXBuildFile; fileRef = E5C6F3E115FBA7CF0038976B /* exported_object.rb */; };
 		E5C6F3E415FBB2050038976B /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5C6F3E315FBB2050038976B /* ScriptingBridge.framework */; };
+		E5D6301416040A3C008DFFD1 /* CPNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D6301216040A3C008DFFD1 /* CPNavigationViewController.m */; };
+		E5D6301F16042EA1008DFFD1 /* CPPodfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D6301D16042EA1008DFFD1 /* CPPodfileViewController.m */; };
+		E5D6302016042EA1008DFFD1 /* CPPodfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5D6301E16042EA1008DFFD1 /* CPPodfileViewController.xib */; };
+		E5D6302E160432D8008DFFD1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5D6302D160432D8008DFFD1 /* QuartzCore.framework */; };
+		E5D630671604BC48008DFFD1 /* CPBorderView.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D630661604BC48008DFFD1 /* CPBorderView.m */; };
+		E5D6306A1604BC58008DFFD1 /* CPBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D630691604BC58008DFFD1 /* CPBackgroundView.m */; };
+		E5D630E21604EC35008DFFD1 /* CPEmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D630E11604EC35008DFFD1 /* CPEmptyView.m */; };
+		E5E0559216001A0A0031C1DD /* CPButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E0559116001A0A0031C1DD /* CPButton.m */; };
+		E5F6FF6B160518600027C6AC /* CPEmptyButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E5F6FF6A160518600027C6AC /* CPEmptyButtonCell.m */; };
+		E5F6FF6E160518910027C6AC /* CPButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E5F6FF6D160518910027C6AC /* CPButtonCell.m */; };
+		E5F9DA311603CA2900A6114F /* CPSubspec.m in Sources */ = {isa = PBXBuildFile; fileRef = E5F9DA301603CA2900A6114F /* CPSubspec.m */; };
+		E5F9DA381603D7AF00A6114F /* CPSpecification.m in Sources */ = {isa = PBXBuildFile; fileRef = E5F9DA371603D7AF00A6114F /* CPSpecification.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +73,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = E51E608715F9647400D4DF27;
 			remoteInfo = MacRubyService;
+		};
+		E5759A611601524B00CCD85C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E591DA7115F27BAF006FB638 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E591DA7915F27BB0006FB638;
+			remoteInfo = CocoaPodsApp;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -95,15 +130,39 @@
 		E51E609115F9647400D4DF27 /* MacRubyService-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MacRubyService-Prefix.pch"; sourceTree = "<group>"; };
 		E51E609215F9647400D4DF27 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E51E609F15F9668700D4DF27 /* MacRubyServiceProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MacRubyServiceProtocol.h; path = ../CocoaPodsApp/MacRubyServiceProtocol.h; sourceTree = "<group>"; };
+		E51FB4721600C898001150D5 /* CPSourceList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSourceList.h; sourceTree = "<group>"; };
+		E51FB4731600C898001150D5 /* CPSourceList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSourceList.m; sourceTree = "<group>"; };
+		E51FB4951600E3E2001150D5 /* CPPodfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPPodfile.h; sourceTree = "<group>"; };
+		E51FB4961600E3E2001150D5 /* CPPodfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPPodfile.m; sourceTree = "<group>"; };
 		E521039015FE235500127C9B /* gems */ = {isa = PBXFileReference; lastKnownFileType = folder; name = gems; path = AppVendor/gems; sourceTree = "<group>"; };
 		E521039215FE235B00127C9B /* ruby */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ruby; path = AppVendor/ruby; sourceTree = "<group>"; };
 		E521F73115FE221F00127C9B /* pod */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = pod; path = AppVendor/bin/pod; sourceTree = "<group>"; };
 		E521F73215FE221F00127C9B /* ruby */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = ruby; path = AppVendor/bin/ruby; sourceTree = "<group>"; };
+		E524369A16037F440026F2DD /* CPSpecCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSpecCellView.h; sourceTree = "<group>"; };
+		E524369B16037F440026F2DD /* CPSpecCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSpecCellView.m; sourceTree = "<group>"; };
+		E52436AA1603A7B50026F2DD /* CPSpecDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSpecDetailViewController.h; sourceTree = "<group>"; };
+		E52436AB1603A7B50026F2DD /* CPSpecDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSpecDetailViewController.m; sourceTree = "<group>"; };
+		E52436AC1603A7B50026F2DD /* CPSpecDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CPSpecDetailViewController.xib; sourceTree = "<group>"; };
+		E530788716037597007A42D0 /* CPSpecsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSpecsViewController.h; sourceTree = "<group>"; };
+		E530788816037597007A42D0 /* CPSpecsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSpecsViewController.m; sourceTree = "<group>"; };
+		E530788916037598007A42D0 /* CPSpecsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CPSpecsViewController.xib; sourceTree = "<group>"; };
 		E543D31D15F96F6C00A239B4 /* AbstractExportedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractExportedObject.h; sourceTree = "<group>"; };
 		E543D31E15F96F6C00A239B4 /* AbstractExportedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractExportedObject.m; sourceTree = "<group>"; };
+		E54B1B5D1605101D000E9B79 /* CPAutoSizingTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPAutoSizingTextField.h; sourceTree = "<group>"; };
+		E54B1B5E1605101D000E9B79 /* CPAutoSizingTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPAutoSizingTextField.m; sourceTree = "<group>"; };
 		E54B9AE015F97DBA00AB19D3 /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = Library/Frameworks/MacRuby.framework; sourceTree = DEVELOPER_DIR; };
 		E54B9AE315F97E2400AB19D3 /* rb_main.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
 		E555F06015FD10A100167373 /* CocoaPodsApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CocoaPodsApp.xcdatamodel; sourceTree = "<group>"; };
+		E55AF5251606AA3800F01798 /* CPStringScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPStringScanner.h; sourceTree = "<group>"; };
+		E55AF5261606AA3800F01798 /* CPStringScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPStringScanner.m; sourceTree = "<group>"; };
+		E55CD1F015FEB8EE00AE8206 /* CPSourceListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSourceListItem.h; sourceTree = "<group>"; };
+		E55CD1F115FEB8EE00AE8206 /* CPSourceListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSourceListItem.m; sourceTree = "<group>"; };
+		E55CD1FB15FECE1300AE8206 /* MasterRepoIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MasterRepoIcon.png; sourceTree = "<group>"; };
+		E55CD1FD15FED01200AE8206 /* reposIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reposIcon.png; sourceTree = "<group>"; };
+		E56FE8491607E31E0076C2CD /* CocoaPods-Podfile.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "CocoaPods-Podfile.icns"; sourceTree = "<group>"; };
+		E56FE857160800020076C2CD /* CPExecutableWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPExecutableWindowController.h; sourceTree = "<group>"; };
+		E56FE858160800020076C2CD /* CPExecutableWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPExecutableWindowController.m; sourceTree = "<group>"; };
+		E56FE859160800030076C2CD /* CPExecutableWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CPExecutableWindowController.xib; sourceTree = "<group>"; };
 		E591DA7A15F27BB0006FB638 /* CocoaPodsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaPodsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E591DA7E15F27BB0006FB638 /* Cocoa.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		E591DA8115F27BB0006FB638 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -118,22 +177,45 @@
 		E591DA9115F27BB0006FB638 /* CPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPAppDelegate.m; sourceTree = "<group>"; };
 		E591DA9415F27BB0006FB638 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		E591DA9B15F27C5F006FB638 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = Icon.icns; path = ../Icon.icns; sourceTree = "<group>"; };
-		E591E21B15F297AA006FB638 /* CPPodsTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPPodsTableView.h; sourceTree = "<group>"; };
-		E591E21C15F297AA006FB638 /* CPPodsTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPPodsTableView.m; sourceTree = "<group>"; };
-		E591E21F15F29A0F006FB638 /* CPSpecTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSpecTableViewCell.h; sourceTree = "<group>"; };
-		E591E22015F29A0F006FB638 /* CPSpecTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSpecTableViewCell.m; sourceTree = "<group>"; };
-		E5B9CBDD15FE312200ACED8A /* CPCocoaPodsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPCocoaPodsManager.h; sourceTree = "<group>"; };
-		E5B9CBDE15FE312200ACED8A /* CPCocoaPodsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPCocoaPodsManager.m; sourceTree = "<group>"; };
+		E5B9CBDD15FE312200ACED8A /* CPGemBridgeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPGemBridgeManager.h; sourceTree = "<group>"; };
+		E5B9CBDE15FE312200ACED8A /* CPGemBridgeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPGemBridgeManager.m; sourceTree = "<group>"; };
 		E5B9CBE015FE336700ACED8A /* CocoaPodsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocoaPodsModel.h; sourceTree = "<group>"; };
 		E5B9CBF615FE3FBC00ACED8A /* CPVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPVersion.h; sourceTree = "<group>"; };
 		E5B9CBF715FE3FBC00ACED8A /* CPVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPVersion.m; sourceTree = "<group>"; };
 		E5B9CBF915FE3FBC00ACED8A /* CPSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSet.h; sourceTree = "<group>"; };
 		E5B9CBFA15FE3FBC00ACED8A /* CPSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSet.m; sourceTree = "<group>"; };
-		E5B9CBFC15FE481A00ACED8A /* CPSpecification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSpecification.h; sourceTree = "<group>"; };
-		E5B9CBFD15FE481A00ACED8A /* CPSpecification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSpecification.m; sourceTree = "<group>"; };
+		E5BE849B15FF831B00AABA55 /* CPExecutableManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPExecutableManager.h; sourceTree = "<group>"; };
+		E5BE849C15FF831B00AABA55 /* CPExecutableManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPExecutableManager.m; sourceTree = "<group>"; };
+		E5BE84CB15FF9EF400AABA55 /* CPSourceListTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSourceListTextField.h; sourceTree = "<group>"; };
+		E5BE84CC15FF9EF400AABA55 /* CPSourceListTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSourceListTextField.m; sourceTree = "<group>"; };
+		E5BE84D215FFAA2500AABA55 /* CPMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPMainViewController.h; sourceTree = "<group>"; };
+		E5BE84D315FFAA2500AABA55 /* CPMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPMainViewController.m; sourceTree = "<group>"; };
+		E5BE84D415FFAA2500AABA55 /* CPMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CPMainViewController.xib; sourceTree = "<group>"; };
 		E5C6F3E115FBA7CF0038976B /* exported_object.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = exported_object.rb; sourceTree = "<group>"; };
 		E5C6F3E315FBB2050038976B /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
 		E5C6F3E515FBB21A0038976B /* Xcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Xcode.h; path = ../Xcode.h; sourceTree = "<group>"; };
+		E5D6301116040A3C008DFFD1 /* CPNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPNavigationViewController.h; sourceTree = "<group>"; };
+		E5D6301216040A3C008DFFD1 /* CPNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPNavigationViewController.m; sourceTree = "<group>"; };
+		E5D6301C16042EA1008DFFD1 /* CPPodfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPPodfileViewController.h; sourceTree = "<group>"; };
+		E5D6301D16042EA1008DFFD1 /* CPPodfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPPodfileViewController.m; sourceTree = "<group>"; };
+		E5D6301E16042EA1008DFFD1 /* CPPodfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CPPodfileViewController.xib; sourceTree = "<group>"; };
+		E5D6302D160432D8008DFFD1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E5D630651604BC48008DFFD1 /* CPBorderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPBorderView.h; sourceTree = "<group>"; };
+		E5D630661604BC48008DFFD1 /* CPBorderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPBorderView.m; sourceTree = "<group>"; };
+		E5D630681604BC58008DFFD1 /* CPBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPBackgroundView.h; sourceTree = "<group>"; };
+		E5D630691604BC58008DFFD1 /* CPBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPBackgroundView.m; sourceTree = "<group>"; };
+		E5D630E01604EC35008DFFD1 /* CPEmptyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPEmptyView.h; sourceTree = "<group>"; };
+		E5D630E11604EC35008DFFD1 /* CPEmptyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPEmptyView.m; sourceTree = "<group>"; };
+		E5E0559016001A0A0031C1DD /* CPButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPButton.h; sourceTree = "<group>"; };
+		E5E0559116001A0A0031C1DD /* CPButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPButton.m; sourceTree = "<group>"; };
+		E5F6FF69160518600027C6AC /* CPEmptyButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPEmptyButtonCell.h; sourceTree = "<group>"; };
+		E5F6FF6A160518600027C6AC /* CPEmptyButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPEmptyButtonCell.m; sourceTree = "<group>"; };
+		E5F6FF6C160518910027C6AC /* CPButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPButtonCell.h; sourceTree = "<group>"; };
+		E5F6FF6D160518910027C6AC /* CPButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPButtonCell.m; sourceTree = "<group>"; };
+		E5F9DA2F1603CA2900A6114F /* CPSubspec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSubspec.h; sourceTree = "<group>"; };
+		E5F9DA301603CA2900A6114F /* CPSubspec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSubspec.m; sourceTree = "<group>"; };
+		E5F9DA361603D7AF00A6114F /* CPSpecification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSpecification.h; sourceTree = "<group>"; };
+		E5F9DA371603D7AF00A6114F /* CPSpecification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPSpecification.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +233,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5D6302E160432D8008DFFD1 /* QuartzCore.framework in Frameworks */,
 				E5C6F3E415FBB2050038976B /* ScriptingBridge.framework in Frameworks */,
 				E591DA7F15F27BB0006FB638 /* Cocoa.framework in Frameworks */,
 				094B011CF38442FFB173D883 /* libPods.a in Frameworks */,
@@ -184,6 +267,30 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		E51FB4761600C9C6001150D5 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				E5B9CBDD15FE312200ACED8A /* CPGemBridgeManager.h */,
+				E5B9CBDE15FE312200ACED8A /* CPGemBridgeManager.m */,
+				E5BE849B15FF831B00AABA55 /* CPExecutableManager.h */,
+				E5BE849C15FF831B00AABA55 /* CPExecutableManager.m */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		E51FB4771600CA42001150D5 /* CPSourceList */ = {
+			isa = PBXGroup;
+			children = (
+				E51FB4721600C898001150D5 /* CPSourceList.h */,
+				E51FB4731600C898001150D5 /* CPSourceList.m */,
+				E55CD1F015FEB8EE00AE8206 /* CPSourceListItem.h */,
+				E55CD1F115FEB8EE00AE8206 /* CPSourceListItem.m */,
+				E5BE84CB15FF9EF400AABA55 /* CPSourceListTextField.h */,
+				E5BE84CC15FF9EF400AABA55 /* CPSourceListTextField.m */,
+			);
+			name = CPSourceList;
+			sourceTree = "<group>";
+		};
 		E521036F15FE227000127C9B /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
@@ -203,39 +310,89 @@
 			name = bin;
 			sourceTree = "<group>";
 		};
-		E536203D15F580E800C2D4CC /* Model */ = {
+		E530787816035954007A42D0 /* Podfile */ = {
+			isa = PBXGroup;
+			children = (
+				E5D6301C16042EA1008DFFD1 /* CPPodfileViewController.h */,
+				E5D6301D16042EA1008DFFD1 /* CPPodfileViewController.m */,
+				E5D6301E16042EA1008DFFD1 /* CPPodfileViewController.xib */,
+			);
+			name = Podfile;
+			sourceTree = "<group>";
+		};
+		E536203D15F580E800C2D4CC /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				E5C6F3E515FBB21A0038976B /* Xcode.h */,
 				E5B9CBE015FE336700ACED8A /* CocoaPodsModel.h */,
+				E5F9DA361603D7AF00A6114F /* CPSpecification.h */,
+				E5F9DA371603D7AF00A6114F /* CPSpecification.m */,
 				E555F05F15FD10A100167373 /* CocoaPodsApp.xcdatamodeld */,
-				E5B9CBFC15FE481A00ACED8A /* CPSpecification.h */,
-				E5B9CBFD15FE481A00ACED8A /* CPSpecification.m */,
+				E5F9DA2F1603CA2900A6114F /* CPSubspec.h */,
+				E5F9DA301603CA2900A6114F /* CPSubspec.m */,
 				E5B9CBF915FE3FBC00ACED8A /* CPSet.h */,
 				E5B9CBFA15FE3FBC00ACED8A /* CPSet.m */,
 				E5B9CBF615FE3FBC00ACED8A /* CPVersion.h */,
 				E5B9CBF715FE3FBC00ACED8A /* CPVersion.m */,
+				E51FB4951600E3E2001150D5 /* CPPodfile.h */,
+				E51FB4961600E3E2001150D5 /* CPPodfile.m */,
 			);
-			name = Model;
+			name = Models;
 			sourceTree = "<group>";
 		};
 		E536203E15F5820D00C2D4CC /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E591E21B15F297AA006FB638 /* CPPodsTableView.h */,
-				E591E21C15F297AA006FB638 /* CPPodsTableView.m */,
-				E536203F15F5821800C2D4CC /* CPPodsView */,
+				E54B1B5D1605101D000E9B79 /* CPAutoSizingTextField.h */,
+				E54B1B5E1605101D000E9B79 /* CPAutoSizingTextField.m */,
+				E5F6FF69160518600027C6AC /* CPEmptyButtonCell.h */,
+				E5F6FF6A160518600027C6AC /* CPEmptyButtonCell.m */,
+				E5F6FF6C160518910027C6AC /* CPButtonCell.h */,
+				E5F6FF6D160518910027C6AC /* CPButtonCell.m */,
+				E51FB4771600CA42001150D5 /* CPSourceList */,
+				E5E0559016001A0A0031C1DD /* CPButton.h */,
+				E5E0559116001A0A0031C1DD /* CPButton.m */,
+				E5D630651604BC48008DFFD1 /* CPBorderView.h */,
+				E5D630661604BC48008DFFD1 /* CPBorderView.m */,
+				E5D630681604BC58008DFFD1 /* CPBackgroundView.h */,
+				E5D630691604BC58008DFFD1 /* CPBackgroundView.m */,
+				E5D630E01604EC35008DFFD1 /* CPEmptyView.h */,
+				E5D630E11604EC35008DFFD1 /* CPEmptyView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
 		};
-		E536203F15F5821800C2D4CC /* CPPodsView */ = {
+		E55CD1DA15FE868300AE8206 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				E591E21F15F29A0F006FB638 /* CPSpecTableViewCell.h */,
-				E591E22015F29A0F006FB638 /* CPSpecTableViewCell.m */,
+				E5BE84D215FFAA2500AABA55 /* CPMainViewController.h */,
+				E5BE84D315FFAA2500AABA55 /* CPMainViewController.m */,
+				E5BE84D415FFAA2500AABA55 /* CPMainViewController.xib */,
+				E5D630641604B9B1008DFFD1 /* Reusable */,
+				E5BE84D715FFAA3600AABA55 /* Specs */,
+				E530787816035954007A42D0 /* Podfile */,
 			);
-			name = CPPodsView;
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E56009A51608A9B6003B5E94 /* Window Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E56FE857160800020076C2CD /* CPExecutableWindowController.h */,
+				E56FE858160800020076C2CD /* CPExecutableWindowController.m */,
+				E56FE859160800030076C2CD /* CPExecutableWindowController.xib */,
+			);
+			name = "Window Controllers";
+			sourceTree = "<group>";
+		};
+		E5795B6216015ED600AB953B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E56FE8491607E31E0076C2CD /* CocoaPods-Podfile.icns */,
+				E55CD1FD15FED01200AE8206 /* reposIcon.png */,
+				E55CD1FB15FECE1300AE8206 /* MasterRepoIcon.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		E591DA6F15F27BAF006FB638 = {
@@ -262,6 +419,7 @@
 		E591DA7D15F27BB0006FB638 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E5D6302D160432D8008DFFD1 /* QuartzCore.framework */,
 				E591DA8115F27BB0006FB638 /* AppKit.framework */,
 				E591DA8215F27BB0006FB638 /* CoreData.framework */,
 				E591DA8315F27BB0006FB638 /* Foundation.framework */,
@@ -280,11 +438,15 @@
 				E591DA9015F27BB0006FB638 /* CPAppDelegate.h */,
 				E591DA9115F27BB0006FB638 /* CPAppDelegate.m */,
 				E591DA9315F27BB0006FB638 /* MainMenu.xib */,
-				E5B9CBDD15FE312200ACED8A /* CPCocoaPodsManager.h */,
-				E5B9CBDE15FE312200ACED8A /* CPCocoaPodsManager.m */,
+				E51FB4761600C9C6001150D5 /* Managers */,
+				E56009A51608A9B6003B5E94 /* Window Controllers */,
+				E55CD1DA15FE868300AE8206 /* ViewControllers */,
 				E536203E15F5820D00C2D4CC /* Views */,
-				E536203D15F580E800C2D4CC /* Model */,
+				E536203D15F580E800C2D4CC /* Models */,
+				E5795B6216015ED600AB953B /* Resources */,
 				E591DA8515F27BB0006FB638 /* Supporting Files */,
+				E55AF5251606AA3800F01798 /* CPStringScanner.h */,
+				E55AF5261606AA3800F01798 /* CPStringScanner.m */,
 			);
 			path = CocoaPodsApp;
 			sourceTree = "<group>";
@@ -302,7 +464,49 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		E5BE84D715FFAA3600AABA55 /* Specs */ = {
+			isa = PBXGroup;
+			children = (
+				E530788716037597007A42D0 /* CPSpecsViewController.h */,
+				E530788816037597007A42D0 /* CPSpecsViewController.m */,
+				E530788916037598007A42D0 /* CPSpecsViewController.xib */,
+				E524369A16037F440026F2DD /* CPSpecCellView.h */,
+				E524369B16037F440026F2DD /* CPSpecCellView.m */,
+				E52436AA1603A7B50026F2DD /* CPSpecDetailViewController.h */,
+				E52436AB1603A7B50026F2DD /* CPSpecDetailViewController.m */,
+				E52436AC1603A7B50026F2DD /* CPSpecDetailViewController.xib */,
+			);
+			name = Specs;
+			sourceTree = "<group>";
+		};
+		E5D630641604B9B1008DFFD1 /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				E5D6301116040A3C008DFFD1 /* CPNavigationViewController.h */,
+				E5D6301216040A3C008DFFD1 /* CPNavigationViewController.m */,
+			);
+			name = Reusable;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		E50B294116011E2D007DA213 /* Deployment */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = deployment;
+			buildConfigurationList = E50B294416011E2D007DA213 /* Build configuration list for PBXLegacyTarget "Deployment" */;
+			buildPhases = (
+			);
+			buildToolPath = rake;
+			buildWorkingDirectory = "";
+			dependencies = (
+				E5759A621601524B00CCD85C /* PBXTargetDependency */,
+			);
+			name = Deployment;
+			passBuildSettingsInEnvironment = 1;
+			productName = Deployment;
+		};
+/* End PBXLegacyTarget section */
 
 /* Begin PBXNativeTarget section */
 		E51E608715F9647400D4DF27 /* macrubyservice */ = {
@@ -329,7 +533,6 @@
 			buildPhases = (
 				E591DA7615F27BB0006FB638 /* Sources */,
 				E591DA7715F27BB0006FB638 /* Frameworks */,
-				E591DA9D15F27C85006FB638 /* ShellScript */,
 				E591DA7815F27BB0006FB638 /* Resources */,
 				E51E609B15F9657300D4DF27 /* Copy XPC Services */,
 				5947349588B741148B2BC8A5 /* Copy Pods Resources */,
@@ -353,7 +556,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = CP;
-				LastUpgradeCheck = 0440;
+				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = CocoaPods;
 			};
 			buildConfigurationList = E591DA7415F27BB0006FB638 /* Build configuration list for PBXProject "CocoaPodsApp" */;
@@ -370,6 +573,7 @@
 			targets = (
 				E591DA7915F27BB0006FB638 /* CocoaPodsApp */,
 				E51E608715F9647400D4DF27 /* macrubyservice */,
+				E50B294116011E2D007DA213 /* Deployment */,
 			);
 		};
 /* End PBXProject section */
@@ -393,6 +597,14 @@
 				E591DA8F15F27BB0006FB638 /* Credits.rtf in Resources */,
 				E591DA9515F27BB0006FB638 /* MainMenu.xib in Resources */,
 				E591DA9C15F27C5F006FB638 /* Icon.icns in Resources */,
+				E55CD1FC15FECE1300AE8206 /* MasterRepoIcon.png in Resources */,
+				E55CD1FE15FED01200AE8206 /* reposIcon.png in Resources */,
+				E5BE84D615FFAA2500AABA55 /* CPMainViewController.xib in Resources */,
+				E530788B16037598007A42D0 /* CPSpecsViewController.xib in Resources */,
+				E52436AE1603A7B50026F2DD /* CPSpecDetailViewController.xib in Resources */,
+				E5D6302016042EA1008DFFD1 /* CPPodfileViewController.xib in Resources */,
+				E56FE84A1607E31E0076C2CD /* CocoaPods-Podfile.icns in Resources */,
+				E56FE85B160800050076C2CD /* CPExecutableWindowController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,19 +638,6 @@
 			shellPath = /bin/sh;
 			shellScript = "";
 		};
-		E591DA9D15F27C85006FB638 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 12;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "#rake appvendor:buils_script";
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -457,13 +656,32 @@
 			files = (
 				E591DA8B15F27BB0006FB638 /* main.m in Sources */,
 				E591DA9215F27BB0006FB638 /* CPAppDelegate.m in Sources */,
-				E591E21D15F297AA006FB638 /* CPPodsTableView.m in Sources */,
-				E591E22115F29A0F006FB638 /* CPSpecTableViewCell.m in Sources */,
 				E555F06115FD10A100167373 /* CocoaPodsApp.xcdatamodeld in Sources */,
-				E5B9CBDF15FE312200ACED8A /* CPCocoaPodsManager.m in Sources */,
+				E5B9CBDF15FE312200ACED8A /* CPGemBridgeManager.m in Sources */,
 				E5B9CBF815FE3FBC00ACED8A /* CPVersion.m in Sources */,
 				E5B9CBFB15FE3FBC00ACED8A /* CPSet.m in Sources */,
-				E5B9CBFE15FE481A00ACED8A /* CPSpecification.m in Sources */,
+				E55CD1F215FEB8EE00AE8206 /* CPSourceListItem.m in Sources */,
+				E5BE849D15FF831B00AABA55 /* CPExecutableManager.m in Sources */,
+				E5BE84CD15FF9EF500AABA55 /* CPSourceListTextField.m in Sources */,
+				E5BE84D515FFAA2500AABA55 /* CPMainViewController.m in Sources */,
+				E5E0559216001A0A0031C1DD /* CPButton.m in Sources */,
+				E51FB4741600C898001150D5 /* CPSourceList.m in Sources */,
+				E51FB4971600E3E2001150D5 /* CPPodfile.m in Sources */,
+				E530788A16037598007A42D0 /* CPSpecsViewController.m in Sources */,
+				E524369C16037F440026F2DD /* CPSpecCellView.m in Sources */,
+				E52436AD1603A7B50026F2DD /* CPSpecDetailViewController.m in Sources */,
+				E5F9DA311603CA2900A6114F /* CPSubspec.m in Sources */,
+				E5F9DA381603D7AF00A6114F /* CPSpecification.m in Sources */,
+				E5D6301416040A3C008DFFD1 /* CPNavigationViewController.m in Sources */,
+				E5D6301F16042EA1008DFFD1 /* CPPodfileViewController.m in Sources */,
+				E5D630671604BC48008DFFD1 /* CPBorderView.m in Sources */,
+				E5D6306A1604BC58008DFFD1 /* CPBackgroundView.m in Sources */,
+				E5D630E21604EC35008DFFD1 /* CPEmptyView.m in Sources */,
+				E54B1B5F1605101D000E9B79 /* CPAutoSizingTextField.m in Sources */,
+				E5F6FF6B160518600027C6AC /* CPEmptyButtonCell.m in Sources */,
+				E5F6FF6E160518910027C6AC /* CPButtonCell.m in Sources */,
+				E55AF5271606AA3800F01798 /* CPStringScanner.m in Sources */,
+				E56FE85A160800050076C2CD /* CPExecutableWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +692,11 @@
 			isa = PBXTargetDependency;
 			target = E51E608715F9647400D4DF27 /* macrubyservice */;
 			targetProxy = E51E609D15F965C600D4DF27 /* PBXContainerItemProxy */;
+		};
+		E5759A621601524B00CCD85C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E591DA7915F27BB0006FB638 /* CocoaPodsApp */;
+			targetProxy = E5759A611601524B00CCD85C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -513,6 +736,29 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		E50B294216011E2D007DA213 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUGGING_SYMBOLS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E50B294316011E2D007DA213 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		E51E609415F9647400D4DF27 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -607,6 +853,7 @@
 			baseConfigurationReference = C453DA64E3B8423FB942292C /* Pods.xcconfig */;
 			buildSettings = {
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = NO;
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CocoaPodsApp/CocoaPodsApp-Prefix.pch";
@@ -621,6 +868,7 @@
 			baseConfigurationReference = C453DA64E3B8423FB942292C /* Pods.xcconfig */;
 			buildSettings = {
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = NO;
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CocoaPodsApp/CocoaPodsApp-Prefix.pch";
@@ -633,6 +881,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E50B294416011E2D007DA213 /* Build configuration list for PBXLegacyTarget "Deployment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E50B294216011E2D007DA213 /* Debug */,
+				E50B294316011E2D007DA213 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E51E609615F9647400D4DF27 /* Build configuration list for PBXNativeTarget "macrubyservice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

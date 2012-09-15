@@ -1,4 +1,0 @@
-Documentation set was installed to Xcode!
-
-Path: /Users/fabio/Library/Developer/Shared/Documentation/DocSets/org.cocoapods.MagicalRecord-HEAD-based-on-2.0.3.docset
-Time: 2012-09-10 18:19:58 +0000

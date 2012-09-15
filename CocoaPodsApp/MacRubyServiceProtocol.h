@@ -20,10 +20,12 @@
 @required
 
 - (void)stringForKey:(NSString*)key completion:(void (^)(NSString*))completion;
+- (void)numberForKey:(NSString*)key completion:(void (^)(NSNumber*))completion;
 - (void)arrayForKey:(NSString*)key completion:(void (^)(NSArray*))completion;
 - (void)dictionaryForKey:(NSString*)key completion:(void (^)(NSDictionary*))completion;
 
 - (void)stringForKey:(NSString *)key arguments:(NSDictionary*)arguments completion:(void (^)(NSString *))completion;
+- (void)numberForKey:(NSString *)key arguments:(NSDictionary*)arguments completion:(void (^)(NSNumber *))completion;
 - (void)arrayForKey:(NSString*)key arguments:(NSDictionary*)arguments completion:(void (^)(NSArray*))completion;
 - (void)dictionaryForKey:(NSString*)key arguments:(NSDictionary*)arguments completion:(void (^)(NSDictionary*))completion;
 

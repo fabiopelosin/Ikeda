@@ -17,11 +17,3 @@ install_resource()
       ;;
   esac
 }
-install_resource 'Fragaria/SMLCommandResult.xib'
-install_resource 'Fragaria/SMLDetab.xib'
-install_resource 'Fragaria/SMLEntab.xib'
-install_resource 'Fragaria/SMLGoToLine.xib'
-install_resource 'Fragaria/SMLOpenPanelAccessoryView.xib'
-install_resource 'Fragaria/SMLRegularExpressionHelp.xib'
-install_resource 'Fragaria/Syntax Definitions'
-install_resource 'Fragaria/SyntaxDefinitions.plist'

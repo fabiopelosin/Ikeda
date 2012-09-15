@@ -7,13 +7,12 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "INAppStoreWindow.h"
 
-@interface CPAppDelegate : NSObject <NSApplicationDelegate>
+@interface CPAppDelegate : NSObject <NSApplicationDelegate, NSWindowDelegate>
 
-@property (assign) IBOutlet NSWindow *window;
+@property (assign) IBOutlet INAppStoreWindow *window;
 
-@property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
-@property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
-@property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+- (void)runExecutableWithTitle:(NSString*)title arguments:(NSArray*)arguments workingDirectory:(NSString*)workingDirectory;
 
 @end

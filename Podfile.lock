@@ -1,36 +1,43 @@
 
 PODS:
-- A2DynamicDelegate (2.0.1):
+- A2DynamicDelegate (2.0.2):
   - libffi
-- BlocksKit (1.5.1):
+- AFNetworking (1.0)
+- BlocksKit (1.5.2):
   - A2DynamicDelegate
-- Fragaria (0.0.1)
+- DSFavIconManager (0.10.0)
+- INAppStoreWindow (1.1)
+- MAKVONotificationCenter (HEAD based on 0.0.1)
 - MagicalRecord (HEAD based on 2.0.3)
 - PXSourceList (0.8)
-- TwUI (0.4):
-  - TwUI/Support (= 0.4)
-  - TwUI/UIKit (= 0.4)
-- TwUI/Support (0.4)
-- TwUI/UIKit (0.4):
-  - TwUI/Support
+- SNRHUDKit (0.0.1)
 - libffi (3.0.11)
 
 DEPENDENCIES:
+- AFNetworking
 - BlocksKit
-- Fragaria
+- DSFavIconManager
+- INAppStoreWindow
+- MAKVONotificationCenter (HEAD)
 - MagicalRecord (HEAD)
 - PXSourceList
-- TwUI
+- SNRHUDKit (from `https://github.com/irrationalfab/SNRHUDKit.git', commit `a0791e31b2b0619a570a31bf9cf9d5a07bd5b3d0')
+
+EXTERNAL SOURCES:
+  SNRHUDKit:
+    :git: https://github.com/irrationalfab/SNRHUDKit.git
+    :commit: a0791e31b2b0619a570a31bf9cf9d5a07bd5b3d0
 
 SPEC CHECKSUMS:
-  A2DynamicDelegate: dead4cbf1ddd89b96ebe3a1d94ba08b707d3cffc
-  BlocksKit: b270fd80c9ea10908feba15ffdbedc0d39ce0382
-  Fragaria: 1741a33d1c2c69487a25ce561d7a41271a52405b
+  A2DynamicDelegate: 013b345f1aca891ded67a95c1512fad677c260a9
+  AFNetworking: 11ddec0dca78dc178cece46ef48ee0b65e47b293
+  BlocksKit: 12fbe889d9f8cc66adf5c9bd4cb0606071f214f2
+  DSFavIconManager: fc25bfc913797f8696b351f91ab9a6f0ace8abbc
+  INAppStoreWindow: 77f15fd07261a79ae443124927c94ad30905d900
+  MAKVONotificationCenter: 4540e226e809a110ecf2629d3afd375a5beb086a
   MagicalRecord: bab76c152f93668a25cf1b697e1f469f4c3bf691
   PXSourceList: 80a590e03f84221c62652a9b955b1d90b1807261
-  TwUI: cafc3ae0ad6ead59422b05b74405ac07152854f4
-  TwUI/Support: cafc3ae0ad6ead59422b05b74405ac07152854f4
-  TwUI/UIKit: cafc3ae0ad6ead59422b05b74405ac07152854f4
+  SNRHUDKit: 3d1c2aecd936d01f38121ebfb6f11e208b3a4ced
   libffi: 8a1d9ba43c0c84b546b42c6f742714e73aa07ae1
 
-COCOAPODS: 0.14.0.rc2
+COCOAPODS: 0.14.0

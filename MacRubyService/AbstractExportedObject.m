@@ -14,6 +14,10 @@
   completion([self valueForKey:key]);
 }
 
+- (void)numberForKey:(NSString*)key completion:(void (^)(NSNumber*))completion {
+  completion([self valueForKey:key]);
+}
+
 - (void)arrayForKey:(NSString*)key completion:(void (^)(NSArray*))completion {
   completion([self valueForKey:key]);
 }
@@ -25,6 +29,11 @@
 - (void)stringForKey:(NSString *)key arguments:(NSDictionary*)arguments completion:(void (^)(NSString *))completion {
   completion([self performSelector:NSSelectorFromString([key stringByAppendingString:@":"]) withObject:arguments]);
 }
+
+- (void)numberForKey:(NSString *)key arguments:(NSDictionary*)arguments completion:(void (^)(NSNumber *))completion {
+  completion([self performSelector:NSSelectorFromString([key stringByAppendingString:@":"]) withObject:arguments]);
+}
+
 
 - (void)arrayForKey:(NSString*)key arguments:(NSDictionary*)arguments completion:(void (^)(NSArray*))completion {
   completion([self performSelector:NSSelectorFromString([key stringByAppendingString:@":"]) withObject:arguments]);

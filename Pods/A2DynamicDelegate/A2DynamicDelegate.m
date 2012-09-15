@@ -28,7 +28,6 @@ Protocol *a2_delegateProtocol(Class cls);
 
 static Class a2_clusterSubclassForProtocol(Protocol *protocol);
 static void *A2DynamicDelegateProtocolKey;
-static dispatch_queue_t backgroundQueue = nil;
 
 #pragma mark -
 
@@ -48,6 +47,8 @@ static dispatch_queue_t backgroundQueue = nil;
 + (Protocol *) protocol;
 + (void) setProtocol: (Protocol *) protocol;
 
++ (dispatch_queue_t) dynamicDelegateBackgroundQueue;
+
 @end
 
 #pragma mark -
@@ -57,11 +58,6 @@ static dispatch_queue_t backgroundQueue = nil;
 @synthesize handlers = _handlers, delegatingObject = _delegatingObject;
 
 #pragma mark NSObject
-
-+ (void) load
-{
-	backgroundQueue = dispatch_queue_create("us.pandamonia.A2DynamicDelegate.backgroundQueue", DISPATCH_QUEUE_SERIAL);
-}
 
 + (id) allocWithZone: (NSZone *) zone
 {
@@ -96,7 +92,7 @@ static dispatch_queue_t backgroundQueue = nil;
 	
 	[super dealloc];
 	
-	dispatch_async(backgroundQueue, ^{
+	dispatch_async([A2DynamicDelegate dynamicDelegateBackgroundQueue], ^{
 		Class cls = objc_getClass(className);
 		
 		[[cls implementationMap] removeAllObjects];
@@ -183,6 +179,16 @@ static dispatch_queue_t backgroundQueue = nil;
 	return impsMap;
 }
 
++ (dispatch_queue_t) dynamicDelegateBackgroundQueue
+{
+	static dispatch_once_t onceToken;
+	static dispatch_queue_t backgroundQueue = nil;
+	dispatch_once(&onceToken, ^{
+		backgroundQueue = dispatch_queue_create("us.pandamonia.A2DynamicDelegate.backgroundQueue", DISPATCH_QUEUE_SERIAL);
+	});
+	return backgroundQueue;
+}
+
 #pragma mark Block Implementations
 
 + (id) blockImplementationForMethod: (SEL) selector classMethod: (BOOL) isClassMethod
@@ -244,7 +250,7 @@ static dispatch_queue_t backgroundQueue = nil;
 + (Protocol *) protocol
 {
 	Class class = self;
-	while (class.superclass != [A2DynamicDelegate class]) class = class.superclass;
+	while (class && class.superclass != [A2DynamicDelegate class]) class = class.superclass;
 	if (!class) return nil;
 	
 	return objc_getAssociatedObject(class, &A2DynamicDelegateProtocolKey);
@@ -252,7 +258,7 @@ static dispatch_queue_t backgroundQueue = nil;
 + (void) setProtocol: (Protocol *) protocol
 {
 	Class class = self;
-	while (class.superclass != [A2DynamicDelegate class]) class = class.superclass;
+	while (class && class.superclass != [A2DynamicDelegate class]) class = class.superclass;
 	if (!class) return;
 	
 	// If protocol is already set, return
@@ -359,7 +365,7 @@ static Class a2_clusterSubclassForProtocol(Protocol *protocol) {
 	
 	__block A2DynamicDelegate *dynamicDelegate;
 	
-	dispatch_sync(backgroundQueue, ^{
+	dispatch_sync([A2DynamicDelegate dynamicDelegateBackgroundQueue], ^{
 		dynamicDelegate = objc_getAssociatedObject(self, protocol);
 		
 		if (!dynamicDelegate)

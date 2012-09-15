@@ -1,0 +1,1 @@
+../../SNRHUDKit/SNRHUDKit/Classes/SNRHUDSegmentedCell.h

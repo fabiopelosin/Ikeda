@@ -7,6 +7,7 @@
 #
 
 require 'cocoapods'
+require 'active_support/core_ext/array/conversions'
 
 class ExportedObject < AbstractExportedObject
   Pod = ::Pod
@@ -31,8 +32,7 @@ class ExportedObject < AbstractExportedObject
   # http://rubydoc.info/github/CocoaPods/CocoaPods/master/Pod/Specification
   def specs
     Pod::Source.all_sets.map do |set|
-      spec = set.specification
-      spec_to_hash(spec)
+      set_to_hash(set)
     end
   end
 
@@ -40,17 +40,43 @@ class ExportedObject < AbstractExportedObject
     all_sets = Pod::Source.all_sets
     arguments['names'].map do |name|
       set = all_sets.find { |set| set.name == name }
-      spec_to_hash(set.specification)
+      set_to_hash(set)
     end
   end
 
-  def spec_to_hash(spec)
+  # Uses the attributes of CPSpecification as the keys. 
+  #
+  def set_to_hash(set)
+    return {} unless set
+    pod = Pod::Command::Presenter::CocoaPod.new(set)
+
     hash = {}
-    %w|name version homepage summary description defined_in_file|.each do |attribute|
-      hash[attribute] = spec.send(attribute).to_s
+    %w|name version versions authors homepage summary license|.each do |attribute|
+      hash[attribute] = pod.send(attribute).to_s
     end
-    hash['supports_ios'] = spec.available_platforms.include?(:ios)
-    hash['supports_osx'] = spec.available_platforms.include?(:osx)
+
+    hash['sourceURL']       = pod.source_url
+    hash['specDescription'] = pod.description
+    hash['subspecs']        = pod.subspecs.map(&:name) if pod.subspecs
+    hash['definedInFile']   = pod.spec.defined_in_file.to_s
+    hash['supportsIOS']     = pod.spec.available_platforms.include?(:ios)
+    hash['supportsOSX']     = pod.spec.available_platforms.include?(:osx)
     hash
+  end
+
+  def repos
+    Pod::Source.all.map do |source|
+      hash = {}
+      hash['name'] = source.name
+      hash['path'] = source.path.to_s
+      hash
+    end
+  end
+
+  def needs_setup
+    dir = (Pod::Config.instance.repos_dir + 'master')
+    r = dir.exist? && Pod::Command::Repo::compatible?('master')
+    NSLog r ? "OK" : "FALSE"
+    r
   end
 end
