@@ -73,18 +73,20 @@
                                                                        queue:[[NSOperationQueue alloc] init]
                                                                   usingBlock:notificationBlock];
 
-  NSTask *task;
-  task = [[NSTask alloc] init];
-  if (workingDirectory) {
-    [task setCurrentDirectoryPath:[workingDirectory stringByStandardizingPath]];
-  }
+  NSMutableDictionary *environment = [[[NSProcessInfo processInfo] environment] mutableCopy];
+  environment[@"CP_STDOUT_SYNC"] = @"TRUE";
+  arguments = [@[@"--no-color", @"--verbose"] arrayByAddingObjectsFromArray:arguments];
+  NSTask *task = [[NSTask alloc] init];
   [task setLaunchPath:_executablePath];
-  [task setEnvironment: @{ @"CP_STDOUT_SYNC" : @"TRUE" } ];
-  [task setArguments:[@[@"--no-color", @"--verbose"] arrayByAddingObjectsFromArray:arguments]];
+  [task setEnvironment: environment];
+  [task setArguments:arguments];
   [task setStandardInput:[NSPipe pipe]];
   [task setStandardOutput:pipe];
   [task setStandardError:pipe];
-  
+  if (workingDirectory) {
+    [task setCurrentDirectoryPath:[workingDirectory stringByStandardizingPath]];
+  }
+
   task.terminationHandler = ^(NSTask *task) {
     NSData *data = [[task.standardOutput fileHandleForReading] readDataToEndOfFile];
     NSString*output = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
