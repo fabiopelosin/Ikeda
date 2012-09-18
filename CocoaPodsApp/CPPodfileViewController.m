@@ -64,15 +64,23 @@
 }
 
 - (IBAction)installAction:(NSButton*)sender {
-#if DEBUG
-  [self runExecutableWithTitle:@"Pod install (no update)" arguments: @[@"install", @"--no-update"]];
-#else
-  [self runExecutableWithTitle:@"Pod install" arguments: @[@"install"]];
-#endif
+  NSString *title = @"Install";
+  NSArray *arguments = @[@"install"];
+  if (([[NSApp currentEvent] modifierFlags] & NSAlternateKeyMask) != 0) {
+    title = [title stringByAppendingString:@" (no repo update)"];
+    arguments = [arguments arrayByAddingObject:@"--no-update"];
+  }
+  [self runExecutableWithTitle:title arguments:arguments];
 }
 
 - (IBAction)updateAction:(NSButton*)sender {
-  [self runExecutableWithTitle:@"Pod update" arguments: @[@"update"]];
+  NSString *title = @"Update";
+  NSArray *arguments = @[@"update"];
+  if (([[NSApp currentEvent] modifierFlags] & NSAlternateKeyMask) != 0) {
+    title = [title stringByAppendingString:@" (no repo update)"];
+    arguments = [arguments arrayByAddingObject:@"--no-update"];
+  }
+  [self runExecutableWithTitle:title arguments:arguments];
 }
 
 - (IBAction)docsButtonAction:(id)sender {
