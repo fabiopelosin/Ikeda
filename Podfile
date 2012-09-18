@@ -14,3 +14,11 @@ pod 'DSFavIconManager'
 #pod 'Fragaria', :local => "~/Desktop/moritzhFragaria"
 #pod 'SNRHUDKit', :local => "~/Desktop/SNRHUDKit"
 
+post_install do | installer |
+  puts "POST INSTALL"
+  prefix_header = config.project_pods_root + 'Pods-prefix.pch'
+  puts text = prefix_header.read.gsub(%{#import "CoreData+MagicalRecord.h"}, %{#define MR_ENABLE_ACTIVE_RECORD_LOGGING 0\n#import "CoreData+MagicalRecord.h"})
+  prefix_header.open('w') do |file|
+    file.write(text)
+  end
+end
