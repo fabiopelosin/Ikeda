@@ -237,7 +237,7 @@
 						<array class="NSMutableArray" key="NSSubviews">
 							<object class="NSTextField" id="455793649">
 								<reference key="NSNextResponder" ref="593945405"/>
-								<int key="NSvFlags">268</int>
+								<int key="NSvFlags">-2147483380</int>
 								<string key="NSFrame">{{451, 5}, {406, 14}}</string>
 								<reference key="NSSuperview" ref="593945405"/>
 								<reference key="NSWindow"/>
@@ -274,7 +274,6 @@
 								<string key="NSFrame">{{874, 4}, {16, 16}}</string>
 								<reference key="NSSuperview" ref="593945405"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:945</string>
 								<int key="NSpiFlags">28938</int>
 								<double key="NSMaxValue">100</double>
