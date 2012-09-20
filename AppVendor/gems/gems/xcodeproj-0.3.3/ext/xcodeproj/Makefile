@@ -62,17 +62,17 @@ LIBRUBYARG_STATIC = -l$(RUBY_SO_NAME)-static
 OUTFLAG = -o 
 COUTFLAG = -o 
 
-RUBY_EXTCONF_H = 
+RUBY_EXTCONF_H = extconf.h
 cflags   =  $(optflags) $(debugflags) $(warnflags)
 optflags = -O3
 debugflags = -ggdb
 warnflags = -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration
-CFLAGS   = -fno-common $(cflags)  -fno-common -pipe -O3 -Wall $(ARCH_FLAG)
+CFLAGS   = -fno-common  -fno-common -pipe -std=c99 $(ARCH_FLAG)
 INCFLAGS = -I. -I$(arch_hdrdir) -I$(hdrdir)/ruby/backward -I$(hdrdir) -I$(srcdir)
 DEFS     = 
-CPPFLAGS =  -I/Users/fabio/.rvm/usr/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE $(DEFS) $(cppflags)
+CPPFLAGS = -DRUBY_EXTCONF_H=\"$(RUBY_EXTCONF_H)\" -I/Users/fabio/.rvm/usr/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE $(DEFS) $(cppflags)
 CXXFLAGS = $(CFLAGS) $(cxxflags)
-ldflags  = -L. -L/usr/local/lib
+ldflags  = -L. -L/usr/local/lib -framework CoreFoundation
 dldflags = -Wl,-undefined,dynamic_lookup -Wl,-multiply_defined,suppress -Wl,-flat_namespace
 ARCH_FLAG = 
 DLDFLAGS = $(ldflags) $(dldflags) $(ARCH_FLAG)
@@ -112,20 +112,20 @@ DISTCLEANDIRS =
 
 extout = 
 extout_prefix = 
-target_prefix = /json/ext
+target_prefix = 
 LOCAL_LIBS = 
 LIBS = $(LIBRUBYARG_SHARED)  -lpthread -ldl -lobjc 
-SRCS = parser.c
-OBJS = parser.o
-TARGET = parser
+SRCS = xcodeproj_ext.c
+OBJS = xcodeproj_ext.o
+TARGET = xcodeproj_ext
 DLLIB = $(TARGET).bundle
 EXTSTATIC = 
 STATIC_LIB = 
 
 BINDIR        = $(bindir)
 RUBYCOMMONDIR = $(sitedir)$(target_prefix)
-RUBYLIBDIR = /Users/fabio/Documents/GitHub/Ikeda/Vendor/bundler/ruby/1.9.1/gems/json-1.7.5/lib$(target_prefix)
-RUBYARCHDIR = /Users/fabio/Documents/GitHub/Ikeda/Vendor/bundler/ruby/1.9.1/gems/json-1.7.5/lib$(target_prefix)
+RUBYLIBDIR = /Users/fabio/Documents/GitHub/Ikeda/Vendor/bundler/ruby/1.9.1/gems/xcodeproj-0.3.3/ext$(target_prefix)
+RUBYARCHDIR = /Users/fabio/Documents/GitHub/Ikeda/Vendor/bundler/ruby/1.9.1/gems/xcodeproj-0.3.3/ext$(target_prefix)
 HDRDIR        = $(rubyhdrdir)/ruby$(target_prefix)
 ARCHHDRDIR    = $(rubyhdrdir)/$(arch)/ruby$(target_prefix)
 
@@ -165,7 +165,7 @@ install-rb-default: pre-install-rb-default
 pre-install-rb: Makefile
 pre-install-rb-default: Makefile
 pre-install-rb-default:
-	$(ECHO) installing default parser libraries
+	$(ECHO) installing default xcodeproj_ext libraries
 $(RUBYARCHDIR):
 	$(Q) $(MAKEDIRS) $@
 
@@ -204,11 +204,10 @@ site-install-rb: install-rb
 	$(Q) $(CC) $(INCFLAGS) $(CPPFLAGS) $(CFLAGS) $(COUTFLAG)$@ -c $<
 
 $(DLLIB): $(OBJS) Makefile
-	$(ECHO) linking shared-object json/ext/$(DLLIB)
+	$(ECHO) linking shared-object $(DLLIB)
 	@-$(RM) $(@)
 	$(Q) $(LDSHARED) -o $@ $(OBJS) $(LIBPATH) $(DLDFLAGS) $(LOCAL_LIBS) $(LIBS)
 
 
 
-###
-parser.o: parser.c parser.h $(srcdir)/../fbuffer/fbuffer.h
+$(OBJS): $(hdrdir)/ruby.h $(hdrdir)/ruby/defines.h $(arch_hdrdir)/ruby/config.h $(RUBY_EXTCONF_H)

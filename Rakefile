@@ -19,7 +19,7 @@ namespace :vendor do
     sh "rm -rf #{ruby_dir}"
     sh "mkdir -p #{ruby_dir}"
     sh "cp -RH ~/.sm/pkg/versions/tokaidoapp/active/ #{ruby_dir}"
-    puts_success "Self contained ruby installed",ruby_dir
+    puts_success "Self contained ruby installed", ruby_dir
   end
 
   desc "Updates the vendored CocoaPods gem and it dependencies using AppGemfile as a Gemfile"
@@ -33,6 +33,7 @@ namespace :vendor do
     Dir.chdir "Vendor" do
       sh "bundle install --path bundler"
     end
+    puts_success "Gems downloaded", "Vendor/bundler"
   end
 
   desc "Prepares the app vendor folder"
@@ -47,6 +48,7 @@ namespace :vendor do
     sh "rm -rf AppVendor/ruby/src"
     sh "rm -rf AppVendor/gems/cache"
     sh "rm -rf AppVendor/gems/specifications"
+    puts_success "AppVendor folder prepared", "AppVendor"
   end
 end
 

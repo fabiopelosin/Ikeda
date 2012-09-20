@@ -124,8 +124,8 @@ STATIC_LIB =
 
 BINDIR        = $(bindir)
 RUBYCOMMONDIR = $(sitedir)$(target_prefix)
-RUBYLIBDIR = /Users/fabio/Desktop/CocoaPodsApp/vendor/bundler/ruby/1.9.1/gems/json-1.7.5/lib$(target_prefix)
-RUBYARCHDIR = /Users/fabio/Desktop/CocoaPodsApp/vendor/bundler/ruby/1.9.1/gems/json-1.7.5/lib$(target_prefix)
+RUBYLIBDIR = /Users/fabio/Documents/GitHub/Ikeda/Vendor/bundler/ruby/1.9.1/gems/json-1.7.5/lib$(target_prefix)
+RUBYARCHDIR = /Users/fabio/Documents/GitHub/Ikeda/Vendor/bundler/ruby/1.9.1/gems/json-1.7.5/lib$(target_prefix)
 HDRDIR        = $(rubyhdrdir)/ruby$(target_prefix)
 ARCHHDRDIR    = $(rubyhdrdir)/$(arch)/ruby$(target_prefix)
 
