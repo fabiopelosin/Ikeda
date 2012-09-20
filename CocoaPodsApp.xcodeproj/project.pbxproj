@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		094B011CF38442FFB173D883 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 12CF706AD7304DBD919F6B98 /* libPods.a */; };
+		E50E5F6B160B9EAE0078A590 /* CocoaPodsApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E50E5F69160B9EAE0078A590 /* CocoaPodsApp.xcdatamodeld */; };
+		E50E5F75160B9F690078A590 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = E50E5F74160B9F690078A590 /* Icon.icns */; };
 		E51E608A15F9647400D4DF27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E51E608915F9647400D4DF27 /* Foundation.framework */; };
 		E51E609015F9647400D4DF27 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E51E608E15F9647400D4DF27 /* InfoPlist.strings */; };
 		E51E609315F9647400D4DF27 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E51E609215F9647400D4DF27 /* main.m */; };
@@ -27,7 +29,6 @@
 		E54B9AE115F97DBA00AB19D3 /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E54B9AE015F97DBA00AB19D3 /* MacRuby.framework */; };
 		E54B9AE915F9818C00AB19D3 /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = E54B9AE315F97E2400AB19D3 /* rb_main.rb */; };
 		E555F02615FD0BBC00167373 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E591DA8215F27BB0006FB638 /* CoreData.framework */; };
-		E555F06115FD10A100167373 /* CocoaPodsApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E555F05F15FD10A100167373 /* CocoaPodsApp.xcdatamodeld */; };
 		E55AF5271606AA3800F01798 /* CPStringScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = E55AF5261606AA3800F01798 /* CPStringScanner.m */; };
 		E55CD1F215FEB8EE00AE8206 /* CPSourceListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E55CD1F115FEB8EE00AE8206 /* CPSourceListItem.m */; };
 		E55CD1FC15FECE1300AE8206 /* MasterRepoIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = E55CD1FB15FECE1300AE8206 /* MasterRepoIcon.png */; };
@@ -42,7 +43,6 @@
 		E591DA8F15F27BB0006FB638 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E591DA8D15F27BB0006FB638 /* Credits.rtf */; };
 		E591DA9215F27BB0006FB638 /* CPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E591DA9115F27BB0006FB638 /* CPAppDelegate.m */; };
 		E591DA9515F27BB0006FB638 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E591DA9315F27BB0006FB638 /* MainMenu.xib */; };
-		E591DA9C15F27C5F006FB638 /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = E591DA9B15F27C5F006FB638 /* Icon.icns */; };
 		E5B9CBDF15FE312200ACED8A /* CPGemBridgeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B9CBDE15FE312200ACED8A /* CPGemBridgeManager.m */; };
 		E5B9CBF815FE3FBC00ACED8A /* CPVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B9CBF715FE3FBC00ACED8A /* CPVersion.m */; };
 		E5B9CBFB15FE3FBC00ACED8A /* CPSet.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B9CBFA15FE3FBC00ACED8A /* CPSet.m */; };
@@ -123,6 +123,9 @@
 /* Begin PBXFileReference section */
 		12CF706AD7304DBD919F6B98 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C453DA64E3B8423FB942292C /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		E50E5F64160B9E600078A590 /* Xcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Xcode.h; sourceTree = "<group>"; };
+		E50E5F6A160B9EAE0078A590 /* CocoaPodsApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CocoaPodsApp.xcdatamodel; sourceTree = "<group>"; };
+		E50E5F74160B9F690078A590 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
 		E51E608815F9647400D4DF27 /* org.cocoapods.macrubyservice.xpc */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = org.cocoapods.macrubyservice.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
 		E51E608915F9647400D4DF27 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E51E608D15F9647400D4DF27 /* MacRubyService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MacRubyService-Info.plist"; sourceTree = "<group>"; };
@@ -152,7 +155,6 @@
 		E54B1B5E1605101D000E9B79 /* CPAutoSizingTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPAutoSizingTextField.m; sourceTree = "<group>"; };
 		E54B9AE015F97DBA00AB19D3 /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = Library/Frameworks/MacRuby.framework; sourceTree = DEVELOPER_DIR; };
 		E54B9AE315F97E2400AB19D3 /* rb_main.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
-		E555F06015FD10A100167373 /* CocoaPodsApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CocoaPodsApp.xcdatamodel; sourceTree = "<group>"; };
 		E55AF5251606AA3800F01798 /* CPStringScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPStringScanner.h; sourceTree = "<group>"; };
 		E55AF5261606AA3800F01798 /* CPStringScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPStringScanner.m; sourceTree = "<group>"; };
 		E55CD1F015FEB8EE00AE8206 /* CPSourceListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPSourceListItem.h; sourceTree = "<group>"; };
@@ -176,7 +178,6 @@
 		E591DA9015F27BB0006FB638 /* CPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPAppDelegate.h; sourceTree = "<group>"; };
 		E591DA9115F27BB0006FB638 /* CPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPAppDelegate.m; sourceTree = "<group>"; };
 		E591DA9415F27BB0006FB638 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		E591DA9B15F27C5F006FB638 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = Icon.icns; path = ../Icon.icns; sourceTree = "<group>"; };
 		E5B9CBDD15FE312200ACED8A /* CPGemBridgeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPGemBridgeManager.h; sourceTree = "<group>"; };
 		E5B9CBDE15FE312200ACED8A /* CPGemBridgeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPGemBridgeManager.m; sourceTree = "<group>"; };
 		E5B9CBE015FE336700ACED8A /* CocoaPodsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocoaPodsModel.h; sourceTree = "<group>"; };
@@ -193,7 +194,6 @@
 		E5BE84D415FFAA2500AABA55 /* CPMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CPMainViewController.xib; sourceTree = "<group>"; };
 		E5C6F3E115FBA7CF0038976B /* exported_object.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = exported_object.rb; sourceTree = "<group>"; };
 		E5C6F3E315FBB2050038976B /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
-		E5C6F3E515FBB21A0038976B /* Xcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Xcode.h; path = ../Xcode.h; sourceTree = "<group>"; };
 		E5D6301116040A3C008DFFD1 /* CPNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPNavigationViewController.h; sourceTree = "<group>"; };
 		E5D6301216040A3C008DFFD1 /* CPNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPNavigationViewController.m; sourceTree = "<group>"; };
 		E5D6301C16042EA1008DFFD1 /* CPPodfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPPodfileViewController.h; sourceTree = "<group>"; };
@@ -323,11 +323,10 @@
 		E536203D15F580E800C2D4CC /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				E5C6F3E515FBB21A0038976B /* Xcode.h */,
+				E50E5F69160B9EAE0078A590 /* CocoaPodsApp.xcdatamodeld */,
 				E5B9CBE015FE336700ACED8A /* CocoaPodsModel.h */,
 				E5F9DA361603D7AF00A6114F /* CPSpecification.h */,
 				E5F9DA371603D7AF00A6114F /* CPSpecification.m */,
-				E555F05F15FD10A100167373 /* CocoaPodsApp.xcdatamodeld */,
 				E5F9DA2F1603CA2900A6114F /* CPSubspec.h */,
 				E5F9DA301603CA2900A6114F /* CPSubspec.m */,
 				E5B9CBF915FE3FBC00ACED8A /* CPSet.h */,
@@ -336,6 +335,7 @@
 				E5B9CBF715FE3FBC00ACED8A /* CPVersion.m */,
 				E51FB4951600E3E2001150D5 /* CPPodfile.h */,
 				E51FB4961600E3E2001150D5 /* CPPodfile.m */,
+				E50E5F64160B9E600078A590 /* Xcode.h */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -388,6 +388,7 @@
 		E5795B6216015ED600AB953B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E50E5F74160B9F690078A590 /* Icon.icns */,
 				E56FE8491607E31E0076C2CD /* CocoaPods-Podfile.icns */,
 				E55CD1FD15FED01200AE8206 /* reposIcon.png */,
 				E55CD1FB15FECE1300AE8206 /* MasterRepoIcon.png */,
@@ -454,7 +455,6 @@
 		E591DA8515F27BB0006FB638 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E591DA9B15F27C5F006FB638 /* Icon.icns */,
 				E591DA8615F27BB0006FB638 /* CocoaPodsApp-Info.plist */,
 				E591DA8715F27BB0006FB638 /* InfoPlist.strings */,
 				E591DA8A15F27BB0006FB638 /* main.m */,
@@ -596,7 +596,6 @@
 				E591DA8915F27BB0006FB638 /* InfoPlist.strings in Resources */,
 				E591DA8F15F27BB0006FB638 /* Credits.rtf in Resources */,
 				E591DA9515F27BB0006FB638 /* MainMenu.xib in Resources */,
-				E591DA9C15F27C5F006FB638 /* Icon.icns in Resources */,
 				E55CD1FC15FECE1300AE8206 /* MasterRepoIcon.png in Resources */,
 				E55CD1FE15FED01200AE8206 /* reposIcon.png in Resources */,
 				E5BE84D615FFAA2500AABA55 /* CPMainViewController.xib in Resources */,
@@ -605,6 +604,7 @@
 				E5D6302016042EA1008DFFD1 /* CPPodfileViewController.xib in Resources */,
 				E56FE84A1607E31E0076C2CD /* CocoaPods-Podfile.icns in Resources */,
 				E56FE85B160800050076C2CD /* CPExecutableWindowController.xib in Resources */,
+				E50E5F75160B9F690078A590 /* Icon.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -656,7 +656,6 @@
 			files = (
 				E591DA8B15F27BB0006FB638 /* main.m in Sources */,
 				E591DA9215F27BB0006FB638 /* CPAppDelegate.m in Sources */,
-				E555F06115FD10A100167373 /* CocoaPodsApp.xcdatamodeld in Sources */,
 				E5B9CBDF15FE312200ACED8A /* CPGemBridgeManager.m in Sources */,
 				E5B9CBF815FE3FBC00ACED8A /* CPVersion.m in Sources */,
 				E5B9CBFB15FE3FBC00ACED8A /* CPSet.m in Sources */,
@@ -682,6 +681,7 @@
 				E5F6FF6E160518910027C6AC /* CPButtonCell.m in Sources */,
 				E55AF5271606AA3800F01798 /* CPStringScanner.m in Sources */,
 				E56FE85A160800050076C2CD /* CPExecutableWindowController.m in Sources */,
+				E50E5F6B160B9EAE0078A590 /* CocoaPodsApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -920,14 +920,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		E555F05F15FD10A100167373 /* CocoaPodsApp.xcdatamodeld */ = {
+		E50E5F69160B9EAE0078A590 /* CocoaPodsApp.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				E555F06015FD10A100167373 /* CocoaPodsApp.xcdatamodel */,
+				E50E5F6A160B9EAE0078A590 /* CocoaPodsApp.xcdatamodel */,
 			);
-			currentVersion = E555F06015FD10A100167373 /* CocoaPodsApp.xcdatamodel */;
+			currentVersion = E50E5F6A160B9EAE0078A590 /* CocoaPodsApp.xcdatamodel */;
 			path = CocoaPodsApp.xcdatamodeld;
-			sourceTree = SOURCE_ROOT;
+			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
