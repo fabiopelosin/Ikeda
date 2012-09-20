@@ -1,0 +1,25 @@
+have_func: checking for rb_block_call() in ruby/ruby.h... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../../.ext/include/x86_64-darwin12.2.0 -I../../.././include -I../../.././ext/racc/cparse -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib     -lruby-static  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ruby/ruby.h>
+4: 
+5: /*top*/
+6: int main() {return 0;}
+7: extern int t(void);
+8: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_block_call; return 0; }
+/* end */
+
+--------------------
+
+extconf.h is:
+/* begin */
+1: #ifndef EXTCONF_H
+2: #define EXTCONF_H
+3: #define HAVE_RB_BLOCK_CALL 1
+4: #endif
+/* end */
+

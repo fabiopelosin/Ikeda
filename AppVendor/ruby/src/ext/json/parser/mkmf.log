@@ -1,0 +1,33 @@
+have_header: checking for ruby/re.h... -------------------- yes
+
+"/usr/bin/gcc-4.2 -E -I../../../.ext/include/x86_64-darwin12.2.0 -I../../.././include -I../../.././ext/json/parser -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ruby/re.h>
+/* end */
+
+--------------------
+
+have_header: checking for ruby/encoding.h... -------------------- yes
+
+"/usr/bin/gcc-4.2 -E -I../../../.ext/include/x86_64-darwin12.2.0 -I../../.././include -I../../.././ext/json/parser -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ruby/encoding.h>
+/* end */
+
+--------------------
+
+extconf.h is:
+/* begin */
+1: #ifndef EXTCONF_H
+2: #define EXTCONF_H
+3: #define HAVE_RUBY_RE_H 1
+4: #define HAVE_RUBY_ENCODING_H 1
+5: #endif
+/* end */
+

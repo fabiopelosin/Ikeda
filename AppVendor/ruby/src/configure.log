@@ -1,0 +1,444 @@
+checking build system type... x86_64-apple-darwin12.2.0
+checking host system type... x86_64-apple-darwin12.2.0
+checking target system type... x86_64-apple-darwin12.2.0
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether /usr/bin/gcc-4.2 accepts -g... yes
+checking for /usr/bin/gcc-4.2 option to accept ISO C89... none needed
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking how to run the C preprocessor... /usr/bin/gcc-4.2 -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking whether /usr/bin/gcc-4.2 needs -traditional... no
+checking whether the linker is GNU ld... no
+checking whether /usr/bin/gcc-4.2 -E accepts -o... yes
+checking for real target cpu... x86_64
+checking for ranlib... ranlib
+checking for ar... ar
+checking for as... as
+checking for objdump... no
+checking for gobjdump... no
+checking for objcopy... no
+checking for gobjcopy... no
+checking for nm... nm
+checking whether ln -s works... yes
+checking whether make sets $(MAKE)... yes
+checking for a BSD-compatible install... /usr/bin/install -c
+checking for a thread-safe mkdir -p...  -d
+use 'mkdir -p' as MKDIR_P
+checking for dot... dot
+checking for doxygen... no
+checking for pkg-config... pkg-config
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking for cd using physical directory... cd -P
+checking whether -Wno-unused-parameter is accepted... yes
+checking whether -Wno-parentheses is accepted... yes
+checking whether -Wno-long-long is accepted... yes
+checking whether -Wno-missing-field-initializers is accepted... yes
+checking whether -Werror=pointer-arith is accepted... yes
+checking whether -Werror=write-strings is accepted... yes
+checking whether -Werror=declaration-after-statement is accepted... yes
+checking whether -Werror=shorten-64-to-32 is accepted... yes
+checking whether -Werror=implicit-function-declaration is accepted... yes
+checking whether -Wextra is accepted... yes
+checking whether -ggdb is accepted... yes
+checking whether -fvisibility=hidden is accepted... yes
+checking whether -Wl,-unexported_symbol,_Init_* is accepted... yes
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking whether byte ordering is bigendian... no
+checking for an ANSI C-conforming const... yes
+checking whether char is unsigned... no
+checking for inline... inline
+checking for working volatile... yes
+checking for long long... yes
+checking for off_t... yes
+checking char bit... 8
+checking size of int... 4
+checking size of short... 2
+checking size of long... 8
+checking size of long long... 8
+checking size of __int64... 0
+checking size of off_t... 8
+checking size of void*... 8
+checking size of float... 4
+checking size of double... 8
+checking size of time_t... 8
+checking for printf prefix for long long... ll
+checking for pid_t... yes
+checking for convertible type of pid_t... INT
+checking for uid_t... yes
+checking for convertible type of uid_t... UINT
+checking for gid_t... yes
+checking for convertible type of gid_t... UINT
+checking for time_t... yes
+checking for convertible type of time_t... LONG
+checking for dev_t... yes
+checking for convertible type of dev_t... INT
+checking for mode_t... yes
+checking for convertible type of mode_t... UINT
+checking for rlim_t... yes
+checking for convertible type of rlim_t... ULL
+checking for prototypes... yes
+checking token paste string... ansi
+checking stringization... #expr
+checking string literal concatenation... yes
+checking for variable length prototypes and stdarg.h... yes
+checking for variable length macro... yes
+checking for noreturn function attribute... __attribute__ ((noreturn)) x
+checking for deprecated function attribute... __attribute__ ((deprecated)) x
+checking for noinline function attribute... __attribute__ ((noinline)) x
+checking for stdcall function attribute... x
+checking for cdecl function attribute... x
+checking for fastcall function attribute... x
+checking for function alias... no
+checking for atomic builtins... yes
+checking for exported function attribute... __attribute__ ((visibility("default")))
+checking whether sys_nerr is declared... yes
+checking whether Mac OS X 10.5 or later... yes
+checking for broken crypt with 8bit chars... no
+checking for crypt in -lcrypt... (cached) no
+checking for dlopen in -ldl... yes
+checking for shl_load in -ldld... no
+checking for socketpair in -lsocket... no
+checking for clock_gettime in -lrt... no
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking for stdbool.h that conforms to C99... yes
+checking for _Bool... yes
+checking for sys/wait.h that is POSIX.1 compatible... yes
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking sys/file.h usability... yes
+checking sys/file.h presence... yes
+checking for sys/file.h... yes
+checking sys/ioctl.h usability... yes
+checking sys/ioctl.h presence... yes
+checking for sys/ioctl.h... yes
+checking sys/syscall.h usability... yes
+checking sys/syscall.h presence... yes
+checking for sys/syscall.h... yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking sys/fcntl.h usability... yes
+checking sys/fcntl.h presence... yes
+checking for sys/fcntl.h... yes
+checking sys/select.h usability... yes
+checking sys/select.h presence... yes
+checking for sys/select.h... yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking sys/times.h usability... yes
+checking sys/times.h presence... yes
+checking for sys/times.h... yes
+checking sys/param.h usability... yes
+checking sys/param.h presence... yes
+checking for sys/param.h... yes
+checking syscall.h usability... no
+checking syscall.h presence... no
+checking for syscall.h... no
+checking pwd.h usability... yes
+checking pwd.h presence... yes
+checking for pwd.h... yes
+checking grp.h usability... yes
+checking grp.h presence... yes
+checking for grp.h... yes
+checking a.out.h usability... no
+checking a.out.h presence... no
+checking for a.out.h... no
+checking utime.h usability... yes
+checking utime.h presence... yes
+checking for utime.h... yes
+checking direct.h usability... no
+checking direct.h presence... no
+checking for direct.h... no
+checking sys/resource.h usability... yes
+checking sys/resource.h presence... yes
+checking for sys/resource.h... yes
+checking sys/mkdev.h usability... no
+checking sys/mkdev.h presence... no
+checking for sys/mkdev.h... no
+checking sys/utime.h usability... no
+checking sys/utime.h presence... no
+checking for sys/utime.h... no
+checking xti.h usability... no
+checking xti.h presence... no
+checking for xti.h... no
+checking netinet/in_systm.h usability... yes
+checking netinet/in_systm.h presence... yes
+checking for netinet/in_systm.h... yes
+checking float.h usability... yes
+checking float.h presence... yes
+checking for float.h... yes
+checking ieeefp.h usability... no
+checking ieeefp.h presence... no
+checking for ieeefp.h... no
+checking for ucontext.h... (cached) no
+checking intrinsics.h usability... no
+checking intrinsics.h presence... no
+checking for intrinsics.h... no
+checking langinfo.h usability... yes
+checking langinfo.h presence... yes
+checking for langinfo.h... yes
+checking locale.h usability... yes
+checking locale.h presence... yes
+checking for locale.h... yes
+checking sys/sendfile.h usability... no
+checking sys/sendfile.h presence... no
+checking for sys/sendfile.h... no
+checking time.h usability... yes
+checking time.h presence... yes
+checking for time.h... yes
+checking for net/socket.h... (cached) no
+checking for sys/socket.h... (cached) yes
+checking process.h usability... no
+checking process.h presence... no
+checking for process.h... no
+checking for size_t... yes
+checking size of size_t... 8
+checking size of ptrdiff_t... 8
+checking for printf prefix for size_t... z
+checking for printf prefix for ptrdiff_t... t
+checking for struct stat.st_blksize... yes
+checking for struct stat.st_blocks... yes
+checking for struct stat.st_rdev... yes
+checking size of struct stat.st_size... SIZEOF_LONG
+checking size of struct stat.st_blocks... SIZEOF_LONG
+checking for struct stat.st_atim... no
+checking for struct stat.st_atimespec... yes
+checking for struct stat.st_atimensec... no
+checking for struct stat.st_mtim... no
+checking for struct stat.st_mtimespec... yes
+checking for struct stat.st_mtimensec... no
+checking for struct stat.st_ctim... no
+checking for struct stat.st_ctimespec... yes
+checking for struct stat.st_ctimensec... no
+checking for struct timespec... yes
+checking for struct timezone... yes
+checking for clockid_t... no
+checking for fd_mask... yes
+checking for int8_t... yes
+checking size of int8_t... 1
+checking for uint8_t... yes
+checking size of uint8_t... 1
+checking for int16_t... yes
+checking size of int16_t... 2
+checking for uint16_t... yes
+checking size of uint16_t... 2
+checking for int32_t... yes
+checking size of int32_t... 4
+checking for uint32_t... yes
+checking size of uint32_t... 4
+checking for int64_t... yes
+checking size of int64_t... 8
+checking for uint64_t... yes
+checking size of uint64_t... 8
+checking for int128_t... no
+checking for uint128_t... no
+checking for intptr_t... yes
+checking size of intptr_t... 8
+checking for uintptr_t... yes
+checking size of uintptr_t... 8
+checking for ssize_t... yes
+checking size of ssize_t... 8
+checking for stack end address... no
+checking for gc_mark and gc_children stack frame approximate size(word)... 17
+checking for uid_t in sys/types.h... (cached) yes
+checking type of array argument to getgroups... (cached) gid_t
+checking return type of signal handlers... void
+checking for working alloca.h... yes
+checking for alloca... yes
+checking for dynamic size alloca... ok
+checking for working memcmp... yes
+checking for broken erfc of glibc-2.3.6 on IA64... no
+checking for dup2... yes
+checking for memmove... yes
+checking for strerror... yes
+checking for strchr... yes
+checking for strstr... yes
+checking for crypt... yes
+checking for flock... yes
+checking for isnan... yes
+checking for finite... yes
+checking for isinf... yes
+checking for hypot... yes
+checking for acosh... yes
+checking for erf... yes
+checking for tgamma... yes
+checking for lgamma_r... yes
+checking for cbrt... yes
+checking for strlcpy... yes
+checking for strlcat... yes
+checking for ffs... yes
+checking for setproctitle... no
+checking for signbit... yes
+checking for fmod... yes
+checking for killpg... yes
+checking for wait4... yes
+checking for waitpid... yes
+checking for fork... yes
+checking for spawnv... no
+checking for syscall... yes
+checking for __syscall... yes
+checking for chroot... yes
+checking for getcwd... yes
+checking for eaccess... no
+checking for truncate... yes
+checking for ftruncate... yes
+checking for ftello... yes
+checking for chsize... no
+checking for times... yes
+checking for utimes... yes
+checking for utimensat... no
+checking for fcntl... yes
+checking for lockf... yes
+checking for lstat... yes
+checking for truncate64... no
+checking for ftruncate64... no
+checking for ftello64... no
+checking for fseeko... yes
+checking for fseeko64... no
+checking for link... yes
+checking for symlink... yes
+checking for readlink... yes
+checking for readdir_r... yes
+checking for fsync... yes
+checking for fdatasync... (cached) no
+checking for fchown... yes
+checking for posix_fadvise... no
+checking for setitimer... yes
+checking for setruid... yes
+checking for seteuid... yes
+checking for setreuid... yes
+checking for setresuid... no
+checking for socketpair... yes
+checking for setrgid... yes
+checking for setegid... yes
+checking for setregid... yes
+checking for setresgid... no
+checking for issetugid... yes
+checking for pause... yes
+checking for lchown... yes
+checking for lchmod... yes
+checking for getpgrp... yes
+checking for setpgrp... yes
+checking for getpgid... yes
+checking for setpgid... yes
+checking for initgroups... yes
+checking for getgroups... yes
+checking for setgroups... yes
+checking for getpriority... yes
+checking for getrlimit... yes
+checking for setrlimit... yes
+checking for sysconf... yes
+checking for close... yes
+checking for getgrnam_r... yes
+checking for dlopen... yes
+checking for sigprocmask... yes
+checking for sigaction... yes
+checking for sigsetjmp... yes
+checking for _setjmp... yes
+checking for _longjmp... yes
+checking for setsid... yes
+checking for telldir... yes
+checking for seekdir... yes
+checking for fchmod... yes
+checking for cosh... yes
+checking for sinh... yes
+checking for tanh... yes
+checking for log2... yes
+checking for round... yes
+checking for setuid... yes
+checking for setgid... yes
+checking for daemon... (cached) no
+checking for select_large_fdset... no
+checking for setenv... yes
+checking for unsetenv... yes
+checking for mktime... yes
+checking for timegm... yes
+checking for gmtime_r... yes
+checking for clock_gettime... no
+checking for gettimeofday... yes
+checking for poll... yes
+checking for ppoll... no
+checking for pread... yes
+checking for sendfile... yes
+checking for shutdown... yes
+checking for sigaltstack... yes
+checking for dl_iterate_phdr... no
+checking for unsetenv returns a value... yes
+checking for __builtin_setjmp... no
+checking for setjmp type... _setjmp
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking for struct tm.tm_zone... yes
+checking for struct tm.tm_gmtoff... yes
+checking for external int daylight... yes
+checking for external timezone... long
+checking for external altzone... no
+checking for timezone... yes
+checking whether timezone requires zero arguments... yes
+checking for negative time_t for gmtime(3)... yes
+checking for localtime(3) overflow correctly... yes
+checking whether right shift preserve sign bit... yes
+checking read count field in FILE structures... _r
+checking read buffer ptr field in FILE structures... _p
+checking size of struct stat.st_ino... SIZEOF_LONG
+checking whether _SC_CLK_TCK is supported... yes
+checking stack growing direction on x86_64... -1
+checking for pthread_kill in -lthr... no
+checking for pthread_kill in -lpthread... yes
+checking for pthread_np.h... no
+checking for sched_yield... yes
+checking for pthread_attr_setinheritsched... yes
+checking for pthread_getattr_np... no
+checking for pthread_attr_get_np... no
+checking for pthread_attr_getstack... yes
+checking for pthread_get_stackaddr_np... yes
+checking for pthread_get_stacksize_np... yes
+checking for thr_stksegment... no
+checking for pthread_stackseg_np... no
+checking for pthread_getthrds_np... no
+checking for pthread_condattr_setclock... no
+checking for pthread_sigmask... yes
+checking if fork works with pthread... yes
+checking for backtrace... yes
+checking valgrind/memcheck.h usability... no
+checking valgrind/memcheck.h presence... no
+checking for valgrind/memcheck.h... no
+checking whether ELF binaries are produced... no
+checking whether OS depend dynamic link works... yes
+checking for dladdr... yes
+checking for strip... strip
+checking for prefix of external symbols... _
+checking pthread.h usability... yes
+checking pthread.h presence... yes
+checking for pthread.h... yes
+checking for if make is GNU make... yes
+checking for nroff... /usr/bin/nroff
+.ext/include/x86_64-darwin12.2.0/ruby/config.h updated
+ruby library version = 1.9.1
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating ruby-1.9.pc

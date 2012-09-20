@@ -1,0 +1,1973 @@
+have_library: checking for t_open() in -lnsl... -------------------- no
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib     -lruby-static -lnsl  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘t_open’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))t_open; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib     -lruby-static -lnsl  -lpthread -ldl -lobjc "
+ld: library not found for -lnsl
+collect2: ld returned 1 exit status
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { t_open(); return 0; }
+/* end */
+
+--------------------
+
+have_library: checking for socket() in -lsocket... -------------------- no
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib     -lruby-static -lsocket  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘socket’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))socket; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib     -lruby-static -lsocket  -lpthread -ldl -lobjc "
+ld: library not found for -lsocket
+collect2: ld returned 1 exit status
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { socket(); return 0; }
+/* end */
+
+--------------------
+
+have_header: checking for assert.h... -------------------- yes
+
+"/usr/bin/gcc-4.2 -E -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <assert.h>
+/* end */
+
+--------------------
+
+package configuration for openssl is not found
+have_header: checking for openssl/ssl.h... -------------------- yes
+
+"/usr/bin/gcc-4.2 -E -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <openssl/ssl.h>
+/* end */
+
+--------------------
+
+have_library: checking for OpenSSL_add_all_digests() in -lcrypto... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib     -lruby-static -lcrypto  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘OpenSSL_add_all_digests’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))OpenSSL_add_all_digests; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib     -lruby-static -lcrypto  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { OpenSSL_add_all_digests(); return 0; }
+/* end */
+
+--------------------
+
+have_library: checking for SSL_library_init() in -lssl... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘SSL_library_init’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))SSL_library_init; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { SSL_library_init(); return 0; }
+/* end */
+
+--------------------
+
+have_header: checking for openssl/conf_api.h... -------------------- yes
+
+"/usr/bin/gcc-4.2 -E -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <openssl/conf_api.h>
+/* end */
+
+--------------------
+
+have_func: checking for rb_str_set_len() in ruby.h... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ruby.h>
+4: 
+5: /*top*/
+6: int main() {return 0;}
+7: int t() { void ((*volatile p)()); p = (void ((*)()))rb_str_set_len; return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_block_call() in ruby.h... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ruby.h>
+4: 
+5: /*top*/
+6: int main() {return 0;}
+7: int t() { void ((*volatile p)()); p = (void ((*)()))rb_block_call; return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for ERR_peek_last_error()... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘ERR_peek_last_error’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))ERR_peek_last_error; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { ERR_peek_last_error(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for ASN1_put_eoc()... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘ASN1_put_eoc’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))ASN1_put_eoc; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { ASN1_put_eoc(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for BN_mod_add()... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘BN_mod_add’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))BN_mod_add; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { BN_mod_add(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for BN_mod_sqr()... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘BN_mod_sqr’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))BN_mod_sqr; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { BN_mod_sqr(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for BN_mod_sub()... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘BN_mod_sub’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))BN_mod_sub; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { BN_mod_sub(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for BN_pseudo_rand_range()... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘BN_pseudo_rand_range’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))BN_pseudo_rand_range; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { BN_pseudo_rand_range(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for BN_rand_range()... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘BN_rand_range’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))BN_rand_range; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { BN_rand_range(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for CONF_get1_default_config_file()... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘CONF_get1_default_config_file’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))CONF_get1_default_config_file; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { CONF_get1_default_config_file(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for EVP_CIPHER_CTX_copy()... -------------------- no
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘EVP_CIPHER_CTX_copy’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))EVP_CIPHER_CTX_copy; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+Undefined symbols for architecture x86_64:
+  "_EVP_CIPHER_CTX_copy", referenced from:
+      _t in cc5mbIlY.o
+ld: symbol(s) not found for architecture x86_64
+collect2: ld returned 1 exit status
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { EVP_CIPHER_CTX_copy(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for EVP_CIPHER_CTX_set_padding()... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘EVP_CIPHER_CTX_set_padding’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))EVP_CIPHER_CTX_set_padding; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { EVP_CIPHER_CTX_set_padding(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for EVP_CipherFinal_ex()... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘EVP_CipherFinal_ex’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))EVP_CipherFinal_ex; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { EVP_CipherFinal_ex(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for EVP_CipherInit_ex()... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘EVP_CipherInit_ex’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))EVP_CipherInit_ex; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { EVP_CipherInit_ex(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for EVP_DigestFinal_ex()... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘EVP_DigestFinal_ex’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))EVP_DigestFinal_ex; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { EVP_DigestFinal_ex(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for EVP_DigestInit_ex()... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘EVP_DigestInit_ex’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))EVP_DigestInit_ex; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { EVP_DigestInit_ex(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for EVP_MD_CTX_cleanup()... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘EVP_MD_CTX_cleanup’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))EVP_MD_CTX_cleanup; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { EVP_MD_CTX_cleanup(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for EVP_MD_CTX_create()... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘EVP_MD_CTX_create’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))EVP_MD_CTX_create; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { EVP_MD_CTX_create(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for EVP_MD_CTX_destroy()... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘EVP_MD_CTX_destroy’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))EVP_MD_CTX_destroy; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { EVP_MD_CTX_destroy(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for EVP_MD_CTX_init()... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘EVP_MD_CTX_init’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))EVP_MD_CTX_init; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { EVP_MD_CTX_init(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for HMAC_CTX_cleanup()... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘HMAC_CTX_cleanup’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))HMAC_CTX_cleanup; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { HMAC_CTX_cleanup(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for HMAC_CTX_copy()... -------------------- no
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘HMAC_CTX_copy’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))HMAC_CTX_copy; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+Undefined symbols for architecture x86_64:
+  "_HMAC_CTX_copy", referenced from:
+      _t in cc0YxMp1.o
+ld: symbol(s) not found for architecture x86_64
+collect2: ld returned 1 exit status
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { HMAC_CTX_copy(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for HMAC_CTX_init()... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘HMAC_CTX_init’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))HMAC_CTX_init; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { HMAC_CTX_init(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for PEM_def_callback()... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘PEM_def_callback’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))PEM_def_callback; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { PEM_def_callback(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for PKCS5_PBKDF2_HMAC()... -------------------- no
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘PKCS5_PBKDF2_HMAC’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))PKCS5_PBKDF2_HMAC; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+Undefined symbols for architecture x86_64:
+  "_PKCS5_PBKDF2_HMAC", referenced from:
+      _t in ccAzWTyr.o
+ld: symbol(s) not found for architecture x86_64
+collect2: ld returned 1 exit status
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { PKCS5_PBKDF2_HMAC(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for PKCS5_PBKDF2_HMAC_SHA1()... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘PKCS5_PBKDF2_HMAC_SHA1’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))PKCS5_PBKDF2_HMAC_SHA1; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { PKCS5_PBKDF2_HMAC_SHA1(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for X509V3_set_nconf()... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘X509V3_set_nconf’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))X509V3_set_nconf; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { X509V3_set_nconf(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for X509V3_EXT_nconf_nid()... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘X509V3_EXT_nconf_nid’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))X509V3_EXT_nconf_nid; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { X509V3_EXT_nconf_nid(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for X509_CRL_add0_revoked()... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘X509_CRL_add0_revoked’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))X509_CRL_add0_revoked; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { X509_CRL_add0_revoked(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for X509_CRL_set_issuer_name()... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘X509_CRL_set_issuer_name’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))X509_CRL_set_issuer_name; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { X509_CRL_set_issuer_name(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for X509_CRL_set_version()... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘X509_CRL_set_version’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))X509_CRL_set_version; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { X509_CRL_set_version(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for X509_CRL_sort()... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘X509_CRL_sort’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))X509_CRL_sort; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { X509_CRL_sort(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for X509_NAME_hash_old()... -------------------- no
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘X509_NAME_hash_old’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))X509_NAME_hash_old; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+Undefined symbols for architecture x86_64:
+  "_X509_NAME_hash_old", referenced from:
+      _t in ccNML7WR.o
+ld: symbol(s) not found for architecture x86_64
+collect2: ld returned 1 exit status
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { X509_NAME_hash_old(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for X509_STORE_get_ex_data()... -------------------- no
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘X509_STORE_get_ex_data’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))X509_STORE_get_ex_data; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+Undefined symbols for architecture x86_64:
+  "_X509_STORE_get_ex_data", referenced from:
+      _t in ccqq3Sf8.o
+ld: symbol(s) not found for architecture x86_64
+collect2: ld returned 1 exit status
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { X509_STORE_get_ex_data(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for X509_STORE_set_ex_data()... -------------------- no
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘X509_STORE_set_ex_data’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))X509_STORE_set_ex_data; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+Undefined symbols for architecture x86_64:
+  "_X509_STORE_set_ex_data", referenced from:
+      _t in ccrvlb32.o
+ld: symbol(s) not found for architecture x86_64
+collect2: ld returned 1 exit status
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { X509_STORE_set_ex_data(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for OBJ_NAME_do_all_sorted()... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘OBJ_NAME_do_all_sorted’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))OBJ_NAME_do_all_sorted; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { OBJ_NAME_do_all_sorted(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for SSL_SESSION_get_id()... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘SSL_SESSION_get_id’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))SSL_SESSION_get_id; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { SSL_SESSION_get_id(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for SSL_SESSION_cmp()... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘SSL_SESSION_cmp’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))SSL_SESSION_cmp; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { SSL_SESSION_cmp(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for OPENSSL_cleanse()... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘OPENSSL_cleanse’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))OPENSSL_cleanse; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { OPENSSL_cleanse(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for SSLv2_method()... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘SSLv2_method’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))SSLv2_method; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { SSLv2_method(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for SSLv2_server_method()... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘SSLv2_server_method’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))SSLv2_server_method; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { SSLv2_server_method(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for SSLv2_client_method()... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘SSLv2_client_method’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))SSLv2_client_method; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { SSLv2_client_method(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for SSL_set_tlsext_host_name() in openssl/ssl.h... -------------------- no
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:7: error: ‘SSL_set_tlsext_host_name’ undeclared (first use in this function)
+conftest.c:7: error: (Each undeclared identifier is reported only once
+conftest.c:7: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <openssl/ssl.h>
+4: 
+5: /*top*/
+6: int main() {return 0;}
+7: int t() { void ((*volatile p)()); p = (void ((*)()))SSL_set_tlsext_host_name; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+conftest.c:7:36: error: macro "SSL_set_tlsext_host_name" requires 2 arguments, but only 1 given
+conftest.c: In function ‘t’:
+conftest.c:7: error: ‘SSL_set_tlsext_host_name’ undeclared (first use in this function)
+conftest.c:7: error: (Each undeclared identifier is reported only once
+conftest.c:7: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <openssl/ssl.h>
+4: 
+5: /*top*/
+6: int main() {return 0;}
+7: int t() { SSL_set_tlsext_host_name(); return 0; }
+/* end */
+
+--------------------
+
+have_macro: checking for SSL_set_tlsext_host_name in openssl/ssl.h... -------------------- yes
+
+"/usr/bin/gcc-4.2 -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe   -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <openssl/ssl.h>
+4: /*top*/
+5: #ifndef SSL_set_tlsext_host_name
+6: # error
+7: >>>>>> SSL_set_tlsext_host_name undefined <<<<<<
+8: #endif
+/* end */
+
+--------------------
+
+have_header: checking for openssl/engine.h... -------------------- yes
+
+"/usr/bin/gcc-4.2 -E -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <openssl/engine.h>
+/* end */
+
+--------------------
+
+have_func: checking for ENGINE_add()... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘ENGINE_add’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))ENGINE_add; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { ENGINE_add(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for ENGINE_load_builtin_engines()... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘ENGINE_load_builtin_engines’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))ENGINE_load_builtin_engines; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { ENGINE_load_builtin_engines(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for ENGINE_load_openbsd_dev_crypto()... -------------------- no
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘ENGINE_load_openbsd_dev_crypto’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))ENGINE_load_openbsd_dev_crypto; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+Undefined symbols for architecture x86_64:
+  "_ENGINE_load_openbsd_dev_crypto", referenced from:
+      _t in cc27978x.o
+ld: symbol(s) not found for architecture x86_64
+collect2: ld returned 1 exit status
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { ENGINE_load_openbsd_dev_crypto(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for ENGINE_get_digest()... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘ENGINE_get_digest’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))ENGINE_get_digest; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { ENGINE_get_digest(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for ENGINE_get_cipher()... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘ENGINE_get_cipher’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))ENGINE_get_cipher; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { ENGINE_get_cipher(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for ENGINE_cleanup()... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘ENGINE_cleanup’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))ENGINE_cleanup; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { ENGINE_cleanup(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for ENGINE_load_4758cca()... -------------------- no
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘ENGINE_load_4758cca’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))ENGINE_load_4758cca; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+Undefined symbols for architecture x86_64:
+  "_ENGINE_load_4758cca", referenced from:
+      _t in ccLkmXhU.o
+ld: symbol(s) not found for architecture x86_64
+collect2: ld returned 1 exit status
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { ENGINE_load_4758cca(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for ENGINE_load_aep()... -------------------- no
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘ENGINE_load_aep’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))ENGINE_load_aep; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+Undefined symbols for architecture x86_64:
+  "_ENGINE_load_aep", referenced from:
+      _t in ccX3MCNA.o
+ld: symbol(s) not found for architecture x86_64
+collect2: ld returned 1 exit status
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { ENGINE_load_aep(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for ENGINE_load_atalla()... -------------------- no
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘ENGINE_load_atalla’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))ENGINE_load_atalla; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+Undefined symbols for architecture x86_64:
+  "_ENGINE_load_atalla", referenced from:
+      _t in cc5nNpgl.o
+ld: symbol(s) not found for architecture x86_64
+collect2: ld returned 1 exit status
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { ENGINE_load_atalla(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for ENGINE_load_chil()... -------------------- no
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘ENGINE_load_chil’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))ENGINE_load_chil; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+Undefined symbols for architecture x86_64:
+  "_ENGINE_load_chil", referenced from:
+      _t in ccfLPEoW.o
+ld: symbol(s) not found for architecture x86_64
+collect2: ld returned 1 exit status
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { ENGINE_load_chil(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for ENGINE_load_cswift()... -------------------- no
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘ENGINE_load_cswift’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))ENGINE_load_cswift; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+Undefined symbols for architecture x86_64:
+  "_ENGINE_load_cswift", referenced from:
+      _t in ccjLKMjM.o
+ld: symbol(s) not found for architecture x86_64
+collect2: ld returned 1 exit status
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { ENGINE_load_cswift(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for ENGINE_load_nuron()... -------------------- no
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘ENGINE_load_nuron’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))ENGINE_load_nuron; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+Undefined symbols for architecture x86_64:
+  "_ENGINE_load_nuron", referenced from:
+      _t in cc7e6zs7.o
+ld: symbol(s) not found for architecture x86_64
+collect2: ld returned 1 exit status
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { ENGINE_load_nuron(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for ENGINE_load_sureware()... -------------------- no
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘ENGINE_load_sureware’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))ENGINE_load_sureware; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+Undefined symbols for architecture x86_64:
+  "_ENGINE_load_sureware", referenced from:
+      _t in ccQde2UA.o
+ld: symbol(s) not found for architecture x86_64
+collect2: ld returned 1 exit status
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { ENGINE_load_sureware(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for ENGINE_load_ubsec()... -------------------- no
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘ENGINE_load_ubsec’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))ENGINE_load_ubsec; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lssl -lcrypto  -lruby-static -lssl -lcrypto  -lpthread -ldl -lobjc "
+Undefined symbols for architecture x86_64:
+  "_ENGINE_load_ubsec", referenced from:
+      _t in cc8PhyG8.o
+ld: symbol(s) not found for architecture x86_64
+collect2: ld returned 1 exit status
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { ENGINE_load_ubsec(); return 0; }
+/* end */
+
+--------------------
+
+checking for OpenSSL version is 0.9.7 or later... -------------------- yes
+
+"/usr/bin/gcc-4.2 -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe   -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <openssl/opensslv.h>
+4: 
+5: /*top*/
+6: int conftest_const[(OPENSSL_VERSION_NUMBER >= 0x00907000L) ? 1 : -1];
+/* end */
+
+--------------------
+
+have_header: checking for openssl/ocsp.h... -------------------- yes
+
+"/usr/bin/gcc-4.2 -E -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <openssl/ocsp.h>
+/* end */
+
+--------------------
+
+have_struct_member: checking for EVP_CIPHER_CTX.flags in openssl/evp.h... -------------------- yes
+
+"/usr/bin/gcc-4.2 -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe   -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <openssl/evp.h>
+4: 
+5: /*top*/
+6: int main() {return 0;}
+7: int s = (char *)&((EVP_CIPHER_CTX*)0)->flags - (char *)0;
+/* end */
+
+--------------------
+
+have_struct_member: checking for EVP_CIPHER_CTX.engine in openssl/evp.h... -------------------- yes
+
+"/usr/bin/gcc-4.2 -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe   -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <openssl/evp.h>
+4: 
+5: /*top*/
+6: int main() {return 0;}
+7: int s = (char *)&((EVP_CIPHER_CTX*)0)->engine - (char *)0;
+/* end */
+
+--------------------
+
+have_struct_member: checking for X509_ATTRIBUTE.single in openssl/x509.h... -------------------- yes
+
+"/usr/bin/gcc-4.2 -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/openssl -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe   -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <openssl/x509.h>
+4: 
+5: /*top*/
+6: int main() {return 0;}
+7: int s = (char *)&((X509_ATTRIBUTE*)0)->single - (char *)0;
+/* end */
+
+--------------------
+
+extconf.h is:
+/* begin */
+ 1: #ifndef EXTCONF_H
+ 2: #define EXTCONF_H
+ 3: #define HAVE_ASSERT_H 1
+ 4: #define HAVE_OPENSSL_SSL_H 1
+ 5: #define HAVE_OPENSSL_CONF_API_H 1
+ 6: #define HAVE_RB_STR_SET_LEN 1
+ 7: #define HAVE_RB_BLOCK_CALL 1
+ 8: #define HAVE_ERR_PEEK_LAST_ERROR 1
+ 9: #define HAVE_ASN1_PUT_EOC 1
+10: #define HAVE_BN_MOD_ADD 1
+11: #define HAVE_BN_MOD_SQR 1
+12: #define HAVE_BN_MOD_SUB 1
+13: #define HAVE_BN_PSEUDO_RAND_RANGE 1
+14: #define HAVE_BN_RAND_RANGE 1
+15: #define HAVE_CONF_GET1_DEFAULT_CONFIG_FILE 1
+16: #define HAVE_EVP_CIPHER_CTX_SET_PADDING 1
+17: #define HAVE_EVP_CIPHERFINAL_EX 1
+18: #define HAVE_EVP_CIPHERINIT_EX 1
+19: #define HAVE_EVP_DIGESTFINAL_EX 1
+20: #define HAVE_EVP_DIGESTINIT_EX 1
+21: #define HAVE_EVP_MD_CTX_CLEANUP 1
+22: #define HAVE_EVP_MD_CTX_CREATE 1
+23: #define HAVE_EVP_MD_CTX_DESTROY 1
+24: #define HAVE_EVP_MD_CTX_INIT 1
+25: #define HAVE_HMAC_CTX_CLEANUP 1
+26: #define HAVE_HMAC_CTX_INIT 1
+27: #define HAVE_PEM_DEF_CALLBACK 1
+28: #define HAVE_PKCS5_PBKDF2_HMAC_SHA1 1
+29: #define HAVE_X509V3_SET_NCONF 1
+30: #define HAVE_X509V3_EXT_NCONF_NID 1
+31: #define HAVE_X509_CRL_ADD0_REVOKED 1
+32: #define HAVE_X509_CRL_SET_ISSUER_NAME 1
+33: #define HAVE_X509_CRL_SET_VERSION 1
+34: #define HAVE_X509_CRL_SORT 1
+35: #define HAVE_OBJ_NAME_DO_ALL_SORTED 1
+36: #define HAVE_SSL_SESSION_GET_ID 1
+37: #define HAVE_SSL_SESSION_CMP 1
+38: #define HAVE_OPENSSL_CLEANSE 1
+39: #define HAVE_SSLV2_METHOD 1
+40: #define HAVE_SSLV2_SERVER_METHOD 1
+41: #define HAVE_SSLV2_CLIENT_METHOD 1
+42: #define HAVE_SSL_SET_TLSEXT_HOST_NAME 1
+43: #define HAVE_OPENSSL_ENGINE_H 1
+44: #define HAVE_ENGINE_ADD 1
+45: #define HAVE_ENGINE_LOAD_BUILTIN_ENGINES 1
+46: #define HAVE_ENGINE_GET_DIGEST 1
+47: #define HAVE_ENGINE_GET_CIPHER 1
+48: #define HAVE_ENGINE_CLEANUP 1
+49: #define HAVE_OPENSSL_OCSP_H 1
+50: #define HAVE_EVP_CIPHER_CTX_FLAGS 1
+51: #define HAVE_ST_FLAGS 1
+52: #define HAVE_EVP_CIPHER_CTX_ENGINE 1
+53: #define HAVE_ST_ENGINE 1
+54: #define HAVE_X509_ATTRIBUTE_SINGLE 1
+55: #define HAVE_ST_SINGLE 1
+56: #endif
+/* end */
+

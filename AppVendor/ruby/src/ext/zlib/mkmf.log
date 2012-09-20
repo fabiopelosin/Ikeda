@@ -1,0 +1,82 @@
+have_library: checking for deflateReset() in -lz... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/zlib -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib     -lruby-static -lz  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘deflateReset’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))deflateReset; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/zlib -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib     -lruby-static -lz  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { deflateReset(); return 0; }
+/* end */
+
+--------------------
+
+have_header: checking for zlib.h... -------------------- yes
+
+"/usr/bin/gcc-4.2 -E -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/zlib -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <zlib.h>
+/* end */
+
+--------------------
+
+have_func: checking for crc32_combine() in zlib.h... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/zlib -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lz  -lruby-static -lz  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <zlib.h>
+4: 
+5: /*top*/
+6: int main() {return 0;}
+7: int t() { void ((*volatile p)()); p = (void ((*)()))crc32_combine; return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for adler32_combine() in zlib.h... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/zlib -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lz  -lruby-static -lz  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <zlib.h>
+4: 
+5: /*top*/
+6: int main() {return 0;}
+7: int t() { void ((*volatile p)()); p = (void ((*)()))adler32_combine; return 0; }
+/* end */
+
+--------------------
+
+extconf.h is:
+/* begin */
+1: #ifndef EXTCONF_H
+2: #define EXTCONF_H
+3: #define HAVE_ZLIB_H 1
+4: #define HAVE_CRC32_COMBINE 1
+5: #define HAVE_ADLER32_COMBINE 1
+6: #endif
+/* end */
+

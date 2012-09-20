@@ -1,0 +1,12 @@
+find_executable: checking for bison... -------------------- yes
+
+--------------------
+
+extconf.h is:
+/* begin */
+1: #ifndef EXTCONF_H
+2: #define EXTCONF_H
+3: #define RIPPER 1
+4: #endif
+/* end */
+

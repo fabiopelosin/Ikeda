@@ -6,6 +6,7 @@ task :vendor => %w| vendor:bundle vendor:ruby vendor:appvendor|
 namespace :vendor do
   desc "Updates the vendored Ruby"
   task :ruby do
+    # http://yehudakatz.com/2012/06/
     # https://github.com/tokaido/tokaidoapp
     # https://github.com/sm/sm
     unless File.exists?(File.expand_path("~/.sm/bin/sm"))
@@ -13,12 +14,19 @@ namespace :vendor do
     end
     ruby_dir = relative_path("vendor/ruby")
 
+    sh "sm libyaml package install"
+
     sh "sm ext install tokaidoapp tokaido/tokaidoapp"
+    sh "sm pkg-config install static"
     sh "sm tokaidoapp dependencies"
-    sh "sm tokaidoapp install"
-    sh "rm -rf #{ruby_dir}"
+    sh "sm tokaidoapp package install"
+    sh "rm -rf   #{ruby_dir}"
     sh "mkdir -p #{ruby_dir}"
     sh "cp -RH ~/.sm/pkg/versions/tokaidoapp/active/ #{ruby_dir}"
+
+    linked_libs = `otool -L Vendor/ruby/lib/ruby/1.9.1/x86_64-darwin12.2.0/psych.bundle`
+    fail("External dependendecies not statically linked") if linked_libs.include?('libyaml')
+
     puts_success "Self contained ruby installed", ruby_dir
   end
 
@@ -43,6 +51,10 @@ namespace :vendor do
 
     sh "cp -r  Vendor/ruby/ AppVendor/ruby"
     sh "cp -r  Vendor/bundler/ruby/1.9.1/ AppVendor/gems"
+
+    # install_name_tool -id "@loader_path/../wxWidgets/lib/libwx_macu-2.8.0.4.0.dylib" libwx_macu-2.8.0.4.0.dylib
+    linked_libs = `otool -L Vendor/bundler/ruby/1.9.1/gems/xcodeproj-0.3.3/ext/xcodeproj/xcodeproj_ext.bundle`
+    fail("External dependendecies with user specific paths") if linked_libs.include?('/Users')
 
     # removed the uneeded files
     sh "rm -rf AppVendor/ruby/src"

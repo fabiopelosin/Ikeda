@@ -1,0 +1,47 @@
+find_header: checking for yaml.h... -------------------- yes
+
+"/usr/bin/gcc-4.2 -E -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/psych -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <yaml.h>
+/* end */
+
+--------------------
+
+find_library: checking for yaml_get_version() in -lyaml... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/psych -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib     -lruby-static -lyaml  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:5: error: ‘yaml_get_version’ undeclared (first use in this function)
+conftest.c:5: error: (Each undeclared identifier is reported only once
+conftest.c:5: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))yaml_get_version; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/psych -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib     -lruby-static -lyaml  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { yaml_get_version(); return 0; }
+/* end */
+
+--------------------
+
+extconf.h is:
+/* begin */
+1: #ifndef EXTCONF_H
+2: #define EXTCONF_H
+3: #endif
+/* end */
+

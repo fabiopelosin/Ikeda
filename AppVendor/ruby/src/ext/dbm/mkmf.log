@@ -1,0 +1,173 @@
+have_type: checking for DBM in ndbm.h... -------------------- yes
+
+"/usr/bin/gcc-4.2 -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/dbm -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe   -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ndbm.h>
+4: 
+5: /*top*/
+6: typedef DBM conftest_type;
+7: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_func: checking for dbm_open("", 0, 0) in ndbm.h... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/dbm -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib     -lruby-static  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ndbm.h>
+4: 
+5: /*top*/
+6: int main() {return 0;}
+7: extern int t(void);
+8: int t(void) { dbm_open("", 0, 0); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for dbm_clearerr((DBM *)0) in ndbm.h... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/dbm -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib     -lruby-static  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ndbm.h>
+4: 
+5: /*top*/
+6: int main() {return 0;}
+7: extern int t(void);
+8: int t(void) { dbm_clearerr((DBM *)0); return 0; }
+/* end */
+
+--------------------
+
+have_header: checking for cdefs.h... -------------------- no
+
+"/usr/bin/gcc-4.2 -E -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/dbm -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe  conftest.c -o conftest.i"
+conftest.c:3:19: error: cdefs.h: No such file or directory
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <cdefs.h>
+/* end */
+
+--------------------
+
+have_header: checking for sys/cdefs.h... -------------------- yes
+
+"/usr/bin/gcc-4.2 -E -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/dbm -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <sys/cdefs.h>
+/* end */
+
+--------------------
+
+have_func: checking for dbm_pagfno((DBM *)0) in ndbm.h... -------------------- no
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/dbm -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib     -lruby-static  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:8: error: ‘DBM_PAGFNO_NOT_AVAILABLE’ undeclared (first use in this function)
+conftest.c:8: error: (Each undeclared identifier is reported only once
+conftest.c:8: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ndbm.h>
+4: 
+5: /*top*/
+6: int main() {return 0;}
+7: extern int t(void);
+8: int t(void) { dbm_pagfno((DBM *)0); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for dbm_dirfno((DBM *)0) in ndbm.h... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/dbm -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib     -lruby-static  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ndbm.h>
+4: 
+5: /*top*/
+6: int main() {return 0;}
+7: extern int t(void);
+8: int t(void) { dbm_dirfno((DBM *)0); return 0; }
+/* end */
+
+--------------------
+
+convertible_int: checking for convertible type of datum.dsize... -------------------- long
+
+"/usr/bin/gcc-4.2 -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/dbm -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe   -c conftest.c"
+conftest.c:7: error: size of array ‘conftest_const’ is negative
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ndbm.h>
+4: typedef datum rbcv_typedef_;
+5: static rbcv_typedef_ rbcv_var;
+6: /*top*/
+7: int conftest_const[(sizeof(rbcv_var.dsize) == sizeof(int)) ? 1 : -1];
+/* end */
+
+"/usr/bin/gcc-4.2 -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/dbm -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe   -c conftest.c"
+conftest.c:7: error: size of array ‘conftest_const’ is negative
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ndbm.h>
+4: typedef datum rbcv_typedef_;
+5: static rbcv_typedef_ rbcv_var;
+6: /*top*/
+7: int conftest_const[(sizeof(rbcv_var.dsize) == sizeof(short)) ? 1 : -1];
+/* end */
+
+"/usr/bin/gcc-4.2 -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/dbm -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe   -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ndbm.h>
+4: typedef datum rbcv_typedef_;
+5: static rbcv_typedef_ rbcv_var;
+6: /*top*/
+7: int conftest_const[(sizeof(rbcv_var.dsize) == sizeof(long)) ? 1 : -1];
+/* end */
+
+--------------------
+
+extconf.h is:
+/* begin */
+ 1: #ifndef EXTCONF_H
+ 2: #define EXTCONF_H
+ 3: #define HAVE_TYPE_DBM 1
+ 4: #define HAVE_DBM_OPEN 1
+ 5: #define HAVE_DBM_CLEARERR 1
+ 6: #define DBM_HDR <ndbm.h>
+ 7: #define HAVE_SYS_CDEFS_H 1
+ 8: #define HAVE_DBM_DIRFNO 1
+ 9: #define SIZEOF_DATUM_DSIZE SIZEOF_LONG
+10: #define TYPEOF_DATUM_DSIZE long
+11: #define PRI_DATUM_DSIZE_PREFIX PRI_LONG_PREFIX
+12: #define DATUM_DSIZE2NUM LONG2NUM
+13: #define NUM2DATUM_DSIZE NUM2LONG
+14: #endif
+/* end */
+

@@ -1,0 +1,26 @@
+generating known_errors.inc
+known_errors.inc unchanged
+./miniruby -I./lib -I. -I.ext/common  ./tool/rbinstall.rb --make="make" --dest-dir="" --extout=".ext" --mflags="" --make-flags="" --data-mode=0644 --prog-mode=0755 --installed-list .installed.list --mantype="doc"
+installing binary commands:   /Users/fabio/.sm/pkg/versions/tokaidoapp/1.9.3-p194/bin
+installing base libraries:    /Users/fabio/.sm/pkg/versions/tokaidoapp/1.9.3-p194/lib
+installing arch files:        /Users/fabio/.sm/pkg/versions/tokaidoapp/1.9.3-p194/lib/ruby/1.9.1/x86_64-darwin12.2.0
+installing pkgconfig data:    /Users/fabio/.sm/pkg/versions/tokaidoapp/1.9.3-p194/lib/pkgconfig
+installing command scripts:   /Users/fabio/.sm/pkg/versions/tokaidoapp/1.9.3-p194/bin
+installing library scripts:   /Users/fabio/.sm/pkg/versions/tokaidoapp/1.9.3-p194/lib/ruby/1.9.1
+installing common headers:    /Users/fabio/.sm/pkg/versions/tokaidoapp/1.9.3-p194/include/ruby-1.9.1
+installing manpages:          /Users/fabio/.sm/pkg/versions/tokaidoapp/1.9.3-p194/share/man/man1
+installing extension objects: /Users/fabio/.sm/pkg/versions/tokaidoapp/1.9.3-p194/lib/ruby/1.9.1/x86_64-darwin12.2.0
+installing extension objects: /Users/fabio/.sm/pkg/versions/tokaidoapp/1.9.3-p194/lib/ruby/site_ruby/1.9.1/x86_64-darwin12.2.0
+installing extension objects: /Users/fabio/.sm/pkg/versions/tokaidoapp/1.9.3-p194/lib/ruby/vendor_ruby/1.9.1/x86_64-darwin12.2.0
+installing extension headers: /Users/fabio/.sm/pkg/versions/tokaidoapp/1.9.3-p194/include/ruby-1.9.1/x86_64-darwin12.2.0
+installing extension scripts: /Users/fabio/.sm/pkg/versions/tokaidoapp/1.9.3-p194/lib/ruby/1.9.1
+installing extension scripts: /Users/fabio/.sm/pkg/versions/tokaidoapp/1.9.3-p194/lib/ruby/site_ruby/1.9.1
+installing extension scripts: /Users/fabio/.sm/pkg/versions/tokaidoapp/1.9.3-p194/lib/ruby/vendor_ruby/1.9.1
+installing extension headers: /Users/fabio/.sm/pkg/versions/tokaidoapp/1.9.3-p194/include/ruby-1.9.1/ruby
+installing default gems:      /Users/fabio/.sm/pkg/versions/tokaidoapp/1.9.3-p194/lib/ruby/gems/1.9.1 (cache, doc, gems, specifications)
+                              rake 0.9.2.2
+                              rdoc 3.9.4
+                              minitest 2.5.1
+                              json 1.5.4
+                              io-console 0.3
+                              bigdecimal 1.1.0

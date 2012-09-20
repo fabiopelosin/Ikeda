@@ -1,0 +1,386 @@
+have_func: checking for ruby_native_thread_p() in ruby.h... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/tk -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib     -lruby-static  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ruby.h>
+4: 
+5: /*top*/
+6: int main() {return 0;}
+7: extern int t(void);
+8: int t(void) { void ((*volatile p)()); p = (void ((*)()))ruby_native_thread_p; return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_errinfo() in ruby.h... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/tk -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib     -lruby-static  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ruby.h>
+4: 
+5: /*top*/
+6: int main() {return 0;}
+7: extern int t(void);
+8: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_errinfo; return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_safe_level() in ruby.h... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/tk -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib     -lruby-static  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ruby.h>
+4: 
+5: /*top*/
+6: int main() {return 0;}
+7: extern int t(void);
+8: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_safe_level; return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_hash_lookup() in ruby.h... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/tk -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib     -lruby-static  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ruby.h>
+4: 
+5: /*top*/
+6: int main() {return 0;}
+7: extern int t(void);
+8: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_hash_lookup; return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_proc_new() in ruby.h... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/tk -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib     -lruby-static  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ruby.h>
+4: 
+5: /*top*/
+6: int main() {return 0;}
+7: extern int t(void);
+8: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_proc_new; return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_obj_untrust() in ruby.h... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/tk -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib     -lruby-static  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ruby.h>
+4: 
+5: /*top*/
+6: int main() {return 0;}
+7: extern int t(void);
+8: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_obj_untrust; return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_obj_taint() in ruby.h... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/tk -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib     -lruby-static  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ruby.h>
+4: 
+5: /*top*/
+6: int main() {return 0;}
+7: extern int t(void);
+8: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_obj_taint; return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_set_safe_level_force() in ruby.h... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/tk -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib     -lruby-static  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ruby.h>
+4: 
+5: /*top*/
+6: int main() {return 0;}
+7: extern int t(void);
+8: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_set_safe_level_force; return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_sourcefile() in ruby.h... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/tk -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib     -lruby-static  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ruby.h>
+4: 
+5: /*top*/
+6: int main() {return 0;}
+7: extern int t(void);
+8: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_sourcefile; return 0; }
+/* end */
+
+--------------------
+
+have_struct_member: checking for struct RArray.ptr in ruby.h... -------------------- no
+
+"/usr/bin/gcc-4.2 -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/tk -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe   -c conftest.c"
+conftest.c:7: error: ‘struct RArray’ has no member named ‘ptr’
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ruby.h>
+4: 
+5: /*top*/
+6: int main() {return 0;}
+7: int s = (char *)&((struct RArray*)0)->ptr - (char *)0;
+/* end */
+
+--------------------
+
+have_struct_member: checking for struct RArray.len in ruby.h... -------------------- no
+
+"/usr/bin/gcc-4.2 -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/tk -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe   -c conftest.c"
+conftest.c:7: error: ‘struct RArray’ has no member named ‘len’
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ruby.h>
+4: 
+5: /*top*/
+6: int main() {return 0;}
+7: int s = (char *)&((struct RArray*)0)->len - (char *)0;
+/* end */
+
+--------------------
+
+have_library: checking for t_open() in -lnsl... -------------------- no
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/tk -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib     -lruby-static -lnsl  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:6: error: ‘t_open’ undeclared (first use in this function)
+conftest.c:6: error: (Each undeclared identifier is reported only once
+conftest.c:6: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: extern int t(void);
+6: int t(void) { void ((*volatile p)()); p = (void ((*)()))t_open; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/tk -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib     -lruby-static -lnsl  -lpthread -ldl -lobjc "
+ld: library not found for -lnsl
+collect2: ld returned 1 exit status
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: extern int t(void);
+6: int t(void) { t_open(); return 0; }
+/* end */
+
+--------------------
+
+have_library: checking for socket() in -lsocket... -------------------- no
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/tk -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib     -lruby-static -lsocket  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:6: error: ‘socket’ undeclared (first use in this function)
+conftest.c:6: error: (Each undeclared identifier is reported only once
+conftest.c:6: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: extern int t(void);
+6: int t(void) { void ((*volatile p)()); p = (void ((*)()))socket; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/tk -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib     -lruby-static -lsocket  -lpthread -ldl -lobjc "
+ld: library not found for -lsocket
+collect2: ld returned 1 exit status
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: extern int t(void);
+6: int t(void) { socket(); return 0; }
+/* end */
+
+--------------------
+
+have_library: checking for dlopen() in -ldl... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/tk -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib     -lruby-static -ldl  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:6: error: ‘dlopen’ undeclared (first use in this function)
+conftest.c:6: error: (Each undeclared identifier is reported only once
+conftest.c:6: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: extern int t(void);
+6: int t(void) { void ((*volatile p)()); p = (void ((*)()))dlopen; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/tk -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib     -lruby-static -ldl  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: extern int t(void);
+6: int t(void) { dlopen(); return 0; }
+/* end */
+
+--------------------
+
+have_library: checking for log() in -lm... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/tk -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -ldl  -lruby-static -lm -ldl  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <math.h>
+4: 
+5: /*top*/
+6: int main() {return 0;}
+7: extern int t(void);
+8: int t(void) { void ((*volatile p)()); p = (void ((*)()))log; return 0; }
+/* end */
+
+--------------------
+
+"/usr/bin/gcc-4.2 -I../../.ext/include/x86_64-darwin12.2.0 -I../.././include -I../.././ext/tk -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe   -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include "ruby.h"
+4: /*top*/
+5: #ifndef HAVE_NATIVETHREAD
+6: # error
+7: >>>>>> HAVE_NATIVETHREAD undefined <<<<<<
+8: #endif
+/* end */
+
+extconf.h is:
+/* begin */
+ 1: #ifndef EXTCONF_H
+ 2: #define EXTCONF_H
+ 3: #define HAVE_RUBY_NATIVE_THREAD_P 1
+ 4: #define HAVE_RB_ERRINFO 1
+ 5: #define HAVE_RB_SAFE_LEVEL 1
+ 6: #define HAVE_RB_HASH_LOOKUP 1
+ 7: #define HAVE_RB_PROC_NEW 1
+ 8: #define HAVE_RB_OBJ_UNTRUST 1
+ 9: #define HAVE_RB_OBJ_TAINT 1
+10: #define HAVE_RB_SET_SAFE_LEVEL_FORCE 1
+11: #define HAVE_RB_SOURCEFILE 1
+12: #define PACKAGE_VERSION "8.5"
+13: #define PACKAGE_BUGREPORT ""
+14: #define NO_VALUES_H 1
+15: #define USE_THREAD_ALLOC 1
+16: #define HAVE_PTHREAD_ATTR_SETSTACKSIZE 1
+17: #define TCL_THREADS 1
+18: #define TCL_CFGVAL_ENCODING "iso8859-1"
+19: #define MODULE_SCOPE extern __attribute__((__visibility__("hidden")))
+20: #define MAC_OSX_TCL 1
+21: #define HAVE_COREFOUNDATION 1
+22: #define TCL_SHLIB_EXT ".dylib"
+23: #define TCL_CFG_OPTIMIZED 1
+24: #define TCL_CFG_DEBUG 1
+25: #define TCL_TOMMATH 1
+26: #define MP_PREC 4
+27: #define TCL_WIDE_INT_IS_LONG 1
+28: #define HAVE_OPENDIR 1
+29: #define HAVE_STRTOL 1
+30: #define HAVE_GETADDRINFO 1
+31: #define HAVE_GETPWUID_R_5 1
+32: #define HAVE_GETPWUID_R 1
+33: #define HAVE_GETPWNAM_R_5 1
+34: #define HAVE_GETPWNAM_R 1
+35: #define HAVE_GETGRGID_R_5 1
+36: #define HAVE_GETGRGID_R 1
+37: #define HAVE_GETGRNAM_R_5 1
+38: #define HAVE_MTSAFE_GETHOSTBYNAME 1
+39: #define HAVE_MTSAFE_GETHOSTBYADDR 1
+40: #define TIME_WITH_SYS_TIME 1
+41: #define HAVE_LOCALTIME_R 1
+42: #define HAVE_TM_GMTOFF 1
+43: #define HAVE_TIMEZONE_VAR 1
+44: #define HAVE_BLKCNT_T 1
+45: #define HAVE_SIGNED_CHAR 1
+46: #define HAVE_LANGINFO 1
+47: #define HAVE_CHFLAGS 1
+48: #define HAVE_GETATTRLIST 1
+49: #define HAVE_COPYFILE_H 1
+50: #define HAVE_COPYFILE 1
+51: #define HAVE_LIBKERN_OSATOMIC_H 1
+52: #define HAVE_OSSPINLOCKLOCK 1
+53: #define HAVE_PTHREAD_ATFORK 1
+54: #define USE_VFORK 1
+55: #define TCL_DEFAULT_ENCODING "utf-8"
+56: #define TCL_LOAD_FROM_MEMORY 1
+57: #define TCL_WIDE_CLICKS 1
+58: #define HAVE_AVAILABILITYMACROS_H 1
+59: #define HAVE_WEAK_IMPORT 1
+60: #define _DARWIN_C_SOURCE 1
+61: #define HAVE_FTS 1
+62: #define HAVE_SYS_FILIO_H 1
+63: #define TCL_UNLOAD_DLLS 1
+64: #define USE_DTRACE 1
+65: #define TCL_FRAMEWORK 1
+66: #define HAVE_PW_GECOS 1
+67: #define MAC_OSX_TK 1
+68: #define TK_FRAMEWORK 1
+69: #define RUBY_VERSION "1.9.3"
+70: #define RUBY_RELEASE_DATE "2012-04-20"
+71: #endif
+/* end */
+

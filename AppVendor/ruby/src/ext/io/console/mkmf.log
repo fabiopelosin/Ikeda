@@ -1,0 +1,122 @@
+"/usr/bin/gcc-4.2 -I../../../.ext/include/x86_64-darwin12.2.0 -I../../.././include -I../../.././ext/io/console -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe   -c conftest.c"
+conftest.c:5:3: error: #error 
+conftest.c:6: error: expected identifier or ‘(’ before ‘>>’ token
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: #ifndef _WIN32
+5: # error
+6: >>>>>> _WIN32 undefined <<<<<<
+7: #endif
+/* end */
+
+have_header: checking for termios.h... -------------------- yes
+
+"/usr/bin/gcc-4.2 -E -I../../../.ext/include/x86_64-darwin12.2.0 -I../../.././include -I../../.././ext/io/console -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <termios.h>
+/* end */
+
+--------------------
+
+have_func: checking for cfmakeraw() in termios.h... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../../.ext/include/x86_64-darwin12.2.0 -I../../.././include -I../../.././ext/io/console -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib     -lruby-static  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <termios.h>
+4: 
+5: /*top*/
+6: int main() {return 0;}
+7: extern int t(void);
+8: int t(void) { void ((*volatile p)()); p = (void ((*)()))cfmakeraw; return 0; }
+/* end */
+
+--------------------
+
+have_header: checking for sys/ioctl.h... -------------------- yes
+
+"/usr/bin/gcc-4.2 -E -I../../../.ext/include/x86_64-darwin12.2.0 -I../../.././include -I../../.././ext/io/console -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <sys/ioctl.h>
+/* end */
+
+--------------------
+
+have_func: checking for rb_io_get_write_io() in ruby/io.h... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../../.ext/include/x86_64-darwin12.2.0 -I../../.././include -I../../.././ext/io/console -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib     -lruby-static  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ruby/io.h>
+4: 
+5: /*top*/
+6: int main() {return 0;}
+7: extern int t(void);
+8: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_io_get_write_io; return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for dup3() in unistd.h... -------------------- no
+
+"/usr/bin/gcc-4.2 -o conftest -I../../../.ext/include/x86_64-darwin12.2.0 -I../../.././include -I../../.././ext/io/console -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib     -lruby-static  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:8: error: ‘dup3’ undeclared (first use in this function)
+conftest.c:8: error: (Each undeclared identifier is reported only once
+conftest.c:8: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <unistd.h>
+4: 
+5: /*top*/
+6: int main() {return 0;}
+7: extern int t(void);
+8: int t(void) { void ((*volatile p)()); p = (void ((*)()))dup3; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../../.ext/include/x86_64-darwin12.2.0 -I../../.././include -I../../.././ext/io/console -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib     -lruby-static  -lpthread -ldl -lobjc "
+Undefined symbols for architecture x86_64:
+  "_dup3", referenced from:
+      _t in cch4WHTt.o
+ld: symbol(s) not found for architecture x86_64
+collect2: ld returned 1 exit status
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <unistd.h>
+4: 
+5: /*top*/
+6: int main() {return 0;}
+7: extern int t(void);
+8: int t(void) { dup3(); return 0; }
+/* end */
+
+--------------------
+
+extconf.h is:
+/* begin */
+1: #ifndef EXTCONF_H
+2: #define EXTCONF_H
+3: #define HAVE_TERMIOS_H 1
+4: #define HAVE_CFMAKERAW 1
+5: #define HAVE_SYS_IOCTL_H 1
+6: #define HAVE_RB_IO_GET_WRITE_IO 1
+7: #endif
+/* end */
+

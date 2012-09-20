@@ -1,0 +1,128 @@
+have_library: checking for main() in -lcrypto... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../../.ext/include/x86_64-darwin12.2.0 -I../../.././include -I../../.././ext/digest/sha2 -I../../.././ext/digest/sha2/.. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib     -lruby-static -lcrypto  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: extern int t(void);
+6: int t(void) { void ((*volatile p)()); p = (void ((*)()))main; return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for SHA256_Transform() in openssl/sha.h... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../../.ext/include/x86_64-darwin12.2.0 -I../../.././include -I../../.././ext/digest/sha2 -I../../.././ext/digest/sha2/.. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lcrypto  -lruby-static -lcrypto  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:8: warning: ‘SHA256_Transform’ is deprecated (declared at /usr/include/openssl/sha.h:151)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <openssl/sha.h>
+4: 
+5: /*top*/
+6: int main() {return 0;}
+7: extern int t(void);
+8: int t(void) { void ((*volatile p)()); p = (void ((*)()))SHA256_Transform; return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for SHA512_Transform() in openssl/sha.h... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../../.ext/include/x86_64-darwin12.2.0 -I../../.././include -I../../.././ext/digest/sha2 -I../../.././ext/digest/sha2/.. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib    -lcrypto  -lruby-static -lcrypto  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:8: warning: ‘SHA512_Transform’ is deprecated (declared at /usr/include/openssl/sha.h:198)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <openssl/sha.h>
+4: 
+5: /*top*/
+6: int main() {return 0;}
+7: extern int t(void);
+8: int t(void) { void ((*volatile p)()); p = (void ((*)()))SHA512_Transform; return 0; }
+/* end */
+
+--------------------
+
+have_type: checking for SHA256_CTX in openssl/sha.h... -------------------- yes
+
+"/usr/bin/gcc-4.2 -I../../../.ext/include/x86_64-darwin12.2.0 -I../../.././include -I../../.././ext/digest/sha2 -I../../.././ext/digest/sha2/.. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe   -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <openssl/sha.h>
+4: 
+5: /*top*/
+6: typedef SHA256_CTX conftest_type;
+7: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_type: checking for SHA512_CTX in openssl/sha.h... -------------------- yes
+
+"/usr/bin/gcc-4.2 -I../../../.ext/include/x86_64-darwin12.2.0 -I../../.././include -I../../.././ext/digest/sha2 -I../../.././ext/digest/sha2/.. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe   -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <openssl/sha.h>
+4: 
+5: /*top*/
+6: typedef SHA512_CTX conftest_type;
+7: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_header: checking for sys/cdefs.h... -------------------- yes
+
+"/usr/bin/gcc-4.2 -E -I../../../.ext/include/x86_64-darwin12.2.0 -I../../.././include -I../../.././ext/digest/sha2 -I../../.././ext/digest/sha2/.. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <sys/cdefs.h>
+/* end */
+
+--------------------
+
+have_type: checking for uint64_t in defs.h with -DHAVE_CONFIG_H -DHAVE_SHA256_TRANSFORM -DHAVE_SHA512_TRANSFORM -DHAVE_TYPE_SHA256_CTX -DHAVE_TYPE_SHA512_CTX -DSHA2_USE_OPENSSL -DHAVE_SYS_CDEFS_H... -------------------- yes
+
+"/usr/bin/gcc-4.2 -I../../../.ext/include/x86_64-darwin12.2.0 -I../../.././include -I../../.././ext/digest/sha2 -I../../.././ext/digest/sha2/.. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe  -DHAVE_CONFIG_H -DHAVE_SHA256_TRANSFORM -DHAVE_SHA512_TRANSFORM -DHAVE_TYPE_SHA256_CTX -DHAVE_TYPE_SHA512_CTX -DSHA2_USE_OPENSSL -DHAVE_SYS_CDEFS_H -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <defs.h>
+4: 
+5: /*top*/
+6: typedef uint64_t conftest_type;
+7: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+extconf.h is:
+/* begin */
+ 1: #ifndef EXTCONF_H
+ 2: #define EXTCONF_H
+ 3: #define HAVE_CONFIG_H 1
+ 4: #define HAVE_SHA256_TRANSFORM 1
+ 5: #define HAVE_SHA512_TRANSFORM 1
+ 6: #define HAVE_TYPE_SHA256_CTX 1
+ 7: #define HAVE_TYPE_SHA512_CTX 1
+ 8: #define SHA2_USE_OPENSSL 1
+ 9: #define HAVE_SYS_CDEFS_H 1
+10: #define HAVE_TYPE_UINT64_T 1
+11: #endif
+/* end */
+

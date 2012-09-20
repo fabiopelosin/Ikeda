@@ -1,0 +1,97 @@
+have_func: checking for rb_obj_instance_exec() in ruby.h... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../../.ext/include/x86_64-darwin12.2.0 -I../../.././include -I../../.././ext/tk/tkutil -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib     -lruby-static  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ruby.h>
+4: 
+5: /*top*/
+6: int main() {return 0;}
+7: extern int t(void);
+8: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_obj_instance_exec; return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_obj_untrust() in ruby.h... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../../.ext/include/x86_64-darwin12.2.0 -I../../.././include -I../../.././ext/tk/tkutil -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib     -lruby-static  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ruby.h>
+4: 
+5: /*top*/
+6: int main() {return 0;}
+7: extern int t(void);
+8: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_obj_untrust; return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_obj_taint() in ruby.h... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../../.ext/include/x86_64-darwin12.2.0 -I../../.././include -I../../.././ext/tk/tkutil -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib     -lruby-static  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ruby.h>
+4: 
+5: /*top*/
+6: int main() {return 0;}
+7: extern int t(void);
+8: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_obj_taint; return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_sym_to_s() in ruby.h... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../../.ext/include/x86_64-darwin12.2.0 -I../../.././include -I../../.././ext/tk/tkutil -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib     -lruby-static  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ruby.h>
+4: 
+5: /*top*/
+6: int main() {return 0;}
+7: extern int t(void);
+8: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_sym_to_s; return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for strndup() in string.h... -------------------- yes
+
+"/usr/bin/gcc-4.2 -o conftest -I../../../.ext/include/x86_64-darwin12.2.0 -I../../.././include -I../../.././ext/tk/tkutil -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib     -lruby-static  -lpthread -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <string.h>
+4: 
+5: /*top*/
+6: int main() {return 0;}
+7: extern int t(void);
+8: int t(void) { void ((*volatile p)()); p = (void ((*)()))strndup; return 0; }
+/* end */
+
+--------------------
+
+extconf.h is:
+/* begin */
+1: #ifndef EXTCONF_H
+2: #define EXTCONF_H
+3: #define HAVE_RB_OBJ_INSTANCE_EXEC 1
+4: #define HAVE_RB_OBJ_UNTRUST 1
+5: #define HAVE_RB_OBJ_TAINT 1
+6: #define HAVE_RB_SYM_TO_S 1
+7: #define HAVE_STRNDUP 1
+8: #endif
+/* end */
+

@@ -1,0 +1,44 @@
+have_func: checking for ruby_add_suffix() in ruby/util.h... -------------------- no
+
+"/usr/bin/gcc-4.2 -o conftest -I../../../.ext/include/x86_64-darwin12.2.0 -I../../.././include -I../../.././ext/-test-/add_suffix -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib     -lruby-static  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:7: error: ‘ruby_add_suffix’ undeclared (first use in this function)
+conftest.c:7: error: (Each undeclared identifier is reported only once
+conftest.c:7: error: for each function it appears in.)
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ruby/util.h>
+4: 
+5: /*top*/
+6: int main() {return 0;}
+7: int t() { void ((*volatile p)()); p = (void ((*)()))ruby_add_suffix; return 0; }
+/* end */
+
+"/usr/bin/gcc-4.2 -o conftest -I../../../.ext/include/x86_64-darwin12.2.0 -I../../.././include -I../../.././ext/-test-/add_suffix -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/Users/fabio/.sm/pkg/active/include -pipe conftest.c  -L. -L../../.. -L. -Bstatic -L/Users/fabio/.sm/pkg/active/lib -L/usr/local/lib     -lruby-static  -lpthread -ldl -lobjc "
+Undefined symbols for architecture x86_64:
+  "_ruby_add_suffix", referenced from:
+      _t in ccSYDjJm.o
+ld: symbol(s) not found for architecture x86_64
+collect2: ld returned 1 exit status
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ruby/util.h>
+4: 
+5: /*top*/
+6: int main() {return 0;}
+7: int t() { ruby_add_suffix(); return 0; }
+/* end */
+
+--------------------
+
+extconf.h is:
+/* begin */
+1: #ifndef EXTCONF_H
+2: #define EXTCONF_H
+3: #endif
+/* end */
+

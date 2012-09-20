@@ -1,0 +1,8 @@
+extconf.h is:
+/* begin */
+1: #ifndef EXTCONF_H
+2: #define EXTCONF_H
+3: #define HAVE_CONFIG_H 1
+4: #endif
+/* end */
+
