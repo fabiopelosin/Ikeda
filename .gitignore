@@ -12,4 +12,9 @@ build/*
 xcuserdata
 profile
 *.moved-aside
-pods/Documentation
+
+Pods/Documentation
+Vendor/bundler
+Vendor/ruby
+Vendor/Gemfile.lock
+Vendor/.bundle
