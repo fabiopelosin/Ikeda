@@ -1,3 +1,4 @@
 #!/usr/bin/env ruby
+STDOUT.sync = true
 require 'cocoapods'
 Pod::Command.run(*ARGV)

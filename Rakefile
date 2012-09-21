@@ -59,7 +59,7 @@ namespace :vendor do
     # Patch CocoaPods either with an environment variable or
     # removing the call to Bundler.
     File.open("AppVendor/gems/gems/cocoapods-0.14.0/bin/pod", 'w') do |f|
-      f.write("#!/usr/bin/env ruby\nrequire 'cocoapods'\nPod::Command.run(*ARGV)")
+      f.write("#!/usr/bin/env ruby\nSTDOUT.sync = true\nrequire 'cocoapods'\nPod::Command.run(*ARGV)")
     end
 
     libs = `otool -L AppVendor/gems/gems/xcodeproj-0.3.3/ext/xcodeproj_ext.bundle`
