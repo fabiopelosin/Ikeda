@@ -1,7 +1,7 @@
 # encoding: utf-8
 
 desc "Bootstrap the vendored dependencies"
-task :vendor => %w| vendor:bundle vendor:ruby vendor:appvendor|
+task :vendor => %w| vendor:ruby vendor:gem vendor:appvendor|
 
 namespace :vendor do
   desc "Updates the vendored Ruby"
@@ -31,7 +31,7 @@ namespace :vendor do
   end
 
   desc "Updates the vendored CocoaPods gem and it dependencies using AppGemfile as a Gemfile"
-  task :bundle do
+  task :gem do
     # Bundler and RVM don't like when you install
     # a bundle from (the automatic) bundle exec rake.
     # Therefore, to prevent issues, there should be
@@ -47,19 +47,28 @@ namespace :vendor do
   desc "Prepares the app vendor folder"
   task :appvendor do
     sh "rm -rf AppVendor/ruby"
-    sh "rm -rf AppVendor/gems"
-
     sh "cp -r  Vendor/ruby/ AppVendor/ruby"
-    sh "cp -r  Vendor/bundler/ruby/1.9.1/ AppVendor/gems"
+    # TODO: Need a better way to do this :-)
+    sh "cp Vendor/libruby.1.9.1.dylib AppVendor/ruby/lib/"
+    sh "rm -rf AppVendor/ruby/src"
 
-    # install_name_tool -id "@loader_path/../wxWidgets/lib/libwx_macu-2.8.0.4.0.dylib" libwx_macu-2.8.0.4.0.dylib
-    linked_libs = `otool -L Vendor/bundler/ruby/1.9.1/gems/xcodeproj-0.3.3/ext/xcodeproj/xcodeproj_ext.bundle`
-    fail("External dependendecies with user specific paths") if linked_libs.include?('/Users')
+
+    sh "rm -rf AppVendor/gems"
+    sh "cp -r  Vendor/bundler/ruby/1.9.1/ AppVendor/gems"
+    # TODO: Offensive hack!
+    # Patch CocoaPods either with an environment variable or
+    # removing the call to Bundler.
+    File.open("AppVendor/gems/gems/cocoapods-0.14.0/bin/pod", 'w') do |f|
+      f.write("#!/usr/bin/env ruby\nrequire 'cocoapods'\nPod::Command.run(*ARGV)")
+    end
+
+    # sh "install_name_tool -change /Users/fabio/.rvm/rubies/ruby-1.9.3-p194/lib/libruby.1.9.1.dylib '@loader_path/../lib/libruby.1.9.1.dylib' AppVendor/gems/gems/xcodeproj-0.3.3/ext/xcodeproj/xcodeproj_ext.bundle"
+    sh "install_name_tool -change /Users/fabio/.rvm/rubies/ruby-1.9.3-p194/lib/libruby.1.9.1.dylib '@executable_path../lib/libruby.1.9.1.dylib' AppVendor/gems/gems/xcodeproj-0.3.3/ext/xcodeproj/xcodeproj_ext.bundle"
+    linked_libs = `otool -L AppVendor/gems/gems/xcodeproj-0.3.3/ext/xcodeproj/xcodeproj_ext.bundle`
+    fail("External dependendecies with user specific paths\n#{linked_libs}") if linked_libs.include?('/Users')
 
     # removed the uneeded files
-    sh "rm -rf AppVendor/ruby/src"
     sh "rm -rf AppVendor/gems/cache"
-    sh "rm -rf AppVendor/gems/specifications"
     puts_success "AppVendor folder prepared", "AppVendor"
   end
 end
@@ -76,15 +85,16 @@ end
 
 # Helpers
 
-# Prints a sucess message :-)
+# Prints a nice success message :-)
 def puts_success(message, dir = nil)
   m = "\n[\e[0;32m✔\e[0m] #{message}"
   m << " (#{dir} - #{`du -md 0 #{dir}`.split(' ')[0]}M)" if dir
   puts m << "\n\n"
 end
 
-# Returns the absolute paht of a path relative the the _Rakefile_
+# Returns the absolute path of a path relative the _Rakefile_
 def relative_path(path)
   path = File.expand_path(File.dirname(__FILE__) + '/' + path)
   "'#{path}'"
 end
+

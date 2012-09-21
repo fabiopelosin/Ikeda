@@ -26,4 +26,4 @@ PHYS_DIR=`pwd -P`
 
 # Restore original path
 cd "$WORKING_DIR"
-exec "$PHYS_DIR/ruby" "$PHYS_DIR/../Frameworks/gems/gems/cocoapods-0.14.0.rc2/bin/pod" $@
+exec "$PHYS_DIR/ruby" "$PHYS_DIR/../Frameworks/gems/bin/pod" $@
