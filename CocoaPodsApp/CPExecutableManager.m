@@ -75,7 +75,7 @@
 
   NSMutableDictionary *environment = [[[NSProcessInfo processInfo] environment] mutableCopy];
   environment[@"CP_STDOUT_SYNC"] = @"TRUE";
-  environment[@"DYLD_PRINT_LIBRARIES"] = @"TRUE";
+  //environment[@"DYLD_PRINT_LIBRARIES"] = @"TRUE";
   arguments = [@[@"--no-color", @"--verbose"] arrayByAddingObjectsFromArray:arguments];
   NSTask *task = [[NSTask alloc] init];
   [task setLaunchPath:_executablePath];
