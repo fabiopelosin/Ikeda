@@ -62,11 +62,14 @@ namespace :vendor do
       f.write("#!/usr/bin/env ruby\nrequire 'cocoapods'\nPod::Command.run(*ARGV)")
     end
 
-    sh "install_name_tool -change /Users/fabio/.rvm/rubies/ruby-1.9.3-p194/lib/libruby.1.9.1.dylib '@executable_path/../lib/libruby.1.9.1.dylib' AppVendor/gems/gems/xcodeproj-0.3.3/ext/xcodeproj/xcodeproj_ext.bundle"
-    sh "install_name_tool -change /Users/fabio/.rvm/rubies/ruby-1.9.3-p194/lib/libruby.1.9.1.dylib '@executable_path/../lib/libruby.1.9.1.dylib' AppVendor/gems/gems/xcodeproj-0.3.3/ext/xcodeproj_ext.bundle"
-
-    linked_libs = `otool -L AppVendor/gems/gems/xcodeproj-0.3.3/ext/xcodeproj/xcodeproj_ext.bundle`
-    fail("External dependendecies with user specific paths\n#{linked_libs}") if linked_libs.include?('/Users')
+    libs = `otool -L AppVendor/gems/gems/xcodeproj-0.3.3/ext/xcodeproj_ext.bundle`
+    local_libruby = libs.match(/(.*.libruby.1.9.1.dylib).*/)[1].lstrip
+    puts "local libruby #{local_libruby}"
+    Dir.glob('AppVendor/gems/**/*.bundle') do |bundle|
+      sh "install_name_tool -change #{local_libruby} '@executable_path/../lib/libruby.1.9.1.dylib' #{bundle}"
+      linked_libs = `otool -L #{bundle}`
+      fail("Detected extensions with user specific paths\n#{linked_libs}") if linked_libs.include?('/Users')
+    end
 
     # removed the uneeded files
     sh "rm -rf AppVendor/gems/cache"
