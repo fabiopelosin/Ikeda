@@ -8,14 +8,15 @@
 
 #import "CPAppDelegate.h"
 #import "CoreData+MagicalRecord.h"
+#import "ReactiveCocoa.h"
 
 #import "CPExecutableWindowController.h"
 #import "CPGemBridgeManager.h"
-#import "CPExecutableManager.h"
 #import "CPMainViewController.h"
+#import "CPExecutable.h"
 
 @interface CPAppDelegate ()
-
+@property (nonatomic, strong) CPExecutableWindowController *execWindowController;
 @end
 
 @implementation CPAppDelegate {
@@ -35,7 +36,7 @@
     if (repoCompatible) {
       [[CPGemBridgeManager sharedInstance] updateSets];
     } else {
-      [self runExecutableWithTitle:@"Pod setup" arguments:@[ @"setup" ] workingDirectory:nil completionHandler:^(int terminationStatus) {
+      [self runExecutableWithTitle:@"Pod setup" arguments:@[ @"setup" ] workingDirectory:nil completionHandler:^(NSInteger terminationStatus) {
         [[CPGemBridgeManager sharedInstance] updateSets];
       }];
     }
@@ -103,50 +104,46 @@
              completionHandler:nil];
 }
 
-- (void)runExecutableWithTitle:(NSString*)title
-                     arguments:(NSArray*)arguments
-              workingDirectory:(NSString*)workingDirectory
+- (void)runExecutableWithTitle:(NSString *)title
+                     arguments:(NSArray *)arguments
+              workingDirectory:(NSString *)workingDirectory
              completionHandler:(CPExecutableCompletionBlock)completionHandle {
-  // TODO: cache the window
-  // TODO: output seems buffered again!
-  CPExecutableWindowController* execController =[[CPExecutableWindowController alloc] initWithWindowNibName:@"CPExecutableWindowController"];
-  [execController setTitle:title];
-  [NSApp beginSheet: execController.window
-     modalForWindow: self.window
-      modalDelegate: nil
-     didEndSelector: nil
-        contextInfo: nil];
+    // TODO: cache the window
+    
+    [self.execWindowController setTitle:title];
+    [self.execWindowController prepareToRun];
 
-  CPExecutableOutputBlock outputHandler = ^(NSString *output) {
-    dispatch_async(dispatch_get_main_queue(), ^ {
-      if (output) {
-        [execController executableDidGenerateOutput:output];
-      }
-    });
-  };
+    [NSApp beginSheet:self.execWindowController.window modalForWindow:self.window modalDelegate:nil didEndSelector:nil contextInfo:nil];
+    
+    __weak CPAppDelegate *weakSelf = self;
+    
+    void (^handler)(NSInteger completionStatus) = ^(NSInteger completionStatus){
+        if (completionHandle) {
+            completionHandle(completionStatus);
+        }
+        [weakSelf.execWindowController executableDidCompleteWithTerminationStatus:completionStatus];
+    };
+    
+    NSTask *task = [CPExecutable taskWithWorkingDirectory:workingDirectory arguments:arguments];
+    
+    [[[task rac_standardOutputSubscribable] doNext:^(NSData *x) {
+        NSString *output = [[NSString alloc] initWithData:x encoding:NSUTF8StringEncoding];
+        if (x.length)
+            [weakSelf.execWindowController executableDidGenerateOutput:output];
+      }] subscribeError:^(NSError *error) {
+          handler(NSTaskRACSupportNonZeroTerminationStatus);
+      } completed:^{
+          handler(0);
+      }];
+    
+    [task rac_run];
+}
 
-  CPExecutableCompletionBlock controllerCompletionHandle = ^(int terminationStatus) {
-    dispatch_async(dispatch_get_main_queue(), ^ {
-      if (completionHandle) {
-        completionHandle(terminationStatus);
-      }
-      [execController executableDidCompleteWithTerminationStatus:terminationStatus];
-    });
-  };
-
-  NSModalSession session = [NSApp beginModalSessionForWindow:execController.window];
-  [execController prepareToRun];
-  [[CPExecutableManager sharedInstance] executeWithWorkingDirectory:workingDirectory
-                                                          arguments:arguments
-                                                      outputHandler:outputHandler
-                                                  completionHandler:controllerCompletionHandle];
-
-  NSInteger result = NSRunContinuesResponse;
-  while (result == NSRunContinuesResponse) {
-    result = [NSApp runModalSession:session];
-    [[NSRunLoop currentRunLoop] limitDateForMode:NSDefaultRunLoopMode];
-  }
-  [NSApp endModalSession:session];
+- (CPExecutableWindowController *)execWindowController {
+    if (!_execWindowController) {
+        self.execWindowController = [[CPExecutableWindowController alloc] initWithWindowNibName:@"CPExecutableWindowController"];
+    }
+    return _execWindowController;
 }
 
 @end
