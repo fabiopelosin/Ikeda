@@ -12,7 +12,6 @@
 #import "BlocksKit.h"
 
 #import "CPGemBridgeManager.h"
-#import "CPExecutableManager.h"
 #import "CPPodfile.h"
 
 #import "CPNavigationViewController.h"

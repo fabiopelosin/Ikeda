@@ -14,6 +14,6 @@
 
 - (void)prepareToRun;
 - (void)executableDidGenerateOutput:(NSString*)output;
-- (void)executableDidCompleteWithTerminationStatus:(int)terminationStatus;
+- (void)executableDidCompleteWithTerminationStatus:(NSInteger)terminationStatus;
 
 @end

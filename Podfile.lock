@@ -7,9 +7,12 @@ PODS:
   - A2DynamicDelegate
 - DSFavIconManager (0.10.0)
 - INAppStoreWindow (1.1)
+- JRSwizzle (1.0)
 - MAKVONotificationCenter (HEAD based on 0.0.1)
 - MagicalRecord (HEAD based on 2.0.3)
 - PXSourceList (0.8)
+- ReactiveCocoa (0.6.0):
+  - JRSwizzle (~> 1.0)
 - SNRHUDKit (0.0.1)
 - libffi (3.0.11)
 
@@ -21,6 +24,7 @@ DEPENDENCIES:
 - MAKVONotificationCenter (HEAD)
 - MagicalRecord (HEAD)
 - PXSourceList
+- ReactiveCocoa
 - SNRHUDKit (from `https://github.com/irrationalfab/SNRHUDKit.git', commit `a0791e31b2b0619a570a31bf9cf9d5a07bd5b3d0')
 
 EXTERNAL SOURCES:
@@ -30,13 +34,15 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   A2DynamicDelegate: 013b345f1aca891ded67a95c1512fad677c260a9
-  AFNetworking: 11ddec0dca78dc178cece46ef48ee0b65e47b293
+  AFNetworking: e9e0911a6afd846691672a4d832fb531e8bae72f
   BlocksKit: 12fbe889d9f8cc66adf5c9bd4cb0606071f214f2
   DSFavIconManager: fc25bfc913797f8696b351f91ab9a6f0ace8abbc
   INAppStoreWindow: 77f15fd07261a79ae443124927c94ad30905d900
+  JRSwizzle: 6242ff38485d870fc2636899048ee1ab883ae587
   MAKVONotificationCenter: 4540e226e809a110ecf2629d3afd375a5beb086a
   MagicalRecord: bab76c152f93668a25cf1b697e1f469f4c3bf691
   PXSourceList: 80a590e03f84221c62652a9b955b1d90b1807261
+  ReactiveCocoa: 172671064cb38a27d5f7a7cd8d3c3e24025480c6
   SNRHUDKit: 3d1c2aecd936d01f38121ebfb6f11e208b3a4ced
   libffi: 8a1d9ba43c0c84b546b42c6f742714e73aa07ae1
 
