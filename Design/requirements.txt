@@ -10,7 +10,7 @@ USER STORIES
 Discoverability
 
 As a user I would like to browse Pods from all spec repos so I can discover new Pods. - #1 done
-As a user I would like to search Pods from all spec repos so I can find those relavent to my specific needs. - #2 done
+As a user I would like to search Pods from all spec repos so I can find those relevant to my specific needs. - #2 done
 As a user I would like to see the amount of GitHub watchers and forks so that I can inform myself on wether or not a Pod is popular. - #3 done
 
 Integration
@@ -19,6 +19,7 @@ As a user I would like to see all open Xcode projects, that contain a Podfile, s
 As a user I would like to edit my project’s Podfile so that I can add/update/remove dependencies. - #5 todo
 As a user I would like to see Pod specs and Podfiles color highlighted so that I can view/edit them conveniently. - #6 todo
 As a user I would like to install the dependencies of a project so I can use CocoaPods from the comfort of a GUI. - #7 partial
+As a user I would like to edit a Pod spec and save the changes to a Spec repo. - #8 todo
 
 ROLES
 
@@ -27,6 +28,6 @@ User: Someone who manages project dependencies through CocoaPods.
 DEFINITIONS
 
 Pod: A library that is distributed through CocoaPods.
-Podfile: A Ruby textfile that descibres the dependencies of one project.
+Podfile: A Ruby textfile that describes the dependencies of one project.
 Pod spec: A Ruby textfile that describes a Pod.
 Spec repo: A directory (often a git repo) that contains specifications for Pods.
