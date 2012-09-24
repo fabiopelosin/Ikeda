@@ -1,0 +1,32 @@
+Requirements Ikeda
+
+- Fabio Pelosin, fabiopelosin@gmail.com
+- Eloy Durán, eloy.de.enige@gmail.com
+
+Ikeda is a complete Ruby 1.9 + CocoaPods binary distribution, packaged as a OS X application bundle which also provides a GUI to browse available Pods and install project dependencies. (Currently this document describes the GUI only.)
+
+USER STORIES
+
+Discoverability
+
+As a user I would like to browse Pods from all spec repos so I can discover new Pods. - #1 done
+As a user I would like to search Pods from all spec repos so I can find those relavent to my specific needs. - #2 done
+As a user I would like to see the amount of GitHub watchers and forks so that I can inform myself on wether or not a Pod is popular. - #3 done
+
+Integration
+
+As a user I would like to see all open Xcode projects, that contain a Podfile, so I can manage the dependencies of those projects. - #4 partial
+As a user I would like to edit my project’s Podfile so that I can add/update/remove dependencies. - #5 todo
+As a user I would like to see Pod specs and Podfiles color highlighted so that I can view/edit them conveniently. - #6 todo
+As a user I would like to install the dependencies of a project so I can use CocoaPods from the comfort of a GUI. - #7 partial
+
+ROLES
+
+User: Someone who manages project dependencies through CocoaPods.
+
+DEFINITIONS
+
+Pod: A library that is distributed through CocoaPods.
+Podfile: A Ruby textfile that descibres the dependencies of one project.
+Pod spec: A Ruby textfile that describes a Pod.
+Spec repo: A directory (often a git repo) that contains specifications for Pods.

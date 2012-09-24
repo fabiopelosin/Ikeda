@@ -1,5 +1,17 @@
 # encoding: utf-8
 
+namespace :requirements do
+  desc "Adds an id to stories without one"
+  task :autofill do
+    sh "bundle exec saga autofill Design/requirements.txt > /tmp/requirements.txt && rm Design/requirements.txt && mv /tmp/requirements.txt Design/requirements.txt"
+  end
+
+  desc "Convert Design/requirements.txt to HTML"
+  task :convert do
+    sh "bundle exec saga convert --template Design/RequirementsTemplate Design/requirements.txt > Design/requirements.html"
+  end
+end
+
 desc "Bootstrap the vendored dependencies"
 task :vendor => %w| vendor:ruby vendor:gem vendor:appvendor|
 

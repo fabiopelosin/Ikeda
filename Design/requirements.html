@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>Requirements Ikeda &middot; Ikeda</title>
+<link rel="stylesheet" type="text/css" media="all" href="RequirementsTemplate/doc.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+  td.id { text-align: right !important; }
+  td.id a { color: #000; }
+  table.review { border-bottom: 1px solid #ccc; margin-top: -1em;}
+  table.review td { padding: .25em 0; vertical-align: top; text-align: left; min-width: 1em; }
+  table.review th { padding: .25em 0; vertical-align: top; text-align: right; }
+  table.review td.story { width: 100%; border-top: 1px solid #ccc; }
+  table.review td.meta { padding-left: 1em; border-top: 1px solid #ccc; text-align: right !important; white-space: nowrap; }
+  table.review td.notes { color: #666; padding: 0 0 .25em 0; font-style: italic; }
+  table.review .dropped { color: #666; text-decoration: line-through; }
+  table.review .done { color: #666; background-color: #f0f8ff; }
+  table.review tr.nested td.story { padding-left: 1em; }
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
+</head>
+<body id="doc" class="requirements">
+
+<p id="logo"><img src="RequirementsTemplate/CocoaPods.png" alt="CocoaPods" /> </p>
+
+<h1>Requirements <br />Ikeda</h1>
+
+<p class="author">Fabio Pelosin, <a href="mailto:fabiopelosin@gmail.com">fabiopelosin@gmail.com</a></p>
+<p class="author">Eloy Durán, <a href="mailto:eloy.de.enige@gmail.com">eloy.de.enige@gmail.com</a></p>
+
+<p>Ikeda is a complete Ruby 1.9 + CocoaPods binary distribution, packaged as a OS X application bundle which also provides a GUI to browse available Pods and install project dependencies. (Currently this document describes the GUI only.)</p>
+
+<h2>User stories</h2>
+<h3>Discoverability</h3>
+<table class="review">
+<tr>
+  <th></th>
+  <th title="id">#</th>
+  <th title="Estimate">e</th>
+  <th title="Iteration">i</th>
+  <th title="Status">s</th>
+</tr>
+<tr class="done" id="story1">
+  <td class="story">As a user I would like to browse Pods from all spec repos so I can discover new Pods.</td>
+  <td class="meta id">1</td>
+  <td class="meta estimate"></td>
+  <td class="meta iteration"></td>
+  <td class="meta status">done</td>
+</tr>
+<tr class="done" id="story2">
+  <td class="story">As a user I would like to search Pods from all spec repos so I can find those relavent to my specific needs.</td>
+  <td class="meta id">2</td>
+  <td class="meta estimate"></td>
+  <td class="meta iteration"></td>
+  <td class="meta status">done</td>
+</tr>
+<tr class="done" id="story3">
+  <td class="story">As a user I would like to see the amount of GitHub watchers and forks so that I can inform myself on wether or not a Pod is popular.</td>
+  <td class="meta id">3</td>
+  <td class="meta estimate"></td>
+  <td class="meta iteration"></td>
+  <td class="meta status">done</td>
+</tr>
+</table>
+<h3>Integration</h3>
+<table class="review">
+<tr>
+  <th></th>
+  <th title="id">#</th>
+  <th title="Estimate">e</th>
+  <th title="Iteration">i</th>
+  <th title="Status">s</th>
+</tr>
+<tr class="partial" id="story4">
+  <td class="story">As a user I would like to see all open Xcode projects, that contain a Podfile, so I can manage the dependencies of those projects.</td>
+  <td class="meta id">4</td>
+  <td class="meta estimate"></td>
+  <td class="meta iteration"></td>
+  <td class="meta status">partial</td>
+</tr>
+<tr class="todo" id="story5">
+  <td class="story">As a user I would like to edit my project’s Podfile so that I can add/update/remove dependencies.</td>
+  <td class="meta id">5</td>
+  <td class="meta estimate"></td>
+  <td class="meta iteration"></td>
+  <td class="meta status">todo</td>
+</tr>
+<tr class="todo" id="story6">
+  <td class="story">As a user I would like to see Pod specs and Podfiles color highlighted so that I can view/edit them conveniently.</td>
+  <td class="meta id">6</td>
+  <td class="meta estimate"></td>
+  <td class="meta iteration"></td>
+  <td class="meta status">todo</td>
+</tr>
+<tr class="partial" id="story7">
+  <td class="story">As a user I would like to install the dependencies of a project so I can use CocoaPods from the comfort of a GUI.</td>
+  <td class="meta id">7</td>
+  <td class="meta estimate"></td>
+  <td class="meta iteration"></td>
+  <td class="meta status">partial</td>
+</tr>
+</table>
+
+<h2>Roles</h2>
+<dl>
+<dt>User</dt>
+<dd>Someone who manages project dependencies through CocoaPods.</dd>
+</dl>
+<h2>Definitions</h2>
+<dl>
+<dt>Pod</dt>
+<dd>A library that is distributed through CocoaPods.</dd>
+<dt>Podfile</dt>
+<dd>A Ruby textfile that descibres the dependencies of one project.</dd>
+<dt>Pod spec</dt>
+<dd>A Ruby textfile that describes a Pod.</dd>
+<dt>Spec repo</dt>
+<dd>A directory (often a git repo) that contains specifications for Pods.</dd>
+</dl>
+</body>
+</html>
