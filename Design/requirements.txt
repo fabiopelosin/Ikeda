@@ -20,6 +20,7 @@ As a user I would like to edit my project’s Podfile so that I can add/update/r
 As a user I would like to see Pod specs and Podfiles color highlighted so that I can view/edit them conveniently. - #6 todo
 As a user I would like to install the dependencies of a project so I can use CocoaPods from the comfort of a GUI. - #7 partial
 As a user I would like to save a Pod spec to a Spec repo so I can share the new/updated Pod spec. - #8 todo
+  This should probably re-use the `pod push` command.
 
 ROLES
 
