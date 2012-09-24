@@ -1,7 +1,0 @@
-PODS_ROOT = ${SRCROOT}/Pods
-PODS_HEADERS_SEARCH_PATHS = ${PODS_PUBLIC_HEADERS_SEARCH_PATHS}
-ALWAYS_SEARCH_USER_PATHS = YES
-OTHER_LDFLAGS = -ObjC -Wl,-no_compact_unwind -framework CoreData -framework Foundation -framework SystemConfiguration
-HEADER_SEARCH_PATHS = ${PODS_HEADERS_SEARCH_PATHS}
-PODS_BUILD_HEADERS_SEARCH_PATHS = "${PODS_ROOT}/BuildHeaders" "${PODS_ROOT}/BuildHeaders/A2DynamicDelegate" "${PODS_ROOT}/BuildHeaders/AFNetworking" "${PODS_ROOT}/BuildHeaders/BlocksKit" "${PODS_ROOT}/BuildHeaders/DSFavIconManager" "${PODS_ROOT}/BuildHeaders/INAppStoreWindow" "${PODS_ROOT}/BuildHeaders/JRSwizzle" "${PODS_ROOT}/BuildHeaders/MAKVONotificationCenter" "${PODS_ROOT}/BuildHeaders/MAKVONotificationCenter/MAKVONotificationCenter" "${PODS_ROOT}/BuildHeaders/MagicalRecord" "${PODS_ROOT}/BuildHeaders/PXSourceList" "${PODS_ROOT}/BuildHeaders/ReactiveCocoa" "${PODS_ROOT}/BuildHeaders/libffi"
-PODS_PUBLIC_HEADERS_SEARCH_PATHS = "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/A2DynamicDelegate" "${PODS_ROOT}/Headers/AFNetworking" "${PODS_ROOT}/Headers/BlocksKit" "${PODS_ROOT}/Headers/DSFavIconManager" "${PODS_ROOT}/Headers/INAppStoreWindow" "${PODS_ROOT}/Headers/JRSwizzle" "${PODS_ROOT}/Headers/MAKVONotificationCenter" "${PODS_ROOT}/Headers/MAKVONotificationCenter/MAKVONotificationCenter" "${PODS_ROOT}/Headers/MagicalRecord" "${PODS_ROOT}/Headers/PXSourceList" "${PODS_ROOT}/Headers/ReactiveCocoa" "${PODS_ROOT}/Headers/libffi"

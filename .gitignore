@@ -13,7 +13,7 @@ xcuserdata
 profile
 *.moved-aside
 
-Pods/Documentation
+Pods
 Vendor/bundler
 Vendor/ruby
 Vendor/Gemfile.lock
