@@ -7,12 +7,11 @@
 //
 
 #import "CPExecutableWindowController.h"
-#import "SNRHUDTextView.h"
 
 @interface CPExecutableWindowController ()
 
 @property (weak) IBOutlet NSTextField *TitleTextField;
-@property (unsafe_unretained) IBOutlet SNRHUDTextView *textView;
+@property (unsafe_unretained) IBOutlet NSTextView *textView;
 @property (weak) IBOutlet NSButton *doneButton;
 @property (weak) IBOutlet NSProgressIndicator *activityIndicator;
 
@@ -74,7 +73,7 @@
 
   if (terminationStatus == 0) {
     [_resultLabel setTextColor:[NSColor colorWithCalibratedRed:0.000 green:0.693 blue:0.072 alpha:1.000]];
-    [_resultLabel setStringValue:@"Sucess"];
+    [_resultLabel setStringValue:@"Success"];
   } else {
     [_resultLabel setTextColor:[NSColor colorWithCalibratedRed:0.700 green:0.000 blue:0.008 alpha:1.000]];
     [_resultLabel setStringValue:@"Failure"];
