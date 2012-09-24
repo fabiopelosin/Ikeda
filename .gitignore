@@ -1,3 +1,5 @@
+.DS_Store
+
 # Xcode
 build/*
 *.pbxuser
@@ -13,6 +15,7 @@ xcuserdata
 profile
 *.moved-aside
 
+# Pods and Vendor
 Pods
 Vendor/bundler
 Vendor/ruby
