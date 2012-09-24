@@ -84,7 +84,7 @@ body
 body
 {
   padding: 0 10%;
-  background: #fff url(../RequirementsTemplate/grad.gif) top right repeat-x;
+  background: #fff url(grad.gif) top right repeat-x;
 }
 body.requirements
 {
@@ -97,7 +97,7 @@ body.requirements
   height: 180px;
   margin: 0 0 0 12px;
   padding: 0;
-  background: transparent url(../RequirementsTemplate/CocoaPods.png) bottom left no-repeat;
+  background: transparent url(CocoaPods.png) bottom left no-repeat;
 }
 #logo img
 {
