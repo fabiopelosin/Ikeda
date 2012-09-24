@@ -13,7 +13,6 @@ PODS:
 - PXSourceList (0.8)
 - ReactiveCocoa (0.6.0):
   - JRSwizzle (~> 1.0)
-- SNRHUDKit (0.0.1)
 - libffi (3.0.11)
 
 DEPENDENCIES:
@@ -25,12 +24,6 @@ DEPENDENCIES:
 - MagicalRecord (HEAD)
 - PXSourceList
 - ReactiveCocoa
-- SNRHUDKit (from `https://github.com/irrationalfab/SNRHUDKit.git', commit `a0791e31b2b0619a570a31bf9cf9d5a07bd5b3d0')
-
-EXTERNAL SOURCES:
-  SNRHUDKit:
-    :git: https://github.com/irrationalfab/SNRHUDKit.git
-    :commit: a0791e31b2b0619a570a31bf9cf9d5a07bd5b3d0
 
 SPEC CHECKSUMS:
   A2DynamicDelegate: 013b345f1aca891ded67a95c1512fad677c260a9
@@ -43,7 +36,6 @@ SPEC CHECKSUMS:
   MagicalRecord: bab76c152f93668a25cf1b697e1f469f4c3bf691
   PXSourceList: 80a590e03f84221c62652a9b955b1d90b1807261
   ReactiveCocoa: 172671064cb38a27d5f7a7cd8d3c3e24025480c6
-  SNRHUDKit: 3d1c2aecd936d01f38121ebfb6f11e208b3a4ced
   libffi: 8a1d9ba43c0c84b546b42c6f742714e73aa07ae1
 
 COCOAPODS: 0.14.0
