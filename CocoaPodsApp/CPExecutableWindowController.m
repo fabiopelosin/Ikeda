@@ -8,7 +8,6 @@
 
 #import "CPExecutableWindowController.h"
 #import "SNRHUDTextView.h"
-#import "CPExecutableManager.h"
 
 @interface CPExecutableWindowController ()
 
@@ -51,14 +50,13 @@
 }
 
 - (IBAction)stopModalAction:(id)sender {
-  [NSApp stopModal];
-  [NSApp endSheet: self.window];
-  [self.window orderOut: self];
+  [NSApp endSheet:self.window];
+  [self.window orderOut:self];
 }
 
 - (void)prepareToRun {
   [_activityIndicator startAnimation:nil];
-  _executableOutput = [NSMutableString new];
+  self.executableOutput = [NSMutableString new];
   [_textView setString:_executableOutput];
 }
 
@@ -68,7 +66,7 @@
   [_textView scrollToEndOfDocument:nil];
 }
 
-- (void)executableDidCompleteWithTerminationStatus:(int)terminationStatus {
+- (void)executableDidCompleteWithTerminationStatus:(NSInteger)terminationStatus {
   [_activityIndicator stopAnimation:nil];
   [_doneButton setEnabled:YES];
   [self.window makeFirstResponder:_doneButton];
@@ -93,7 +91,7 @@
 - (void)displayCompletionNotification:(BOOL)sucess {
   NSUserNotification *note = [NSUserNotification new];
   note.title = [NSString stringWithFormat:@"%@ completed.", _title];
-  note.informativeText = sucess ? @"Sucess." : @"FAILURE!";
+  note.informativeText = sucess ? @"Success." : @"FAILURE!";
 
   [[NSUserNotificationCenter defaultUserNotificationCenter] deliverNotification:(NSUserNotification *)note];
   [note setSoundName:NSUserNotificationDefaultSoundName];

@@ -10,6 +10,7 @@ pod 'INAppStoreWindow'
 pod 'MAKVONotificationCenter', :head
 pod 'AFNetworking'
 pod 'DSFavIconManager'
+pod 'ReactiveCocoa'
 
 #pod 'Fragaria', :local => "~/Desktop/moritzhFragaria"
 #pod 'SNRHUDKit', :local => "~/Desktop/SNRHUDKit"

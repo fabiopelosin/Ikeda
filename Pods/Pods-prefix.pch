@@ -1,6 +1,8 @@
 #ifdef __OBJC__
 #import <Cocoa/Cocoa.h>
 #endif
+
+#import <SystemConfiguration/SystemConfiguration.h>
 #ifdef __OBJC__
 #define MR_SHORTHAND
 #define MR_ENABLE_ACTIVE_RECORD_LOGGING 0
