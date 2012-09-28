@@ -95,10 +95,10 @@
 										<object class="NSTextView" id="688075901">
 											<reference key="NSNextResponder" ref="153792612"/>
 											<int key="NSvFlags">2322</int>
-											<string key="NSFrameSize">{605, 283}</string>
+											<string key="NSFrameSize">{635, 298}</string>
 											<reference key="NSSuperview" ref="153792612"/>
 											<reference key="NSWindow"/>
-											<reference key="NSNextKeyView" ref="501101104"/>
+											<reference key="NSNextKeyView" ref="554822561"/>
 											<string key="NSReuseIdentifierKey">_NS:13</string>
 											<object class="NSTextContainer" key="NSTextContainer" id="1068498140">
 												<object class="NSLayoutManager" key="NSLayoutManager">
@@ -115,11 +115,11 @@
 													<nil key="NSDelegate"/>
 												</object>
 												<reference key="NSTextView" ref="688075901"/>
-												<double key="NSWidth">605</double>
+												<double key="NSWidth">635</double>
 												<int key="NSTCFlags">1</int>
 											</object>
 											<object class="NSTextViewSharedData" key="NSSharedData">
-												<int key="NSFlags">67121125</int>
+												<int key="NSFlags">67121121</int>
 												<int key="NSTextCheckingTypes">0</int>
 												<nil key="NSMarkedAttributes"/>
 												<object class="NSColor" key="NSBackgroundColor" id="637248475">
@@ -167,7 +167,7 @@
 											<nil key="NSDelegate"/>
 										</object>
 									</array>
-									<string key="NSFrame">{{1, 1}, {620, 283}}</string>
+									<string key="NSFrame">{{1, 1}, {635, 298}}</string>
 									<reference key="NSSuperview" ref="761279044"/>
 									<reference key="NSWindow"/>
 									<reference key="NSNextKeyView" ref="688075901"/>
@@ -332,24 +332,23 @@ wGw</bytes>
 								<object class="NSScroller" id="501101104">
 									<reference key="NSNextResponder" ref="761279044"/>
 									<int key="NSvFlags">256</int>
-									<string key="NSFrame">{{621, 1}, {15, 283}}</string>
+									<string key="NSFrame">{{620, 1}, {16, 298}}</string>
 									<reference key="NSSuperview" ref="761279044"/>
 									<reference key="NSWindow"/>
-									<reference key="NSNextKeyView" ref="554822561"/>
+									<reference key="NSNextKeyView" ref="911328230"/>
 									<string key="NSReuseIdentifierKey">_NS:83</string>
 									<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
 									<reference key="NSTarget" ref="761279044"/>
 									<string key="NSAction">_doScroller:</string>
-									<double key="NSCurValue">1</double>
-									<double key="NSPercent">0.85256409645080566</double>
+									<double key="NSPercent">0.95207667731629397</double>
 								</object>
 								<object class="NSScroller" id="554822561">
 									<reference key="NSNextResponder" ref="761279044"/>
 									<int key="NSvFlags">256</int>
-									<string key="NSFrame">{{1, 284}, {620, 15}}</string>
+									<string key="NSFrame">{{1, 283}, {635, 16}}</string>
 									<reference key="NSSuperview" ref="761279044"/>
 									<reference key="NSWindow"/>
-									<reference key="NSNextKeyView" ref="911328230"/>
+									<reference key="NSNextKeyView" ref="501101104"/>
 									<string key="NSReuseIdentifierKey">_NS:33</string>
 									<bool key="NSAllowsLogicalLayoutDirection">NO</bool>
 									<int key="NSsFlags">1</int>
@@ -448,7 +447,7 @@ wGw</bytes>
 					<reference key="NSWindow"/>
 					<reference key="NSNextKeyView" ref="660424261"/>
 				</object>
-				<string key="NSScreenRect">{{0, 0}, {1440, 878}}</string>
+				<string key="NSScreenRect">{{0, 0}, {1920, 1058}}</string>
 				<string key="NSMaxSize">{10000000000000, 10000000000000}</string>
 				<bool key="NSAutorecalculatesContentBorderThicknessMinY">NO</bool>
 				<double key="NSContentBorderThicknessMinY">44</double>
@@ -987,7 +986,6 @@ wGw</bytes>
 				<string key="2.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<boolean value="NO" key="24.IBNSViewMetadataTranslatesAutoresizingMaskIntoConstraints"/>
 				<string key="24.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="25.CustomClassName">SNRHUDTextView</string>
 				<string key="25.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="26.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="27.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -1071,14 +1069,6 @@ wGw</bytes>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
 						<string key="minorKey">./Classes/NSLayoutConstraint.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">SNRHUDTextView</string>
-					<string key="superclassName">NSTextView</string>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/SNRHUDTextView.h</string>
 					</object>
 				</object>
 			</array>

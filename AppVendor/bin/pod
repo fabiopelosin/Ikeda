@@ -7,13 +7,15 @@
 
 WORKING_DIR=`pwd -P`
 
-# Iterate to find the location physical of this script so we can load ruby from
-# a relative path
+# Iterate to find the physical location of this script so we can load ruby from
+# the application bundle
+#
 TARGET_FILE=$0
 cd `dirname $TARGET_FILE`
 TARGET_FILE=`basename $TARGET_FILE`
 
 # Iterate down a (possible) chain of symlinks
+#
 while [ -L "$TARGET_FILE" ]
 do
     TARGET_FILE=`readlink $TARGET_FILE`
@@ -23,7 +25,8 @@ done
 
 PHYS_DIR=`pwd -P`
 
-
 # Restore original path
+#
 cd "$WORKING_DIR"
+
 exec "$PHYS_DIR/ruby" "$PHYS_DIR/../Frameworks/gems/bin/pod" $@

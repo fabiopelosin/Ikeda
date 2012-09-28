@@ -16,7 +16,7 @@
     NSMutableDictionary *environment = [[[NSProcessInfo processInfo] environment] mutableCopy];
     environment[@"CP_STDOUT_SYNC"] = @"TRUE";
     //  environment[@"DYLD_PRINT_LIBRARIES"] = @"TRUE";
-    arguments = [@[@"--no-color", @"--verbose"] arrayByAddingObjectsFromArray:arguments];
+    arguments = [[self.class defaultArguments] arrayByAddingObjectsFromArray:arguments];
     NSTask *task = [[NSTask alloc] init];
     [task setLaunchPath:[self.class embededExecutablePath]];
     [task setEnvironment: environment];
@@ -32,7 +32,11 @@
 }
 
 + (NSString*)embededExecutablePath {
-    return [[NSBundle mainBundle] pathForAuxiliaryExecutable:@"pod"];
+  return [[NSBundle mainBundle] pathForAuxiliaryExecutable:@"pod"];
+}
+
++ (NSArray*)defaultArguments {
+  return @[ @"--no-color", @"--verbose" ];
 }
 
 @end
