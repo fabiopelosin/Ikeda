@@ -9,7 +9,7 @@ PODS:
 - INAppStoreWindow (1.1)
 - JRSwizzle (1.0)
 - MAKVONotificationCenter (HEAD based on 0.0.1)
-- MagicalRecord (HEAD based on 2.0.3)
+- MagicalRecord (2.0.3)
 - PXSourceList (0.8)
 - ReactiveCocoa (0.6.0):
   - JRSwizzle (~> 1.0)
@@ -21,7 +21,7 @@ DEPENDENCIES:
 - DSFavIconManager
 - INAppStoreWindow
 - MAKVONotificationCenter (HEAD)
-- MagicalRecord (HEAD)
+- MagicalRecord
 - PXSourceList
 - ReactiveCocoa
 

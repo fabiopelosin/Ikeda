@@ -3,7 +3,7 @@ platform :osx, "10.8"
 inhibit_all_warnings!
 
 pod 'PXSourceList'
-pod 'MagicalRecord', :head
+pod 'MagicalRecord'
 pod 'BlocksKit'
 pod 'INAppStoreWindow'
 pod 'MAKVONotificationCenter', :head
