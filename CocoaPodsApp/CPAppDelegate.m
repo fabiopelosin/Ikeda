@@ -67,7 +67,7 @@
 
   // Segmented Control
   CGFloat segmentedControlWith = 32.f * 2.f;
-  NSRect segmentedControlFrame = NSMakeRect(240.f + 10.f, - (40.f - 20.f)/2.f,  segmentedControlWith, 22.0f);
+  NSRect segmentedControlFrame = NSMakeRect(70.f + 10.f, - (40.f - 20.f)/2.f,  segmentedControlWith, 22.0f);
   NSSegmentedControl *segmentedControl = [[NSSegmentedControl alloc] initWithFrame:segmentedControlFrame];
   [segmentedControl setAutoresizingMask:NSViewMaxXMargin | NSViewMinYMargin];
   [segmentedControl setSegmentCount:2];

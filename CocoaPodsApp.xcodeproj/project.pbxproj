@@ -442,7 +442,6 @@
 		E591DA8415F27BB0006FB638 /* CocoaPodsApp */ = {
 			isa = PBXGroup;
 			children = (
-				E5C1DBEF1619C49D00E816DE /* Syntax Highlighting */,
 				E591DA9015F27BB0006FB638 /* CPAppDelegate.h */,
 				E591DA9115F27BB0006FB638 /* CPAppDelegate.m */,
 				E591DA9315F27BB0006FB638 /* MainMenu.xib */,
@@ -451,6 +450,7 @@
 				E55CD1DA15FE868300AE8206 /* ViewControllers */,
 				E536203E15F5820D00C2D4CC /* Views */,
 				E536203D15F580E800C2D4CC /* Models */,
+				E5C1DBEF1619C49D00E816DE /* Syntax Highlighting */,
 				E5795B6216015ED600AB953B /* Resources */,
 				E591DA8515F27BB0006FB638 /* Supporting Files */,
 			);
