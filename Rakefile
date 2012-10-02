@@ -49,7 +49,8 @@ namespace :vendor do
     # Therefore, to prevent issues, there should be
     # no Gemfile in the root of the project.
     #
-    sh "mkdir -p Vendor"
+    sh "rm -rf Vendor/bundler"
+    sh "mkdir -p Vendor/bundler"
     Dir.chdir "Vendor" do
       sh "bundle install --path bundler"
     end
@@ -70,11 +71,11 @@ namespace :vendor do
     # TODO: Offensive hack!
     # Patch CocoaPods either with an environment variable or
     # removing the call to Bundler.
-    File.open("AppVendor/gems/gems/cocoapods-0.14.0/bin/pod", 'w') do |f|
+    File.open("AppVendor/gems/gems/cocoapods-0.15.0/bin/pod", 'w') do |f|
       f.write("#!/usr/bin/env ruby\nSTDOUT.sync = true\nrequire 'cocoapods'\nPod::Command.run(*ARGV)")
     end
 
-    libs = `otool -L AppVendor/gems/gems/xcodeproj-0.3.3/ext/xcodeproj_ext.bundle`
+    libs = `otool -L AppVendor/gems/gems/xcodeproj-0.3.4/ext/xcodeproj_ext.bundle`
     local_libruby = libs.match(/(.*.libruby.1.9.1.dylib).*/)[1].lstrip
     puts "local libruby #{local_libruby}"
     Dir.glob('AppVendor/gems/**/*.bundle') do |bundle|
