@@ -64,20 +64,22 @@ NSString *const kCPGemBridgeManagerBothPlatformsSpecFilter = @"kCPGemBridgeManag
   connection.invalidationHandler = ^{
     NSLog (@"CONNECTION INVALIDATED");
   };
-
-
   NSLog (@"COMPLETED CONNECTION REQUESTS");
 }
 
 - (void)versionWithCompletionHandler:(void (^)(NSString* version))handler {
   [cocoaPodsProxy stringForKey:@"version" completion:^(NSString *version) {
-     handler (version);
+    dispatch_async(dispatch_get_main_queue(), ^{
+      handler (version);
+    });
    }];
 }
 
 - (void)checkRepoCompatibiltyWithHandler:(void (^)(BOOL repoCompatible))handler {
   [cocoaPodsProxy numberForKey:@"needs_setup" completion:^(NSNumber *compatible) {
-    handler ([compatible boolValue]);
+    dispatch_async(dispatch_get_main_queue(), ^{
+      handler ([compatible boolValue]);
+    });
   }];
 }
 

@@ -27,6 +27,7 @@ extern NSString *const kCPGemBridgeManagerBothPlatformsSpecFilter;
 //- (void)updateSpecs;
 - (void)updateSpec:(CPSpecification*)spec;
 
+// Handler always called on the main thread
 - (void)versionWithCompletionHandler:(void (^)(NSString* version))handler;
 - (void)checkRepoCompatibiltyWithHandler:(void (^)(BOOL repoCompatible))handler;
 
