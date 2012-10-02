@@ -8,6 +8,8 @@
 
 #import "CPPodfileViewController.h"
 #import "CPAppDelegate.h"
+#import "CPPodfileSyntaxDefinition.h"
+#import "CPSyntaxTheme.h"
 
 @interface CPPodfileViewController ()
 
@@ -35,16 +37,19 @@
 - (void)setPodfile:(CPPodfile *)podfile {
   _podfile = podfile;
   [_textView setString:[_podfile stringReppresentation]];
+
 }
 
 - (void)awakeFromNib {
   CPBackgroundView *backgroundView = (CPBackgroundView *)self.view;
   backgroundView.backgroundColor = [NSColor colorWithCalibratedWhite:0.97f alpha:1.f];
-  [_textView setTextContainerInset:NSMakeSize(10.f, 10.f)];
-  [_textView.textContainer setContainerSize:NSMakeSize(FLT_MAX, FLT_MAX)];
-  [_textView.textContainer setWidthTracksTextView:NO];
-  [_textView setHorizontallyResizable:YES];
+  [_textView setTheme:[CPSyntaxTheme new]];
+  [_textView setSyntaxDefinition:[CPPodfileSyntaxDefinition new]];
   [_textView setString:[_podfile stringReppresentation]];
+  [_textView.lineNumberView setBackgroundColor:[NSColor colorWithCalibratedWhite:0.974 alpha:1.000]];
+  [_textView.lineNumberView setTextColor:[NSColor colorWithCalibratedWhite:0.7 alpha:1.000]];
+  [_textView setTextContainerInset:NSMakeSize(10.f, 10.f)];
+  [_textView setLineNumbersVisible:TRUE];
 }
 
 - (IBAction)openPodfileAction:(NSButton*)sender {

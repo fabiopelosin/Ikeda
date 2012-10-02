@@ -6,10 +6,16 @@ PODS:
 - BlocksKit (1.5.2):
   - A2DynamicDelegate
 - DSFavIconManager (0.10.0)
+- DSSyntaxKit (0.0.1):
+  - BlocksKit
+  - NoodleKit/NoodleLineNumberView
 - INAppStoreWindow (1.1)
 - JRSwizzle (1.0)
 - MAKVONotificationCenter (HEAD based on 0.0.1)
 - MagicalRecord (2.0.3)
+- NoodleKit/NoodleLineNumberMarker (0.0.1)
+- NoodleKit/NoodleLineNumberView (0.0.1):
+  - NoodleKit/NoodleLineNumberMarker
 - PXSourceList (0.8)
 - ReactiveCocoa (0.6.0):
   - JRSwizzle (~> 1.0)
@@ -19,21 +25,29 @@ DEPENDENCIES:
 - AFNetworking
 - BlocksKit
 - DSFavIconManager
+- DSSyntaxKit (from `https://raw.github.com/Discontinuity-srl/DSSyntaxKit/master/DSSyntaxKit.podspec')
 - INAppStoreWindow
 - MAKVONotificationCenter (HEAD)
 - MagicalRecord
 - PXSourceList
 - ReactiveCocoa
 
+EXTERNAL SOURCES:
+  DSSyntaxKit:
+    :podspec: https://raw.github.com/Discontinuity-srl/DSSyntaxKit/master/DSSyntaxKit.podspec
+
 SPEC CHECKSUMS:
   A2DynamicDelegate: 013b345f1aca891ded67a95c1512fad677c260a9
   AFNetworking: e9e0911a6afd846691672a4d832fb531e8bae72f
   BlocksKit: 12fbe889d9f8cc66adf5c9bd4cb0606071f214f2
   DSFavIconManager: fc25bfc913797f8696b351f91ab9a6f0ace8abbc
+  DSSyntaxKit: 50b9f5e0fcbf5d8960812197fd6c657c68264977
   INAppStoreWindow: 77f15fd07261a79ae443124927c94ad30905d900
   JRSwizzle: 6242ff38485d870fc2636899048ee1ab883ae587
   MAKVONotificationCenter: 4540e226e809a110ecf2629d3afd375a5beb086a
   MagicalRecord: bab76c152f93668a25cf1b697e1f469f4c3bf691
+  NoodleKit/NoodleLineNumberMarker: bda95f4bdf934a8c6cff5fb5721222d9b47c70be
+  NoodleKit/NoodleLineNumberView: bda95f4bdf934a8c6cff5fb5721222d9b47c70be
   PXSourceList: 80a590e03f84221c62652a9b955b1d90b1807261
   ReactiveCocoa: 172671064cb38a27d5f7a7cd8d3c3e24025480c6
   libffi: 8a1d9ba43c0c84b546b42c6f742714e73aa07ae1

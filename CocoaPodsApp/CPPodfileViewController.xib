@@ -158,7 +158,7 @@
 											<int key="NSTCFlags">1</int>
 										</object>
 										<object class="NSTextViewSharedData" key="NSSharedData">
-											<int key="NSFlags">67120899</int>
+											<int key="NSFlags">67120963</int>
 											<int key="NSTextCheckingTypes">0</int>
 											<nil key="NSMarkedAttributes"/>
 											<object class="NSColor" key="NSBackgroundColor" id="239045679">
@@ -1020,6 +1020,7 @@ wGw</bytes>
 				<string key="41.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<boolean value="NO" key="45.IBNSViewMetadataTranslatesAutoresizingMaskIntoConstraints"/>
 				<string key="45.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
+				<string key="46.CustomClassName">DSSyntaxTextView</string>
 				<string key="46.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="47.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="48.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -1060,7 +1061,7 @@ wGw</bytes>
 					<string key="superclassName">CPNavigableViewController</string>
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="backgroundView">CPBackgroundView</string>
-						<string key="textView">NSTextView</string>
+						<string key="textView">DSSyntaxTextView</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
 						<object class="IBToOneOutletInfo" key="backgroundView">
@@ -1069,12 +1070,20 @@ wGw</bytes>
 						</object>
 						<object class="IBToOneOutletInfo" key="textView">
 							<string key="name">textView</string>
-							<string key="candidateClassName">NSTextView</string>
+							<string key="candidateClassName">DSSyntaxTextView</string>
 						</object>
 					</dictionary>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
 						<string key="minorKey">./Classes/CPPodfileViewController.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">DSSyntaxTextView</string>
+					<string key="superclassName">NSTextView</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/DSSyntaxTextView.h</string>
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">

@@ -10,11 +10,12 @@
 #import "CPNavigationViewController.h"
 #import "CPPodfile.h"
 #import "CPBackgroundView.h"
+#import "DSSyntaxTextView.h"
 
 @interface CPPodfileViewController : CPNavigableViewController
 
 @property (strong) IBOutlet CPBackgroundView *backgroundView;
-@property (unsafe_unretained) IBOutlet NSTextView *textView;
+@property (unsafe_unretained) IBOutlet DSSyntaxTextView *textView;
 
 @property (nonatomic, strong) CPPodfile* podfile;
 
