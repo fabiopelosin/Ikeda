@@ -48,7 +48,7 @@ class ExportedObject < AbstractExportedObject
   #
   def set_to_hash(set)
     return {} unless set
-    pod = Pod::Command::Presenter::CocoaPod.new(set)
+    pod = Pod::UI::UIPod.new(set)
 
     hash = {}
     %w|name version versions authors homepage summary license|.each do |attribute|
