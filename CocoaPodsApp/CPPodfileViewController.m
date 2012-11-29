@@ -57,10 +57,12 @@
     {
         NSString *defaultApplication = (__bridge NSString *)(LSCopyDefaultRoleHandlerForContentType(kUTTypePlainText, kLSRolesEditor));
         
-        if (![[NSWorkspace sharedWorkspace] openFile:[_podfile path]
-                                     withApplication:[[NSWorkspace sharedWorkspace]
-                                                      absolutePathForAppBundleWithIdentifier:defaultApplication]])
+        if ([[NSWorkspace sharedWorkspace] openFile:[_podfile path]
+                                    withApplication:[[NSWorkspace sharedWorkspace]
+                                                     absolutePathForAppBundleWithIdentifier:defaultApplication]])
         {
+            LSSetDefaultRoleHandlerForContentType(CFSTR("public.podspec"), kLSRolesEditor, (__bridge CFStringRef)defaultApplication);
+        } else {
             NSLog(@"Failed to open podspec at: %@", [_podfile path]);
         }
     }
