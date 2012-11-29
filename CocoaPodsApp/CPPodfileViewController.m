@@ -53,7 +53,17 @@
 }
 
 - (IBAction)openPodfileAction:(NSButton*)sender {
-  [[NSWorkspace sharedWorkspace] openFile:[_podfile path]];
+    if (![[NSWorkspace sharedWorkspace] openFile:[_podfile path]])
+    {
+        NSString *defaultApplication = (__bridge NSString *)(LSCopyDefaultRoleHandlerForContentType(kUTTypePlainText, kLSRolesEditor));
+        
+        if (![[NSWorkspace sharedWorkspace] openFile:[_podfile path]
+                                     withApplication:[[NSWorkspace sharedWorkspace]
+                                                      absolutePathForAppBundleWithIdentifier:defaultApplication]])
+        {
+            NSLog(@"Failed to open podspec at: %@", [_podfile path]);
+        }
+    }
 }
 
 - (void) runExecutableWithTitle:(NSString*)title arguments:(NSArray*)arguments {
