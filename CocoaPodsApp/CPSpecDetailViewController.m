@@ -145,7 +145,17 @@
 }
 
 - (IBAction)openPodspecAction:(id)sender {
-  [[NSWorkspace sharedWorkspace] openFile:_spec.definedInFile];
+    if (![[NSWorkspace sharedWorkspace] openFile:self.spec.definedInFile])
+    {
+        NSString *defaultApplication = (__bridge NSString *)(LSCopyDefaultRoleHandlerForContentType(kUTTypePlainText, kLSRolesEditor));
+        
+        if (![[NSWorkspace sharedWorkspace] openFile:self.spec.definedInFile
+                                     withApplication:[[NSWorkspace sharedWorkspace]
+                                                      absolutePathForAppBundleWithIdentifier:defaultApplication]])
+        {
+            NSLog(@"Failed to open podspec at: %@", self.spec.definedInFile);
+        }
+    }
 }
 
 - (IBAction)openHomePageAction:(id)sender {
