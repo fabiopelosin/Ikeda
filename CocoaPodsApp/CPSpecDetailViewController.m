@@ -51,7 +51,10 @@
 - (void)awakeFromNib {
   [_backgroundView setBackgroundColor:[NSColor whiteColor]];
   [self updateInterface];
-  [_shareButton setImage:[NSImage imageNamed:NSImageNameShareTemplate]];
+  [self.shareButton setImage:[NSImage imageNamed:NSImageNameShareTemplate]];
+  [self.shareButton setTarget:self];
+  [self.shareButton setAction:@selector(shareButtonAction)];
+  [self.shareButton sendActionOn:NSLeftMouseDownMask];
 }
 
 - (void)updateInterface {
@@ -165,13 +168,11 @@
   [[NSWorkspace sharedWorkspace] openURL:url];
 }
 
-- (IBAction)shareButtonAction:(NSButton*)sender {
-  NSArray *items = @[
-  @"#cocoapods", _spec.name, _spec.summary, _spec.homepage
-  ];
+- (void)shareButtonAction {
+  NSArray *items = @[@"#cocoapods", _spec.name, _spec.summary, _spec.homepage];
   NSSharingServicePicker *picker = [[NSSharingServicePicker alloc] initWithItems:items];
   picker.delegate = self;
-  [picker showRelativeToRect:sender.bounds ofView:sender preferredEdge:CGRectMinYEdge];
+  [picker showRelativeToRect:self.shareButton.bounds ofView:self.shareButton preferredEdge:CGRectMinYEdge];
 }
 
 @end
